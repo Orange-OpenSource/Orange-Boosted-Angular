@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orange boosted with Angular2">
+  <title>Orange boosted with Angular2</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <base href="/">
+</head>
+
+<body>
+
+  <app>
+    Loading...
+  </app>
+
+   <% if (process.env.npm_lifecycle_event === 'server') { %>
+  <!-- Webpack Dev Server reload -->
+  <script src="/webpack-dev-server.js"></script>
+  <% } %>
+
+</body>
+</html>

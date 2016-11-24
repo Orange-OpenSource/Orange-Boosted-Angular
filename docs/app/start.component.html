@@ -1,0 +1,57 @@
+<div class="head">
+    <div class="container">
+        <h1>Orange B<span class="text-primary">oo</span>sted with Angular</h1>
+        <p class="lead">This is Ng-boosted, built with Boosted (css only), Angular and ng-bootstrap.</p>
+        <!--<a class="btn btn-inverse btn-info btn-lg disabled" href="">Download Ng-boosted</a>-->
+        <p class="version">Currently Ng-boosted {{ngBoostedVersion}}</p>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Getting started</h2>
+
+    <h3>Dependencies</h3>
+    <p>Ng-boosted is a set of custom components and directives that allows you to run your Angular based projet with Boosted CSS.</p>
+    <p>Before your start using Ng-boosted you need the following dependencies :<p>
+        <ul class="o-square-list">
+            <li><a href="http://boosted.orange.com">Boosted {{boostedVersion}}</a></li>
+            <li><a href="https://angular.io/">Angular {{angularVersion}}</a></li>
+            <li><a href="https://ng-bootstrap.github.io/">ng-bootstrap {{ngBootstrapVersion}}</a></li>
+        </ul>
+
+    <h3>Installation</h3>
+    <p>For <code>ng-bootstrap</code> installation please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here</a></p>
+
+    <p>After installing the above dependencies, install <code>ng-boosted</code> via:</p>
+
+    <p><code>npm install --save @ng-boosted/ng-boosted</code></p>
+
+    <p>Once installed you need to import <code>ng-bootstrap</code> and <code>ng-boosted</code> modules.</p>
+
+    <p><code>
+        import {{ '{' }} NgbModule {{ '}' }} from '@ng-bootstrap/ng-bootstrap';<br>
+        import {{ '{' }} NgBoostedModule {{ '}' }} from '@ng-boosted/ng-boosted';
+    </code></p>
+
+    <p><code>
+        @NgModule({{ '{' }}<br>
+        &emsp;declarations: [AppComponent, ...],<br>
+        &emsp;imports: [NgbModule.forRoot(), NgBoostedModule, ...],<br>
+        &emsp;bootstrap: [AppComponent]<br>
+        {{ '}' }})<br>
+        export class AppModule {{ '{' }}<br>
+        {{ '}' }}<br>
+    </code></p>
+
+    <h2>Building this documentation</h2>
+    <p>Simply <code>npm run build:docs</code> and the output goes to a <code>_gh_pages</code> folder.</p>
+
+    <p>You can also run this documentation with <code>npm start</code></p>
+
+    <p>The output is then served to <a href="http://localhost:3030">http://localhost:3030</a>
+    </p>
+    
+    <h2>Copyright and license</h2>
+
+    <p>Code and documentation copyright 2017 Orange SA. Code released under <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/LICENSE">the MIT license</a>. Docs released under <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/docs/LICENSE">Creative Commons Attribution</a>.</p>
+</div>

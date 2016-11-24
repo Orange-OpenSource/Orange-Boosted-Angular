@@ -1,0 +1,25 @@
+{
+  "name": "@ng-boosted/ng-boosted",
+  "version": "0.0.1",
+  "description": "Orange Boosted with Bootstrap 4 and Angular",
+  "keywords": [
+    "boosted",
+    "angular2"
+  ],
+  "author": "Yves Gatesoupe",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "https://github.com/*",
+  "license":"MIT",
+  "bugs": {
+    "url": "https://github.com/*"
+  },
+  "main": "index.js",
+  "peerDependencies": {
+    "@angular/core": "^2.0.0",
+    "@angular/common": "^2.0.0",
+    "@angular/forms": "^2.0.0"
+  }
+}

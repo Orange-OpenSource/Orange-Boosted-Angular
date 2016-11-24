@@ -1,0 +1,60 @@
+/* Doc Styles */
+
+.head {
+  background-color: #000;
+  color: #fff;
+  border-top: 2px solid #333;
+  overflow: hidden;
+}
+
+.head h1 {
+  color: #fff;
+  margin-top: 1.25rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.lead a {
+  text-decoration: underline;
+}
+
+.version {
+  margin-top: .625rem;
+}
+
+h2 {
+  margin-top: 1.25rem;
+}
+
+.bd-sidebar {
+  list-style: none;
+}
+
+.bd-sidebar li {
+  line-height: 1.375;
+}
+
+.bd-sidebar a {
+  font-size: 1rem;
+  padding: .25rem .75rem;
+}
+
+.doc-link {
+  margin-left: .625rem;
+  font-size: 1.5rem;
+}
+
+/* for code boxes */
+
+.token.tag {
+  font-size: .7875rem;
+}
+
+/* components demos */
+
+.progress {
+  margin-top: 1rem;
+}
