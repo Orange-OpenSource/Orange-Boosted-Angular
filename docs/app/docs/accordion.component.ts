@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-accordion',
   template: `
     <docs-wrapper component="Accordion">
+      <h3>Demo</h3>
       <demo-accordion></demo-accordion>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

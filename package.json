@@ -110,7 +110,9 @@
     "font-loader": "^0.1.2",
     "prismjs": "^1.5.1",
     "prismjs-loader": "^0.0.4",
-    "postcss-loader": "^1.1.0"
+    "postcss-loader": "^1.1.0",
+    "html-loader": "^0.4.5",
+    "markdown-loader": "^2.0.0"
   },
   "repository": {
     "type": "git",

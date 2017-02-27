@@ -34,6 +34,8 @@ import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
 import { DocCollapse } from './docs/collapse.component';
 import { DocProgressBar } from './docs/progress-bar.component';
+import { DocONavbar } from './docs/o-navbar.component';
+import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { CodeBox } from './docs/code-box.component';
 
 @NgModule({
@@ -94,6 +96,14 @@ import { CodeBox } from './docs/code-box.component';
         component: DocProgressBar
       },
       {
+        path: 'documentation/o-navbar',
+        component: DocONavbar
+      },
+      {
+        path: 'documentation/o-scroll-top',
+        component: DocOScrollTop
+      },
+      {
         path: 'boostwatch',
         component: BoostwatchComponent
       },
@@ -133,6 +143,8 @@ import { CodeBox } from './docs/code-box.component';
     DocCarousel,
     DocCollapse,
     DocProgressBar,
+    DocONavbar,
+    DocOScrollTop,
     CodeBox
   ],
   bootstrap:    [ AppComponent ]
