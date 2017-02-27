@@ -13,7 +13,7 @@ import {
   ContentChildren,
 } from '@angular/core';
 
-const TEST_PATTERN = /xs|sm|md|lg|xl/;
+const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
 
 @Directive({selector: 'o-nav-link'})
 export class ONavLink {
