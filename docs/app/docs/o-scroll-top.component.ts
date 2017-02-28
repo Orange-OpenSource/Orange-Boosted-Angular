@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'doc-o-scroll-top',
   styles: [`
-    >>>docs-wrapper .container { margin-bottom: 100rem; }
+    .fake-block { height: 400rem; }
   `],
   template: `
     <docs-wrapper component="OScrollTop">
@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
       <h3>Usage</h3>
       <div [innerHtml]=docContent></div>
       <code-box [snippets]="demoSnippets"></code-box>
+      <div class="fake-block"></div>
     </docs-wrapper>
   `
 })

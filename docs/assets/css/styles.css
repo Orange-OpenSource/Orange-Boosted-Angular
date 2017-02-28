@@ -47,6 +47,29 @@ h2 {
   font-size: 1.5rem;
 }
 
+/* local nav */
+
+.o-nav-local {
+  margin-top: 1.25rem;
+  position: sticky; /* Firefox & Chrome only */
+  top: 1.25rem; /* for position sticky */
+}
+
+.o-nav-local hr {
+  display: none;
+}
+
+.o-nav-local .nav-link {
+  font-weight: normal;
+  padding: .5rem 0;
+}
+
+.o-nav-local .nav {
+  display: block;
+  position: static;
+  border: 0;
+}
+
 /* for code boxes */
 
 .token.tag {
