@@ -8,8 +8,8 @@
     "webpack",
     "typescript"
   ],
-  "author": "Yves Gatesoupe",
-  "homepage": "https://github.com/*",
+  "author": "Orange",
+  "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
@@ -116,10 +116,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/*.git"
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular.git"
   },
   "bugs": {
-    "url": "https://github.com/*"
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues"
   },
   "engines": {
     "node": ">= 4.2.1",
