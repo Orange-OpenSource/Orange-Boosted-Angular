@@ -30,7 +30,7 @@ export class ONavLink {
     <nav [class]="'navbar navbar-inverse ' + (pattern.test(breakpoint) ? 'navbar-toggleable-'+breakpoint : 'navbar-toggleable-sm')" role="navigation">
         <div class="container">
             <a class="navbar-brand logo" [routerLink]="homeRoute">
-                <img src="/assets/img/orange-logo.jpg" alt="Back to homepage" title="Back to homepage">
+                <img src="assets/img/orange-logo.jpg" alt="Back to homepage" title="Back to homepage">
             </a>
             <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">

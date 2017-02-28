@@ -59,7 +59,7 @@ module.exports = function makeWebpackConfig() {
    */
   config.output = isTest ? {} : {
     path: isProd ? root('_gh_pages') : root('.tmp'),
-    publicPath: isProd ? '/' : 'http://localhost:3030/',
+    publicPath: isProd ? '/Orange-Boosted-Angular/' : 'http://localhost:3030/',
     filename: isProd ? 'js/[name].[hash].js' : 'js/[name].js',
     chunkFilename: isProd ? '[id].[hash].chunk.js' : '[id].chunk.js'
   };
