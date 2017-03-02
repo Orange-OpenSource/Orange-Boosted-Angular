@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-pagination',
   template: `
     <docs-wrapper component="Pagination">
+        <h3>Demo</h3>
         <demo-pagination></demo-pagination>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

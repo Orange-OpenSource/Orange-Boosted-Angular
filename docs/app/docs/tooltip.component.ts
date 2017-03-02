@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-tooltip',
   template: `
     <docs-wrapper component="Tooltip">
+        <h3>Demo</h3>
         <demo-tooltip></demo-tooltip>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-tabs',
   template: `
     <docs-wrapper component="Tabs">
+        <h3>Demo</h3>
         <demo-tabs></demo-tabs>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

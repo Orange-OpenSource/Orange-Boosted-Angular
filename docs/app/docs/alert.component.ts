@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-alert',
   template: `
     <docs-wrapper component="Alert">
+        <h3>Demo</h3>
         <demo-alert></demo-alert>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

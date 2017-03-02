@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
     <docs-wrapper component="Carousel">
         <div class="row">
             <div class="col-md-9">
+                <h3>Demo</h3>
                 <demo-carousel></demo-carousel>
                 <code-box [snippets]="demoSnippets"></code-box>
             </div>

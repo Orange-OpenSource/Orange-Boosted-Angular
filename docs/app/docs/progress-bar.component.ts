@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-progress-bar',
   template: `
     <docs-wrapper component="Progress Bar">
+      <h3>Demo</h3>
       <demo-progress-bar></demo-progress-bar>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-modal',
   template: `
     <docs-wrapper component="Modal">
+      <h3>Demo</h3>
       <demo-modal></demo-modal>
       <template ngbModalContainer></template>
       <code-box [snippets]="demoSnippets"></code-box>

@@ -76,8 +76,21 @@ h2 {
   font-size: .7875rem;
 }
 
-/* components demos */
+/* footer */
 
-.progress {
-  margin-top: 1rem;
+.o-footer {
+    margin-top: 6.25rem;
+}
+
+.o-footer-body p {
+    margin-top: .375rem;
+}
+
+.o-footer-body ul {
+    margin-bottom: 1.25rem;
+}
+
+.o-footer li span {
+    font-size: 1.5rem;
+    vertical-align: bottom;
 }

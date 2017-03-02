@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-collapse',
   template: `
     <docs-wrapper component="Collapse">
+      <h3>Demo</h3>
       <demo-collapse></demo-collapse>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

@@ -4,7 +4,7 @@ Main element `<o-navbar>`accepts two parameters :
 
 * `homeRoute` which is the default route of your application when user clicks the logo link.
 * `breakpoint` which is the bootstrap suffix for when the navbar must collapse to mobile view. Default value is `"sm"`.
-Checkout Boosted [documentation](http://boosted.orange.com/v4-alpha/layout/responsive-utilities/#available-classes) for supported values
+Checkout Boosted [documentation](http://boosted.orange.com/v4-alpha/layout/responsive-utilities/#available-classes) for supported values.
 
 Element `<o-nav-link>` has also two parameters :
 
