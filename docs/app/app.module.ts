@@ -22,6 +22,7 @@ import { DemoCarousel } from './demos/carousel.component';
 import { DemoCollapse } from './demos/collapse.component';
 import { DemoProgressBar } from './demos/progress-bar.component';
 import { DemoDropdown } from './demos/dropdown.component';
+import { DemoOSwitch } from './demos/o-switch.component';
 
 import { DocAccordion } from './docs/accordion.component';
 import { DocModal } from './docs/modal.component';
@@ -36,6 +37,7 @@ import { DocCollapse } from './docs/collapse.component';
 import { DocProgressBar } from './docs/progress-bar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
+import { DocOSwitch } from './docs/o-switch.component';
 import { CodeBox } from './docs/code-box.component';
 
 @NgModule({
@@ -104,6 +106,10 @@ import { CodeBox } from './docs/code-box.component';
         component: DocOScrollTop
       },
       {
+        path: 'documentation/o-switch',
+        component: DocOSwitch
+      },
+      {
         path: 'boostwatch',
         component: BoostwatchComponent
       },
@@ -132,6 +138,7 @@ import { CodeBox } from './docs/code-box.component';
     DemoCollapse,
     DemoProgressBar,
     DemoDropdown,
+    DemoOSwitch,
     DocAccordion,
     DocModal,
     DocDropdown,
@@ -145,6 +152,7 @@ import { CodeBox } from './docs/code-box.component';
     DocProgressBar,
     DocONavbar,
     DocOScrollTop,
+    DocOSwitch,
     CodeBox
   ],
   bootstrap:    [ AppComponent ]
