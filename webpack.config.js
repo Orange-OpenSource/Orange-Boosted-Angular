@@ -9,6 +9,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const METADATA = {
+  baseUrl: '/',
+};
+
+const ANGULAR_V_KEY = '@angular/common';
+const NGBOOTSTRAP_V_KEY = '@ng-bootstrap/ng-bootstrap';
+
 /**
  * Env
  * Get npm lifecycle event to identify the environment
@@ -143,7 +150,11 @@ module.exports = function makeWebpackConfig() {
       // Environment helpers
       'process.env': {
         ENV: JSON.stringify(ENV)
-      }
+      },
+      NGBOOSTED_VERSION: JSON.stringify(require(root('src/package.json')).version),
+      BOOSTED_VERSION: JSON.stringify(require(root('package.json')).dependencies.boosted),
+      ANGULAR_VERSION: JSON.stringify(require(root('package.json')).dependencies[ANGULAR_V_KEY]),
+      NGBOOTSTRAP_VERSION: JSON.stringify(require(root('package.json')).dependencies[NGBOOTSTRAP_V_KEY])
     }),
 
     // Workaround needed for angular 2 angular/angular#11580
@@ -183,7 +194,8 @@ module.exports = function makeWebpackConfig() {
       // Reference: https://github.com/ampedandwired/html-webpack-plugin
       new HtmlWebpackPlugin({
         template: './docs/index.html',
-        chunksSortMode: 'dependency'
+        chunksSortMode: 'dependency',
+        metadata: METADATA
       }),
 
       // Extract css files
