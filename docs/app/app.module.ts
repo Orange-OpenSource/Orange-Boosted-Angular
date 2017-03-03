@@ -1,9 +1,9 @@
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule }   from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-// import { NgBoostedModule } from '@ng-boosted/ng-boosted';
 import { NgBoostedModule } from '../../src/index';
 
 import { AppComponent }   from './app.component';
@@ -23,6 +23,7 @@ import { DemoCollapse } from './demos/collapse.component';
 import { DemoProgressBar } from './demos/progress-bar.component';
 import { DemoDropdown } from './demos/dropdown.component';
 import { DemoOSwitch } from './demos/o-switch.component';
+import { DemoOToggle } from './demos/o-toggle.component';
 
 import { DocAccordion } from './docs/accordion.component';
 import { DocModal } from './docs/modal.component';
@@ -38,11 +39,13 @@ import { DocProgressBar } from './docs/progress-bar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
+import { DocOToggle } from './docs/o-toggle.component';
 import { CodeBox } from './docs/code-box.component';
 
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path: 'start',
@@ -110,6 +113,10 @@ import { CodeBox } from './docs/code-box.component';
         component: DocOSwitch
       },
       {
+        path: 'documentation/o-toggle',
+        component: DocOToggle
+      },
+      {
         path: 'boostwatch',
         component: BoostwatchComponent
       },
@@ -139,6 +146,7 @@ import { CodeBox } from './docs/code-box.component';
     DemoProgressBar,
     DemoDropdown,
     DemoOSwitch,
+    DemoOToggle,
     DocAccordion,
     DocModal,
     DocDropdown,
@@ -153,6 +161,7 @@ import { CodeBox } from './docs/code-box.component';
     DocONavbar,
     DocOScrollTop,
     DocOSwitch,
+    DocOToggle,
     CodeBox
   ],
   bootstrap:    [ AppComponent ]

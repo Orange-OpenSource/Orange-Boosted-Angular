@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'doc-o-navbar',
   template: `
-    <docs-wrapper component="ONavbar">
+    <docs-wrapper component="Navbar">
       <h3>Demo</h3>
       <p>Check out this documentation navbar for a nice example.</p>
       <h3>Usage</h3>

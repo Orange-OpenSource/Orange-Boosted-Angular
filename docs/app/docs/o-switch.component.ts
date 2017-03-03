@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'doc-o-switch',
   template: `
-    <docs-wrapper component="OSwitch">
+    <docs-wrapper component="Switch">
       <h3>Demo</h3>
       <demo-o-switch></demo-o-switch>
       <h3>Usage</h3>

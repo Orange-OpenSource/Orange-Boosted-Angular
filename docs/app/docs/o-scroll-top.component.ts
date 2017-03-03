@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     .fake-block { height: 400rem; }
   `],
   template: `
-    <docs-wrapper component="OScrollTop">
+    <docs-wrapper component="Scroll Top">
       <h3>Demo</h3>
       <p>Scroll down this page to see a nice example.</p>
       <h3>Usage</h3>

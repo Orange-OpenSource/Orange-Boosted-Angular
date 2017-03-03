@@ -1,6 +1,6 @@
 /*!
  * --------------------------------------------------------------------------
- * Ng-boosted - o-navbar.component.ts
+ * Ng-boosted - o-switch.component.ts
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */

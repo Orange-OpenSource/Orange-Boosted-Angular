@@ -78,10 +78,7 @@ module.exports = function makeWebpackConfig() {
   config.resolve = {
     // only discover files that have those extensions
     extensions: ['.ts', '.js', '.json', '.css', '.scss', '.html'],
-    modules: [root('node_modules')],
-    alias: {
-      '@ng-boosted/ng-boosted': root('src/index.ts')
-    }
+    modules: [root('node_modules')]
   };
 
   var atlOptions = '';
