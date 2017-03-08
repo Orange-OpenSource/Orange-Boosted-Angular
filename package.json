@@ -13,7 +13,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build:dist": "npm run clean:dist && npm run lint:dist && tsc -p src/ --outDir dist/ && npm run copy:dist",
+    "build:dist": "npm run clean:dist && npm run lint:dist && tsc -d -p src/ --outDir dist/ && npm run copy:dist",
     "build:docs": "rimraf _gh_pages && npm run lint:docs && webpack --progress --profile --bail",
     "build": "npm run build:dist",
     "copy:dist": "cp src/package.json dist/",

@@ -17,6 +17,7 @@
   "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
   "license":"MIT",
   "main": "index.js",
+  "typings": "index.d.ts",
   "peerDependencies": {
     "@angular/core": "^2.0.0",
     "@angular/common": "^2.0.0",
