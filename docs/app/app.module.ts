@@ -4,7 +4,7 @@ import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgBoostedModule } from '../../src/index';
+import { NgBoostedModule } from '../../dist';
 
 import { AppComponent }   from './app.component';
 import { StartComponent } from './start.component';
@@ -24,6 +24,7 @@ import { DemoProgressBar } from './demos/progress-bar.component';
 import { DemoDropdown } from './demos/dropdown.component';
 import { DemoOSwitch } from './demos/o-switch.component';
 import { DemoOToggle } from './demos/o-toggle.component';
+import { DemoSwiper } from './demos/swiper.component';
 
 import { DocAccordion } from './docs/accordion.component';
 import { DocModal } from './docs/modal.component';
@@ -34,6 +35,7 @@ import { DocTooltip } from './docs/tooltip.component';
 import { DocPopover } from './docs/popover.component';
 import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
+import { DocSwiper } from './docs/swiper.component';
 import { DocCollapse } from './docs/collapse.component';
 import { DocProgressBar } from './docs/progress-bar.component';
 import { DocONavbar } from './docs/o-navbar.component';
@@ -97,6 +99,10 @@ import { CodeBox } from './docs/code-box.component';
         component: DocCarousel
       },
       {
+        path: 'documentation/swiper',
+        component: DocSwiper
+      },
+      {
         path: 'documentation/progress',
         component: DocProgressBar
       },
@@ -142,6 +148,7 @@ import { CodeBox } from './docs/code-box.component';
     DemoPopover,
     DemoAlert,
     DemoCarousel,
+    DemoSwiper,
     DemoCollapse,
     DemoProgressBar,
     DemoDropdown,
@@ -156,6 +163,7 @@ import { CodeBox } from './docs/code-box.component';
     DocTooltip,
     DocPopover,
     DocCarousel,
+    DocSwiper,
     DocCollapse,
     DocProgressBar,
     DocONavbar,

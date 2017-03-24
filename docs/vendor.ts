@@ -3,8 +3,6 @@
 // at the entry point of the async loaded file. Also see custom-typings.d.ts as you also need to
 // run `typings install x` where `x` is your module
 
-// TODO(gdi2290): switch to DLLs
-
 // Angular 2
 import '@angular/platform-browser';
 import '@angular/platform-browser-dynamic';
@@ -24,10 +22,16 @@ import 'rxjs/add/operator/mergeMap';
 // Ng-bootstrap
 import '@ng-bootstrap/ng-bootstrap';
 
+import 'prismjs/themes/prism.css';
+
+// Swiper
+import 'swiper/dist/css/swiper.css';
+import 'swiper/dist/js/swiper.js';
+
+// Boosted
 import 'boosted/dist/css/orangeHelvetica.css';
 import 'boosted/dist/css/orangeIcons.css';
 import 'boosted/dist/css/boosted.css';
-import 'prismjs/themes/prism.css';
 
 if ('production' === process.env.ENV) {
   // Production
