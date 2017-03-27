@@ -40,8 +40,8 @@ const Swiper = require('swiper');
       <ng-content></ng-content>
     </div>
     <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev" (click)="movePrev()"></div>
-    <div class="swiper-button-next" (click)="moveNext()"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>`
 })
 export class OCarouselContainerComponent implements OnInit {
@@ -70,13 +70,5 @@ export class OCarouselContainerComponent implements OnInit {
     setTimeout(() => {
       this.swiper.update();
     });
-  }
-
-  public moveNext() {
-      this.swiper.slideNext();
-  }
-
-  public movePrev() {
-      this.swiper.slidePrev();
   }
 }

@@ -16,6 +16,4 @@ export declare class OCarouselContainerComponent implements OnInit {
     constructor(elementRef: ElementRef);
     ngOnInit(): void;
     update(): void;
-    moveNext(): void;
-    movePrev(): void;
 }

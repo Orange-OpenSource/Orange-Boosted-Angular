@@ -45,12 +45,6 @@ var OCarouselContainerComponent = (function () {
             _this.swiper.update();
         });
     };
-    OCarouselContainerComponent.prototype.moveNext = function () {
-        this.swiper.slideNext();
-    };
-    OCarouselContainerComponent.prototype.movePrev = function () {
-        this.swiper.slidePrev();
-    };
     return OCarouselContainerComponent;
 }());
 __decorate([
@@ -63,7 +57,7 @@ OCarouselContainerComponent = __decorate([
     Injectable(),
     Component({
         selector: 'o-carousel-container',
-        template: "<div class=\"swiper-container\">\n    <div class=\"swiper-wrapper\">\n      <ng-content></ng-content>\n    </div>\n    <div class=\"swiper-pagination\"></div>\n    <div class=\"swiper-button-prev\" (click)=\"movePrev()\"></div>\n    <div class=\"swiper-button-next\" (click)=\"moveNext()\"></div>\n  </div>"
+        template: "<div class=\"swiper-container\">\n    <div class=\"swiper-wrapper\">\n      <ng-content></ng-content>\n    </div>\n    <div class=\"swiper-pagination\"></div>\n    <div class=\"swiper-button-prev\"></div>\n    <div class=\"swiper-button-next\"></div>\n  </div>"
     }),
     __param(0, Inject(ElementRef))
 ], OCarouselContainerComponent);

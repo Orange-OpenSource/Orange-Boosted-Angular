@@ -4,6 +4,7 @@ import { Component, ViewChild } from '@angular/core';
     selector: 'demo-swiper',
     styles: [`
         >>> .swiper-container {
+            width: 37.5rem;
             margin-left: 0;
         }
     `],
