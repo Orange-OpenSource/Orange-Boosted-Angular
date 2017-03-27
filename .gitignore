@@ -53,6 +53,7 @@ _gh_pages/*
 .vscode/*
 /.awcache
 .webpack.json
+.tmp
 
 # Doc #
 /doc/

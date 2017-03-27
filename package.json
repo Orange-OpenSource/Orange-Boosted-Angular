@@ -14,8 +14,9 @@
   "main": "dist/index.js",
   "scripts": {
     "build:dist": "npm run clean:dist && npm run lint:dist && tsc -d -p src/ --outDir dist/ && npm run copy:dist",
+    "build:ngc": "npm run clean:dist && npm run lint:dist && ngc -p src/tsconfig-es2015.json",
     "build:docs": "rimraf _gh_pages && npm run lint:docs && webpack --progress --profile --bail",
-    "build": "npm run build:dist",
+    "build": "npm run build:ngc",
     "copy:dist": "cp src/package.json dist/",
     "clean:dist": "npm run rimraf dist",
     "clean:install": "npm set progress=false && npm install",
@@ -24,7 +25,7 @@
     "lint:docs": "tslint --force \"demo/**/*.ts\"",
     "rimraf": "rimraf",
     "server": "webpack-dev-server --progress --profile --watch",
-    "start": "npm run build:dist && npm run server",
+    "start": "npm run build:ngc && npm run server",
     "test": "karma start",
     "test-watch": "karma start --no-single-run --auto-watch",
     "webpack-dev-server": "webpack-dev-server",
@@ -33,6 +34,7 @@
   "dependencies": {
     "@angular/common": "2.4.6",
     "@angular/compiler": "2.4.6",
+    "@angular/compiler-cli": "2.4.6",
     "@angular/core": "2.4.6",
     "@angular/forms": "2.4.6",
     "@angular/http": "2.4.6",
@@ -54,11 +56,8 @@
     "swiper": "^3.4.1"
   },
   "devDependencies": {
-    "@types/hammerjs": "^2.0.33",
-    "@types/jasmine": "^2.2.34",
+    "@types/jasmine": "^2.5.41",
     "@types/node": "^6.0.38",
-    "@types/protractor": "^1.5.20",
-    "@types/selenium-webdriver": "^2.44.29",
     "@types/source-map": "^0.1.27",
     "@types/uglify-js": "^2.0.27",
     "@types/webpack": "^1.12.34",

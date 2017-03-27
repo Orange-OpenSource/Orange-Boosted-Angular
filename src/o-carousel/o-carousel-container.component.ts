@@ -17,7 +17,7 @@ import {
   OnInit
 } from '@angular/core';
 
-import Swiper = require('swiper');
+const Swiper = require('swiper');
 
 // function defaults(dest, ...args: any[]) {
 //   for (let i = arguments.length - 1; i >= 1; i--) {

@@ -25,6 +25,7 @@
     "use-output-property-decorator": true,
     "use-pipe-transform-interface": true,
     "max-classes-per-file": false,
+    "no-var-requires": false,
     "no-console": [true,
       "time",
       "timeEnd",
