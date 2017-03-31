@@ -13,11 +13,10 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build:dist": "npm run clean:dist && npm run lint:dist && tsc -d -p src/ --outDir dist/ && npm run copy:dist",
-    "build:ngc": "npm run clean:dist && npm run lint:dist && ngc -p src/tsconfig-es2015.json",
+    "build:dist": "npm run clean:dist && npm run lint:dist && ngc -p tsconfig-dist.json && npm run copy:dist && npm run rimraf .tmp",
     "build:docs": "rimraf _gh_pages && npm run lint:docs && webpack --progress --profile --bail",
-    "build": "npm run build:ngc",
-    "copy:dist": "cp src/package.json dist/",
+    "build": "npm run build:dist",
+    "copy:dist": "cpx ./package-dist.json dist && renamer --find package-dist.json --replace package.json ./dist/*",
     "clean:dist": "npm run rimraf dist",
     "clean:install": "npm set progress=false && npm install",
     "clean": "npm cache clean && npm run rimraf -- node_modules doc coverage dist",
@@ -25,7 +24,7 @@
     "lint:docs": "tslint --force \"demo/**/*.ts\"",
     "rimraf": "rimraf",
     "server": "webpack-dev-server --progress --profile --watch",
-    "start": "npm run build:ngc && npm run server",
+    "start": "npm run build:dist && npm run server",
     "test": "karma start",
     "test-watch": "karma start --no-single-run --auto-watch",
     "webpack-dev-server": "webpack-dev-server",
@@ -112,7 +111,9 @@
     "prismjs-loader": "^0.0.4",
     "postcss-loader": "^1.1.0",
     "html-loader": "^0.4.5",
-    "markdown-loader": "^2.0.0"
+    "markdown-loader": "^2.0.0",
+    "cpx": "^1.5.0",
+    "renamer": "^0.6.1"
   },
   "repository": {
     "type": "git",

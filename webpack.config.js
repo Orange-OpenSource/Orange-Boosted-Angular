@@ -148,7 +148,7 @@ module.exports = function makeWebpackConfig() {
       'process.env': {
         ENV: JSON.stringify(ENV)
       },
-      NGBOOSTED_VERSION: JSON.stringify(require(root('src/package.json')).version),
+      NGBOOSTED_VERSION: JSON.stringify(require(root('dist/package.json')).version),
       BOOSTED_VERSION: JSON.stringify(require(root('package.json')).dependencies.boosted),
       ANGULAR_VERSION: JSON.stringify(require(root('package.json')).dependencies[ANGULAR_V_KEY]),
       NGBOOTSTRAP_VERSION: JSON.stringify(require(root('package.json')).dependencies[NGBOOTSTRAP_V_KEY])

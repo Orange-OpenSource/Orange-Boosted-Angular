@@ -61,5 +61,5 @@ export class ONavbarComponent {
   public breakpoint: string;
 
   @ContentChildren(ONavLink)
-  private items: QueryList<ONavLink>;
+  public items: QueryList<ONavLink>;
 }

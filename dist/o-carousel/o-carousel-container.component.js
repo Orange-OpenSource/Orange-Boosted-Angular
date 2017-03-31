@@ -17,17 +17,6 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 };
 import { Component, Input, Injectable, Inject, ElementRef } from '@angular/core';
 var Swiper = require('swiper');
-// function defaults(dest, ...args: any[]) {
-//   for (let i = arguments.length - 1; i >= 1; i--) {
-//     let source = arguments[i] || {};
-//     for (let key in source) {
-//       if (source.hasOwnProperty(key) && !dest.hasOwnProperty(key)) {
-//         dest[key] = source[key];
-//       }
-//     }
-//   }
-//   return dest;
-// }
 var OCarouselContainerComponent = (function () {
     function OCarouselContainerComponent(elementRef) {
         this.elementRef = elementRef;

@@ -1,0 +1,24 @@
+{
+  "name": "ng-boosted",
+  "version": "0.0.2",
+  "description": "Orange Boosted with Angular",
+  "keywords": [
+    "boosted",
+    "angular2"
+  ],
+  "author": "Orange",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues"
+  },
+  "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
+  "license":"MIT",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "dependencies": {
+    "swiper": "^3.4.1"
+  }
+}

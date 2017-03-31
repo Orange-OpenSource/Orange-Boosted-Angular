@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
+import { QueryList } from '@angular/core';
 export declare class ONavLink {
     title: string;
     route: string;
@@ -14,5 +15,5 @@ export declare class ONavbarComponent {
     isCollapsed: boolean;
     homeRoute: string;
     breakpoint: string;
-    private items;
+    items: QueryList<ONavLink>;
 }
