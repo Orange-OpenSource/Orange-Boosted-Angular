@@ -25,10 +25,10 @@ This component has two parameters :
 
 ##### ONavMenu
 
-This component has one parameters :
+This component has one parameter :
 
 * `menuTitle` which is the dropdown title.
 
-The host tag <li> must include the `ngbDropdown` directive in order to allow dropdown behaviour. Dropdown menu content must be included inside <li> element. See Dropdown [documentation](https://ng-bootstrap.github.io/#/components/dropdown) for more information.
+The host tag `<li>` must include the `ngbDropdown` directive in order to allow dropdown behaviour. Dropdown menu content must be included inside `<li>` element. See Dropdown [documentation](https://ng-bootstrap.github.io/#/components/dropdown) for more information.
 
 
