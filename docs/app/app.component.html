@@ -1,8 +1,20 @@
 <header>
-    <o-navbar homeRoute="/start" breakpoint="sm">
-        <o-nav-link title="Getting started" route="/start"></o-nav-link>
-        <o-nav-link title="Documentation" route="/documentation"></o-nav-link>
-        <o-nav-link title="Boostwatch" route="/boostwatch"></o-nav-link>
+    <o-navbar homeRoute="/start" breakpoint="sm" brandPath="assets/img/orange-logo.jpg" brandLabel="Back to home page">
+        <li o-nav-link route="/start" routerLinkActive="active">Getting started</li>
+        <li o-nav-link route="/documentation">Documentation</li>
+        <li o-nav-link route="/boostwatch">Boostwatch</li>
+        <!--<li o-nav-link route="/start">Getting started</li>
+        <li o-nav-link route="/boostwatch" title="Shop">
+            <span class="sr-only">basket</span>
+            <span class="icon-buy" aria-hidden="true"></span>
+        </li>
+        <li o-nav-menu ngbDropdown menuTitle="Contribute">
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" role="menu">
+                <a class="dropdown-item" href="/pages.html" role="menuitem">Getting started</a>
+                <a class="dropdown-item" href="#" role="menuitem">About Markdown</a>
+            </div>
+        </li>
+        <li class="nav-item"><a href="http://orange.com" class="nav-link">External link</a></li>-->
     </o-navbar>
 </header>
 

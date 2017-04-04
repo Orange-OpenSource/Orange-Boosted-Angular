@@ -12,7 +12,7 @@ import { RouterModule }   from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
-import { ONavbarComponent, ONavLink } from './o-navbar/o-navbar.component';
+import { ONavbarComponent, ONavLink, ONavMenu } from './o-navbar/o-navbar.component';
 import { OSwitchComponent } from './o-switch/o-switch.component';
 import { OCarouselContainerComponent } from './o-carousel/o-carousel-container.component';
 import { OCarouselComponent } from './o-carousel/o-carousel.component';
@@ -23,7 +23,14 @@ export { OSwitchComponent } from './o-switch/o-switch.component';
 export { OCarouselContainerComponent } from './o-carousel/o-carousel-container.component';
 export { OCarouselComponent } from './o-carousel/o-carousel.component';
 
-const NG_BOOSTED_DECLARATIONS = [ScrollTopComponent, ONavbarComponent, ONavLink, OSwitchComponent, OCarouselContainerComponent, OCarouselComponent];
+const NG_BOOSTED_DECLARATIONS = [
+    ScrollTopComponent,
+    ONavbarComponent,
+    ONavLink,
+    ONavMenu,
+    OSwitchComponent,
+    OCarouselContainerComponent,
+    OCarouselComponent];
 
 @NgModule({
     imports: [CommonModule, RouterModule, NgbModule],

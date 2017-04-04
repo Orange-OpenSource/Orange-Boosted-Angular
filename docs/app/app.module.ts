@@ -25,6 +25,7 @@ import { DemoDropdown } from './demos/dropdown.component';
 import { DemoOSwitch } from './demos/o-switch.component';
 import { DemoOToggle } from './demos/o-toggle.component';
 import { DemoSwiper } from './demos/swiper.component';
+import { DemoONavbar } from './demos/o-navbar.component';
 
 import { DocAccordion } from './docs/accordion.component';
 import { DocModal } from './docs/modal.component';
@@ -154,6 +155,7 @@ import { CodeBox } from './docs/code-box.component';
     DemoDropdown,
     DemoOSwitch,
     DemoOToggle,
+    DemoONavbar,
     DocAccordion,
     DocModal,
     DocDropdown,

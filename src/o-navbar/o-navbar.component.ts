@@ -12,17 +12,50 @@ import {
   Input,
   QueryList,
   ContentChildren,
+  HostBinding
 } from '@angular/core';
 
 const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
 
-@Directive({selector: 'o-nav-link'})
+@Component({
+  selector: 'li[o-nav-link]',
+  template: `
+    <a [routerLink]="route" class="nav-link" routerLinkActive="active"
+     [attr.title]="title === 'undefined' ? null : title"><ng-content></ng-content></a>
+  `
+})
 export class ONavLink {
+  @Input()
+  public route: string;
+
   @Input()
   public title: string;
 
+  @HostBinding('class')
+  public NavLinkClass = 'nav-item';
+}
+
+@Component({
+  selector: 'li[o-nav-menu]',
+  styles: [`
+    a:hover {
+      cursor: pointer;
+    }
+  `],
+  template: `
+    <a class="nav-link dropdown-toggle" ngbDropdownToggle [attr.title]="title === 'undefined' ? null : title">{{menuTitle}}</a>
+    <ng-content class="dropdown-menu"></ng-content>
+  `
+})
+export class ONavMenu {
   @Input()
-  public route: string;
+  public menuTitle: string;
+
+  @Input()
+  public title: string;
+
+  @HostBinding('class')
+  public NavLinkClass = 'nav-item dropdown';
 }
 
 @Component({
@@ -31,7 +64,7 @@ export class ONavLink {
     <nav [class]="'navbar navbar-inverse ' + (pattern.test(breakpoint) ? 'navbar-toggleable-'+breakpoint : 'navbar-toggleable-sm')" role="navigation">
         <div class="container">
             <a class="navbar-brand logo" [routerLink]="homeRoute">
-                <img src="assets/img/orange-logo.jpg" alt="Back to homepage" title="Back to homepage">
+                <img [attr.src]="brandPath" [attr.alt]="brandLabel" [attr.title]="brandLabel">
             </a>
             <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
@@ -40,9 +73,7 @@ export class ONavLink {
             </button>
             <div class="navbar-collapse collapse" id="collapsingNavbarHead" [ngbCollapse]="isCollapsed">
               <ul class="navbar-nav">
-                <li class="nav-item" routerLinkActive="active" *ngFor="let item of items">
-                  <a class="nav-link" [routerLink]="item.route">{{item.title}}</a>
-                </li>
+                <ng-content></ng-content>
               </ul>
             </div>
         </div>
@@ -59,6 +90,12 @@ export class ONavbarComponent {
 
   @Input()
   public breakpoint: string;
+
+  @Input()
+  public brandPath: string;
+
+  @Input()
+  public brandLabel: string;
 
   @ContentChildren(ONavLink)
   public items: QueryList<ONavLink>;
