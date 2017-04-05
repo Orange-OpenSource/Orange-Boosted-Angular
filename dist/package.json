@@ -1,6 +1,6 @@
 {
-  "name": "@ng-boosted/ng-boosted",
-  "version": "0.0.2",
+  "name": "ng-boosted",
+  "version": "1.0.0-alpha",
   "description": "Orange Boosted with Angular",
   "keywords": [
     "boosted",
