@@ -15,14 +15,14 @@ import { Component, Input } from '@angular/core';
         <h3 >Source</h3>
         <ngb-tabset class="code-box">
         <ngb-tab title="HTML" *ngIf="snippets.markup">
-            <template ngbTabContent>
+            <ng-template ngbTabContent>
                 <pre class="language-html"><code class="language-html" [innerHTML]="snippets.markup"></code></pre>
-            </template>
+            </ng-template>
         </ngb-tab>
         <ngb-tab title="TypeScript" *ngIf="snippets.typescript">
-            <template ngbTabContent>
+            <ng-template ngbTabContent>
                 <pre class="language-typescript"><code class="language-typescript" [innerHTML]="snippets.typescript"></code></pre>
-            </template>
+            </ng-template>
         </ngb-tab>
     </ngb-tabset>
     `

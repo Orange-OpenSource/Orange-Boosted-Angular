@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     <docs-wrapper component="Modal">
       <h3>Demo</h3>
       <demo-modal></demo-modal>
-      <template ngbModalContainer></template>
+      <ng-template ngbModalContainer></ng-template>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>
   `
