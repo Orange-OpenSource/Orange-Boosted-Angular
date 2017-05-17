@@ -16,12 +16,14 @@ import { ONavbarComponent, ONavLink, ONavMenu } from './o-navbar/o-navbar.compon
 import { OSwitchComponent } from './o-switch/o-switch.component';
 import { OCarouselContainerComponent } from './o-carousel/o-carousel-container.component';
 import { OCarouselComponent } from './o-carousel/o-carousel.component';
+import { ODropdownComponent } from './o-dropdown/o-dropdown.component';
 
 export { ScrollTopComponent } from './scroll-top/scroll-top.component';
 export { ONavbarComponent, ONavLink } from './o-navbar/o-navbar.component';
 export { OSwitchComponent } from './o-switch/o-switch.component';
 export { OCarouselContainerComponent } from './o-carousel/o-carousel-container.component';
 export { OCarouselComponent } from './o-carousel/o-carousel.component';
+export { ODropdownComponent } from './o-dropdown/o-dropdown.component';
 
 const NG_BOOSTED_DECLARATIONS = [
     ScrollTopComponent,
@@ -30,7 +32,8 @@ const NG_BOOSTED_DECLARATIONS = [
     ONavMenu,
     OSwitchComponent,
     OCarouselContainerComponent,
-    OCarouselComponent];
+    OCarouselComponent,
+    ODropdownComponent];
 
 @NgModule({
     imports: [CommonModule, RouterModule, NgbModule],

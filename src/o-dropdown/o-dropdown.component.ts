@@ -1,0 +1,31 @@
+/*!
+ * --------------------------------------------------------------------------
+ * Ng-boosted - o-dropdown.component.ts
+ * copyright 2017 Orange SA
+ * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
+import { Directive, HostListener, ElementRef, AfterViewInit } from '@angular/core';
+
+@Directive ({
+    selector: '[ngbDropdown]'   // using same selector as ng-bootsrap NgbDropdown directive
+})
+export class ODropdownComponent implements AfterViewInit {
+    private dropdownMenu: any;
+
+    constructor(private elRef: ElementRef) { }
+
+    public ngAfterViewInit() {
+        this.dropdownMenu = this.elRef.nativeElement.querySelectorAll('.dropdown-menu')[0];
+    }
+
+    @HostListener('openChange', ['$event'])
+    private handleDropdownFocus(isOpenEvent) {
+        if (isOpenEvent) {
+            setTimeout(() => {
+                this.dropdownMenu.firstElementChild.focus();
+            });
+        }
+    }
+ }
