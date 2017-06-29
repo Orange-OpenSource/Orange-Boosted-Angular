@@ -12,7 +12,10 @@ import {
   Input,
   QueryList,
   ContentChildren,
-  HostBinding
+  HostBinding,
+  ElementRef,
+  ViewChild,
+  DoCheck
 } from '@angular/core';
 
 const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
@@ -20,11 +23,12 @@ const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
 @Component({
   selector: 'li[o-nav-link]',
   template: `
-    <a [routerLink]="route" class="nav-link" routerLinkActive="active"
-     [attr.title]="title === 'undefined' ? null : title"><ng-content></ng-content></a>
+    <a #link [routerLink]="route" class="nav-link" routerLinkActive="active"
+     [attr.title]="title === 'undefined' ? null : title"
+     [attr.aria-current]="isActive"><ng-content></ng-content></a>
   `
 })
-export class ONavLink {
+export class ONavLink implements DoCheck {
   @Input()
   public route: string;
 
@@ -33,6 +37,19 @@ export class ONavLink {
 
   @HostBinding('class')
   public NavLinkClass = 'nav-item';
+
+  public isActive = false;
+
+  @ViewChild('link')
+  public link: ElementRef;
+
+  public ngDoCheck() {
+    if (this.link.nativeElement.classList.contains('active')) {
+      this.isActive = true;
+    } else {
+      this.isActive = false;
+    }
+  }
 }
 
 @Component({
