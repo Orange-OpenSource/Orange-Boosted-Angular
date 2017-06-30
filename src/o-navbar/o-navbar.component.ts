@@ -44,11 +44,7 @@ export class ONavLink implements DoCheck {
   public link: ElementRef;
 
   public ngDoCheck() {
-    if (this.link.nativeElement.classList.contains('active')) {
-      this.isActive = true;
-    } else {
-      this.isActive = false;
-    }
+    this.isActive = this.link.nativeElement.classList.contains('active');
   }
 }
 
