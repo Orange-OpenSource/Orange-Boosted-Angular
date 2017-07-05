@@ -20,4 +20,6 @@ import { Component, Input } from '@angular/core';
 export class DocsComponent {
     @Input()
     public component: string;
+
+    public isCollapsed = true;
 }

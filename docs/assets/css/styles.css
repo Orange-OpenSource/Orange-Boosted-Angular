@@ -50,24 +50,33 @@ h2 {
 /* local nav */
 
 .o-nav-local {
-  margin-top: 1.25rem;
-  position: sticky; /* Firefox & Chrome only */
-  top: 1.25rem; /* for position sticky */
+    margin: 0;
 }
 
-.o-nav-local hr {
-  display: none;
-}
+@media (min-width: 768px) {
+  .o-nav-local {
+    position: sticky; /* Firefox & Chrome only */
+    top: 1.25rem; /* for position sticky */
+  }
 
-.o-nav-local .nav-link {
-  font-weight: normal;
-  padding: .5rem 0;
-}
+  .o-nav-local hr {
+    display: none;
+  }
 
-.o-nav-local .nav {
-  display: block;
-  position: static;
-  border: 0;
+  .o-nav-local .nav-link {
+    font-weight: normal;
+    padding: .5rem 0;
+  }
+
+  .o-nav-local .collapse {
+    display: block;
+  }
+
+  .o-nav-local .nav {
+    display: block;
+    position: static;
+    border: 0;
+  }
 }
 
 /* for code boxes */

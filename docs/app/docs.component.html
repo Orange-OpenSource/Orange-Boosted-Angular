@@ -1,11 +1,15 @@
 <div class="container">
+    <p class="lead">Here are the angular-bootstrap directive based components supported by Ng-boosted.</p>
+    <p class="lead">Documentation on how to use the directives is available <a href="https://ng-bootstrap.github.io/#/components/accordion">here</a>.</p>
+    <p class="lead">Other boosted components are described <a href="http://boosted.orange.com/v4-alpha/components/alerts/">there</a>.</p>
+
     <div class="row">
         <div class="col-md-3 push-md-9">
             <div class="o-nav-local">
                 <hr aria-hidden="true">
                 <nav class="container">
-                    <a class="hidden-md-up nav-link active local-select" (click)="isCollapsed = !isCollapsed"
-                    [attr.aria-expanded]="!isCollapsed" aria-controls="localNav1" aria-haspopup="true" href="javascript:void(0)">select</a>
+                    <a class="d-md-none nav-link" (click)="isCollapsed = !isCollapsed"
+                    [attr.aria-expanded]="!isCollapsed" aria-controls="localNav1" aria-haspopup="true" href="javascript:void(0)">Go to</a>
                     <div class="collapse" [ngbCollapse]="isCollapsed" id="localNav1">
                         <ul class="nav flex-column">
                             <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/collapse">Collapse</a></li>
@@ -31,9 +35,6 @@
             </div>
         </div>
         <div class="col-md-9 pull-md-3">
-            <p class="lead">Here are the angular-bootstrap directive based components supported by Ng-boosted.</p>
-            <p class="lead">Documentation on how to use the directives is available <a href="https://ng-bootstrap.github.io/#/components/accordion">here</a>.</p>
-            <p class="lead">Other boosted components are described <a href="http://boosted.orange.com/v4-alpha/components/alerts/">there</a>.</p>
             <h2>{{ component }}</h2>
             <ng-content></ng-content>
         </div>
