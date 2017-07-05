@@ -73,16 +73,17 @@ export class ONavMenu {
 
 @Component({
   selector: 'o-navbar',
+  styles: ['.navbar-nav { width: 100%;}'],
   template: `
-    <nav [class]="'navbar navbar-inverse ' + (pattern.test(breakpoint) ? 'navbar-toggleable-'+breakpoint : 'navbar-toggleable-sm')" role="navigation">
+    <nav [class]="'navbar navbar-inverse bg-inverse ' +
+     (pattern.test(breakpoint) ? 'navbar-expand-'+breakpoint : 'navbar-toggleable-sm')" role="navigation">
         <div class="container">
             <a class="navbar-brand logo" [routerLink]="homeRoute">
                 <img [attr.src]="brandPath" [attr.alt]="brandLabel" [attr.title]="brandLabel">
             </a>
             <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
               [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-              <span class="sr-only">toggle navigation</span>
-              <span class="icon-menu"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="collapsingNavbarHead" [ngbCollapse]="isCollapsed">
               <ul class="navbar-nav">
