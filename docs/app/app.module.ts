@@ -2,6 +2,7 @@ import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
@@ -174,6 +175,7 @@ import { CodeBox } from './docs/code-box.component';
     DocOToggle,
     CodeBox
   ],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
