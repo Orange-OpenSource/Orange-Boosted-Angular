@@ -10,7 +10,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const METADATA = {
-  baseUrl: '/',
+  baseUrl: '.',
 };
 
 const ANGULAR_V_KEY = '@angular/common';
