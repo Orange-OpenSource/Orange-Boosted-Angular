@@ -7,32 +7,24 @@
 
 import {
   Component,
-  Input
+  Input,
+  HostBinding
 } from '@angular/core';
 
 @Component({
   selector: 'o-switch',
-  styles: [`
-    .o-switch {
-      display: inline-block;
-    }
-  `],
   template: `
-    <div class="o-switch" (click)="toggleSwitch()">
       <input class="checkbox sr-only" [class.success]="successColor" [id]="inputId" type="checkbox" [checked]="toggled"/>
-      <div class="toggle form-control-label" [class.rounded]="rounded" aria-hidden="true"
+      <label [for]="inputId" class="toggle form-control-label" [class.toggle-rounded]="rounded" aria-hidden="true"
       [ngStyle]="{'width': customWidth}">
-        <span class="on" [class.icon-checkbox-tick]="onLabel === 'on'" role="presentation">
-          <span [class.sr-only]="onLabel === 'on'">{{onLabel}}</span>
-        </span>
-        <span class="off" [class.icon-delete]="offLabel === 'off'" role="presentation">
-          <span [class.sr-only]="offLabel === 'off'">{{offLabel}}</span>
-        </span>
-      </div>
-    </div>
+        <span class="on" [class.svg-checkbox-tick]="onLabel === 'on'"><span [class.sr-only]="onLabel === 'on'">{{onLabel}}</span></span>
+        <span class="off" [class.svg-delete]="offLabel === 'off'"><span [class.sr-only]="offLabel === 'off'">{{offLabel}}</span></span>
+      </label>
   `
 })
 export class OSwitchComponent {
+  @HostBinding('class.o-switch')
+
   @Input()
   public inputId: string;
 
@@ -53,8 +45,4 @@ export class OSwitchComponent {
 
   @Input()
   public offLabel = 'off';
-
-  public toggleSwitch() {
-    this.toggled = !this.toggled;
-  }
 }
