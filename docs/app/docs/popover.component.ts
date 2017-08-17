@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
       margin-top: 1rem;
     }
 
+    demo-popover + h3 {
+      margin-top: 1.25rem;
+    }
+
     code span {
       font-weight: bold;
     }

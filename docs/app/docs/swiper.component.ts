@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-swiper',
+  styles: [`
+    demo-swiper + h3 {
+      margin-top: 1.25rem;
+    }
+  `],
   template: `
     <docs-wrapper component="Swiper">
         <div class="row">

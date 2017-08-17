@@ -12,5 +12,4 @@ export declare class OSwitchComponent {
     customWidth: string;
     onLabel: string;
     offLabel: string;
-    toggleSwitch(): void;
 }

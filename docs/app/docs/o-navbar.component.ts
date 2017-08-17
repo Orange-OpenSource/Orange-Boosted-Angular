@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-o-navbar',
+  styles: [`
+    demo-o-navbar + h3 {
+      margin-top: 1.25rem;
+    }
+  `],
   template: `
     <docs-wrapper component="Navbar">
       <h3>Demo</h3>

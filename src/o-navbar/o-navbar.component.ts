@@ -10,8 +10,6 @@ import {
   Directive,
   Component,
   Input,
-  QueryList,
-  ContentChildren,
   HostBinding,
   ElementRef,
   ViewChild,
@@ -29,19 +27,18 @@ const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
   `
 })
 export class ONavLink implements DoCheck {
+  @HostBinding('class.nav-item')
+
   @Input()
   public route: string;
 
   @Input()
   public title: string;
 
-  @HostBinding('class')
-  public NavLinkClass = 'nav-item';
-
-  public isActive = false;
-
   @ViewChild('link')
   public link: ElementRef;
+
+  public isActive = false;
 
   public ngDoCheck() {
     this.isActive = this.link.nativeElement.classList.contains('active');
@@ -56,33 +53,39 @@ export class ONavLink implements DoCheck {
     }
   `],
   template: `
-    <a class="nav-link dropdown-toggle" ngbDropdownToggle [attr.title]="title === 'undefined' ? null : title">{{menuTitle}}</a>
-    <ng-content class="dropdown-menu"></ng-content>
+    <a class="nav-link" ngbDropdownToggle [attr.title]="title === 'undefined' ? null : title"
+    (click)="$event.stopPropagation();">{{menuTitle}}</a>
+    <ng-content></ng-content>
   `
 })
 export class ONavMenu {
+  @HostBinding('class.nav-item')
+
   @Input()
   public menuTitle: string;
 
   @Input()
   public title: string;
-
-  @HostBinding('class')
-  public NavLinkClass = 'nav-item dropdown';
 }
 
 @Component({
   selector: 'o-navbar',
-  styles: ['.navbar-nav { width: 100%;}'],
+  styles: [`
+    .navbar-nav { width: 100%;}
+
+    >>> a:hover {
+      cursor: pointer;
+    }
+  `],
   template: `
-    <nav [class]="'navbar navbar-inverse bg-inverse ' +
+    <nav [class]="'navbar navbar-dark bg-dark ' +
      (pattern.test(breakpoint) ? 'navbar-expand-'+breakpoint : 'navbar-toggleable-sm')" role="navigation">
         <div class="container">
             <a class="navbar-brand logo" [routerLink]="homeRoute">
                 <img [attr.src]="brandPath" [attr.alt]="brandLabel" [attr.title]="brandLabel">
             </a>
             <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-              [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+              [attr.aria-expanded]="!isCollapsed" aria-controls="collapsingNavbarHead">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-collapse collapse" id="collapsingNavbarHead" [ngbCollapse]="isCollapsed">
@@ -110,7 +113,4 @@ export class ONavbarComponent {
 
   @Input()
   public brandLabel: string;
-
-  @ContentChildren(ONavLink)
-  public items: QueryList<ONavLink>;
 }

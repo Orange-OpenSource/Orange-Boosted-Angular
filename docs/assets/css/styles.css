@@ -25,7 +25,7 @@
   margin-top: .625rem;
 }
 
-h2 {
+ h2 {
   margin-top: 1.25rem;
 }
 
@@ -47,16 +47,74 @@ h2 {
   font-size: 1.5rem;
 }
 
+.jumbotron {
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+  background-color: #eee;
+}
+
+.jumbotron h2 {
+  margin: 0;
+}
+
+article {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
 /* local nav */
 
-.o-nav-local {
-    margin: 0;
+.o-nav-local > .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.o-nav-local .nav-item {
+  margin-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .o-nav-local {
+    margin-top: -1rem;
+    margin-bottom: 0;
+  }
+
+  .o-nav-local > .container .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .o-nav-local .nav-item:first-child,
+  .o-nav-local .nav-item + .nav-item {
+    margin-left: 0;
+  }
+
+  .o-nav-local .nav-link {
+    font-weight: normal;
+    width: 100%;
+  }
+
+  .jumbotron {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  .jumbotron > .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .jumbotron .btn {
+    margin-left: auto;
+  }
 }
 
 @media (min-width: 768px) {
   .o-nav-local {
     position: sticky; /* Firefox & Chrome only */
     top: 1.25rem; /* for position sticky */
+    display: flex;
   }
 
   .o-nav-local hr {
@@ -68,14 +126,10 @@ h2 {
     padding: .5rem 0;
   }
 
-  .o-nav-local .collapse {
-    display: block;
-  }
-
-  .o-nav-local .nav {
-    display: block;
-    position: static;
-    border: 0;
+   .o-nav-local .nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 

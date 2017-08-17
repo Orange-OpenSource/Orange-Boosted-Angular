@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-o-toggle',
+  styles: [`
+    demo-o-toggle + h3 {
+      margin-top: 1.25rem;
+    }
+  `],
   template: `
     <docs-wrapper component="Toggle">
       <h3>Demo</h3>

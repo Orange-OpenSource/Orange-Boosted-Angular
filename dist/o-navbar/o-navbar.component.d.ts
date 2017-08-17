@@ -5,16 +5,17 @@
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-import { QueryList } from '@angular/core';
-export declare class ONavLink {
+import { ElementRef, DoCheck } from '@angular/core';
+export declare class ONavLink implements DoCheck {
     route: string;
     title: string;
-    NavLinkClass: string;
+    link: ElementRef;
+    isActive: boolean;
+    ngDoCheck(): void;
 }
 export declare class ONavMenu {
     menuTitle: string;
     title: string;
-    NavLinkClass: string;
 }
 export declare class ONavbarComponent {
     pattern: RegExp;
@@ -23,5 +24,4 @@ export declare class ONavbarComponent {
     breakpoint: string;
     brandPath: string;
     brandLabel: string;
-    items: QueryList<ONavLink>;
 }
