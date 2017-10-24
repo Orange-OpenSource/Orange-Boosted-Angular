@@ -15,10 +15,14 @@ import {
   selector: 'o-switch',
   template: `
       <input class="checkbox sr-only" [class.success]="successColor" [id]="inputId" type="checkbox" [checked]="toggled"/>
-      <label [for]="inputId" class="toggle form-control-label" [class.toggle-rounded]="rounded" aria-hidden="true"
+      <label [for]="inputId" class="toggle col-form-label" [class.toggle-rounded]="rounded" aria-hidden="true"
       [ngStyle]="{'width': customWidth}">
-        <span class="on" [class.svg-checkbox-tick]="onLabel === 'on'"><span [class.sr-only]="onLabel === 'on'">{{onLabel}}</span></span>
-        <span class="off" [class.svg-delete]="offLabel === 'off'"><span [class.sr-only]="offLabel === 'off'">{{offLabel}}</span></span>
+        <span class="on" [class.svg-checkbox-tick]="onLabel === 'on'" role="presentation">
+          <span [class.sr-only]="onLabel === 'on'">{{onLabel}}</span>
+        </span>
+        <span class="off" [class.svg-delete]="offLabel === 'off'" role="presentation">
+          <span [class.sr-only]="offLabel === 'off'">{{offLabel}}</span>
+        </span>
       </label>
   `
 })
