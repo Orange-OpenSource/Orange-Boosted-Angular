@@ -59,7 +59,7 @@ export class ONavLink implements DoCheck {
   `
 })
 export class ONavMenu {
-  @HostBinding('class.nav-item')
+  @HostBinding('class') public dropdownClass = 'nav-item dropdown';
 
   @Input()
   public menuTitle: string;
