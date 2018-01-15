@@ -42,4 +42,4 @@ npm start
 
 ## Copyright and license
 
-Code and documentation copyright 2017 Orange SA. Code released under [the MIT license](LICENSE). Docs released under [Creative Commons Attribution](docs/LICENSE).
+Code and documentation copyright 2018 Orange SA. Code released under [the MIT license](LICENSE). Docs released under [Creative Commons Attribution](docs/LICENSE).

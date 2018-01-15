@@ -1,14 +1,14 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - index.ts
- * copyright 2017 Orange SA
+ * copyright 2018 Orange SA
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule }   from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ScrollTopComponent } from './scroll-top/scroll-top.component';
