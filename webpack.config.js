@@ -212,7 +212,7 @@ module.exports = function makeWebpackConfig() {
     config.plugins.push(
       // Reference: http://webpack.github.io/docs/list-of-plugins.html#noerrorsplugin
       // Only emit files when there are no errors
-      new webpack.NoEmitOnErrorsPlugin(),
+      new webpack.NoEmitOnErrorsPlugin()
 
       // // Reference: http://webpack.github.io/docs/list-of-plugins.html#dedupeplugin
       // // Dedupe modules in the output
@@ -220,7 +220,7 @@ module.exports = function makeWebpackConfig() {
 
       // Reference: http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
       // Minify all javascript, switch loaders to minimizing mode
-      new webpack.optimize.UglifyJsPlugin({sourceMap: true, mangle: { keep_fnames: true }})
+      // new webpack.optimize.UglifyJsPlugin({sourceMap: true, mangle: { keep_fnames: true }})
 
     );
   }

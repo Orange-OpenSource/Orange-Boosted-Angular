@@ -50,7 +50,7 @@
     "rxjs": "^5.5.0",
     "zone.js": "^0.8.10",
     "@ng-bootstrap/ng-bootstrap": "1.0.0",
-    "boosted": "4.0.0",
+    "boosted": "4.0.1",
     "swiper": "^4.1.0"
   },
   "devDependencies": {
