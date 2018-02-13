@@ -1,13 +1,13 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - o-carousel.component.ts
- * copyright 2017 Orange SA
+ * copyright 2018 Orange SA
  * src: https://github.com/ksachdeva/angular2-swiper/blob/master/src/ks-swiper.ts
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 import { Component, Input, Injectable, Inject, ElementRef } from '@angular/core';
-var Swiper = require('swiper');
+import Swiper from 'swiper';
 var OCarouselContainerComponent = (function () {
     function OCarouselContainerComponent(elementRef) {
         this.elementRef = elementRef;
@@ -37,8 +37,8 @@ var OCarouselContainerComponent = (function () {
         { type: ElementRef, decorators: [{ type: Inject, args: [ElementRef,] },] },
     ]; };
     OCarouselContainerComponent.propDecorators = {
-        'pager': [{ type: Input },],
-        'options': [{ type: Input },],
+        "pager": [{ type: Input },],
+        "options": [{ type: Input },],
     };
     return OCarouselContainerComponent;
 }());

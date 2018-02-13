@@ -1,7 +1,7 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - o-carousel.component.ts
- * copyright 2017 Orange SA
+ * copyright 2018 Orange SA
  * src: https://github.com/ksachdeva/angular2-swiper/blob/master/src/ks-swiper.ts
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - o-navbar.component.ts
- * copyright 2017 Orange SA
+ * copyright 2018 Orange SA
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -14,6 +14,7 @@ export declare class ONavLink implements DoCheck {
     ngDoCheck(): void;
 }
 export declare class ONavMenu {
+    dropdownClass: string;
     menuTitle: string;
     title: string;
 }

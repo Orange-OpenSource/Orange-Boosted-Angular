@@ -1,7 +1,7 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - o-dropdown.component.ts
- * copyright 2017 Orange SA
+ * copyright 2018 Orange SA
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -31,7 +31,7 @@ var ODropdownComponent = (function () {
         { type: ElementRef, },
     ]; };
     ODropdownComponent.propDecorators = {
-        'handleDropdownFocus': [{ type: HostListener, args: ['openChange', ['$event'],] },],
+        "handleDropdownFocus": [{ type: HostListener, args: ['openChange', ['$event'],] },],
     };
     return ODropdownComponent;
 }());

@@ -1,10 +1,10 @@
 {
   "name": "ng-boosted",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "Orange Boosted with Angular",
   "keywords": [
     "boosted",
-    "angular2"
+    "angular"
   ],
   "author": "Orange",
   "repository": {

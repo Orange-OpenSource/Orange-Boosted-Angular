@@ -1,31 +1,63 @@
 /* Doc Styles */
 
-.head {
-  background-color: #000;
-  color: #fff;
-  border-top: 2px solid #333;
-  overflow: hidden;
+.ng-banner {
+  margin-bottom: 3.75rem;
 }
 
 .head h1 {
-  color: #fff;
+  margin-top: 3.75rem;
+  font-size: 3.755rem;
+  letter-spacing: -1px;
+}
+
+.head .lead {
+  font-size: 1rem;
   margin-top: 1.25rem;
 }
 
-.lead {
-  font-size: 1.25rem;
-  margin-top: 1.25rem;
-}
-
-.lead a {
+.head .lead a {
   text-decoration: underline;
 }
 
-.version {
-  margin-top: .625rem;
+.head svg {
+  margin-top: 2.5rem;
 }
 
- h2 {
+.head img {
+  height: 14.75rem;
+  margin-top: 3.75rem;
+}
+
+.version {
+  margin-left: 1.875rem;
+}
+
+.only-in-ng {
+  background-color: #eee;
+}
+
+.only-in-ng .col-md-5 {
+  display: flex;
+}
+
+.only-in-ng .inner {
+  align-self: center;
+}
+
+.only-in-ng h2 {
+  font-size: 1.5rem;
+}
+
+.only-in-ng img {
+  width: 100%;
+  margin: 3.755rem 0;
+}
+
+.only-in-ng .o-square-list li::before {
+  color: #000;
+}
+ 
+h2 {
   margin-top: 1.25rem;
 }
 
@@ -91,7 +123,46 @@ article {
   color: #f16e00;
 }
 
+/* for code boxes */
+
+.token.tag {
+  font-size: .7875rem;
+}
+
+/* footer */
+
+.o-footer {
+  margin-top: 0;
+}
+
+.o-footer .o-footer-top {
+  padding: 1.25rem 0;
+}
+.o-footer .nav-link {
+  display: inline-block;
+}
+
+.o-footer .nav-link + .nav-link {
+    margin-left: -.625rem;
+}
+
 @media (max-width: 767px) {
+  .head h1 {
+    font-size: 2.5rem;
+  }
+  
+  .head .col-md-7 {
+    order: 1;
+  }
+
+  .head .col-md-5 {
+    text-align: center;
+  }
+
+  .only-in-ng {
+    padding-bottom: 3.75rem;
+  }
+
   .o-nav-local {
     margin-top: -1rem;
     margin-bottom: 0;
@@ -150,18 +221,3 @@ article {
   }
 }
 
-/* for code boxes */
-
-.token.tag {
-  font-size: .7875rem;
-}
-
-/* footer */
-
-.o-footer .nav-link {
-  display: inline-block;
-}
-
-.o-footer .nav-link + .nav-link {
-    margin-left: -.625rem;
-}

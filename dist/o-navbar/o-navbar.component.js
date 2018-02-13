@@ -1,11 +1,11 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - o-navbar.component.ts
- * copyright 2017 Orange SA
+ * copyright 2018 Orange SA
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
-import { Component, Input, HostBinding, ViewChild } from '@angular/core';
+import { Component, Input, HostBinding, ElementRef, ViewChild } from '@angular/core';
 var TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
 var ONavLink = (function () {
     function ONavLink() {
@@ -23,15 +23,16 @@ var ONavLink = (function () {
     /** @nocollapse */
     ONavLink.ctorParameters = function () { return []; };
     ONavLink.propDecorators = {
-        'route': [{ type: HostBinding, args: ['class.nav-item',] }, { type: Input },],
-        'title': [{ type: Input },],
-        'link': [{ type: ViewChild, args: ['link',] },],
+        "route": [{ type: HostBinding, args: ['class.nav-item',] }, { type: Input },],
+        "title": [{ type: Input },],
+        "link": [{ type: ViewChild, args: ['link',] },],
     };
     return ONavLink;
 }());
 export { ONavLink };
 var ONavMenu = (function () {
     function ONavMenu() {
+        this.dropdownClass = 'nav-item dropdown';
     }
     ONavMenu.decorators = [
         { type: Component, args: [{
@@ -43,8 +44,9 @@ var ONavMenu = (function () {
     /** @nocollapse */
     ONavMenu.ctorParameters = function () { return []; };
     ONavMenu.propDecorators = {
-        'menuTitle': [{ type: HostBinding, args: ['class.nav-item',] }, { type: Input },],
-        'title': [{ type: Input },],
+        "dropdownClass": [{ type: HostBinding, args: ['class',] },],
+        "menuTitle": [{ type: Input },],
+        "title": [{ type: Input },],
     };
     return ONavMenu;
 }());
@@ -64,10 +66,10 @@ var ONavbarComponent = (function () {
     /** @nocollapse */
     ONavbarComponent.ctorParameters = function () { return []; };
     ONavbarComponent.propDecorators = {
-        'homeRoute': [{ type: Input },],
-        'breakpoint': [{ type: Input },],
-        'brandPath': [{ type: Input },],
-        'brandLabel': [{ type: Input },],
+        "homeRoute": [{ type: Input },],
+        "breakpoint": [{ type: Input },],
+        "brandPath": [{ type: Input },],
+        "brandLabel": [{ type: Input },],
     };
     return ONavbarComponent;
 }());

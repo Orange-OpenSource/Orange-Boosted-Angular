@@ -8,6 +8,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
 
 import { AppComponent }   from './app.component';
+import { HomeComponent } from './home.component';
 import { StartComponent } from './start.component';
 import { DocsComponent } from './docs.component';
 import { BoostwatchComponent } from './boostwatch.component';
@@ -51,6 +52,10 @@ import { CodeBox } from './docs/code-box.component';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
+      {
+        path: 'home',
+        component: HomeComponent
+      },
       {
         path: 'start',
         component: StartComponent
@@ -130,7 +135,7 @@ import { CodeBox } from './docs/code-box.component';
       },
       {
         path: '',
-        redirectTo: '/start',
+        redirectTo: '/home',
         pathMatch: 'full'
       }
     ]),
@@ -139,6 +144,7 @@ import { CodeBox } from './docs/code-box.component';
   ],
   declarations: [
     AppComponent,
+    HomeComponent,
     StartComponent,
     DocsComponent,
     BoostwatchComponent,

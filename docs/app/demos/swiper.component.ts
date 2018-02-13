@@ -18,10 +18,19 @@ export class DemoSwiper {
         slidesPerView: 1,
         loop: false,
         a11y: true,
-        keyboardControl: true,
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
       };
     }
 }

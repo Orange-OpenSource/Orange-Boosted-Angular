@@ -17,7 +17,7 @@ import {
   OnInit
 } from '@angular/core';
 
-const Swiper = require('swiper');
+import Swiper from 'swiper';
 
 @Injectable()
 @Component({
