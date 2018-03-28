@@ -48,13 +48,18 @@ export class ONavLink implements DoCheck {
 @Component({
   selector: 'li[o-nav-menu]',
   styles: [`
-    a:hover {
+    button {
+      border: 0;
+      background-color: #000;
+    }
+
+    button:hover {
       cursor: pointer;
     }
   `],
   template: `
-    <a class="nav-link" ngbDropdownToggle [attr.title]="title === 'undefined' ? null : title"
-    (click)="$event.stopPropagation();">{{menuTitle}}</a>
+    <button class="nav-link" ngbDropdownToggle [attr.title]="title === 'undefined' ? null : title"
+    (click)="$event.stopPropagation();">{{menuTitle}}</button>
     <ng-content></ng-content>
   `
 })
