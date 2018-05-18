@@ -27,7 +27,7 @@ export class ScrollTopComponent {
   public label: string;
 
   @HostListener('window:scroll', [])
-  private onWindowScroll() {
+  public onWindowScroll() {
     if (document.documentElement.scrollTop > window.innerHeight) {
         this.showMe = true;
     } else {
