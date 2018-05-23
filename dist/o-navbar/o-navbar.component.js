@@ -7,7 +7,7 @@
  */
 import { Component, Input, HostBinding, ElementRef, ViewChild } from '@angular/core';
 var TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
-var ONavLink = (function () {
+var ONavLink = /** @class */ (function () {
     function ONavLink() {
         this.isActive = false;
     }
@@ -21,7 +21,6 @@ var ONavLink = (function () {
                 },] },
     ];
     /** @nocollapse */
-    ONavLink.ctorParameters = function () { return []; };
     ONavLink.propDecorators = {
         "route": [{ type: HostBinding, args: ['class.nav-item',] }, { type: Input },],
         "title": [{ type: Input },],
@@ -30,19 +29,18 @@ var ONavLink = (function () {
     return ONavLink;
 }());
 export { ONavLink };
-var ONavMenu = (function () {
+var ONavMenu = /** @class */ (function () {
     function ONavMenu() {
         this.dropdownClass = 'nav-item dropdown';
     }
     ONavMenu.decorators = [
         { type: Component, args: [{
                     selector: 'li[o-nav-menu]',
-                    styles: ["\n    a:hover {\n      cursor: pointer;\n    }\n  "],
-                    template: "\n    <a class=\"nav-link\" ngbDropdownToggle [attr.title]=\"title === 'undefined' ? null : title\"\n    (click)=\"$event.stopPropagation();\">{{menuTitle}}</a>\n    <ng-content></ng-content>\n  "
+                    styles: ["\n    button {\n      border: 0;\n      background-color: #000;\n    }\n\n    button:hover {\n      cursor: pointer;\n    }\n  "],
+                    template: "\n    <button class=\"nav-link\" ngbDropdownToggle [attr.title]=\"title === 'undefined' ? null : title\"\n    (click)=\"$event.stopPropagation();\">{{menuTitle}}</button>\n    <ng-content></ng-content>\n  "
                 },] },
     ];
     /** @nocollapse */
-    ONavMenu.ctorParameters = function () { return []; };
     ONavMenu.propDecorators = {
         "dropdownClass": [{ type: HostBinding, args: ['class',] },],
         "menuTitle": [{ type: Input },],
@@ -51,7 +49,7 @@ var ONavMenu = (function () {
     return ONavMenu;
 }());
 export { ONavMenu };
-var ONavbarComponent = (function () {
+var ONavbarComponent = /** @class */ (function () {
     function ONavbarComponent() {
         this.pattern = TEST_PATTERN;
         this.isCollapsed = true;
@@ -64,7 +62,6 @@ var ONavbarComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    ONavbarComponent.ctorParameters = function () { return []; };
     ONavbarComponent.propDecorators = {
         "homeRoute": [{ type: Input },],
         "breakpoint": [{ type: Input },],

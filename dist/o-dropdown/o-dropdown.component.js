@@ -6,7 +6,7 @@
  * --------------------------------------------------------------------------
  */
 import { Directive, HostListener, ElementRef } from '@angular/core';
-var ODropdownComponent = (function () {
+var ODropdownComponent = /** @class */ (function () {
     function ODropdownComponent(elRef) {
         this.elRef = elRef;
     }

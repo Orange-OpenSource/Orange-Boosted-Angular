@@ -11,5 +11,5 @@ export declare class ODropdownComponent implements AfterViewInit {
     private dropdownMenu;
     constructor(elRef: ElementRef);
     ngAfterViewInit(): void;
-    private handleDropdownFocus(isOpenEvent);
+    handleDropdownFocus(isOpenEvent: any): void;
 }

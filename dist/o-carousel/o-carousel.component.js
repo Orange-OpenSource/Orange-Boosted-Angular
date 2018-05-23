@@ -8,7 +8,7 @@
  */
 import { Component, Injectable, Inject, ElementRef, Host } from '@angular/core';
 import { OCarouselContainerComponent } from './o-carousel-container.component';
-var OCarouselComponent = (function () {
+var OCarouselComponent = /** @class */ (function () {
     function OCarouselComponent(elementRef, swiper) {
         this.elm = elementRef.nativeElement;
         this.swiper = swiper;

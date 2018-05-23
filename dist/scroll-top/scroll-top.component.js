@@ -6,7 +6,7 @@
  * --------------------------------------------------------------------------
  */
 import { Component, Input, HostListener } from '@angular/core';
-var ScrollTopComponent = (function () {
+var ScrollTopComponent = /** @class */ (function () {
     function ScrollTopComponent() {
         this.showMe = false;
     }
@@ -27,7 +27,6 @@ var ScrollTopComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    ScrollTopComponent.ctorParameters = function () { return []; };
     ScrollTopComponent.propDecorators = {
         "label": [{ type: Input },],
         "onWindowScroll": [{ type: HostListener, args: ['window:scroll', [],] },],

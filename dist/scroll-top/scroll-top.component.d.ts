@@ -8,5 +8,5 @@
 export declare class ScrollTopComponent {
     showMe: boolean;
     label: string;
-    private onWindowScroll();
+    onWindowScroll(): void;
 }

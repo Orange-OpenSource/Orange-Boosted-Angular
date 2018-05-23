@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 import { Component, Input, HostBinding } from '@angular/core';
-var OSwitchComponent = (function () {
+var OSwitchComponent = /** @class */ (function () {
     function OSwitchComponent() {
         this.toggled = false;
         this.rounded = false;
@@ -21,7 +21,6 @@ var OSwitchComponent = (function () {
                 },] },
     ];
     /** @nocollapse */
-    OSwitchComponent.ctorParameters = function () { return []; };
     OSwitchComponent.propDecorators = {
         "inputId": [{ type: HostBinding, args: ['class.o-switch',] }, { type: Input },],
         "toggled": [{ type: Input },],
