@@ -21,7 +21,7 @@ export class ODropdownComponent implements AfterViewInit {
     }
 
     @HostListener('openChange', ['$event'])
-    private handleDropdownFocus(isOpenEvent) {
+    public handleDropdownFocus(isOpenEvent) {
         if (isOpenEvent) {
             setTimeout(() => {
                 this.dropdownMenu.firstElementChild.focus();
