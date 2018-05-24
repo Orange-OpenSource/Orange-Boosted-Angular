@@ -202,7 +202,7 @@ article {
   .o-nav-local {
     position: sticky; /* Firefox & Chrome only */
     top: 1.25rem; /* for position sticky */
-    display: flex;
+    display: flex !important;
   }
 
   .o-nav-local hr {
