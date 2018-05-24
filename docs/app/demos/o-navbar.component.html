@@ -6,8 +6,15 @@
         <span class="icon-buy" aria-hidden="true"></span>
     </li>
 
-    <li o-nav-menu ngbDropdown menuTitle="Contribute">
+    <!-- <li o-nav-menu ngbDropdown menuTitle="Contribute">
         <div ngbDropdownMenu>
+            <a class="dropdown-item" href="#">Github</a>
+            <a class="dropdown-item" href="#">About Markdown</a>
+        </div>
+    </li> -->
+    <li ngbDropdown class="nav-item dropdown">
+        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Contribute</a>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <a class="dropdown-item" href="#">Github</a>
             <a class="dropdown-item" href="#">About Markdown</a>
         </div>
