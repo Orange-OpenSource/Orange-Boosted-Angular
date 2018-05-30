@@ -1,5 +1,9 @@
 /* Doc Styles */
 
+.navbar-nav-svg {
+  width: 1.4rem;
+}
+
 .ng-banner {
   margin-bottom: 3.75rem;
 }
