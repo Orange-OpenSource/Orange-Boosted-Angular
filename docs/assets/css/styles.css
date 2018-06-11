@@ -83,23 +83,16 @@ h2 {
   font-size: 1.5rem;
 }
 
-.jumbotron {
-  padding-top: 4rem;
-  padding-bottom: 3rem;
-  margin-bottom: 2rem;
-  background-color: #eee;
-}
-
-.jumbotron h2 {
-  margin: 0;
-}
-
 article {
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
 /* local nav */
+
+#component_nav {
+  border-right: 1px solid #eee;
+}
 
 .o-nav-local {
   border: 0;
@@ -120,11 +113,20 @@ article {
 .o-nav-local .nav .nav-link {
   font-weight: 400;
   padding-top: .5rem;
+  padding-left: 0;
   padding-bottom: .5rem;
 }
 
 .o-nav-local .nav .nav-link.active {
   color: #f16e00;
+}
+
+.o-nav-local .nav-item:first-child {
+  margin: 24px 0;
+}
+
+.doc-ext-link {
+  margin-top: 33px;
 }
 
 /* for code boxes */
@@ -167,12 +169,16 @@ article {
     padding-bottom: 3.75rem;
   }
 
+  #component_nav {
+    border: 0;
+  }
+
   .o-nav-local {
-    margin-top: -1rem;
+    margin-top: 12px;
     margin-bottom: 0;
   }
 
-  .o-nav-local > .container .nav {
+  .o-nav-local .nav {
     flex-direction: column;
     width: 100%;
   }
@@ -186,26 +192,12 @@ article {
     font-weight: normal;
     width: 100%;
   }
-
-  .jumbotron {
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-  }
-
-  .jumbotron > .container {
-    display: flex;
-    align-items: center;
-  }
-
-  .jumbotron .btn {
-    margin-left: auto;
-  }
 }
 
 @media (min-width: 768px) {
   .o-nav-local {
     position: sticky; /* Firefox & Chrome only */
-    top: 1.25rem; /* for position sticky */
+    top: 0; /* for position sticky */
     display: flex !important;
   }
 

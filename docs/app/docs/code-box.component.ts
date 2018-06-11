@@ -10,6 +10,10 @@ import { Component, Input } from '@angular/core';
             border: 0;
             padding: 0;
         }
+        :host {
+            display: block;
+            margin-bottom: 30px;
+        }
     `],
     template: `
         <h3 >Source</h3>

@@ -1,16 +1,12 @@
-<div class="jumbotron">
-    <div class="container">
-        <h2>{{ component }}</h2>
-        <button type="button" class="btn btn-outline-secondary d-md-none" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">Go to</button>
-    </div>
-    </div>
 <div class="container">
+    <button type="button" class="btn btn-outline-secondary mt-3 d-md-none" (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">Menu</button>
     <div class="row">
-        <div class="col-md-3 order-md-1">
+        <div class="col-md-2" id="component_nav">
             <div class="o-nav-local" [ngbCollapse]="isCollapsed" id="collapseExample">
-                <nav class="container">
+                <nav>
                     <ul class="nav">
+                        <li class="nav-item d-none d-md-inline-block"><a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/accordion">Accordion</a></li>
                         <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/alert">Alert</a></li>
                         <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/carousel">Carousel</a></li>
@@ -31,12 +27,9 @@
                 </nav>
             </div>
         </div>
-        <div class="col-md-9">
-            <article>
-                <p>Here are the angular-bootstrap directive based components supported by Ng-boosted.</p>
-                <p>Documentation on how to use the directives is available <a href="https://ng-bootstrap.github.io/#/components/accordion">here</a>.</p>
-                <p>Other boosted components are described <a href="http://boosted.orange.com/v4-alpha/components/alerts/">there</a>.</p>
-            </article>
+        <div class="col-md-10 pl-md-5">
+            <h2>{{ component }}</h2>
+            <p class="doc-ext-link">Original component documentation can be found <a target="_blank" href="https://ng-bootstrap.github.io/#/components/">here.</a></p>
             <ng-content></ng-content>
         </div>
     </div>
