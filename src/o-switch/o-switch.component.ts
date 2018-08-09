@@ -14,7 +14,7 @@ import {
 @Component({
   selector: 'o-switch',
   template: `
-      <input class="checkbox sr-only" [class.success]="successColor" [id]="inputId" type="checkbox" [checked]="toggled"/>
+      <input class="checkbox sr-only" [class.success]="successColor" [id]="inputId" type="checkbox" [name]="inputId" [checked]="toggled"/>
       <label [for]="inputId" class="toggle col-form-label" [class.toggle-rounded]="rounded" aria-hidden="true"
       [ngStyle]="{'width': customWidth}">
         <span class="on" [class.svg-checkbox-tick]="onLabel === 'on'" role="presentation">
