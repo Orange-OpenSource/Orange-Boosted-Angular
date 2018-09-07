@@ -157,7 +157,7 @@ module.exports = function makeWebpackConfig() {
     // Workaround needed for angular 2 angular/angular#11580
       new webpack.ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
-        /angular(\\|\/)core(\\|\/)@angular/,
+        /angular(\\|\/)core/,
         root('./docs') // location of your src
       ),
 
