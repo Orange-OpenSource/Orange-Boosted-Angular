@@ -101,6 +101,11 @@ module.exports = function makeWebpackConfig() {
         loaders: ['awesome-typescript-loader?' + atlOptions, 'angular2-template-loader', '@angularclass/hmr-loader'],
         exclude: [isTest ? /\.(e2e)\.ts$/ : /\.(spec|e2e)\.ts$/, /node_modules\/(?!(ng2-.+))/]
       },
+      {
+        test: /\.js$/, // Check for all js files
+        exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
+        loader: 'babel-loader'
+      },
 
       /* load fonts for css files */
       {
