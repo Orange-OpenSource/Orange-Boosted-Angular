@@ -104,7 +104,12 @@ module.exports = function makeWebpackConfig() {
       {
         test: /\.js$/, // Check for all js files
         exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
-        loader: 'babel-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
 
       /* load fonts for css files */
