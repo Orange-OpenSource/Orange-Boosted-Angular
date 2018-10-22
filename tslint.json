@@ -11,14 +11,11 @@
     "component-class-suffix": false,
     "directive-class-suffix": false,
     "import-destructuring-spacing": true,
-    "invoke-injectable": true,
-    "no-access-missing-member": true,
     "no-attribute-parameter-decorator": true,
     "no-forward-ref": true,
     "no-input-rename": true,
     "no-output-rename": true,
     "pipe-naming": [true, "camelCase"],
-    "templates-use-public": true,
     "use-host-property-decorator": true,
     "use-input-property-decorator": true,
     "use-life-cycle-interface": true,
@@ -36,7 +33,6 @@
       150
     ],
     "no-string-literal": false,
-    "no-use-before-declare": true,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "quotemark": [
