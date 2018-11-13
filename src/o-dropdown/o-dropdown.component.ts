@@ -9,7 +9,7 @@
 import { Directive, HostListener, ElementRef, AfterViewInit } from '@angular/core';
 
 @Directive ({
-    selector: '[appngbDropdown]'   // using same selector as ng-bootsrap NgbDropdown directive
+    selector: '[ngbDropdown]'   // using same selector as ng-bootsrap NgbDropdown directive
 })
 export class ODropdownComponent implements AfterViewInit {
     private dropdownMenu: any;
