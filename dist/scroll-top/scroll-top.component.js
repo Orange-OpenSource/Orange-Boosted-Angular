@@ -22,14 +22,12 @@ var ScrollTopComponent = /** @class */ (function () {
         { type: Component, args: [{
                     selector: 'scroll-top',
                     styles: ['a { display: inline;}'],
-                    // boosted css fix
                     template: "\n    <a href=\"javascript:void(0)\" class=\"o-scroll-up\" title=\"{{label}}\"\n    onclick=\"window.scrollTo(0, 0);\" *ngIf=\"showMe\">\n      <span class=\"o-scroll-up-text hidden-sm-down\">{{label}}</span>\n      <span class=\"o-scroll-up-icon\" aria-hidden=\"true\"></span>\n    </a>\n  "
                 },] },
     ];
-    /** @nocollapse */
     ScrollTopComponent.propDecorators = {
-        "label": [{ type: Input },],
-        "onWindowScroll": [{ type: HostListener, args: ['window:scroll', [],] },],
+        label: [{ type: Input }],
+        onWindowScroll: [{ type: HostListener, args: ['window:scroll', [],] }]
     };
     return ScrollTopComponent;
 }());

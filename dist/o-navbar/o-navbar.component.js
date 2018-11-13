@@ -20,11 +20,10 @@ var ONavLink = /** @class */ (function () {
                     template: "\n    <a #link [routerLink]=\"route\" class=\"nav-link\" routerLinkActive=\"active\"\n     [attr.title]=\"title === 'undefined' ? null : title\"\n     [attr.aria-current]=\"isActive\"><ng-content></ng-content></a>\n  "
                 },] },
     ];
-    /** @nocollapse */
     ONavLink.propDecorators = {
-        "route": [{ type: HostBinding, args: ['class.nav-item',] }, { type: Input },],
-        "title": [{ type: Input },],
-        "link": [{ type: ViewChild, args: ['link',] },],
+        route: [{ type: HostBinding, args: ['class.nav-item',] }, { type: Input }],
+        title: [{ type: Input }],
+        link: [{ type: ViewChild, args: ['link',] }]
     };
     return ONavLink;
 }());
@@ -40,11 +39,10 @@ var ONavMenu = /** @class */ (function () {
                     template: "\n    <button class=\"nav-link\" ngbDropdownToggle [attr.title]=\"title === 'undefined' ? null : title\"\n    (click)=\"$event.stopPropagation();\">{{menuTitle}}</button>\n    <ng-content></ng-content>\n  "
                 },] },
     ];
-    /** @nocollapse */
     ONavMenu.propDecorators = {
-        "dropdownClass": [{ type: HostBinding, args: ['class',] },],
-        "menuTitle": [{ type: Input },],
-        "title": [{ type: Input },],
+        dropdownClass: [{ type: HostBinding, args: ['class',] }],
+        menuTitle: [{ type: Input }],
+        title: [{ type: Input }]
     };
     return ONavMenu;
 }());
@@ -61,12 +59,11 @@ var ONavbarComponent = /** @class */ (function () {
                     template: "\n    <nav [class]=\"'navbar navbar-dark bg-dark ' +\n     (pattern.test(breakpoint) ? 'navbar-expand-'+breakpoint : 'navbar-toggleable-sm')\" role=\"navigation\">\n        <div class=\"container\">\n            <a class=\"navbar-brand logo\" [routerLink]=\"homeRoute\">\n                <img [attr.src]=\"brandPath\" [attr.alt]=\"brandLabel\" [attr.title]=\"brandLabel\">\n            </a>\n            <button class=\"navbar-toggler\" type=\"button\" (click)=\"isCollapsed = !isCollapsed\"\n              [attr.aria-expanded]=\"!isCollapsed\" aria-controls=\"collapsingNavbarHead\">\n              <span class=\"navbar-toggler-icon\"></span>\n            </button>\n            <div class=\"navbar-collapse collapse\" id=\"collapsingNavbarHead\" [ngbCollapse]=\"isCollapsed\">\n              <ul class=\"navbar-nav\">\n                <ng-content></ng-content>\n              </ul>\n            </div>\n        </div>\n    </nav>\n  "
                 },] },
     ];
-    /** @nocollapse */
     ONavbarComponent.propDecorators = {
-        "homeRoute": [{ type: Input },],
-        "breakpoint": [{ type: Input },],
-        "brandPath": [{ type: Input },],
-        "brandLabel": [{ type: Input },],
+        homeRoute: [{ type: Input }],
+        breakpoint: [{ type: Input }],
+        brandPath: [{ type: Input }],
+        brandLabel: [{ type: Input }]
     };
     return ONavbarComponent;
 }());

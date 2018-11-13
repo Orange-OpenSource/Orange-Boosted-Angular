@@ -34,11 +34,11 @@ var OCarouselContainerComponent = /** @class */ (function () {
     ];
     /** @nocollapse */
     OCarouselContainerComponent.ctorParameters = function () { return [
-        { type: ElementRef, decorators: [{ type: Inject, args: [ElementRef,] },] },
+        { type: ElementRef, decorators: [{ type: Inject, args: [ElementRef,] }] }
     ]; };
     OCarouselContainerComponent.propDecorators = {
-        "pager": [{ type: Input },],
-        "options": [{ type: Input },],
+        pager: [{ type: Input }],
+        options: [{ type: Input }]
     };
     return OCarouselContainerComponent;
 }());

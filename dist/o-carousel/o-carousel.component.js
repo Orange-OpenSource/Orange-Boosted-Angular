@@ -26,8 +26,8 @@ var OCarouselComponent = /** @class */ (function () {
     ];
     /** @nocollapse */
     OCarouselComponent.ctorParameters = function () { return [
-        { type: ElementRef, decorators: [{ type: Inject, args: [ElementRef,] },] },
-        { type: OCarouselContainerComponent, decorators: [{ type: Host }, { type: Inject, args: [OCarouselContainerComponent,] },] },
+        { type: ElementRef, decorators: [{ type: Inject, args: [ElementRef,] }] },
+        { type: OCarouselContainerComponent, decorators: [{ type: Host }, { type: Inject, args: [OCarouselContainerComponent,] }] }
     ]; };
     return OCarouselComponent;
 }());

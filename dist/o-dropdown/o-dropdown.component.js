@@ -23,15 +23,15 @@ var ODropdownComponent = /** @class */ (function () {
     };
     ODropdownComponent.decorators = [
         { type: Directive, args: [{
-                    selector: '[ngbDropdown]' // using same selector as ng-bootsrap NgbDropdown directive
+                    selector: '[appngbDropdown]' // using same selector as ng-bootsrap NgbDropdown directive
                 },] },
     ];
     /** @nocollapse */
     ODropdownComponent.ctorParameters = function () { return [
-        { type: ElementRef, },
+        { type: ElementRef }
     ]; };
     ODropdownComponent.propDecorators = {
-        "handleDropdownFocus": [{ type: HostListener, args: ['openChange', ['$event'],] },],
+        handleDropdownFocus: [{ type: HostListener, args: ['openChange', ['$event'],] }]
     };
     return ODropdownComponent;
 }());
