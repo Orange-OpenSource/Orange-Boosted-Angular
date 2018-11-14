@@ -23,7 +23,7 @@ var ODropdownComponent = /** @class */ (function () {
     };
     ODropdownComponent.decorators = [
         { type: Directive, args: [{
-                    selector: '[appngbDropdown]' // using same selector as ng-bootsrap NgbDropdown directive
+                    selector: '[ngbDropdown]' // using same selector as ng-bootsrap NgbDropdown directive
                 },] },
     ];
     /** @nocollapse */
