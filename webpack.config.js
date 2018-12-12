@@ -88,7 +88,7 @@ module.exports = function makeWebpackConfig() {
 
   var atlOptions = '';
   if (isTest && !isTestWatch) {
-    // awesome-typescript-loader needs to output inlineSourceMap for code coverage to work with source maps.
+    // rs-loader needs to output inlineSourceMap for code coverage to work with source maps.
     atlOptions = 'inlineSourceMap=true&sourceMap=false';
   }
 
@@ -103,7 +103,7 @@ module.exports = function makeWebpackConfig() {
       // Support for .ts files.
       {
         test: /\.ts$/,
-        loaders: ['awesome-typescript-loader?' + atlOptions, 'angular2-template-loader', '@angularclass/hmr-loader'],
+        loaders: ['ts-loader?' + atlOptions, 'angular2-template-loader', '@angularclass/hmr-loader'],
         exclude: [isTest ? /\.(e2e)\.ts$/ : /\.(spec|e2e)\.ts$/, /node_modules\/(?!(ng2-.+))/]
       },
       {
