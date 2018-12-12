@@ -6,6 +6,8 @@
     "node_modules/codelyzer"
   ],
   "rules": {
+    "javascript.validate.enable": false,
+    "no-unused-expression": false,
     "trailing-comma": [false, {"multiline": "always", "singleline": "never"}],
     "interface-name": [false, "always-prefix"],
     "component-class-suffix": false,

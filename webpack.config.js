@@ -3,7 +3,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 // Webpack Plugins
-var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
+//var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -33,6 +33,11 @@ module.exports = function makeWebpackConfig() {
    */
   var config = {};
 
+  /**
+   *  Mode
+   *  Reference: https://webpack.js.org/concepts/mode/#usage
+   */
+  config.mode = 'none';
   /**
    * Devtool
    * Reference: http://webpack.github.io/docs/configuration.html#devtool
@@ -115,7 +120,14 @@ module.exports = function makeWebpackConfig() {
       /* load fonts for css files */
       {
         test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
-        use : 'file-loader?name=assets/fonts/[name].[ext]'
+        use : [
+          {
+            loader: 'file-loader',
+            options: {
+              name:'assets/fonts/[name].[ext]'
+            }
+          }
+        ]
       },
 
       // Support for *.json files.
@@ -141,7 +153,12 @@ module.exports = function makeWebpackConfig() {
 
       // support for .html as raw text
       // todo: change the loader to something that adds a hash to images
-      {test: /\.html$/, use: 'raw-loader',  exclude: root('docs/index.html')}
+      {test: /\.html$/, use: 'raw-loader',  exclude: root('docs/index.html')},
+      // remove warning on system.import
+      {
+        test: /[\/\\]@angular[\/\\]core[\/\\].+\.js$/,
+        parser: { system: true, commonjs: true },  // enable SystemJS
+      }
     ]
   };
 
@@ -167,7 +184,7 @@ module.exports = function makeWebpackConfig() {
     // Workaround needed for angular 2 angular/angular#11580
       new webpack.ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
-        /angular(\\|\/)core(\\|\/)@angular/,
+        /@angular(\\|\/)core(\\|\/)fesm5(\\|\/)esm5/,
         root('./docs') // location of your src
       ),
 
@@ -189,14 +206,32 @@ module.exports = function makeWebpackConfig() {
   ];
 
   if (!isTest && !isTestWatch) {
-    config.plugins.push(
-      // Generate common chunks if necessary
-      // Reference: https://webpack.github.io/docs/code-splitting.html
-      // Reference: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
-      new CommonsChunkPlugin({
-        name: ['vendor', 'polyfills']
-      }),
-
+    // Generate common chunks if necessary
+    // Reference: https://webpack.github.io/docs/code-splitting.html
+    // Reference: https://webpack.github.io/docs/list-of-plugins.html#commonschunkplugin
+    // new CommonsChunkPlugin({
+    //  name: ['vendor', 'polyfills']
+    // }),
+    config.plugins = {
+        optimization: {
+          splitChunks: {
+            cachedGroups: {
+              vendor : {
+                name: 'vendor',
+                chunks: 'all',
+                enforce: true,
+                priorit: 1
+              },
+              polyfills: {
+                name: "polyfills",
+                enforce: true,
+                priority: 2
+              }
+            }
+          }
+        }
+      },
+      config.plugins= [
       // Inject script and link tags into html files
       // Reference: https://github.com/ampedandwired/html-webpack-plugin
       new HtmlWebpackPlugin({
@@ -214,7 +249,7 @@ module.exports = function makeWebpackConfig() {
         from: root('docs/assets/img'),
         to: 'assets/img'
       }])
-    );
+    ]
   }
 
   // Add build specific plugins
@@ -248,7 +283,6 @@ module.exports = function makeWebpackConfig() {
     quiet: true,
     stats: 'minimal' // none (or false), errors-only, minimal, normal (or true) and verbose
   };
-
   return config;
 }();
 
