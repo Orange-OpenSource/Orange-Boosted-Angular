@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
+import { Globals } from './global';
 
 @Component({
   selector: 'getting-started',
-  template: require('./start.component.html')
+  template: require('./start.component.html'),
+  providers: [Globals]
 })
 export class StartComponent {
-  public ngBoostedVersion = NGBOOSTED_VERSION;
-  public boostedVersion = BOOSTED_VERSION;
-  public angularVersion = ANGULAR_VERSION;
-  public ngBootstrapVersion = NGBOOTSTRAP_VERSION;
+  constructor(public globals: Globals) {}
 }

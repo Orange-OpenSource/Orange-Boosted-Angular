@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { Globals } from './global';
 
 @Component({
   selector: 'home',
-  template: require('./home.component.html')
+  template: require('./home.component.html'),
+  providers: [Globals]
 })
 export class HomeComponent {
-  public ngBoostedVersion = NGBOOSTED_VERSION;
+  constructor(public globals: Globals) {}
 }

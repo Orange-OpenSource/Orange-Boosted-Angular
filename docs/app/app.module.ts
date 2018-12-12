@@ -47,6 +47,8 @@ import { DocOSwitch } from './docs/o-switch.component';
 import { DocOToggle } from './docs/o-toggle.component';
 import { CodeBox } from './docs/code-box.component';
 
+import { Globals } from './global';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -181,7 +183,7 @@ import { CodeBox } from './docs/code-box.component';
     DocOToggle,
     CodeBox
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
