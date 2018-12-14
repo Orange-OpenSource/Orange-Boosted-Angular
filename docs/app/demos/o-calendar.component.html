@@ -1,0 +1,10 @@
+<form class="form-inline">
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle"></button>
+            </div>
+        <input class="form-control calendar-input" #bdatepicker placeholder="DD/MM/YYYY" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" aria-label="Calendar" aria-describedby="button-toggle">
+        </div>
+    </div>
+</form>
