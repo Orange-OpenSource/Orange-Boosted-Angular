@@ -11,5 +11,6 @@ export { OSwitchComponent } from './o-switch/o-switch.component';
 export { OCarouselContainerComponent } from './o-carousel/o-carousel-container.component';
 export { OCarouselComponent } from './o-carousel/o-carousel.component';
 export { ODropdownComponent } from './o-dropdown/o-dropdown.component';
+export { OCalendarComponent } from './o-calendar/o-calendar.component';
 export declare class NgBoostedModule {
 }
