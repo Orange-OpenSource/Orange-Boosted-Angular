@@ -10,13 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 import { Component, Input } from '@angular/core';
 import { NgbDateParserFormatter, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
 import { DateParserFormatter } from '../../src/o-calendar/date-parser-formater';
-import { DomSanitizer } from '@angular/platform-browser';
 var OCalendarComponent = /** @class */ (function () {
-    function OCalendarComponent(calendar, sanitize) {
+    function OCalendarComponent(calendar) {
         this.calendar = calendar;
-        this.sanitize = sanitize;
         this.today = this.calendar.getToday();
-        sanitize.bypassSecurityTrustStyle(this.color);
     }
     __decorate([
         Input(),
@@ -29,7 +26,7 @@ var OCalendarComponent = /** @class */ (function () {
             template: "\n    <form class=\"form-inline\">\n        <div class=\"form-group\">\n            <div class=\"input-group\">\n                <div class=\"input-group-prepend\">\n                    <button class=\"btn btn-outline-secondary calendar-{{color}}\" (click)=\"d.toggle()\" type=\"button\" id=\"button-toggle\" attr.aria-label=\"Open calendar\"></button>\n                </div>\n            <input class=\"form-control calendar-input\" #bdatepicker [footerTemplate]=\"footerTemplate\" placeholder=\"DD/MM/YYYY\" name=\"dp\" [(ngModel)]=\"model\" ngbDatepicker #d=\"ngbDatepicker\" aria-label=\"Calendar\" aria-describedby=\"button-toggle\">\n            </div>\n        </div>\n    </form>\n    <ng-template #footerTemplate>\n        <hr class=\"my-0\">\n        <button class=\"btn btn-primary btn-sm m-2 float-left\" attr.aria-label=\"Today\" (click)=\"model = today; d.close()\">Today</button>\n        <button class=\"btn btn-secondary btn-sm m-2 float-right\" attr.aria-label=\"Close\" (click)=\"d.close()\">Close</button>\n    </ng-template>\n",
             providers: [{ provide: NgbDateParserFormatter, useClass: DateParserFormatter }]
         }),
-        __metadata("design:paramtypes", [NgbCalendar, DomSanitizer])
+        __metadata("design:paramtypes", [NgbCalendar])
     ], OCalendarComponent);
     return OCalendarComponent;
 }());
