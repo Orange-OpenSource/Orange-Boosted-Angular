@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { NgbDateParserFormatter } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDateParserFormatter, NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { DateParserFormatter } from '../../src/o-calendar/date-parser-formater';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
     selector: 'o-calendar',
@@ -56,7 +57,12 @@ import { DateParserFormatter } from '../../src/o-calendar/date-parser-formater';
     providers: [{provide: NgbDateParserFormatter, useClass: DateParserFormatter}]
 })
 export class OCalendarComponent {
+    public model: NgbDateStruct;
+    public today = this.calendar.getToday();
+
     @Input()
     public color: string;
-    public model;
+    constructor(private calendar: NgbCalendar, private sanitize: DomSanitizer) {
+        sanitize.bypassSecurityTrustStyle(this.color);
+    }
  }
