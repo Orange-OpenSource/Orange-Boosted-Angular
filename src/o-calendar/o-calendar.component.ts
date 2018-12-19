@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgbDateParserFormatter, NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
-import { DateParserFormatter } from '../../src/o-calendar/date-parser-formater';
+import { DateParserFormatter } from '../util/date-parser-formater';
 
 @Component({
     selector: 'o-calendar',

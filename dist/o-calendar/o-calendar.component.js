@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 import { Component, Input } from '@angular/core';
 import { NgbDateParserFormatter, NgbCalendar } from '@ng-bootstrap/ng-bootstrap';
-import { DateParserFormatter } from '../../src/o-calendar/date-parser-formater';
+import { DateParserFormatter } from '../util/date-parser-formater';
 var OCalendarComponent = /** @class */ (function () {
     function OCalendarComponent(calendar) {
         this.calendar = calendar;
