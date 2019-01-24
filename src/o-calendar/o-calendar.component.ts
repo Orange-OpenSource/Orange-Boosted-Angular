@@ -41,9 +41,9 @@ import { DateParserFormatter } from '../util/date-parser-formater';
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" aria-label="Open calendar"></button>
+                    <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="{{labelButton}}"></button>
                 </div>
-            <input class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="DD/MM/YYYY" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" aria-label="Calendar" aria-describedby="button-toggle">
+            <input class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}" aria-describedby="button-toggle">
             </div>
         </div>
     </form>
@@ -56,10 +56,17 @@ import { DateParserFormatter } from '../util/date-parser-formater';
     providers: [{provide: NgbDateParserFormatter, useClass: DateParserFormatter}]
 })
 export class OCalendarComponent {
-    public model: NgbDateStruct;
     public today = this.calendar.getToday();
 
     @Input()
     public color: string;
+    @Input()
+    public  labelButton: string;
+    @Input()
+    public labelInput: string;
+    @Input()
+    public placeHolder: string;
+    @Input()
+    public model: NgbDateStruct;
     constructor(private calendar: NgbCalendar) {}
  }
