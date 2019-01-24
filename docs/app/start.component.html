@@ -42,6 +42,17 @@
         {{ '}' }}<br>
     </code></p>
 
+    <h2>Adding Boosted CSS</h2>
+    <p>Two options can be done to import Boosted installed from <a href="https://www.npmjs.com/package/boosted"></a>NPM</p>
+    <p>- Configuer your <code>angular.json</code> as:<br>
+        <code> "styles": [<br>
+                "/path/node_modules/boosted/dist/css/boosted.min.css",<br>
+                "styles.css"<br>
+            ]</code><br>
+        - Or import directly in <code>src/style.css or src/style.scss</code>:<br>
+        <code>@import '~boosted/dist/css/boosted.min.css'</code>
+    </p>
+
     <h2>Building this documentation</h2>
     <p>Simply <code>npm run build:docs</code> and the output goes to a <code>_gh_pages</code> folder.</p>
 
