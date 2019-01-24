@@ -41,7 +41,7 @@ import { DateParserFormatter } from '../util/date-parser-formater';
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="Open calendar"></button>
+                    <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" aria-label="Open calendar"></button>
                 </div>
             <input class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="DD/MM/YYYY" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" aria-label="Calendar" aria-describedby="button-toggle">
             </div>
