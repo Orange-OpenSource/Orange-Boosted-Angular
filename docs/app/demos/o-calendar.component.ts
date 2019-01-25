@@ -45,4 +45,7 @@ public getDayAriaLabel(date: NgbDateStruct): string {
     template: require('./o-calendar.component.html'),
     providers: [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
 })
-export class DemoOCalendar {}
+export class DemoOCalendar {
+    public model: NgbDateStruct;
+
+}

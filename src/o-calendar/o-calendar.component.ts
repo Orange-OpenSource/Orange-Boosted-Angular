@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { NgbDateParserFormatter, NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { DateParserFormatter } from '../util/date-parser-formater';
+import { isNumber, toInteger } from '../util/check';
 
 @Component({
     selector: 'o-calendar',
@@ -43,20 +44,21 @@ import { DateParserFormatter } from '../util/date-parser-formater';
                 <div class="input-group-prepend">
                     <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="{{labelButton}}"></button>
                 </div>
-            <input class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}" aria-describedby="button-toggle">
+            <input (ngModelChange)="onChange(bdatepicker.value);" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}" aria-describedby="button-toggle">
             </div>
         </div>
     </form>
     <ng-template #footerTemplate>
         <hr class="my-0">
-        <button class="btn btn-primary btn-sm m-2 float-left" attr.aria-label="Today" (click)="model = today; d.close()">Today</button>
-        <button class="btn btn-secondary btn-sm m-2 float-right" attr.aria-label="Close" (click)="d.close()">Close</button>
+        <button class="btn btn-primary btn-sm m-2 float-left" attr.aria-label="{{labelFooterToday}}" (click)="model = today; this.childEvent.emit(today); d.close();">Today</button>
+        <button class="btn btn-secondary btn-sm m-2 float-right" attr.aria-label="{{labelFooterClose}}" (click)="d.close()">Close</button>
     </ng-template>
 `,
     providers: [{provide: NgbDateParserFormatter, useClass: DateParserFormatter}]
 })
 export class OCalendarComponent {
     public today = this.calendar.getToday();
+    public model: NgbDateStruct;
 
     @Input()
     public color: string;
@@ -65,8 +67,21 @@ export class OCalendarComponent {
     @Input()
     public labelInput: string;
     @Input()
-    public placeHolder: string;
+    public labelFooterToday: string;
     @Input()
-    public model: NgbDateStruct;
+    public labelFooterClose: string;
+    @Input()
+    public placeHolder: string;
+    @Output()
+    public childEvent = new EventEmitter();
     constructor(private calendar: NgbCalendar) {}
+    public onChange(value) {
+        if (value) {
+            const dateParts = value.trim().split('/');
+            if (dateParts.length === 3 && isNumber(dateParts[0]) && isNumber(dateParts[1]) && isNumber(dateParts[2])) {
+                this.childEvent.emit({year: toInteger(dateParts[2]), month: toInteger(dateParts[1]), day: toInteger(dateParts[0])});
+            }
+        }
+        return null;
+    }
  }
