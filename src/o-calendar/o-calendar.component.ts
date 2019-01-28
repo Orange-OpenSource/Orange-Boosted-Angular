@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { NgbDateParserFormatter, NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { DateParserFormatter } from '../util/date-parser-formater';
 import { isNumber, toInteger } from '../util/check';
@@ -50,8 +50,8 @@ import { isNumber, toInteger } from '../util/check';
     </form>
     <ng-template #footerTemplate>
         <hr class="my-0">
-        <button class="btn btn-primary btn-sm m-2 float-left" attr.aria-label="{{labelFooterToday}}" (click)="model = today; this.childEvent.emit(today); d.close();">Today</button>
-        <button class="btn btn-secondary btn-sm m-2 float-right" attr.aria-label="{{labelFooterClose}}" (click)="d.close()">Close</button>
+        <button class="btn btn-primary btn-sm m-2 float-left" attr.aria-label="{{labelFooterToday}}" (click)="model = today; this.childEvent.emit(today); d.close(); this.focusCalendar();">Today</button>
+        <button class="btn btn-secondary btn-sm m-2 float-right" attr.aria-label="{{labelFooterClose}}" (click)="d.close(); this.focusCalendar();">Close</button>
     </ng-template>
 `,
     providers: [{provide: NgbDateParserFormatter, useClass: DateParserFormatter}]
@@ -60,6 +60,8 @@ export class OCalendarComponent {
     public today = this.calendar.getToday();
     public model: NgbDateStruct;
 
+    @ViewChild('bdatepicker')
+    public bdatepicker: any;
     @Input()
     public color: string;
     @Input()
@@ -83,5 +85,8 @@ export class OCalendarComponent {
             }
         }
         return null;
+    }
+    public focusCalendar() {
+        this.bdatepicker.nativeElement.focus();
     }
  }
