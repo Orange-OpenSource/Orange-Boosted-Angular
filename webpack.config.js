@@ -144,7 +144,7 @@ module.exports = function makeWebpackConfig() {
           'style-loader',
           {
             loader: 'css-loader',
-            options: { root: '.', minimize: isProd }
+            //options: { root: '.', minimize: isProd }
           }
         ]
       },
