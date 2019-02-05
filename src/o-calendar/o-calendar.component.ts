@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ViewChild, OnChanges, SimpleChanges, SimpleChange, ElementRef, DoCheck } from '@angular/core';
 import { NgbDateParserFormatter, NgbCalendar, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 import { DateParserFormatter } from '../util/date-parser-formater';
 import { isNumber, toInteger } from '../util/check';
@@ -44,7 +44,7 @@ import { isNumber, toInteger } from '../util/check';
                 <div class="input-group-prepend">
                     <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="{{labelButton}}" aria-haspopup="true"></button>
                 </div>
-            <input (ngModelChange)="onChange(bdatepicker.value);" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}" aria-describedby="button-toggle">
+            <input (ngModelChange)="onChange(bdatepicker.value); this.focusCalendar()" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}" aria-describedby="button-toggle">
             </div>
         </div>
     </form>
@@ -60,8 +60,7 @@ export class OCalendarComponent {
     public today = this.calendar.getToday();
     public model: NgbDateStruct;
 
-    @ViewChild('bdatepicker')
-    public bdatepicker: any;
+    @ViewChild('bdatepicker') public bdatepicker: ElementRef;
     @Input()
     public color: string;
     @Input()
