@@ -44,7 +44,7 @@ import { isNumber, toInteger } from '../util/check';
                 <div class="input-group-prepend">
                     <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="{{labelButton}}" aria-haspopup="true"></button>
                 </div>
-            <input (ngModelChange)="onChange(bdatepicker.value); this.focusCalendar()" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}" aria-describedby="button-toggle">
+            <input (ngModelChange)="onChange(bdatepicker.value); this.focusCalendar()" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}">
             </div>
         </div>
     </form>
