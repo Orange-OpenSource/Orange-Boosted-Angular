@@ -31,7 +31,7 @@
     ],
     "max-line-length": [
       true,
-      150
+      4000
     ],
     "no-string-literal": false,
     "object-literal-sort-keys": false,

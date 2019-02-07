@@ -1,13 +1,13 @@
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule }   from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
 
-import { AppComponent }   from './app.component';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { StartComponent } from './start.component';
 import { DocsComponent } from './docs.component';
@@ -21,6 +21,7 @@ import { DemoTooltip } from './demos/tooltip.component';
 import { DemoPopover } from './demos/popover.component';
 import { DemoAlert } from './demos/alert.component';
 import { DemoCarousel } from './demos/carousel.component';
+import { DemoOCalendar } from './demos/o-calendar.component';
 import { DemoCollapse } from './demos/collapse.component';
 import { DemoProgressBar } from './demos/progress-bar.component';
 import { DemoDropdown } from './demos/dropdown.component';
@@ -30,6 +31,7 @@ import { DemoSwiper } from './demos/swiper.component';
 import { DemoONavbar } from './demos/o-navbar.component';
 
 import { DocAccordion } from './docs/accordion.component';
+import { DocOCalendar } from './docs/o-calendar.component';
 import { DocModal } from './docs/modal.component';
 import { DocDropdown } from './docs/dropdown.component';
 import { DocTabs } from './docs/tabs.component';
@@ -64,12 +66,16 @@ import { Globals } from './global';
       },
       {
         path: 'documentation',
-        redirectTo: 'documentation/collapse',
+        redirectTo: 'documentation/accordion',
         pathMatch: 'full'
       },
       {
         path: 'documentation/collapse',
         component: DocCollapse
+      },
+      {
+        path: 'documentation/calendar',
+        component: DocOCalendar
       },
       {
         path: 'documentation/accordion',
@@ -158,6 +164,7 @@ import { Globals } from './global';
     DemoPopover,
     DemoAlert,
     DemoCarousel,
+    DemoOCalendar,
     DemoSwiper,
     DemoCollapse,
     DemoProgressBar,
@@ -166,6 +173,7 @@ import { Globals } from './global';
     DemoOToggle,
     DemoONavbar,
     DocAccordion,
+    DocOCalendar,
     DocModal,
     DocDropdown,
     DocTabs,
