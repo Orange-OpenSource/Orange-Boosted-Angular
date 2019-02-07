@@ -4,6 +4,8 @@ import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
+import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
 
@@ -49,10 +51,38 @@ import { CodeBox } from './docs/code-box.component';
 
 import { Globals } from './global';
 
+const cookieConfig: NgcCookieConsentConfig = {
+  cookie: {
+    domain: 'localhost:3030' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
+  },
+  palette: {
+    popup: {
+      background: '#000',
+      text: '#ffffff',
+      link: '#ffffff'
+    },
+    button: {
+      background: '#f16e00',
+      text: '#ffffff',
+      border: 'transparent'
+    }
+  },
+  theme: 'edgeless',
+  type: 'opt-out',
+  content: {
+    message: 'This website uses cookies to ensure you get the best experience on our website.',
+    dismiss: 'Got it!',
+    deny: 'Refuse cookies',
+    link: 'Learn more',
+    href: 'https://cookiesandyou.com'
+  }
+};
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    NgcCookieConsentModule.forRoot(cookieConfig),
     RouterModule.forRoot([
       {
         path: 'home',
