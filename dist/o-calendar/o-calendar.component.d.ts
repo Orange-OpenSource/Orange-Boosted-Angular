@@ -13,6 +13,6 @@ export declare class OCalendarComponent {
     placeHolder: string;
     childEvent: EventEmitter<{}>;
     constructor(calendar: NgbCalendar);
-    onChange(value: any): any;
+    onChange(value: any): void;
     focusCalendar(): void;
 }

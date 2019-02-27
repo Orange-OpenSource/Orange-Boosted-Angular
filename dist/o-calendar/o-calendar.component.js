@@ -24,7 +24,6 @@ var OCalendarComponent = /** @class */ (function () {
                 this.childEvent.emit({ year: toInteger(dateParts[2]), month: toInteger(dateParts[1]), day: toInteger(dateParts[0]) });
             }
         }
-        return null;
     };
     OCalendarComponent.prototype.focusCalendar = function () {
         this.bdatepicker.nativeElement.focus();

@@ -19,7 +19,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 import { Component, Input, Injectable, Inject, ElementRef } from '@angular/core';
-import Swiper from 'swiper';
+import Swiper from 'swiper/dist/js/swiper';
 var OCarouselContainerComponent = /** @class */ (function () {
     function OCarouselContainerComponent(elementRef) {
         this.elementRef = elementRef;
