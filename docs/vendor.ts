@@ -27,6 +27,7 @@ import 'prismjs/themes/prism.css';
 // Swiper
 import 'swiper/dist/css/swiper.css';
 import 'swiper/dist/js/swiper.js';
+import 'swiper/dist/js/swiper';
 
 // Boosted
 import 'boosted/dist/css/orangeHelvetica.css';

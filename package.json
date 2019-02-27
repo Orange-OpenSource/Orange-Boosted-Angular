@@ -33,14 +33,14 @@
   "peerDependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0",
-    "rxjs": "^6.4.0"
+    "rxjs": "^6.4.0",
+    "swiper": "^4.4.6"
   },
   "dependencies": {
     "@ng-bootstrap/ng-bootstrap": "4.0.2",
     "autoprefixer": "^9.4.7",
     "boosted": "4.2.2",
-    "classlist.js": "^1.1.20150312",
-    "swiper": "^4.4.1"
+    "classlist.js": "^1.1.20150312"
   },
   "devDependencies": {
     "@angular/common": "^7.2.3",

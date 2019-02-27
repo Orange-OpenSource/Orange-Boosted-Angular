@@ -83,7 +83,6 @@ export class OCalendarComponent {
                 this.childEvent.emit({year: toInteger(dateParts[2]), month: toInteger(dateParts[1]), day: toInteger(dateParts[0])});
             }
         }
-        return null;
     }
     public focusCalendar() {
         this.bdatepicker.nativeElement.focus();
