@@ -21,7 +21,7 @@ const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
 @Component({
   selector: 'li[o-nav-link]',
   template: `
-    <a #link [routerLink]="route" class="nav-link" routerLinkActive="active"
+    <a #link [routerLink]="route" [queryParams]="query" class="nav-link" routerLinkActive="active"
      [attr.title]="title === 'undefined' ? null : title"
      [attr.aria-current]="isActive"><ng-content></ng-content></a>
   `
@@ -31,6 +31,9 @@ export class ONavLink implements DoCheck {
 
   @Input()
   public route: string;
+
+  @Input()
+  public query: string;
 
   @Input()
   public title: string;
