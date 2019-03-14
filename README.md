@@ -42,4 +42,5 @@ npm start
 
 ## Copyright and license
 
+Thanks to [Netlify](https://www.netlify.com/), we are able to deploy pre-versions at [Ng-Boosted](https://ng-boosted.netlify.com).
 Code and documentation copyright 2018 Orange SA. Code released under [the MIT license](LICENSE). Docs released under [Creative Commons Attribution](docs/LICENSE).
