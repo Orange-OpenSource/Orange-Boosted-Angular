@@ -20,7 +20,8 @@ There is three supported types of child elements to `<o-navbar>`. Each of them m
 
 This component has two parameters :
 
-* `route` which the targeted app route, same value as you would use in `[routerLink]`attribute.
+* `route` is the targeted app route. It is the same value you would use in `[routerLink]`attribute.
+* `query`, optional, is the params to pass. It is the same value you would use in `[queryParams]`attribute.
 * `title` which acts as `<a>` tag attribute `title`. Can be handy when using icon nav links with no text in it. No provided value will not set the `title`attribute.
 
 ##### ONavMenu
