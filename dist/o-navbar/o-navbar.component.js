@@ -31,6 +31,10 @@ var ONavLink = /** @class */ (function () {
     __decorate([
         Input(),
         __metadata("design:type", String)
+    ], ONavLink.prototype, "query", void 0);
+    __decorate([
+        Input(),
+        __metadata("design:type", String)
     ], ONavLink.prototype, "title", void 0);
     __decorate([
         ViewChild('link'),
@@ -39,7 +43,7 @@ var ONavLink = /** @class */ (function () {
     ONavLink = __decorate([
         Component({
             selector: 'li[o-nav-link]',
-            template: "\n    <a #link [routerLink]=\"route\" class=\"nav-link\" routerLinkActive=\"active\"\n     [attr.title]=\"title === 'undefined' ? null : title\"\n     [attr.aria-current]=\"isActive\"><ng-content></ng-content></a>\n  "
+            template: "\n    <a #link [routerLink]=\"route\" [queryParams]=\"query\" class=\"nav-link\" routerLinkActive=\"active\"\n     [attr.title]=\"title === 'undefined' ? null : title\"\n     [attr.aria-current]=\"isActive\"><ng-content></ng-content></a>\n  "
         })
     ], ONavLink);
     return ONavLink;

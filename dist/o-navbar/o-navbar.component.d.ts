@@ -8,6 +8,7 @@
 import { ElementRef, DoCheck } from '@angular/core';
 export declare class ONavLink implements DoCheck {
     route: string;
+    query: string;
     title: string;
     link: ElementRef;
     isActive: boolean;
