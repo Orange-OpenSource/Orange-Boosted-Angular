@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component ({
     selector: 'demo-popover',
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
     `],
     template: require('./popover.component.html')
 })
-export class DemoPopover { }
+export class DemoPopover implements OnInit {
+    constructor(private _analytics: Analytics) {}
+    public ngOnInit(): void {
+        this._analytics.trackPageViews();
+    }
+ }

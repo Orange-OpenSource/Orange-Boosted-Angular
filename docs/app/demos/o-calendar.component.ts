@@ -1,5 +1,6 @@
-import { Component, Injectable } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { NgbDatepickerI18n, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { Analytics } from './shared/analytics';
 
 const I18N_VALUES = {
     'fr': {
@@ -45,7 +46,12 @@ public getDayAriaLabel(date: NgbDateStruct): string {
     template: require('./o-calendar.component.html'),
     providers: [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
 })
-export class DemoOCalendar {
+export class DemoOCalendar implements OnInit {
     public model: NgbDateStruct;
+    constructor( private _analytics: Analytics ) {}
+
+    public ngOnInit(): void {
+        this._analytics.trackPageViews();
+      }
 
 }

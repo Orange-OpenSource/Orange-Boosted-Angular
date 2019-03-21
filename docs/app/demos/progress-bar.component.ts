@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'demo-progress-bar',
@@ -10,4 +11,9 @@ import { Component } from '@angular/core';
   template: require('./progress-bar.component.html')
 })
 
-export class DemoProgressBar { }
+export class DemoProgressBar implements OnInit {
+  constructor(private _analytics: Analytics) {}
+  public ngOnInit(): void {
+      this._analytics.trackPageViews();
+  }
+}

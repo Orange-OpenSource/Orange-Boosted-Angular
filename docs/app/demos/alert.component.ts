@@ -1,15 +1,16 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
     selector: 'demo-alert',
     template: require('./alert.component.html')
 })
-export class DemoAlert {
+export class DemoAlert implements OnInit {
   @Input()
   public alerts: IAlert[] = [];
   private backup: IAlert[] = [];
 
-  constructor() {
+  constructor(private _analytics: Analytics) {
     this.alerts.push({
       id: 1,
       type: 'success',
@@ -37,6 +38,10 @@ export class DemoAlert {
 
   public reset() {
     this.alerts = this.backup.map((alert: IAlert) => Object.assign({}, alert));
+  }
+
+  public ngOnInit(): void {
+    this._analytics.trackPageViews();
   }
 }
 
