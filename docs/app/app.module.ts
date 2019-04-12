@@ -4,7 +4,8 @@ import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+
+import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
@@ -55,6 +56,8 @@ const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
     domain: 'localhost:3030' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
   },
+  position: 'bottom',
+  theme: 'edgeless',
   palette: {
     popup: {
       background: '#000',
@@ -67,14 +70,13 @@ const cookieConfig: NgcCookieConsentConfig = {
       border: 'transparent'
     }
   },
-  theme: 'edgeless',
   type: 'opt-out',
   content: {
-    message: 'This website uses cookies to ensure you get the best experience on our website.',
-    dismiss: 'Got it!',
-    deny: 'Refuse cookies',
-    link: 'Learn more',
-    href: 'https://cookiesandyou.com'
+    message: 'En poursuivant votre navigation, vous acceptez l\'utilisation de services tiers pouvant installer des cookies.',
+    dismiss: 'OK,tout accepter.',
+    deny: 'Personnaliser',
+    href: 'https://cookiesandyou.com',
+    allow: 'Autoriser les cookies'
   }
 };
 
