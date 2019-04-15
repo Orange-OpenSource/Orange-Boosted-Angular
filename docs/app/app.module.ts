@@ -4,8 +4,11 @@ import { RouterModule }   from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-
 import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
+
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
@@ -52,6 +55,11 @@ import { CodeBox } from './docs/code-box.component';
 
 import { Globals } from './global';
 
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
     domain: 'localhost:3030' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
@@ -73,10 +81,9 @@ const cookieConfig: NgcCookieConsentConfig = {
   type: 'opt-out',
   content: {
     message: 'En poursuivant votre navigation, vous acceptez l\'utilisation de services tiers pouvant installer des cookies.',
-    dismiss: 'OK,tout accepter.',
     deny: 'Personnaliser',
     href: 'https://cookiesandyou.com',
-    allow: 'Autoriser les cookies'
+    allow: 'OK,tout accepter.'
   }
 };
 
@@ -84,7 +91,15 @@ const cookieConfig: NgcCookieConsentConfig = {
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     NgcCookieConsentModule.forRoot(cookieConfig),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     RouterModule.forRoot([
       {
         path: 'home',
