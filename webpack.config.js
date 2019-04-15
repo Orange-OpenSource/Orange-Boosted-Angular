@@ -248,6 +248,11 @@ module.exports = function makeWebpackConfig() {
       new CopyWebpackPlugin([{
         from: root('docs/assets/img'),
         to: 'assets/img'
+      }]),
+
+      new CopyWebpackPlugin([{
+        from: root('docs/assets/lang'),
+        to: 'assets/i18n'
       }])
     ]
   }
