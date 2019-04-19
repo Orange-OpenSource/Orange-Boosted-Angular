@@ -6,7 +6,7 @@
  * --------------------------------------------------------------------------
  */
 
-import { Component, Input, HostListener, ViewChild } from '@angular/core';
+import { Component, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'scroll-top',
