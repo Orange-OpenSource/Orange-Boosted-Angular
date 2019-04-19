@@ -54,6 +54,7 @@ import { DocOToggle } from './docs/o-toggle.component';
 import { CodeBox } from './docs/code-box.component';
 
 import { Globals } from './global';
+import { CookieManagerService } from './util/cookie-utils';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -62,10 +63,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
-    domain: 'localhost:3030' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
+    domain: 'localhost' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
   },
   position: 'bottom',
-  theme: 'edgeless',
+  theme: 'classic',
   palette: {
     popup: {
       background: '#000',
@@ -81,9 +82,9 @@ const cookieConfig: NgcCookieConsentConfig = {
   type: 'opt-out',
   content: {
     message: 'En poursuivant votre navigation, vous acceptez l\'utilisation de services tiers pouvant installer des cookies.',
-    deny: 'Personnaliser',
+    deny: 'Refuser les cookies',
     href: 'https://cookiesandyou.com',
-    allow: 'OK,tout accepter.'
+    allow: 'Accepter les cookies'
   }
 };
 
@@ -230,7 +231,7 @@ const cookieConfig: NgcCookieConsentConfig = {
     DocOToggle,
     CodeBox
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals, CookieManagerService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
