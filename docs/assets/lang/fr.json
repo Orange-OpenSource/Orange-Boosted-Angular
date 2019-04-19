@@ -2,7 +2,7 @@
     "cookie": {
         "header": "Ng-Boosted utilises des Cookies",
         "message": "En poursuivant votre navigation, vous acceptez l'utilisation de services tiers pouvant installer des cookies.",
-        "allow": "OK, tout accepter.",
-        "deny": "Personnaliser"
+        "allow": "Accepter les cookies",
+        "deny": "Refuser les cookies"
     }
 }
