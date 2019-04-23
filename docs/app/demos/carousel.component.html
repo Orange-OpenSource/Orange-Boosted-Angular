@@ -1,4 +1,4 @@
-<ngb-carousel [interval]="false" [wrap]="false">
+<ngb-carousel [interval]="1000" [wrap]="false" #carousel >
     <ng-template ngbSlide>
         <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random first slide">
         <div class="carousel-caption">
@@ -21,3 +21,7 @@
         </div>
     </ng-template>
 </ngb-carousel>
+<div class="btn-group" role="group" aria-label="Carousel toggle controls">
+    <button type="button" (click)="this.setPause()" id="pause" class="btn btn-outline-dark btn-sm" aria-label="set Pause" #pauseButton>Pause</button>
+    <button type="button" (click)="this.setPlay()" id="pause" class="btn btn-outline-dark btn-sm" aria-label="set Play" #pauseButton>Play</button>
+</div>

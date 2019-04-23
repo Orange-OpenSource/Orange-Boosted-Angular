@@ -13,7 +13,6 @@ import {
   Injectable,
   Inject,
   ElementRef,
-  Host,
   OnInit
 } from '@angular/core';
 
