@@ -10,8 +10,10 @@
     <h2>Getting started</h2>
 
     <h3>Dependencies</h3>
-    <p>Ng-boosted is a set of custom components and directives based on ng-bootstrap anf Orange graphic chart. It allows you to run your Angular based projet with Boosted CSS.</p>
-    <p>If you use Boosted CSS and Ng-bootstrap, you need the following dependencies :</p>
+    <p>Ng-boosted is an extension of ng-bootstrap. It uses Orange graphic chart. It allows you to run your Angular project based on Boosted CSS.
+        Like ng-bootstrap, it backports js component from bootstrap in angular, ng-boosted aimed to backport custom Orange component of boosted that are not native in bootstrap.
+    </p>
+    <p>Here is the dependencies that you don't need to explicity add to your project:</p>
         <ul class="o-square-list">
             <li><a href="http://boosted.orange.com">Boosted {{globals.boostedVersion}}</a></li>
             <li><a href="https://ng-bootstrap.github.io/">ng-bootstrap {{globals.ngBootstrapVersion}}</a></li>
@@ -19,11 +21,13 @@
         <p>Beware of the version above-mentioned are <b>the minimal required versions</b>.
         Some components need ng-bootstrap import. Find below instructions.</p>
     <h3>Installation</h3>
-    <p>For <code>ng-bootstrap</code> installation please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here.</a></p>
+    <p>For <code>ng-bootstrap</code> installation, please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here.</a></p>
 
     <p>Install <code>ng-boosted</code> via:</p>
 
     <p><code>npm install --save ng-boosted</code></p>
+    or <br>
+    <p><code>yarn add ng-boosted</code></p>
 
     <p>Once installed, you need to import <code>ng-bootstrap, if you use it,</code> and <code>ng-boosted</code> modules.</p>
 
@@ -41,6 +45,11 @@
         export class AppModule {{ '{' }}<br>
         {{ '}' }}<br>
     </code></p>
+
+    <p>
+        If you need to use a component from ng-bootstrap you need to import it like explain in ng-bootstrap documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here</a>.
+        <code>import {{ '{' }} NgbModule, NgbActiveModal {{ '}' }} from '@ng-bootstrap/ng-bootstrap'; </code>
+    </p>
 
     <h2>Adding Boosted CSS</h2>
     <p>Two options can be done to import Boosted installed from <a href="https://www.npmjs.com/package/boosted"></a>npm</p>
