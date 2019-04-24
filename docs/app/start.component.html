@@ -11,13 +11,13 @@
 
     <h3>Dependencies</h3>
     <p>Ng-boosted is a set of custom components and directives that allows you to run your Angular based projet with Boosted CSS.</p>
-    <p>Before your start using Ng-boosted you need the following dependencies :</p>
+    <p>Before you start using Ng-Boosted you need the following dependencies :</p>
         <ul class="o-square-list">
             <li><a href="http://boosted.orange.com">Boosted {{globals.boostedVersion}}</a></li>
             <li><a href="https://angular.io/">Angular {{globals.angularVersion}}</a></li>
             <li><a href="https://ng-bootstrap.github.io/">ng-bootstrap {{globals.ngBootstrapVersion}}</a></li>
         </ul>
-
+        <p>Beware of the version above-mentioned are <b>the minimal required versions</b>.</p>
     <h3>Installation</h3>
     <p>For <code>ng-bootstrap</code> installation please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here</a></p>
 
@@ -25,7 +25,7 @@
 
     <p><code>npm install --save ng-boosted</code></p>
 
-    <p>Once installed you need to import <code>ng-bootstrap</code> and <code>ng-boosted</code> modules.</p>
+    <p>Once installed, you need to import <code>ng-bootstrap</code> and <code>ng-boosted</code> modules.</p>
 
     <p><code>
         import {{ '{' }} NgbModule {{ '}' }} from '@ng-bootstrap/ng-bootstrap';<br>
@@ -43,14 +43,21 @@
     </code></p>
 
     <h2>Adding Boosted CSS</h2>
-    <p>Two options can be done to import Boosted installed from <a href="https://www.npmjs.com/package/boosted"></a>NPM</p>
-    <p>- Configuer your <code>angular.json</code> as:<br>
+    <p>Two options can be done to import Boosted installed from <a href="https://www.npmjs.com/package/boosted"></a>npm</p>
+    <h3>Configure your angular.json</h3>
+    <p>Inside the file, add the following path:<br>
         <code> "styles": [<br>
                 "/path/node_modules/boosted/dist/css/boosted.min.css",<br>
                 "styles.css"<br>
             ]</code><br>
-        - Or import directly in <code>src/style.css or src/style.scss</code>:<br>
+    </p>
+    <h3>Configure your styles.css</h3>
+    <p>Inside your styles.css, import boosted css:
         <code>@import '~boosted/dist/css/boosted.min.css'</code>
+    </p>
+    <h3>Configure your styles.scss</h3>
+    <p>if you are using SASS, then you need to do this in your styles.scss:
+        <code>@import '../node_modules/boosted/scss/boosted.scss'</code>
     </p>
 
     <h2>Building this documentation</h2>
