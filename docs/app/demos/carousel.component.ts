@@ -7,10 +7,13 @@ import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 })
 export class DemoCarousel {
     @ViewChild('carousel') public carousel: NgbCarousel;
+    public pause: boolean = false;
     public setPause() {
         this.carousel.pause();
+        this.pause = !this.pause;
     }
     public setPlay() {
         this.carousel.cycle();
+        this.pause = !this.pause;
     }
  }
