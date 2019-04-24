@@ -10,22 +10,22 @@
     <h2>Getting started</h2>
 
     <h3>Dependencies</h3>
-    <p>Ng-boosted is a set of custom components and directives that allows you to run your Angular based projet with Boosted CSS.</p>
-    <p>Before you start using Ng-Boosted you need the following dependencies :</p>
+    <p>Ng-boosted is a set of custom components and directives based on ng-bootstrap anf Orange graphic chart. It allows you to run your Angular based projet with Boosted CSS.</p>
+    <p>If you use Boosted CSS and Ng-bootstrap, you need the following dependencies :</p>
         <ul class="o-square-list">
             <li><a href="http://boosted.orange.com">Boosted {{globals.boostedVersion}}</a></li>
-            <li><a href="https://angular.io/">Angular {{globals.angularVersion}}</a></li>
             <li><a href="https://ng-bootstrap.github.io/">ng-bootstrap {{globals.ngBootstrapVersion}}</a></li>
         </ul>
-        <p>Beware of the version above-mentioned are <b>the minimal required versions</b>.</p>
+        <p>Beware of the version above-mentioned are <b>the minimal required versions</b>.
+        Some components need ng-bootstrap import. Find below instructions.</p>
     <h3>Installation</h3>
-    <p>For <code>ng-bootstrap</code> installation please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here</a></p>
+    <p>For <code>ng-bootstrap</code> installation please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started">here.</a></p>
 
-    <p>After installing the above dependencies, install <code>ng-boosted</code> via:</p>
+    <p>Install <code>ng-boosted</code> via:</p>
 
     <p><code>npm install --save ng-boosted</code></p>
 
-    <p>Once installed, you need to import <code>ng-bootstrap</code> and <code>ng-boosted</code> modules.</p>
+    <p>Once installed, you need to import <code>ng-bootstrap, if you use it,</code> and <code>ng-boosted</code> modules.</p>
 
     <p><code>
         import {{ '{' }} NgbModule {{ '}' }} from '@ng-bootstrap/ng-bootstrap';<br>
@@ -52,11 +52,11 @@
             ]</code><br>
     </p>
     <h3>Configure your styles.css</h3>
-    <p>Inside your styles.css, import boosted css:
+    <p>Inside your styles.css, import boosted css:<br>
         <code>@import '~boosted/dist/css/boosted.min.css'</code>
     </p>
     <h3>Configure your styles.scss</h3>
-    <p>if you are using SASS, then you need to do this in your styles.scss:
+    <p>if you are using SASS, then you need to do this in your styles.scss:<br>
         <code>@import '../node_modules/boosted/scss/boosted.scss'</code>
     </p>
 
