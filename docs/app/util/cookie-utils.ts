@@ -3,7 +3,9 @@
  */
 export class CookieManagerService {
 
-public setCookie(name: string, val: string) {
+private GA_COOKIE_NAMES = ['_ga', '_gat'];
+
+public setCookie(name: string, val: boolean) {
     const date = new Date();
     const value = val;
     // Set it expire in 395 days, compliance with Cookie Laws in EU
@@ -24,5 +26,15 @@ public deleteCookie(name: string) {
     date.setTime(date.getTime() + (-1 * 24 * 60 * 60 * 1000));
     document.cookie = name + '=; expires=' + date.toUTCString() + '; path=/';
 }
+
+public rejectCookie(gaId: string) {
+    // disable GA
+    this.setCookie(`ga-disable-${gaId}`, true);
+    this.setCookie(`consent`, false);
+    window[`ga-disable-${gaId}`] = true;
+    this.GA_COOKIE_NAMES.forEach((cookieName) => {
+      this.deleteCookie(cookieName);
+    });
+  }
 
 }
