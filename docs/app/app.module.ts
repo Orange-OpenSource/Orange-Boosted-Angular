@@ -1,19 +1,15 @@
-import { NgModule, ApplicationRef } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule }   from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
-import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
-
 import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
 
-import { AppComponent }   from './app.component';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { StartComponent } from './start.component';
 import { DocsComponent } from './docs.component';
@@ -61,46 +57,11 @@ export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
-const cookieConfig: NgcCookieConsentConfig = {
-  cookie: {
-    domain: 'localhost' // or 'your.domain.com' // it is mandatory to set a domain, for cookies to work properly (see https://goo.gl/S2Hy2A)
-  },
-  position: 'bottom',
-  theme: 'classic',
-  palette: {
-    popup: {
-      background: '#000',
-      text: '#ffffff',
-      link: '#ffffff'
-    },
-    button: {
-      background: '#f16e00',
-      text: '#ffffff',
-      border: 'transparent'
-    }
-  },
-  type: 'opt-out',
-  content: {
-    message: 'En poursuivant votre navigation, vous acceptez l\'utilisation de services tiers pouvant installer des cookies.',
-    deny: 'Refuser les cookies',
-    href: 'https://cookiesandyou.com',
-    allow: 'Accepter les cookies'
-  }
-};
-
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    NgcCookieConsentModule.forRoot(cookieConfig),
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      }
-    }),
     RouterModule.forRoot([
       {
         path: 'home',
