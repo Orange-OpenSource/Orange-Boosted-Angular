@@ -1,0 +1,7 @@
+<ngb-alert [dismissible]="false" [type]="dark" *ngIf="this.showAlertCookie" class="alert-cookie">
+    <p>
+        {{ alert.message }}
+        <button type="button" class="btn btn-deny" (click)="this.deny">{{ alert.deny }}</button>
+        <button type="button" class="btn btn-allow" (click)="this.allow">{{ alert.allow }}</button>
+    </p>
+</ngb-alert>

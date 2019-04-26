@@ -1,0 +1,14 @@
+.alert-cookie {
+    color: #fff;
+    background-color: #000;
+}
+
+.btn-deny {
+    color: #fff;
+}
+
+.btn-allow {
+    color: #fff;
+    background-color: #f16e00;
+    border-color: #f16e00;
+}
