@@ -13,7 +13,6 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "cookie-vendor": "shx mkdir -p docs/cookie/vendor/js && shx mkdir -p docs/cookie/vendor/css && shx cp node_modules/cookieconsent/build/cookieconsent.min.js docs/cookie/vendor/js && shx cp node_modules/cookieconsent/build/cookieconsent.min.css docs/cookie/vendor/css",
     "build:dist": "npm run clean:dist && npm run lint:dist && ngc -p tsconfig-dist.json && npm run copy:dist && npm run rimraf .tmp",
     "build:docs": "rimraf _gh_pages && npm run lint:docs && webpack --progress --profile --bail",
     "build": "npm run build:dist",
