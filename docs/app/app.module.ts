@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -51,6 +53,7 @@ import { CodeBox } from './docs/code-box.component';
 
 import { Globals } from './global';
 import { CookieManagerService } from './util/cookie-utils';
+import { AlertCookieService } from './cookie-interface/alert-cookie';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -62,6 +65,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+    }),
     RouterModule.forRoot([
       {
         path: 'home',
@@ -192,7 +202,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     DocOToggle,
     CodeBox
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals, CookieManagerService],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals, CookieManagerService, AlertCookieService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
