@@ -33,10 +33,6 @@ import 'boosted/dist/css/orangeHelvetica.css';
 import 'boosted/dist/css/orangeIcons.css';
 import 'boosted/dist/css/boosted.css';
 
-// Cookie Consent
-import 'cookieconsent/build/cookieconsent.min.js';
-import 'cookieconsent/build/cookieconsent.min.css';
-
 if ('production' === process.env.ENV) {
   // Production
 
