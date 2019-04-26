@@ -41,24 +41,20 @@ export class AppComponent implements OnInit {
         });
 
         const TrackNavigator = navigator.doNotTrack;
-        console.log(navigator.doNotTrack);
             // Check donotTrack and Cookie Consent and do nothing if those values are positive
         if ( (TrackNavigator === '1' || TrackNavigator === 'yes' ) ) {
             this.cookiemanager.rejectCookie(this.GA_ID);
-            console.log('Inside 1');
             this.showAlertCookie = false;
             return;
         }
         // tslint:disable-next-line:max-line-length
         if ( this.cookiemanager.getCookie('consent') === 'false' && ( (TrackNavigator === '1' || TrackNavigator === 'yes' ) )) {
             this.cookiemanager.rejectCookie(this.GA_ID);
-            console.log('Inside 2');
             this.showAlertCookie = false;
             return;
         }
         if ( this.cookiemanager.getCookie('consent') === 'false' ) {
             this.cookiemanager.rejectCookie(this.GA_ID);
-            console.log('Inside 3');
             this.showAlertCookie = false;
             return;
         }
