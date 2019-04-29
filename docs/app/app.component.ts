@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CookieManagerService } from './util/cookie-utils';
 import { Globals } from './global';
 
 @Component({
@@ -9,5 +10,10 @@ import { Globals } from './global';
 
 export class AppComponent {
 
-    constructor(public globals: Globals) {}
+    constructor(public globals: Globals, private cookiemanager: CookieManagerService) {}
+
+    public reset() {
+        this.cookiemanager.rejectCookie('test');
+        return;
+    }
  }
