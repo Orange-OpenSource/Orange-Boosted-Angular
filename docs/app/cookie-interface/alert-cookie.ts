@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieManagerService } from '../util/cookie-utils';
 import { Alert } from './alert';
@@ -27,6 +27,8 @@ import { Alert } from './alert';
 })
 export class AlertCookieComponent implements OnInit {
 
+    @Input() public GA_ID: string;
+
     // keep refs to subscriptions to be able to unsubscribe later
     private cookieAlert: Alert = {
         header: 'warning',
@@ -34,8 +36,8 @@ export class AlertCookieComponent implements OnInit {
         deny: 'Refuse Cookies',
         allow: 'Accept Cookies',
     };
-    private GA_ID = 'test';
-    private showAlertCookie: boolean = true;
+
+    private showAlertCookie: boolean;
 
     constructor(private translateService: TranslateService, private cookiemanager: CookieManagerService) {}
 
@@ -45,27 +47,31 @@ export class AlertCookieComponent implements OnInit {
         const browserLang = this.translateService.getBrowserLang();
         this.translateService.use(browserLang.match(/en|fr/) ? browserLang : 'en');
 
-        if (this.cookiemanager.getCookie('consent') === 'false' && this.showAlertCookie) {
-          this.translateService.get(['cookie.header', 'cookie.message', 'cookie.allow', 'cookie.deny']).subscribe((data) => {
-              this.cookieAlert.header = data['cookie.header'];
-              this.cookieAlert.message = data['cookie.message'];
-              this.cookieAlert.deny = data['cookie.deny'];
-              this.cookieAlert.allow = data['cookie.allow'];
+        if (!this.cookiemanager.getCookie('consent')) {
+            this.showAlertCookie = true;
+        }
+
+        if (this.cookiemanager.getCookie('consent') && this.showAlertCookie) {
+            this.translateService.get(['cookie.header', 'cookie.message', 'cookie.allow', 'cookie.deny']).subscribe((data) => {
+            this.cookieAlert.header = data['cookie.header'];
+            this.cookieAlert.message = data['cookie.message'];
+            this.cookieAlert.deny = data['cookie.deny'];
+            this.cookieAlert.allow = data['cookie.allow'];
           });
-          const TrackNavigator = navigator.doNotTrack;
+            const TrackNavigator = navigator.doNotTrack;
               // Check donotTrack and Cookie Consent and do nothing if those values are positive
-          if ( (TrackNavigator === '1' || TrackNavigator === 'yes' ) ) {
+            if ( (TrackNavigator === '1' || TrackNavigator === 'yes' ) ) {
               this.cookiemanager.rejectCookie(this.GA_ID);
               this.showAlertCookie = false;
               return;
-          }
+            }
           // tslint:disable-next-line:max-line-length
-          if ( this.cookiemanager.getCookie('consent') === 'false' && ( (TrackNavigator === '1' || TrackNavigator === 'yes' ) )) {
+            if ( this.cookiemanager.getCookie('consent') === 'false' && ( (TrackNavigator === '1' || TrackNavigator === 'yes' ) )) {
               this.cookiemanager.rejectCookie(this.GA_ID);
               this.showAlertCookie = false;
               return;
-          }
-          if ( this.cookiemanager.getCookie('consent') === 'false' ) {
+            }
+            if ( this.cookiemanager.getCookie('consent') === 'false' ) {
               this.cookiemanager.rejectCookie(this.GA_ID);
               this.showAlertCookie = false;
               return;
