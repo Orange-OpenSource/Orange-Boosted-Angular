@@ -12,6 +12,7 @@ export class DemoCarousel {
         this.carousel.pause();
         this.pause = !this.pause;
     }
+
     public setPlay() {
         this.carousel.cycle();
         this.pause = !this.pause;
