@@ -53,7 +53,7 @@ import { CodeBox } from './docs/code-box.component';
 
 import { Globals } from './global';
 import { CookieManagerService } from './util/cookie-utils';
-import { AlertCookieService } from './cookie-interface/alert-cookie';
+import { AlertCookieComponent } from './cookie-interface/alert-cookie';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -165,6 +165,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   declarations: [
     AppComponent,
+    AlertCookieComponent,
     HomeComponent,
     StartComponent,
     DocsComponent,
@@ -202,7 +203,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     DocOToggle,
     CodeBox
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals, CookieManagerService, AlertCookieService],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals, CookieManagerService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
