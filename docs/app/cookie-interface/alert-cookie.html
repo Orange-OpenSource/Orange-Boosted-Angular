@@ -1,7 +1,15 @@
-<ngb-alert [dismissible]="false" [type]="dark" *ngIf="this.showAlertCookie" class="alert-cookie">
-    <p>
-        {{ alert.message }}
-        <button type="button" class="btn btn-deny" (click)="this.deny()">{{ alert.deny }}</button>
-        <button type="button" class="btn btn-allow" (click)="this.allow()">{{ alert.allow }}</button>
-    </p>
+<ngb-alert [dismissible]="false" [type]="dark" *ngIf="this.showAlertCookie" class="alert-cookie fixed-bottom" attr.aria-label="{{ cookieAlert.header }}">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-10">
+                <p>
+                    <b>{{ cookieAlert.message }}</b>
+                </p>
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-inverse btn-link" (click)="this.deny()">{{ cookieAlert.deny }}</button>
+                <button type="button" class="btn btn-inverse btn-warning" (click)="this.allow()">{{ cookieAlert.allow }}</button>
+            </div>
+        </div>
+    </div>
 </ngb-alert>
