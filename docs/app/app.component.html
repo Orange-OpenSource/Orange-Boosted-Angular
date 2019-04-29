@@ -15,21 +15,7 @@
 <router-outlet></router-outlet>
 
 <scroll-top label="Back to top"></scroll-top>
-<ngb-alert [dismissible]="false" [type]="dark" *ngIf="this.showAlertCookie" class="alert-cookie fixed-bottom" attr.aria-label="{{ cookieAlert.header }}">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-10">
-                <p>
-                    <b>{{ cookieAlert.message }}</b>
-                </p>
-            </div>
-            <div class="col-sm-2">
-                <button type="button" class="btn btn-inverse btn-link" (click)="this.deny()">{{ cookieAlert.deny }}</button>
-                <button type="button" class="btn btn-inverse btn-warning" (click)="this.allow()">{{ cookieAlert.allow }}</button>
-            </div>
-        </div>
-    </div>
-</ngb-alert>
+<alert-cookie></alert-cookie>
 <footer role="contentinfo" class="o-footer">
     <h1 class="sr-only">footer - site map & informations</h1>
     <div class="o-footer-top">
