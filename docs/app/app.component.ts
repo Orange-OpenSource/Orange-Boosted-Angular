@@ -8,7 +8,7 @@ import { Globals } from './global';
     .img-height {
         height: 1.4rem;
     }
-    `]
+    `],
     providers: [Globals]
 })
 
