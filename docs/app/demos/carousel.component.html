@@ -1,4 +1,4 @@
-<ngb-carousel [interval]="1000" [wrap]="false" #carousel >
+<ngb-carousel [interval]="1500" [wrap]="true" [pauseOnHover]="false" #carousel >
     <ng-template ngbSlide>
         <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random first slide">
         <div class="carousel-caption">
@@ -20,8 +20,15 @@
         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </div>
     </ng-template>
+    <ng-template ngbSlide>
+        <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random fourth slide">
+        <div class="carousel-caption">
+        <h3>Fourth slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+    </ng-template>
 </ngb-carousel>
 <div class="btn-group" role="group" aria-label="Carousel toggle controls">
-    <button *ngIf="this.pause === false" type="button" (click)="this.setPause()" id="pause" class="btn btn-outline-dark btn-sm" aria-label="set Pause" #pauseButton>Pause</button>
-    <button *ngIf="this.pause === true" type="button" (click)="this.setPlay()" id="pause" class="btn btn-outline-dark btn-sm" aria-label="set Play" #pauseButton>Play</button>
+    <button *ngIf="!this.pause" type="button" (click)="this.setPause()" id="pause" class="btn btn-outline-dark btn-sm icon-Pause" aria-label="set Pause" #pauseButton></button>
+    <button *ngIf="this.pause"  type="button" (click)="this.setPlay()" id="play" class="btn btn-outline-dark btn-sm icon-Play " aria-label="set Play" #playButton></button>
 </div>
