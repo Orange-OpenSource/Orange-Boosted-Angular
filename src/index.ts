@@ -6,7 +6,7 @@
  * --------------------------------------------------------------------------
  */
 
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -42,5 +42,10 @@ const NG_BOOSTED_DECLARATIONS = [
 @NgModule({
     imports: [CommonModule, RouterModule, NgbModule, FormsModule],
     declarations: NG_BOOSTED_DECLARATIONS,
-    exports: NG_BOOSTED_DECLARATIONS})
+    exports: NG_BOOSTED_DECLARATIONS,
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+    ]
+})
 export class NgBoostedModule { }
