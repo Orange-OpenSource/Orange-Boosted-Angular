@@ -17,7 +17,7 @@ export class DemoCarousel implements OnInit {
 
     public pause: boolean;
     public changeState() {
-        if(!this.pause){
+        if (!this.pause) {
             this.carousel.pause();
             this.pause = !this.pause;
         } else {

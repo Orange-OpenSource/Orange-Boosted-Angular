@@ -15,8 +15,11 @@ export class DemoSwiper {
 
     constructor() {
         this.example1SwipeOptions = {
+        autoplay: {
+            delay: 3500,
+        },
         slidesPerView: 1,
-        loop: false,
+        loop: true,
         a11y: true,
         keyboard: {
             enabled: true,
