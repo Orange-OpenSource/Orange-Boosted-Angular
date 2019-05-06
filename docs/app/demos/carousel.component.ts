@@ -16,14 +16,14 @@ export class DemoCarousel implements OnInit {
     @ViewChild('carousel') public carousel: NgbCarousel;
 
     public pause: boolean;
-    public setPause() {
-        this.carousel.pause();
-        this.pause = !this.pause;
-    }
-
-    public setPlay() {
-        this.carousel.cycle();
-        this.pause = !this.pause;
+    public changeState() {
+        if(!this.pause){
+            this.carousel.pause();
+            this.pause = !this.pause;
+        } else {
+            this.carousel.cycle();
+            this.pause = !this.pause;
+        }
     }
 
     public ngOnInit() {

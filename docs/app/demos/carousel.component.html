@@ -29,6 +29,5 @@
     </ng-template>
 </ngb-carousel>
 <div class="btn-group" role="group" aria-label="Carousel toggle controls">
-    <button *ngIf="!this.pause" type="button" (click)="this.setPause()" id="pause" class="btn btn-outline-dark btn-sm icon-Pause" aria-label="set Pause" #pauseButton></button>
-    <button *ngIf="this.pause"  type="button" (click)="this.setPlay()" id="play" class="btn btn-outline-dark btn-sm icon-Play " aria-label="set Play" #playButton></button>
+    <button type="button" (click)="this.changeState()" id="changeState" class="btn btn-outline-dark btn-sm" [ngClass] = "!this.pause ? 'icon-Pause':'icon-Play'" [attr.aria-label]="!this.pause ? 'set Pause':'set Play'"></button>
 </div>
