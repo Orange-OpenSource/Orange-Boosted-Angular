@@ -55,7 +55,6 @@ export class OCarouselContainerComponent implements OnInit {
   public swiper: any;
 
   public showPager: boolean;
-  
   private pause: boolean;
 
   constructor( @Inject(ElementRef) private elementRef: ElementRef) {
