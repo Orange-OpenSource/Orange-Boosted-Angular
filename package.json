@@ -37,7 +37,7 @@
     "swiper": "^4.4.6"
   },
   "dependencies": {
-    "@ng-bootstrap/ng-bootstrap": "4.0.2",
+    "@ng-bootstrap/ng-bootstrap": "4.1.0",
     "autoprefixer": "^9.4.7",
     "boosted": "4.2.2",
     "classlist.js": "^1.1.20150312"
