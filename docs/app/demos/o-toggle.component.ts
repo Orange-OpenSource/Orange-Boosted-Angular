@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
     selector: 'demo-o-toggle',
@@ -10,8 +10,12 @@ import { FormsModule }   from '@angular/forms';
     `],
     template: require('./o-toggle.component.html')
 })
-export class DemoOToggle {
+export class DemoOToggle implements OnInit {
     // define which radio is toggled on init
-    model = 2;
-    model2 = 1;
+    public model = 2;
+    public model2 = 1;
+    constructor(private _analytics: Analytics) {}
+    public ngOnInit(): void {
+        this._analytics.trackPageViews();
+    }
 }

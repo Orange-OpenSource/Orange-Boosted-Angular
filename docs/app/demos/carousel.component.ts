@@ -1,5 +1,7 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { Analytics } from './shared/analytics';
+
 
 @Component({
     selector: 'demo-carousel',
@@ -14,9 +16,10 @@ import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
     providers: [NgbCarouselConfig]
 })
 export class DemoCarousel implements OnInit {
+
     @ViewChild('carousel') public carousel: NgbCarousel;
 
-    constructor(config: NgbCarouselConfig) {
+    constructor(private _analytics: Analytics, config: NgbCarouselConfig) {
         config.interval = 1500;
         config.wrap = true;
         config.keyboard = true;
@@ -38,5 +41,6 @@ export class DemoCarousel implements OnInit {
 
     public ngOnInit() {
         this.pause = false;
+        this._analytics.trackPageViews();
     }
  }

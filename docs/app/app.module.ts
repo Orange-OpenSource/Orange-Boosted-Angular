@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
+import { Analytics } from './demos/shared/analytics';
+
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
 
@@ -191,7 +193,7 @@ import { Globals } from './global';
     DocOToggle,
     CodeBox
   ],
-  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Globals, Analytics],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
