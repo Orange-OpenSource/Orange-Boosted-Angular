@@ -1,4 +1,4 @@
-<ngb-carousel #carousel >
+<ngb-carousel #carousel (focus)="onFocus()" (blur)="onBlur()">
     <ng-template ngbSlide>
         <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random first slide">
         <div class="carousel-caption">

@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit} from '@angular/core';
 import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Analytics } from './shared/analytics';
 
@@ -42,5 +42,15 @@ export class DemoCarousel implements OnInit {
     public ngOnInit() {
         this.pause = false;
         this._analytics.trackPageViews();
+    }
+    public onFocus() {
+        this.carousel.interval = 0;
+        this.carousel.pause();
+        this.pause = !this.pause;
+    }
+    public onBlur() {
+        this.carousel.interval = 1500;
+        this.carousel.cycle();
+        this.pause = !this.pause;
     }
  }
