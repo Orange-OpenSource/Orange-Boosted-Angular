@@ -13,7 +13,8 @@ import {
   Injectable,
   Inject,
   ElementRef,
-  OnInit
+  OnInit,
+  HostListener
 } from '@angular/core';
 
 import Swiper from 'swiper/dist/js/swiper';
@@ -86,5 +87,28 @@ export class OCarouselContainerComponent implements OnInit {
     setTimeout(() => {
       this.swiper.update();
     });
+  }
+  @HostListener('mouseenter') public onMouseEnter() {
+    this.swiper.autoplay.stop();
+    this.pause = !this.pause;
+    console.log('mouse enter');
+  }
+
+  @HostListener('mouseleave') public onMouseLeave() {
+    this.swiper.autoplay.start();
+    this.pause = !this.pause;
+    console.log('mouse leave');
+  }
+
+  @HostListener('focus') public onFocusIn() {
+    this.swiper.autoplay.start();
+    this.pause = !this.pause;
+    console.log('gainig focus');
+  }
+
+  @HostListener('blur') public onFocusOut() {
+    this.swiper.autoplay.start();
+    this.pause = !this.pause;
+    console.log('loosing focus');
   }
 }
