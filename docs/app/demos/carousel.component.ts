@@ -23,7 +23,7 @@ export class DemoCarousel implements OnInit {
         config.interval = 1500;
         config.wrap = true;
         config.keyboard = true;
-        config.pauseOnHover = false; 
+        config.pauseOnHover = true; 
     }
 
     public pause: boolean;
