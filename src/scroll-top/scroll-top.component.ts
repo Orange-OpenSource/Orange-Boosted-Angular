@@ -13,7 +13,7 @@ import { Component, Input, HostListener } from '@angular/core';
   styles: ['a { display: inline;}'], // boosted css fix
   template: `
     <a href="javascript:void(0)" class="o-scroll-up" title="{{label}}"
-    onclick="window.scrollTo(0, 0);" *ngIf="showMe">
+    (click)="scrollToTop()" *ngIf="showMe">
       <span class="o-scroll-up-text hidden-sm-down">{{label}}</span>
       <span class="o-scroll-up-icon" aria-hidden="true"></span>
     </a>
@@ -33,5 +33,9 @@ export class ScrollTopComponent {
     } else {
         this.showMe = false;
     }
+  }
+
+  public scrollToTop() {
+    document.documentElement.scrollTop = 0;
   }
 }

@@ -1,4 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
     selector: 'demo-swiper',
@@ -10,10 +11,10 @@ import { Component, ViewChild } from '@angular/core';
     `],
     template: require('./swiper.component.html')
 })
-export class DemoSwiper {
-    example1SwipeOptions: any;
+export class DemoSwiper implements OnInit {
+    public example1SwipeOptions: any;
 
-    constructor() {
+    constructor(private _analytics: Analytics) {
         this.example1SwipeOptions = {
         slidesPerView: 1,
         loop: false,
@@ -32,5 +33,8 @@ export class DemoSwiper {
             prevEl: '.swiper-button-prev',
         }
       };
+    }
+    public ngOnInit(): void {
+        this._analytics.trackPageViews();
     }
 }
