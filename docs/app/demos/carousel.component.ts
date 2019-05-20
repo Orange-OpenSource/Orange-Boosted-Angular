@@ -1,4 +1,4 @@
-import { Component, ViewChild, OnInit} from '@angular/core';
+import { Component, ViewChild, OnInit, HostListener } from '@angular/core';
 import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Analytics } from './shared/analytics';
 
@@ -53,4 +53,15 @@ export class DemoCarousel implements OnInit {
         this.carousel.cycle();
         this.pause = !this.pause;
     }
+
+    @HostListener('mouseenter') public onMouseEnter() {
+        this.carousel.pause();
+        this.pause = !this.pause;
+    }
+    
+    @HostListener('mouseleave') public onMouseLeave() {
+        this.carousel.cycle();
+        this.pause = !this.pause;
+      }
+    
  }
