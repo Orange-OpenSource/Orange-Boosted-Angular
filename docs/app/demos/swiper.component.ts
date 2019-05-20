@@ -16,8 +16,11 @@ export class DemoSwiper implements OnInit {
 
     constructor(private _analytics: Analytics) {
         this.example1SwipeOptions = {
+        autoplay: {
+            delay: 1500,
+        },
         slidesPerView: 1,
-        loop: false,
+        loop: true,
         a11y: true,
         keyboard: {
             enabled: true,

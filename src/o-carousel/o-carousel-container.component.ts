@@ -13,8 +13,8 @@ import {
   Injectable,
   Inject,
   ElementRef,
-  Host,
-  OnInit
+  OnInit,
+  HostListener
 } from '@angular/core';
 
 import Swiper from 'swiper/dist/js/swiper';
@@ -22,6 +22,17 @@ import Swiper from 'swiper/dist/js/swiper';
 @Injectable()
 @Component({
   selector: 'o-carousel-container',
+  styles: [`
+    .icon-Pause {
+        content: "\eabc";
+    }
+    .icon-Play {
+        content: "\eac9";
+    }
+    .swiper-pagination-bullets, swiper-container-horizontal {
+      bottom:2.5rem!important;
+    }`
+  ],
   template:
   `<div class="swiper-container">
     <div class="swiper-wrapper">
@@ -30,6 +41,9 @@ import Swiper from 'swiper/dist/js/swiper';
     <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+    <div *ngIf="pauseButton" class="btn-group" role="group" aria-label="Carousel toggle controls">
+      <button type="button" (click)="this.changeState()" id="changeState" class="btn btn-outline-dark btn-sm" [ngClass] = "!this.pause ? 'icon-Pause':'icon-Play'" [attr.aria-label]="!this.pause ? 'set Pause':'set Play'"></button>
+    </div>
   </div>`
 })
 export class OCarouselContainerComponent implements OnInit {
@@ -39,9 +53,13 @@ export class OCarouselContainerComponent implements OnInit {
   @Input()
   public options: any;
 
+  @Input()
+  public pauseButton: boolean;
+
   public swiper: any;
 
   public showPager: boolean;
+  private pause: boolean;
 
   constructor( @Inject(ElementRef) private elementRef: ElementRef) {
   }
@@ -52,11 +70,45 @@ export class OCarouselContainerComponent implements OnInit {
     setTimeout(() => {
       this.swiper = new Swiper(nativeElement.children[0], this.options);
     });
+    this.pause = false;
+  }
+
+  public changeState() {
+    if (!this.pause) {
+        this.swiper.autoplay.stop();
+        this.pause = !this.pause;
+    } else {
+        this.swiper.autoplay.start();
+        this.pause = !this.pause;
+    }
   }
 
   public update() {
     setTimeout(() => {
       this.swiper.update();
     });
+  }
+  @HostListener('mouseenter') public onMouseEnter() {
+    this.swiper.autoplay.stop();
+    this.pause = !this.pause;
+    console.log('mouse enter');
+  }
+
+  @HostListener('mouseleave') public onMouseLeave() {
+    this.swiper.autoplay.start();
+    this.pause = !this.pause;
+    console.log('mouse leave');
+  }
+
+  @HostListener('focus') public onFocusIn() {
+    this.swiper.autoplay.start();
+    this.pause = !this.pause;
+    console.log('gainig focus');
+  }
+
+  @HostListener('blur') public onFocusOut() {
+    this.swiper.autoplay.start();
+    this.pause = !this.pause;
+    console.log('loosing focus');
   }
 }

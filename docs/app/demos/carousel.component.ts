@@ -1,13 +1,67 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit, HostListener } from '@angular/core';
+import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 import { Analytics } from './shared/analytics';
+
 
 @Component({
     selector: 'demo-carousel',
-    template: require('./carousel.component.html')
+    template: require('./carousel.component.html'),
+    styles: [`
+    .icon-Pause {
+        content: "\eabc";
+    }
+    .icon-Play {
+        content: "\eac9";
+    }`],
+    providers: [NgbCarouselConfig]
 })
 export class DemoCarousel implements OnInit {
-    constructor(private _analytics: Analytics) {}
-    public ngOnInit(): void {
+
+    @ViewChild('carousel') public carousel: NgbCarousel;
+
+    constructor(private _analytics: Analytics, config: NgbCarouselConfig) {
+        config.interval = 1500;
+        config.wrap = true;
+        config.keyboard = true;
+        config.pauseOnHover = true; 
+    }
+
+    public pause: boolean;
+    public changeState() {
+        if (!this.pause) {
+            this.carousel.interval = 0;
+            this.carousel.pause();
+            this.pause = !this.pause;
+        } else {
+            this.carousel.interval = 1500;
+            this.carousel.cycle();
+            this.pause = !this.pause;
+        }
+    }
+
+    public ngOnInit() {
+        this.pause = false;
         this._analytics.trackPageViews();
     }
+    public onFocus() {
+        this.carousel.interval = 0;
+        this.carousel.pause();
+        this.pause = !this.pause;
+    }
+    public onBlur() {
+        this.carousel.interval = 1500;
+        this.carousel.cycle();
+        this.pause = !this.pause;
+    }
+
+    @HostListener('mouseenter') public onMouseEnter() {
+        this.carousel.pause();
+        this.pause = !this.pause;
+    }
+    
+    @HostListener('mouseleave') public onMouseLeave() {
+        this.carousel.cycle();
+        this.pause = !this.pause;
+      }
+    
  }
