@@ -111,10 +111,10 @@ import { Globals } from './global';
         path: 'documentation/alert',
         component: DocAlert
       },
-      {
+      /*{
         path: 'documentation/carousel',
         component: DocCarousel
-      },
+      },*/
       {
         path: 'documentation/swiper',
         component: DocSwiper
