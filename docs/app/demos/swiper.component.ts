@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'demo-swiper',
@@ -11,10 +10,10 @@ import { Analytics } from './shared/analytics';
     `],
     template: require('./swiper.component.html')
 })
-export class DemoSwiper implements OnInit {
+export class DemoSwiper {
     public example1SwipeOptions: any;
 
-    constructor(private _analytics: Analytics) {
+    constructor() {
         this.example1SwipeOptions = {
         autoplay: {
             delay: 1500,
@@ -36,8 +35,5 @@ export class DemoSwiper implements OnInit {
             prevEl: '.swiper-button-prev',
         }
       };
-    }
-    public ngOnInit(): void {
-        this._analytics.trackPageViews();
     }
 }

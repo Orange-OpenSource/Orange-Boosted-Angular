@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
@@ -7,11 +6,11 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   selector: 'demo-modal',
   template: require('./modal.component.html')
 })
-export class DemoModal implements OnInit {
+export class DemoModal {
 
     public closeResult: string;
 
-    constructor(private modalService: NgbModal, private _analytics: Analytics ) {}
+    constructor(private modalService: NgbModal) {}
 
     public open(content) {
         this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
@@ -19,10 +18,6 @@ export class DemoModal implements OnInit {
         }, (reason) => {
           this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
         });
-    }
-
-    public ngOnInit(): void {
-      this._analytics.trackPageViews();
     }
 
     private getDismissReason(reason: any): string {

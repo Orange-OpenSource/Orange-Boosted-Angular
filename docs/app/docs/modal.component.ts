@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'doc-modal',
@@ -11,9 +12,13 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocModal {
+export class DocModal implements OnInit {
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/modal.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/modal.component.ts')
   };
+  constructor(private _analytics: Analytics ) {}
+  public ngOnInit(): void {
+    this._analytics.trackPageViews();
+  }
 }
