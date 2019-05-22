@@ -13,6 +13,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
+    "publish:docs":"npm run build:docs && gh-pages --dist _gh_pages --branch gh-pages --repo https://github.com/Orange-OpenSource/Orange-Boosted-Angular.git",
     "build:dist": "npm run clean:dist && npm run lint:dist && ngc -p tsconfig-dist.json && npm run copy:dist && npm run rimraf .tmp",
     "build:docs": "rimraf _gh_pages && npm run lint:docs && webpack --progress --profile --bail",
     "build": "npm run build:dist",
