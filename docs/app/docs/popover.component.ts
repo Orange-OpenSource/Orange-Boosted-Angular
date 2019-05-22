@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'doc-popover',
@@ -25,11 +26,15 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocPopover {
+export class DocPopover implements OnInit {
   public docContent = require('html-loader!markdown-loader!./popover.component.md');
 
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/popover.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/popover.component.ts')
   };
+  constructor(private _analytics: Analytics) {}
+  public ngOnInit(): void {
+      this._analytics.trackPageViews();
+  }
 }

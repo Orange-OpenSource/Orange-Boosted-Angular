@@ -26,7 +26,7 @@ export class Analytics {
       this._router.events.pipe(
         filter((event) => event instanceof NavigationEnd)
       ).subscribe(() => {
-        ga('send', {hitType: 'pageview', page: this._location.path()});
+        // ga('send', {hitType: 'pageview', page: this._location.path()});
       });
     }
   }
@@ -36,7 +36,7 @@ export class Analytics {
    */
   public trackEvent(action: string, category: string) {
     if (this._enabled) {
-      ga('send', {hitType: 'event', eventCategory: category, eventAction: action});
+      // ga('send', {hitType: 'event', eventCategory: category, eventAction: action});
     }
   }
 }

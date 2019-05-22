@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
-import { Analytics } from './demos/shared/analytics';
+import { Analytics } from './docs/shared/analytics';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from '../../dist';
@@ -111,10 +111,10 @@ import { Globals } from './global';
         path: 'documentation/alert',
         component: DocAlert
       },
-      {
+      /*{
         path: 'documentation/carousel',
         component: DocCarousel
-      },
+      },*/
       {
         path: 'documentation/swiper',
         component: DocSwiper

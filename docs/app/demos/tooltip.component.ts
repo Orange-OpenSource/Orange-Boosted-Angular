@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'demo-tooltip',
@@ -10,9 +9,6 @@ import { Analytics } from './shared/analytics';
     `],
     template: require('./tooltip.component.html')
 })
-export class DemoTooltip implements OnInit {
-    constructor(private _analytics: Analytics) {}
-    public ngOnInit(): void {
-        this._analytics.trackPageViews();
-    }
+export class DemoTooltip {
+
 }

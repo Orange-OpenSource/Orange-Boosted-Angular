@@ -1,7 +1,5 @@
 import { Component, ViewChild, OnInit, HostListener } from '@angular/core';
 import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
-import { Analytics } from './shared/analytics';
-
 
 @Component({
     selector: 'demo-carousel',
@@ -19,14 +17,15 @@ export class DemoCarousel implements OnInit {
 
     @ViewChild('carousel') public carousel: NgbCarousel;
 
-    constructor(private _analytics: Analytics, config: NgbCarouselConfig) {
+    public pause: boolean;
+
+    constructor(config: NgbCarouselConfig) {
         config.interval = 1500;
         config.wrap = true;
         config.keyboard = true;
-        config.pauseOnHover = true; 
+        config.pauseOnHover = true;
     }
 
-    public pause: boolean;
     public changeState() {
         if (!this.pause) {
             this.carousel.interval = 0;
@@ -41,7 +40,6 @@ export class DemoCarousel implements OnInit {
 
     public ngOnInit() {
         this.pause = false;
-        this._analytics.trackPageViews();
     }
     public onFocus() {
         this.carousel.interval = 0;
@@ -58,10 +56,9 @@ export class DemoCarousel implements OnInit {
         this.carousel.pause();
         this.pause = !this.pause;
     }
-    
+
     @HostListener('mouseleave') public onMouseLeave() {
         this.carousel.cycle();
         this.pause = !this.pause;
-      }
-    
+    }
  }
