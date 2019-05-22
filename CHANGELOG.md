@@ -1,5 +1,5 @@
 <a name="4.1.3"></a> (22/05/2019)
-##4.1.3
+## 4.1.3
 ### Added
 *	Adding Orange logo (8f24268)
 *	Adding Netlify link (6817d87) and logo (a738485)
