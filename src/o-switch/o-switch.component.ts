@@ -8,15 +8,17 @@
 import {
   Component,
   Input,
-  HostBinding
+  HostBinding,
+  Output,
+  EventEmitter
 } from '@angular/core';
 
 @Component({
   selector: 'o-switch',
   template: `
-      <input class="checkbox sr-only" [class.success]="successColor" [id]="inputId" type="checkbox" [name]="inputId" [checked]="toggled"/>
+      <input class="checkbox sr-only" [class.success]="successColor" [id]="inputId" type="checkbox" [name]="inputId" [checked]="toggled" [(ngModel)]="check" (change)="checkValue(check?true:false)"/>
       <label [for]="inputId" class="toggle col-form-label" [class.toggle-rounded]="rounded" aria-hidden="true"
-      [ngStyle]="{'width': customWidth}">
+      [ngStyle]="{'width': customWidth}" >
         <span class="on" [class.svg-checkbox-tick]="onLabel === 'on'" role="presentation">
           <span [class.sr-only]="onLabel === 'on'">{{onLabel}}</span>
         </span>
@@ -27,6 +29,8 @@ import {
   `
 })
 export class OSwitchComponent {
+  public check: boolean;
+
   @HostBinding('class.o-switch')
 
   @Input()
@@ -49,4 +53,10 @@ export class OSwitchComponent {
 
   @Input()
   public offLabel = 'off';
+
+  @Output()
+  public isChecked = new EventEmitter();
+  public checkValue(event: any) {
+    this.isChecked.emit(this.check);
+ }
 }
