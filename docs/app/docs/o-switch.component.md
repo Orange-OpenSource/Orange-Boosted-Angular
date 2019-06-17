@@ -6,3 +6,4 @@ Element `<o-switch>` accepts the following parameters :
 * `successColor`set to `true` to get the success color variant of the switch.
 * `onLabel` and `offLabel` can be set to custom labels.
 * `customWidth` be sure to set a correct width according to the lenghiest custom labels used. String format is same as you would use in CSS, i.e `4.75rem`, `auto`.
+* `isChecked` an output, represents the state of the checkbox when changing is made on it.
