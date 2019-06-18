@@ -12,7 +12,7 @@ import { isNumber, toInteger } from '../util/check';
         >>> .ngb-dp-weekday {
             color: unset !important;
         }
-        .btn-custom-color {
+        .btn-custom {
             color: #fff;
             background-color: #000;
             border-color: #000;
@@ -51,14 +51,14 @@ import { isNumber, toInteger } from '../util/check';
             <div class="input-group">
                 <input (ngModelChange)="onChange(bdatepicker.value); this.focusCalendar()" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.title="{{labelInput}}" attr.aria-label="{{labelInput}}">
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.title="{{labelButton}}" attr.aria-label="{{labelButton}}" aria-haspopup="true"></button>
+                    <button [className]="color === 'white' ? 'btn btn-outline-secondary calendar-white' : 'btn btn-outline-secondary calendar-black'" (click)="d.toggle()" type="button" id="button-toggle" attr.title="{{labelButton}}" attr.aria-label="{{labelButton}}" aria-haspopup="true"></button>
                 </div>
             </div>
         </div>
     </form>
     <ng-template #footerTemplate>
         <hr class="my-0">
-        <button class="btn btn-custom-color btn-sm m-2 float-left" attr.title="{{labelFooterToday}}" attr.aria-label="{{labelFooterToday}}" (click)="model = today; this.childEvent.emit(today); d.close(); this.focusCalendar();">Today</button>
+        <button class="btn btn-custom btn-sm m-2 float-left" attr.title="{{labelFooterToday}}" attr.aria-label="{{labelFooterToday}}" (click)="model = today; this.childEvent.emit(today); d.close(); this.focusCalendar();">Today</button>
         <button class="btn btn-secondary btn-sm m-2 float-right" attr.title="{{labelFooterClose}}" attr.aria-label="{{labelFooterClose}}" (click)="d.close(); this.focusCalendar();">Close</button>
     </ng-template>
 `,
