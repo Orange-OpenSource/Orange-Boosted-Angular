@@ -30,7 +30,11 @@ import Swiper from 'swiper/dist/js/swiper';
         content: "\eac9";
     }
     .swiper-pagination-bullets, swiper-container-horizontal {
-      bottom:2.5rem!important;
+      bottom:2.5rem !important;
+    }
+    .swiper-button-prev,.swiper-button-next:focus {
+      outline: 2px solid #000 !important;
+      outline: -1px !important;
     }`
   ],
   template:
@@ -41,9 +45,7 @@ import Swiper from 'swiper/dist/js/swiper';
     <div class="swiper-pagination"></div>
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
-    <div *ngIf="pauseButton" class="btn-group" role="group" aria-label="Carousel toggle controls">
-      <button type="button" (click)="this.changeState()" id="changeState" class="btn btn-outline-dark btn-sm" [ngClass] = "!this.pause ? 'icon-Pause':'icon-Play'" [attr.aria-label]="!this.pause ? 'set Pause':'set Play'"></button>
-    </div>
+    <button *ngIf="pauseButton" type="button" (click)="this.changeState()" id="changeState" class="btn btn-outline-dark btn-sm" [ngClass] = "!this.pause ? 'icon-Pause':'icon-Play'" [attr.aria-label]="!this.pause ? 'set Pause':'set Play'"></button>
   </div>`
 })
 export class OCarouselContainerComponent implements OnInit {
