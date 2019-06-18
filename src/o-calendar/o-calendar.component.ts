@@ -7,7 +7,7 @@ import { isNumber, toInteger } from '../util/check';
     selector: 'o-calendar',
     styles: [`
         .calendar-input {
-            border-left: none;
+            border-right: none;
         }
         >>> .ngb-dp-weekday {
             color: unset !important;
@@ -23,7 +23,7 @@ import { isNumber, toInteger } from '../util/check';
             background-repeat: no-repeat;
             background-size: 23px;
             background-position: center;
-            border-right: none;
+            border-left: none;
             border-color: #ccc;
         }
         button.calendar-black {
@@ -32,7 +32,7 @@ import { isNumber, toInteger } from '../util/check';
             background-repeat: no-repeat;
             background-size: 23px;
             background-position: center;
-            border-right: none;
+            border-left: none;
             border-color: #ccc;
         }
         button.calendar-white:active, button.calendar-black:active {
@@ -49,10 +49,10 @@ import { isNumber, toInteger } from '../util/check';
     <form class="form-inline">
         <div class="form-group">
             <div class="input-group">
-                <div class="input-group-prepend">
+                <input (ngModelChange)="onChange(bdatepicker.value); this.focusCalendar()" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}">
+                <div class="input-group-append">
                     <button class="btn btn-outline-secondary calendar-{{color}}" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="{{labelButton}}" aria-haspopup="true"></button>
                 </div>
-            <input (ngModelChange)="onChange(bdatepicker.value); this.focusCalendar()" class="form-control calendar-input" #bdatepicker [footerTemplate]="footerTemplate" placeholder="{{placeHolder}}" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" attr.aria-label="{{labelInput}}">
             </div>
         </div>
     </form>
