@@ -10,5 +10,8 @@ import { Component } from '@angular/core';
     template: require('./o-switch.component.html')
 })
 export class DemoOSwitch {
-
+    public checked: boolean;
+    public getCheck(check) {
+        this.checked = check;
+    }
 }
