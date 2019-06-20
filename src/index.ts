@@ -42,10 +42,6 @@ const NG_BOOSTED_DECLARATIONS = [
 @NgModule({
     imports: [CommonModule, RouterModule, NgbModule, FormsModule],
     declarations: NG_BOOSTED_DECLARATIONS,
-    exports: NG_BOOSTED_DECLARATIONS,
-    schemas: [
-        CUSTOM_ELEMENTS_SCHEMA,
-        NO_ERRORS_SCHEMA
-    ]
+    exports: NG_BOOSTED_DECLARATIONS
 })
 export class NgBoostedModule { }
