@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-boosted": [
+        "dist/ng-boosted"
+      ],
+      "ng-boosted/*": [
+        "dist/ng-boosted/*"
+      ]
+    }
   }
 }

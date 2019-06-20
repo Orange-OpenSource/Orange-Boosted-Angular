@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "ng-boosted": {
+      "root": "projects/ng-boosted",
+      "sourceRoot": "projects/ng-boosted/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-boosted/tsconfig.lib.json",
+            "project": "projects/ng-boosted/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-boosted/src/test.ts",
+            "tsConfig": "projects/ng-boosted/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-boosted/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-boosted/tsconfig.lib.json",
+              "projects/ng-boosted/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "Orange-Boosted-Angular"
