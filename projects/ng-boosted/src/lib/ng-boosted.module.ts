@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { NgBoostedComponent } from './ng-boosted.component';
 import { ScrollTopComponent } from './o-scroll/scroll-top.component';

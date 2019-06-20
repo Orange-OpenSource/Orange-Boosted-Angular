@@ -9,20 +9,18 @@
 import { Component, Input, HostListener } from '@angular/core';
 
 @Component({
-  selector: 'scroll-top',
-  template: `
-    <a *ngIf="showMe" href="javascript:void(0)" class="o-scroll-up" title="{{label}}"
-    onclick="window.scrollTo(0, 0);">
-      <span class="o-scroll-up-text hidden-sm-down">{{label}}</span>
-      <span class="o-scroll-up-icon" aria-hidden="true"></span>
-    </a>
-  `,
+  selector: 'lib-scroll-top',
+  templateUrl: './scroll-top.component.html',
   styles: ['a { display: inline;}']
 })
 export class ScrollTopComponent {
 
-  public showMe:boolean = false;
-  @Input() public label:string;
+  public showMe = false;
+  @Input() public label: string;
+
+  public ScrollToTop() {
+    window.scrollTo(0, 0);
+  }
 
   @HostListener('window:scroll', [])
   public onWindowScroll() {
