@@ -1,4 +1,4 @@
 <a #link [routerLink]="route" [queryParams]="query" class="nav-link" routerLinkActive="active"
-       [attr.title]="title === 'undefined' ? null : title"
+       [attr.title]="title === 'undefined' ? null : title" [attr.aria-label]="title === 'undefined' ? null : title"
        [attr.aria-current]="isActive"><ng-content></ng-content>
 </a>
