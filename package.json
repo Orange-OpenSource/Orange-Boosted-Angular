@@ -7,10 +7,18 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test-ng-boosted": "ng test ng-boosted",
+    "lint-ng-boosted": "ng lint ng-boosted",
+    "build-ng-boosted": "ng build ng-boosted",
+    "publish-ng-boosted": "npm run build-ng-boosted && cd dist/ng-boosted && npm pack"
   },
   "private": true,
   "dependencies": {
+    "boosted": "4.3.1",
+    "@ng-bootstrap/ng-bootstrap": "4.2.1"
+  },
+  "devDependencies": {
     "@angular/animations": "~7.0.0",
     "@angular/common": "~7.0.0",
     "@angular/compiler": "~7.0.0",
@@ -20,11 +28,6 @@
     "@angular/platform-browser": "~7.0.0",
     "@angular/platform-browser-dynamic": "~7.0.0",
     "@angular/router": "~7.0.0",
-    "core-js": "^2.5.4",
-    "rxjs": "~6.3.3",
-    "zone.js": "~0.8.26"
-  },
-  "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
     "@angular-devkit/build-ng-packagr": "~0.10.0",
     "@angular/cli": "~7.0.2",
@@ -34,6 +37,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "codelyzer": "~4.5.0",
+    "core-js": "^2.5.4",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",
@@ -44,10 +48,12 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
+    "rxjs": "~6.3.3",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
-    "typescript": "~3.1.1"
+    "typescript": "~3.1.1",
+    "zone.js": "~0.8.26"
   }
 }
