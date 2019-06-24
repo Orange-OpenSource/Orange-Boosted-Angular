@@ -22,7 +22,7 @@ describe('ScrollTopComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create Scroll Component', () => {
     expect(component).toBeTruthy();
   });
 
@@ -33,7 +33,8 @@ describe('ScrollTopComponent', () => {
   it('The value of aria label and title of the a tag html attribute should be Go Top', () => {
     component.label = 'Go Top';
     component.showMe = true;
-    //console.log(atag);
-    //expect(atag.querySelector('a').getAttribute('title')).toEqual('Go Top');
+    fixture.detectChanges();
+    const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
+    expect(ataghtml.querySelector('a').getAttribute('title')).toEqual('Go Top');
   });
 });
