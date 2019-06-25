@@ -1,7 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ScrollTopComponent } from './scroll-top.component';
-import { DebugElement } from '@angular/core/src/debug/debug_node';
 
 describe('ScrollTopComponent', () => {
   let component: ScrollTopComponent;

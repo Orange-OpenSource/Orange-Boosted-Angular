@@ -74,7 +74,7 @@ describe('ONavbarComponent', () => {
     expect(onavLink.linkParams).toBe('/homeroute');
   });
 
-  it('Checki the click event on button', () => {
+  it('Check the click event on button', () => {
     component.homeRoute = '/homeroute';
     fixture.detectChanges();
     const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
