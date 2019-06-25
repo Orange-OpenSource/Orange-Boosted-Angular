@@ -16,7 +16,8 @@
   "private": true,
   "dependencies": {
     "boosted": "4.3.1",
-    "@ng-bootstrap/ng-bootstrap": "4.2.1"
+    "@ng-bootstrap/ng-bootstrap": "4.2.1",
+    "swiper": "^4.4.6"
   },
   "devDependencies": {
     "@angular/animations": "~7.0.0",
@@ -48,6 +49,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
+    "swiper": "^4.4.6",
     "rxjs": "~6.3.3",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
