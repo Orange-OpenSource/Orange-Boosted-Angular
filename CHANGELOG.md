@@ -1,4 +1,15 @@
-<a name="4.1.3"></a> (19/06/2019)
+<a name="4.2.1-beta.0"></a> (25/06/2019)
+## 4.2.1-beta.0
+
+### This version requires Angular 8.0.0 and Ng-Bootstrap 4.2.1
+
+### Changed/Improvement
+*	**Packages:** Update Angular and ng bootrap package [5ab3539](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5ab3539c0d2f88470b9666fb76a4c7c2ff1749c9) 
+
+### Bug Fixed
+*	**O-Calendar, Carousel, O-Navbar :** Updating ViewChild function in order to take two params due to the update of Angular [a9d3788](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/a9d37880e2dae9b2c11975aed8d72e08deb811b7)
+
+<a name="4.2.0"></a> (19/06/2019)
 ## 4.2.0
 
 ### Changed/Improvement
