@@ -7,8 +7,6 @@ import { OSwitchComponent } from './switch.component';
 describe('OSwitchComponent', () => {
   let component: OSwitchComponent;
   let fixture: ComponentFixture<OSwitchComponent>;
-  let atag: HTMLElement;
-  let inputTest;
   let input;
 
   beforeEach(async(() => {
@@ -22,9 +20,7 @@ describe('OSwitchComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(OSwitchComponent);
     component = fixture.componentInstance;
-    atag = fixture.debugElement.nativeElement;
     input  = fixture.debugElement.query(By.css('.checkbox'));
-    inputTest  = fixture.debugElement.query(By.css('.checkbox')).nativeElement;
     fixture.detectChanges();
   });
 
