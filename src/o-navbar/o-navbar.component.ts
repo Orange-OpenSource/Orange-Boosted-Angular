@@ -38,7 +38,7 @@ export class ONavLink implements DoCheck {
   @Input()
   public title: string;
 
-  @ViewChild('link')
+  @ViewChild('link', {static: true})
   public link: ElementRef;
 
   public isActive = false;
