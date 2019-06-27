@@ -16,7 +16,7 @@ import {
     AfterViewInit
   } from '@angular/core';
 
-  import { OCarouselContainerComponent } from './o-carousel-container.component';
+  import { OCarouselContainerComponent } from './o-carousel-container/o-carousel-container.component';
 
   @Injectable()
   @Component({
