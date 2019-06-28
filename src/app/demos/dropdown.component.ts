@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'demo-dropdown',
-  template: require('./dropdown.component.html')
+  templateUrl: './dropdown.component.html'
 })
 export class DemoDropdown { }

@@ -8,7 +8,7 @@ import { Component, ViewChild } from '@angular/core';
             margin-left: 0;
         }
     `],
-    template: require('./swiper.component.html')
+    templateUrl: './swiper.component.html'
 })
 export class DemoSwiper {
     example1SwipeOptions: any;

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
             font-weight: bold;
         }
     `],
-    template: require('./o-switch.component.html')
+    templateUrl: './o-switch.component.html'
 })
 export class DemoOSwitch { }

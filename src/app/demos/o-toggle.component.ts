@@ -8,7 +8,7 @@ import { FormsModule }   from '@angular/forms';
             margin-top: 2.5rem;
         }
     `],
-    template: require('./o-toggle.component.html')
+    templateUrl: './o-toggle.component.html'
 })
 export class DemoOToggle {
     // define which radio is toggled on init

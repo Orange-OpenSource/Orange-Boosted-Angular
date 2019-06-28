@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
         margin-right: 0.5rem;
     }
     `],
-    template: require('./tooltip.component.html')
+    templateUrl: './tooltip.component.html'
 })
 export class DemoTooltip { }
