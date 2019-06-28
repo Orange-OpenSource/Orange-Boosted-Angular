@@ -37,6 +37,7 @@
     "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "html-loader": "^0.5.5",
     "codelyzer": "~4.5.0",
     "core-js": "^2.5.4",
     "jasmine-core": "~2.99.1",
@@ -47,7 +48,9 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "markdown-loader": "^5.0.0",
     "ng-packagr": "^4.2.0",
+    "prismjs-loader": "^0.0.4",
     "protractor": "~5.4.0",
     "swiper": "^4.4.6",
     "rxjs": "~6.3.3",
@@ -57,5 +60,19 @@
     "tslint": "~5.11.0",
     "typescript": "~3.1.1",
     "zone.js": "~0.8.26"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues"
+  },
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3"
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
