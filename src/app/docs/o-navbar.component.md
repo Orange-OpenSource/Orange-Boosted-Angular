@@ -2,7 +2,7 @@
 
 Orange navbar component is designed to work with Angular [router](https://angular.io/docs/ts/latest/guide/router.html) module.
 
-Main element `<o-navbar>` accepts the following parameters :
+Main element `<lib-o-navbar>` accepts the following parameters :
 
 * `homeRoute` which is the default route of your application when user clicks the logo link.
 * `breakpoint` which is the bootstrap suffix for when the navbar must collapse to mobile view. Default value is `"sm"`.
@@ -10,7 +10,7 @@ Checkout Boosted [documentation](http://boosted.orange.com/v4-alpha/layout/respo
 * `brandPath` to specify path and file of the brand logo
 * `brandLabel` to specify alt text for image and link title at the same time
 
-There is three supported types of child elements to `<o-navbar>`. Each of them must use native `<li>` html element.
+There is three supported types of child elements to `<lib-o-navbar>`. Each of them must use native `<li>` html element.
 
 * `o-nav-link` for application navigation using Angular router module.
 * `o-nav-menu` for dropdown menu in navbar.

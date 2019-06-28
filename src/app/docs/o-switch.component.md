@@ -1,4 +1,4 @@
-Element `<o-switch>` accepts the following parameters :
+Element `<lib-o-switch>` accepts the following parameters :
 
 * `inputId` represents the element's `id` to be used with a `<label>` tag `for` attribute.
 * `toggled` represents the state of the switch. Can be set to `true` at initialisation.
