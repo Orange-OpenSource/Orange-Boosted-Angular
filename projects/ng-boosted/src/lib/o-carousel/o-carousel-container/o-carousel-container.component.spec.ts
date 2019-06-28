@@ -28,7 +28,7 @@ describe('OCarouselContainerComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  /*it('Firstly, pause is false', () => {
+  it('Firstly, pause is false', () => {
     expect(component.pause).toBeFalsy();
   });
 
@@ -52,7 +52,7 @@ describe('OCarouselContainerComponent', () => {
     expect(ataghtml.querySelector('button').getAttribute('aria-label')).toEqual('set Pause');
   });
 
-  it('After cliking on pause button, aria-label of the button should be Set Play by checking the aria-label', () => {
+  /*it('After cliking on pause button, aria-label of the button should be Set Play by checking the aria-label', () => {
     component.pauseButton = true;
     component.pause = true;
     component.changeState();
