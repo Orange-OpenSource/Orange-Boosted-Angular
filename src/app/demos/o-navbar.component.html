@@ -1,0 +1,17 @@
+<o-navbar homeRoute="/start" breakpoint="sm" brandPath="assets/img/orange-logo.jpg" brandLabel="Back to home page">
+     <li o-nav-link route="/documentation">Getting started</li>
+
+     <li o-nav-link route="/start" title="Shop">
+        <span class="sr-only">basket</span>
+        <span class="icon-buy" aria-hidden="true"></span>
+    </li>
+    <li ngbDropdown class="nav-item dropdown">
+        <a class="nav-link" id="dropdownBasic1" ngbDropdownToggle>Contribute</a>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <a class="dropdown-item" href="#">Github</a>
+            <a class="dropdown-item" href="#">About Markdown</a>
+        </div>
+    </li>
+
+    <li class="nav-item"><a href="http://orange.com" class="nav-link">External link</a></li>
+</o-navbar>

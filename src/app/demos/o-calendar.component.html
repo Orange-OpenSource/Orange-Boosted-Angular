@@ -1,0 +1,4 @@
+<o-calendar [color]="'black'" [labelButton]="'Open Calendar'" [labelInput]="'Calendar'" [placeHolder]="'DD/MM/YYYY'"
+[labelFooterToday]="'Today'" [labelFooterClose]="'Close'" (childEvent)="model=$event" ></o-calendar>
+<hr/>
+<pre>Model: {{ model | json }}</pre>
