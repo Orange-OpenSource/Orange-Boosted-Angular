@@ -1,221 +1,227 @@
-/* You can add global styles to this file, and also import other style files */
 /* Doc Styles */
 
+code {
+  background-color: #f5f5f5;
+}
 .navbar-nav-svg {
-    width: 1.4rem;
-  }
-  
-  .ng-banner {
-    margin-bottom: 3.75rem;
-  }
-  
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.footer-svg {
+  height: 1.6rem;
+}
+
+.ng-banner {
+  margin-bottom: 3.75rem;
+}
+
+.head h1 {
+  margin-top: 3.75rem;
+  font-size: 3.755rem;
+  letter-spacing: -1px;
+}
+
+.head .lead {
+  font-size: 1rem;
+  margin-top: 1.25rem;
+}
+
+.head .lead a {
+  text-decoration: underline;
+}
+
+.head svg {
+  margin-top: 2.5rem;
+}
+
+.head img {
+  height: 14.75rem;
+  margin-top: 3.75rem;
+}
+
+.version {
+  margin-left: 1.875rem;
+}
+
+.only-in-ng {
+  background-color: #eee;
+}
+
+.only-in-ng .col-md-5 {
+  display: flex;
+}
+
+.only-in-ng .inner {
+  align-self: center;
+}
+
+.only-in-ng h2 {
+  font-size: 1.5rem;
+}
+
+.only-in-ng img {
+  width: 100%;
+  margin: 3.755rem 0;
+}
+
+.only-in-ng .o-square-list li::before {
+  color: #000;
+}
+ 
+h2 {
+  margin-top: 1.25rem;
+}
+
+.bd-sidebar {
+  list-style: none;
+}
+
+.bd-sidebar li {
+  line-height: 1.375;
+}
+
+.bd-sidebar a {
+  font-size: 1rem;
+  padding: .25rem .75rem;
+}
+
+.doc-link {
+  margin-left: .625rem;
+  font-size: 1.5rem;
+}
+
+article {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+/* local nav */
+
+#component_nav {
+  border-right: 1px solid #eee;
+}
+
+.o-nav-local {
+  border: 0;
+  flex-direction: column;
+}
+
+.o-nav-local > .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.o-nav-local .nav-item,
+.o-nav-local .nav-item + .nav-item,
+.o-nav-local .nav-item:first-child {
+  margin-left: 0rem;
+}
+
+.o-nav-local .nav .nav-link {
+  font-weight: 400;
+  padding-top: .5rem;
+  padding-left: 0;
+  padding-bottom: .5rem;
+}
+
+.o-nav-local .nav .nav-link.active {
+  color: #f16e00;
+}
+
+.o-nav-local .nav-item:first-child {
+  margin: 24px 0;
+}
+
+.doc-ext-link {
+  margin-top: 33px;
+}
+
+/* for code boxes */
+
+.token.tag {
+  font-size: .7875rem;
+}
+
+/* footer */
+
+.o-footer {
+  margin-top: 0;
+}
+
+.o-footer .o-footer-top {
+  padding: 1.25rem 0;
+}
+.o-footer .nav-link {
+  display: inline-block;
+}
+
+.o-footer .nav-link + .nav-link {
+    margin-left: -.625rem;
+}
+
+@media (max-width: 767px) {
   .head h1 {
-    margin-top: 3.75rem;
-    font-size: 3.755rem;
-    letter-spacing: -1px;
+    font-size: 2.5rem;
   }
   
-  .head .lead {
-    font-size: 1rem;
-    margin-top: 1.25rem;
+  .head .col-md-7 {
+    order: 1;
   }
-  
-  .head .lead a {
-    text-decoration: underline;
+
+  .head .col-md-5 {
+    text-align: center;
   }
-  
-  .head svg {
-    margin-top: 2.5rem;
-  }
-  
-  .head img {
-    height: 14.75rem;
-    margin-top: 3.75rem;
-  }
-  
-  .version {
-    margin-left: 1.875rem;
-  }
-  
+
   .only-in-ng {
-    background-color: #eee;
+    padding-bottom: 3.75rem;
   }
-  
-  .only-in-ng .col-md-5 {
-    display: flex;
-  }
-  
-  .only-in-ng .inner {
-    align-self: center;
-  }
-  
-  .only-in-ng h2 {
-    font-size: 1.5rem;
-  }
-  
-  .only-in-ng img {
-    width: 100%;
-    margin: 3.755rem 0;
-  }
-  
-  .only-in-ng .o-square-list li::before {
-    color: #000;
-  }
-   
-  h2 {
-    margin-top: 1.25rem;
-  }
-  
-  .bd-sidebar {
-    list-style: none;
-  }
-  
-  .bd-sidebar li {
-    line-height: 1.375;
-  }
-  
-  .bd-sidebar a {
-    font-size: 1rem;
-    padding: .25rem .75rem;
-  }
-  
-  .doc-link {
-    margin-left: .625rem;
-    font-size: 1.5rem;
-  }
-  
-  article {
-    overflow: hidden;
-    margin-bottom: 1rem;
-  }
-  
-  /* local nav */
-  
+
   #component_nav {
-    border-right: 1px solid #eee;
-  }
-  
-  .o-nav-local {
     border: 0;
+  }
+
+  .o-nav-local {
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .o-nav-local .nav {
     flex-direction: column;
+    width: 100%;
   }
-  
-  .o-nav-local > .container {
+
+  .o-nav-local .nav-item:first-child,
+  .o-nav-local .nav-item + .nav-item {
+    margin-left: 0;
+  }
+
+  .o-nav-local .nav-link {
+    font-weight: normal;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .o-nav-local {
+    position: sticky; /* Firefox & Chrome only */
+    top: 0; /* for position sticky */
+    display: flex !important;
+  }
+
+  .o-nav-local hr {
+    display: none;
+  }
+
+  .o-nav-local .nav-link {
+    font-weight: normal;
+    padding: .5rem 0;
+  }
+
+   .o-nav-local .nav {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-wrap: nowrap;
   }
-  
-  .o-nav-local .nav-item,
-  .o-nav-local .nav-item + .nav-item,
-  .o-nav-local .nav-item:first-child {
-    margin-left: 0rem;
-  }
-  
-  .o-nav-local .nav .nav-link {
-    font-weight: 400;
-    padding-top: .5rem;
-    padding-left: 0;
-    padding-bottom: .5rem;
-  }
-  
-  .o-nav-local .nav .nav-link.active {
-    color: #f16e00;
-  }
-  
-  .o-nav-local .nav-item:first-child {
-    margin: 24px 0;
-  }
-  
-  .doc-ext-link {
-    margin-top: 33px;
-  }
-  
-  /* for code boxes */
-  
-  .token.tag {
-    font-size: .7875rem;
-  }
-  
-  /* footer */
-  
-  .o-footer {
-    margin-top: 0;
-  }
-  
-  .o-footer .o-footer-top {
-    padding: 1.25rem 0;
-  }
-  .o-footer .nav-link {
-    display: inline-block;
-  }
-  
-  .o-footer .nav-link + .nav-link {
-      margin-left: -.625rem;
-  }
-  
-  @media (max-width: 767px) {
-    .head h1 {
-      font-size: 2.5rem;
-    }
-    
-    .head .col-md-7 {
-      order: 1;
-    }
-  
-    .head .col-md-5 {
-      text-align: center;
-    }
-  
-    .only-in-ng {
-      padding-bottom: 3.75rem;
-    }
-  
-    #component_nav {
-      border: 0;
-    }
-  
-    .o-nav-local {
-      margin-top: 12px;
-      margin-bottom: 0;
-    }
-  
-    .o-nav-local .nav {
-      flex-direction: column;
-      width: 100%;
-    }
-  
-    .o-nav-local .nav-item:first-child,
-    .o-nav-local .nav-item + .nav-item {
-      margin-left: 0;
-    }
-  
-    .o-nav-local .nav-link {
-      font-weight: normal;
-      width: 100%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .o-nav-local {
-      position: sticky; /* Firefox & Chrome only */
-      top: 0; /* for position sticky */
-      display: flex !important;
-    }
-  
-    .o-nav-local hr {
-      display: none;
-    }
-  
-    .o-nav-local .nav-link {
-      font-weight: normal;
-      padding: .5rem 0;
-    }
-  
-     .o-nav-local .nav {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-  }
-  
-  
+}
+
