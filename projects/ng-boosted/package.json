@@ -1,6 +1,15 @@
 {
   "name": "ng-boosted",
-  "version": "0.0.1",
+  "version": "4.2.1-beta.1",
+  "description": "Orange Boosted with Bootstrap 4 and Angular",
+  "keywords": [
+    "boosted",
+    "angular",
+    "typescript"
+  ],
+  "author": "Orange",
+  "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.0.0",
     "@angular/core": "^8.0.0"
@@ -10,5 +19,16 @@
       "boosted": "4.2.2",
       "classlist.js": "^1.1.20150312",
       "swiper": "^4.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues"
+  },
+  "engines": {
+    "node": ">= 4.2.1",
+    "npm": ">= 3"
   }
 }
