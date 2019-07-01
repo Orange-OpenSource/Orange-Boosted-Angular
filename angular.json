@@ -27,9 +27,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../Orange-Boosted-Angular/node_modules/boosted/scss/boosted.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "../Orange-Boosted-Angular/node_modules/swiper/dist/js/swiper.min.js",
+              "../Orange-Boosted-Angular/node_modules/jquery/dist/jquery.min.js",
+              "../Orange-Boosted-Angular/node_modules/popper.js/dist/umd/popper.min.js",
+              "../Orange-Boosted-Angular/node_modules/boosted/dist/js/boosted.min.js"
+            ]
           },
           "configurations": {
             "production": {
