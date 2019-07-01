@@ -25,7 +25,7 @@ import { Component, Input, HostBinding, ElementRef, ViewChild, DoCheck } from '@
     @Input()
     public title: string;
 
-    @ViewChild('link')
+    @ViewChild('link', {static: true})
     public link: ElementRef;
 
     public isActive = false;
