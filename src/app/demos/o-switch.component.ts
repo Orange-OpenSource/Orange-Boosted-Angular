@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
             font-weight: bold;
         }
     `],
-    templateUrl: './o-switch.component.html'
+    template: require('./o-switch.component.html')
 })
-export class DemoOSwitch { }
+export class DemoOSwitch {
+    public checked: boolean;
+    public getCheck(check) {
+        this.checked = check;
+    }
+}

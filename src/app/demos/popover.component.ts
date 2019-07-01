@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
         margin-right: 0.5rem;
     }
     `],
-    templateUrl: './popover.component.html'
+    template: require('./popover.component.html')
 })
-export class DemoPopover { }
+export class DemoPopover  {
+
+ }

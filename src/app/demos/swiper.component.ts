@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'demo-swiper',
@@ -8,15 +8,18 @@ import { Component, ViewChild } from '@angular/core';
             margin-left: 0;
         }
     `],
-    templateUrl: './swiper.component.html'
+    template: require('./swiper.component.html')
 })
 export class DemoSwiper {
-    example1SwipeOptions: any;
+    public example1SwipeOptions: any;
 
     constructor() {
         this.example1SwipeOptions = {
+        autoplay: {
+            delay: 1500,
+        },
         slidesPerView: 1,
-        loop: false,
+        loop: true,
         a11y: true,
         keyboard: {
             enabled: true,

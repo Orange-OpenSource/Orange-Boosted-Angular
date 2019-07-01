@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
 
 @Component({
     selector: 'demo-o-toggle',
@@ -8,10 +7,10 @@ import { FormsModule }   from '@angular/forms';
             margin-top: 2.5rem;
         }
     `],
-    templateUrl: './o-toggle.component.html'
+    template: require('./o-toggle.component.html')
 })
 export class DemoOToggle {
     // define which radio is toggled on init
-    model = 2;
-    model2 = 1;
+    public model = 2;
+    public model2 = 1;
 }

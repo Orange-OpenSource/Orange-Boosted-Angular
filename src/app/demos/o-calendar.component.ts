@@ -42,7 +42,7 @@ public getDayAriaLabel(date: NgbDateStruct): string {
 @Component({
     selector: 'demo-o-calendar',
     styles: [],
-    templateUrl: './o-calendar.component.html',
+    template: require('./o-calendar.component.html'),
     providers: [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
 })
 export class DemoOCalendar {

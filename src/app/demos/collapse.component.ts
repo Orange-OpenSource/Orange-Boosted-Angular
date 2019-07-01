@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'demo-collapse',
-  templateUrl: './collapse.component.html'
+  template: require('./collapse.component.html')
 })
-export class DemoCollapse { }
+export class DemoCollapse {
+
+}

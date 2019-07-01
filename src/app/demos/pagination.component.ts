@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'demo-pagination',
-    templateUrl: './pagination.component.html'
+    template: require('./pagination.component.html')
 })
-export class DemoPagination { }
+export class DemoPagination {
+}
