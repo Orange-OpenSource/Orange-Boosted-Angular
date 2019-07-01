@@ -19,6 +19,7 @@
     "boosted": "4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
+    "prismjs": "^1.16.0",
     "swiper": "^4.4.6"
   },
   "devDependencies": {

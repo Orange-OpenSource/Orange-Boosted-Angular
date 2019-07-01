@@ -28,7 +28,12 @@
             ],
             "styles": [
               "src/styles.scss",
-              "../Orange-Boosted-Angular/node_modules/boosted/scss/boosted.scss"
+              "../Orange-Boosted-Angular/node_modules/boosted/scss/boosted.scss",
+              "../Orange-Boosted-Angular/node_modules/boosted/dist/css/orangeHelvetica.css",
+              "../Orange-Boosted-Angular/node_modules/boosted/dist/css/orangeIcons.css",
+              "../Orange-Boosted-Angular/node_modules/swiper/dist/css/swiper.css",
+              "../Orange-Boosted-Angular/node_modules/prismjs/themes/prism.css"
+              
             ],
             "scripts": [
               "../Orange-Boosted-Angular/node_modules/swiper/dist/js/swiper.min.js",
