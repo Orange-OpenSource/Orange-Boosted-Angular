@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'doc-o-navbar',
@@ -17,11 +18,16 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocONavbar {
+export class DocONavbar implements OnInit {
   public docContent = require('html-loader!markdown-loader!./o-navbar.component.md');
 
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-navbar.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/o-navbar.component.ts')
   };
+
+  constructor(private _analytics: Analytics) {}
+    public ngOnInit(): void {
+        // this._analytics.trackPageViews();
+    }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'doc-o-calendar',
@@ -17,11 +18,16 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOCalendar {
+export class DocOCalendar implements OnInit {
   public docContent = require('html-loader!markdown-loader!./o-calendar.component.md');
 
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-calendar.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/o-calendar.component.ts')
   };
+  constructor( private _analytics: Analytics ) {}
+
+  public ngOnInit(): void {
+    // this._analytics.trackPageViews();
+  }
 }

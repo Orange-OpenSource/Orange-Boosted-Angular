@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'doc-o-scroll-top',
@@ -16,10 +17,15 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOScrollTop {
+export class DocOScrollTop implements OnInit {
   public docContent = require('html-loader!markdown-loader!./o-scroll-top.component.md');
 
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-scroll-top.component.html')
   };
+
+  constructor(private _analytics: Analytics) {}
+    public ngOnInit(): void {
+        // this._analytics.trackPageViews();
+    }
 }

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Analytics } from './shared/analytics';
 
 @Component({
   selector: 'doc-tooltip',
@@ -10,9 +11,13 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocTooltip {
+export class DocTooltip implements OnInit {
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/tooltip.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/tooltip.component.ts')
   };
+  constructor(private _analytics: Analytics) {}
+  public ngOnInit(): void {
+      // this._analytics.trackPageViews();
+  }
 }
