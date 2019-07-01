@@ -1,6 +1,16 @@
 {
-  "name": "orange-boosted-angular",
-  "version": "0.0.0",
+  "name": "ng-boosted",
+  "version": "4.2.1-beta.1",
+  "description": "Orange Boosted with Bootstrap 4 and Angular",
+  "keywords": [
+    "boosted",
+    "angular",
+    "webpack",
+    "typescript"
+  ],
+  "author": "Orange",
+  "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,10 +18,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test-ng-boosted": "ng test ng-boosted",
-    "lint-ng-boosted": "ng lint ng-boosted",
-    "build-ng-boosted": "ng build ng-boosted",
-    "publish-ng-boosted": "npm run build-ng-boosted && cd dist/ng-boosted && npm pack"
+    "test-lib-ng-boosted": "ng test ng-boosted",
+    "lint-lib-ng-boosted": "ng lint ng-boosted",
+    "build-lib-ng-boosted": "ng build ng-boosted",
+    "publish-lib-ng-boosted": "npm run build-ng-boosted && cd dist/ng-boosted && npm pack"
   },
   "private": true,
   "dependencies": {
