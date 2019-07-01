@@ -9,7 +9,8 @@
 import { Component, Input, HostBinding, ElementRef, ViewChild, DoCheck } from '@angular/core';
 
   @Component({
-    selector: 'lib-li[o-nav-link]',
+    // tslint:disable-next-line:component-selector
+    selector: 'li[o-nav-link]',
     templateUrl: './o-nav-link.component.html'
   })
   export class ONavLinkComponent implements DoCheck {
