@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'demo-alert',
-    template: require('./alert.component.html')
+    templateUrl: './alert.component.html'
 })
 export class DemoAlert {
   @Input()

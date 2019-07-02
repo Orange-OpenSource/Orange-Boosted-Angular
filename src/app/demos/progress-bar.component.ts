@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
       margin-top: 1rem;
     }
   `],
-  template: require('./progress-bar.component.html')
+  templateUrl: './progress-bar.component.html'
 })
 
 export class DemoProgressBar {

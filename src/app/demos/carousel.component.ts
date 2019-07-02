@@ -3,7 +3,7 @@ import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
     selector: 'demo-carousel',
-    template: require('./carousel.component.html'),
+    templateUrl: './carousel.component.html',
     styles: [`
     .icon-Pause {
         content: "\eabc";
