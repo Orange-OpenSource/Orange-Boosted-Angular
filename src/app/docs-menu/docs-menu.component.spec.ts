@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NgBoostedModule } from 'ng-boosted';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { DocsMenuComponent } from './docs-menu.component';
 
@@ -8,6 +10,9 @@ describe('DocsMenuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        NgBoostedModule, NgbModule
+      ],
       declarations: [ DocsMenuComponent ]
     })
     .compileComponents();
@@ -21,5 +26,9 @@ describe('DocsMenuComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+  
+  it(`should have iscollapsed set to true`, () => {
+    expect(component.isCollapsed).toBeTruthy();
   });
 });

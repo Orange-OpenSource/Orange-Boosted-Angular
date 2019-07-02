@@ -22,4 +22,10 @@ describe('StartComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have <h3> with "Dependencies"', () => {
+    const bannerElement: HTMLElement = fixture.nativeElement;
+    const p = bannerElement.querySelector('h3');
+    expect(p.textContent).toEqual('Dependencies');
+  });
 });
