@@ -17,10 +17,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "test-lib-ng-boosted": "ng test ng-boosted",
-    "lint-lib-ng-boosted": "ng lint ng-boosted",
-    "build-lib-ng-boosted": "ng build ng-boosted",
-    "publish-lib-ng-boosted": "npm run build-ng-boosted && cd dist/ng-boosted && npm pack"
+    "copy-readme": "cpx ./README.md dist/ng-boosted",
+    "test-lib": "ng test ng-boosted",
+    "lint-lib": "ng lint ng-boosted",
+    "build-lib": "ng build ng-boosted",
+    "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
   },
   "private": true,
   "dependencies": {
@@ -52,6 +53,7 @@
     "html-loader": "^0.5.5",
     "codelyzer": "~4.5.0",
     "core-js": "^2.5.4",
+    "cpx": "^1.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.0.0",
