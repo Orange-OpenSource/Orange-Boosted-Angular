@@ -27,10 +27,13 @@
   "dependencies": {
     "@ng-bootstrap/ng-bootstrap": "4.2.1",
     "boosted": "4.3.1",
+    "classlist.js": "^1.1.20150312",
     "jquery": "^3.4.1",
+    "ng-boosted": "4.2.1-beta.1",
     "popper.js": "^1.15.0",
     "prismjs": "^1.16.0",
-    "swiper": "^4.4.6"
+    "swiper": "^4.4.6",
+    "web-animations-js": "^2.3.2"
   },
   "devDependencies": {
     "@angular/animations": "~8.0.0",
