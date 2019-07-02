@@ -5,4 +5,5 @@ import { Component } from '@angular/core';
     templateUrl: './pagination.component.html'
 })
 export class DemoPagination {
+    public page = 1;
 }
