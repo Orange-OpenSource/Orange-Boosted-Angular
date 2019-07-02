@@ -7,6 +7,8 @@ import { Analytics } from './docs/shared/analytics';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from 'ng-boosted';
 
+import { Globals } from './directives/global';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
@@ -99,7 +101,7 @@ import { CodeBox } from './docs/code-box.component';
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [Analytics],
+  providers: [Analytics, Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
