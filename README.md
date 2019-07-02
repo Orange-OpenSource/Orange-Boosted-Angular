@@ -6,6 +6,7 @@ It also explains the basic mechanics of using `git`, `node`, and `npm`.
 * [Prerequisite Software](#prerequisite-software)
 * [Getting the Sources](#getting-the-sources)
 * [Installing NPM Modules](#installing-npm-modules)
+* [Installing Ng-Boosted](#installing-lib)
 * [Running demo Locally](#running-demo-locally)
 * [Copyright and license](#copyright-and-license)
 
@@ -20,7 +21,7 @@ following products on your development machine:
 
 ## Getting the Sources
 
-Clone this repository
+Clone this repository [Orange Boosted Angular](https://github.com/Orange-OpenSource/Orange-Boosted-Angular.git)
 
 
 ## Installing NPM Modules
@@ -31,6 +32,10 @@ Next, install the JavaScript modules needed to build Ng-Boosted:
 # Install Ng-Boosted project dependencies (package.json)
 npm install
 ```
+
+## Installing Ng-Boosted
+
+Here is the [explanation](https://ng-boosted.orange.com/#/start) on how to install and use ng-boosted library.
 
 ## Copyright and license
 
