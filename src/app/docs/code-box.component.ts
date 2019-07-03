@@ -33,5 +33,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CodeBox {
     @Input()
-    public snippets: Object;
+    public snippets = {markup: '', typescript: ''};
 }
