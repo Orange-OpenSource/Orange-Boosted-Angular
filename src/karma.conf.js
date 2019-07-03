@@ -32,7 +32,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['ChromeHeadless', 'ChromeHeadlessNoSandbox'],
+    browsers: ['Firefox','ChromeHeadless', 'ChromeHeadlessNoSandbox'],
     singleRun: false,
     restartOnFileChange: true
   });
