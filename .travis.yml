@@ -17,4 +17,6 @@ install:
 
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
+  - npm run build-lib -- --no-watch --no-progress --browsers=ChromeHeadless
   - npm run test -- --no-watch --no-progress --browsers=ChromeHeadless
+  - npm run build-aot -- --no-watch --no-progress --browsers=ChromeHeadless
