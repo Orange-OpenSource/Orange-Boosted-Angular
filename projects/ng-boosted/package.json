@@ -18,7 +18,8 @@
       "@ng-bootstrap/ng-bootstrap": "4.2.1",
       "boosted": "^4.3.1",
       "classlist.js": "^1.1.20150312",
-      "swiper": "^4.4.1"
+      "swiper": "^4.4.1",
+      "@types/swiper": "^4.4.3"
   },
   "repository": {
     "type": "git",
