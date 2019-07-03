@@ -62,8 +62,7 @@ describe('ONavLinkComponent', () => {
     const onavLinkDe = linkDes[0];
     const onavLink = routerLinks[0];
 
-    // onavLinkDe.nativeElement.click();
-    onavLinkDe.triggerEventHandler('click', null);
+    onavLinkDe.nativeElement.click();
     fixture.detectChanges();
 
     expect(onavLink.linkParams).toBe('/test');

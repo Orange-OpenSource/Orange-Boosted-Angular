@@ -1,8 +1,12 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { By } from '@angular/platform-browser';
+
 import { RouterTestingModule } from '@angular/router/testing';
+import { RouterModule } from '@angular/router';
 
 import { RouterLinkDirective } from '../../testing/router-link-directive';
+import { TestComponent } from '../../testing/test.component';
 
 import { ONavbarComponent } from './o-navbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -18,8 +22,8 @@ describe('ONavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, NgbModule],
-      declarations: [ ONavbarComponent, RouterLinkDirective ]
+      imports: [RouterTestingModule, NgbModule, RouterModule.forRoot([{path: 'home', component: TestComponent}]) ],
+      declarations: [ ONavbarComponent, TestComponent, RouterLinkDirective ]
     })
     .compileComponents();
   }));
@@ -56,26 +60,26 @@ describe('ONavbarComponent', () => {
     expect(ataghtml.querySelector('img').getAttribute('src')).toEqual('/src/img/');
   });
 
-  it('Get RouterLinks from tempalte and check if it is equal to homeroute', () => {
-    component.homeRoute = '/homeroute';
+  it('Get RouterLinks from tempalte and check if it is equal to home', () => {
+    component.homeRoute = '/home';
     fixture.detectChanges();
-    expect(routerLinks[0].linkParams).toBe('/homeroute');
+    expect(routerLinks[0].linkParams).toBe('/home');
   });
 
   it('Simulated a click on nav link', () => {
-    component.homeRoute = '/homeroute';
+    component.homeRoute = '/home';
     const onavLinkDe = linkDes[0];
     const onavLink = routerLinks[0];
 
-    // onavLinkDe.nativeElement.click();
-    onavLinkDe.triggerEventHandler('click', null);
+    fixture.detectChanges();
+    onavLinkDe.nativeElement.click();
     fixture.detectChanges();
 
-    expect(onavLink.linkParams).toBe('/homeroute');
+    expect(onavLink.navigatedTo).toBe('/home');
   });
 
   it('Check the click event on button', () => {
-    component.homeRoute = '/homeroute';
+    component.homeRoute = '/home';
     fixture.detectChanges();
     const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
     testButton.triggerEventHandler('click', null);
