@@ -1,3 +1,15 @@
+<a name="4.2.1-beta.1"></a> (27/06/2019)
+## 4.2.1-beta.1
+
+### This version requires Angular 8.0.0 and Ng-Bootstrap 4.2.1
+
+### Changed/Improvement
+*	**Package:** Adding Angular-Cli, remaking the library [3fed9aa](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/3fed9aa01b80ae7937a4bad2192cfa25d94f323e) 
+
+### Bug Fixed
+*	**O-Calendar, O-Carousel, O-Navbar, O-Scroll, O-switch :** From now on plus add lib when calling the selector of the component as lib-o-navbar, lib-o-scrool, lib-o-switch, lib-o-carousel-slide, lib-o-calendar [c909875](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/c90987584e9f0153b9d46abec8b070aeeac791f3)
+
+
 <a name="4.2.1-beta.0"></a> (25/06/2019)
 ## 4.2.1-beta.0
 
