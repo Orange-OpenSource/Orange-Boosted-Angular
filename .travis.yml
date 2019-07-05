@@ -6,7 +6,7 @@ node_js:
   - "10.4.1"
 
 addons:
-  firefox: "49.0"
+  chrome: stable,
 
 cache:
   directories:
