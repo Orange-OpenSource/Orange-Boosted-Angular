@@ -16,5 +16,4 @@ install:
   - npm install
 
 script:
-  - npm run test ng-boosted -- --no-watch --no-progress
-  - npm run test -- --no-watch --no-progress
+  - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
