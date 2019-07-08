@@ -18,7 +18,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-aot": "ng build --aot",
-    "publish-docs": "npm run build-aot && git add dist/Orange-Boosted-Angular && git commit -m \"chore: compile documentation\" --allow-empty && git push origin gh-pages && echo 'Documentation successfully deployed !'",
+    "publish-docs": "npm run build-aot && git checkout gh-pages && git add dist/Orange-Boosted-Angular && git commit -m \"chore: compile documentation\" --allow-empty && git push origin gh-pages && echo 'Documentation successfully deployed !'",
     "copy-readme": "cpx ./README.md dist/ng-boosted",
     "test-lib": "ng test ng-boosted",
     "lint-lib": "ng lint ng-boosted",
