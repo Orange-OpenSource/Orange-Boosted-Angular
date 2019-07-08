@@ -17,7 +17,7 @@ import {
     HostListener
   } from '@angular/core';
 
-  import Swiper from 'swiper';
+  import Swiper from 'swiper/dist/js/swiper';
 
   @Injectable()
   @Component({
