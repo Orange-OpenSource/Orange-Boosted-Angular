@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { Analytics } from './docs/shared/analytics';
 
@@ -101,7 +102,7 @@ import { CodeBox } from './docs/code-box.component';
     NgbModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [Analytics, Globals],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Analytics, Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
