@@ -1,5 +1,8 @@
 # Orange Boosted Angular
 
+[![npm version](https://badge.fury.io/js/ng-boosted.svg)](https://badge.fury.io/js/ng-boosted)
+[![Build Status](https://travis-ci.org/Orange-OpenSource/Orange-Boosted-Angular.svg?branch=refacto-structure)](https://travis-ci.org/Orange-OpenSource/Orange-Boosted-Angular)
+
 This document describes how to set up your development environment to build and test Ng-Boosted.
 It also explains the basic mechanics of using `git`, `node`, and `npm`.
 
