@@ -26,5 +26,6 @@ deploy:
   keep_history: true
   local_dir: dist/Orange-Boosted-Angular
   fqdn: ng-boosted.orange.com
+  target_branch: test-gh-pages
   on:
     branch: refacto-structure
