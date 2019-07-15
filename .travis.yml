@@ -27,4 +27,4 @@ deploy:
   local_dir: dist/Orange-Boosted-Angular
   fqdn: ng-boosted.orange.com
   on:
-    branch: master
+    branch: refacto-structure
