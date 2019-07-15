@@ -1,3 +1,19 @@
+<a name="4.2.1"></a> (15/07/2019)
+## 4.2.1
+
+### This version requires Angular > 7.0.0 and Ng-Bootstrap 4.2.1
+
+### Changes
+*	**O-Calendar, O-Carousel, O-Navbar, O-Scroll, O-switch :** From now on, add lib when calling the selector of the component as lib-o-navbar, lib-o-scrool, lib-o-switch, lib-o-carousel-slide, lib-o-calendar [c909875](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/c90987584e9f0153b9d46abec8b070aeeac791f3)
+
+*	**lib-O-Calendar, lib-O-Carousel, lib-O-Navbar, lib-O-Scroll, lib-O-switch :** Improvement have been done on testing the DOM of each component [ec0a1e9](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ec0a1e97dd418cd5804491bd6d8a54a2a1dd2e23)
+*	**O-Carousel :** Removing types/swiper [e58474b](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/e58d74b583eb72c73d3eae57526b0e3ad6069502)
+
+### Bug Fixed
+*	**lib-O-Navbar :** Updating the dropdown item in lib-o-navbar and changing the call name inside the documentation from <o-navbar> to <lib-o-navbar> [eb52030](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/92/commits/eb52030a7bf230d03cc8f69491c9b586033bb744)
+
+*	**lib-O-Navbar :** Changing the call name inside the documentation from <o-navbar> to <lib-o-navbar> [0eafd44](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/92/commits/0eafd44021a85ea4b420151b0d99c249af3e35ac)
+
 <a name="4.2.1-beta.2"></a> (08/07/2019)
 ## 4.2.1-beta.2
 
