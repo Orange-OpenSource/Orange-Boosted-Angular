@@ -1,6 +1,6 @@
 {
   "name": "ng-boosted",
-  "version": "4.2.1-beta.2",
+  "version": "4.2.1",
   "description": "Orange Boosted with Bootstrap 4 and Angular",
   "keywords": [
     "boosted",
@@ -29,7 +29,7 @@
   "dependencies": {},
   "devDependencies": {
     "@ng-bootstrap/ng-bootstrap": "4.2.1",
-    "ng-boosted": "4.2.1-beta.2",
+    "ng-boosted": "4.2.1",
     "boosted": "4.3.1",
     "classlist.js": "^1.1.20150312",
     "jquery": "^3.4.1",
