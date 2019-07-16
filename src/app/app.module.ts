@@ -99,7 +99,7 @@ import { CodeBox } from './docs/code-box.component';
     BrowserModule,
     FormsModule,
     NgBoostedModule,
-    NgbModule.forRoot(),
+    NgbModule,
     AppRoutingModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Analytics, Globals],
