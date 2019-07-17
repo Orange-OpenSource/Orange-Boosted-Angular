@@ -13,7 +13,7 @@ export class OCalendarComponent {
     public today = this.calendar.getToday();
     public model: NgbDateStruct;
 
-    @ViewChild('bdatepicker') public bdatepicker: ElementRef;
+    @ViewChild('bdatepicker', {static: true}) public bdatepicker: ElementRef;
     @Input()
     public color: string;
     @Input()

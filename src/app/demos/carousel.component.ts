@@ -15,7 +15,7 @@ import { NgbCarousel, NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 })
 export class DemoCarousel implements OnInit {
 
-    @ViewChild('carousel') public carousel: NgbCarousel;
+    @ViewChild('carousel', {static: true}) public carousel: NgbCarousel;
 
     public pause: boolean;
 
