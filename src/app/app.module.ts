@@ -22,6 +22,7 @@ import { DemoModal } from './demos/modal.component';
 import { DemoTabs } from './demos/tabs.component';
 import { DemoPagination } from './demos/pagination.component';
 import { DemoTooltip } from './demos/tooltip.component';
+import { DemoToast } from './demos/toast.component';
 import { DemoPopover } from './demos/popover.component';
 import { DemoAlert } from './demos/alert.component';
 import { DemoCarousel } from './demos/carousel.component';
@@ -41,6 +42,7 @@ import { DocDropdown } from './docs/dropdown.component';
 import { DocTabs } from './docs/tabs.component';
 import { DocPagination } from './docs/pagination.component';
 import { DocTooltip } from './docs/tooltip.component';
+import { DocToast } from './docs/toast.component';
 import { DocPopover } from './docs/popover.component';
 import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
@@ -64,6 +66,7 @@ import { CodeBox } from './docs/code-box.component';
     DemoTabs,
     DemoPagination,
     DemoTooltip,
+    DemoToast,
     DemoPopover,
     DemoAlert,
     DemoCarousel,
@@ -83,6 +86,7 @@ import { CodeBox } from './docs/code-box.component';
     DocPagination,
     DocAlert,
     DocTooltip,
+    DocToast,
     DocPopover,
     DocCarousel,
     DocSwiper,
