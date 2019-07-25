@@ -27,19 +27,19 @@
               "src/assets"
             ],
             "styles": [
-              "../Orange-Boosted-Angular/node_modules/prismjs/themes/prism.css",
-              "../Orange-Boosted-Angular/node_modules/swiper/dist/css/swiper.css",
-              "../Orange-Boosted-Angular/node_modules/boosted/dist/css/orangeHelvetica.css",
-              "../Orange-Boosted-Angular/node_modules/boosted/dist/css/orangeIcons.css",
-              "../Orange-Boosted-Angular/node_modules/boosted/scss/boosted.scss",
+              "../node_modules/prismjs/themes/prism.css",
+              "../node_modules/swiper/dist/css/swiper.css",
+              "../node_modules/boosted/dist/css/orangeHelvetica.css",
+              "../node_modules/boosted/dist/css/orangeIcons.css",
+              "../node_modules/boosted/scss/boosted.scss",
               "src/styles.scss"
               
             ],
             "scripts": [
-              "../Orange-Boosted-Angular/node_modules/swiper/dist/js/swiper.min.js",
-              "../Orange-Boosted-Angular/node_modules/jquery/dist/jquery.min.js",
-              "../Orange-Boosted-Angular/node_modules/popper.js/dist/umd/popper.min.js",
-              "../Orange-Boosted-Angular/node_modules/boosted/dist/js/boosted.min.js"
+              "../node_modules/swiper/dist/js/swiper.min.js",
+              "../node_modules/jquery/dist/jquery.min.js",
+              "../node_modules/popper.js/dist/umd/popper.min.js",
+              "../node_modules/boosted/dist/js/boosted.min.js"
             ]
           },
           "configurations": {
