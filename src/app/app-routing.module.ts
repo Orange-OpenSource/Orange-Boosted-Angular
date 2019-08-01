@@ -12,6 +12,7 @@ import { DocDropdown } from './docs/dropdown.component';
 import { DocTabs } from './docs/tabs.component';
 import { DocPagination } from './docs/pagination.component';
 import { DocTooltip } from './docs/tooltip.component';
+import { DocToast } from './docs/toast.component';
 import { DocPopover } from './docs/popover.component';
 import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
@@ -67,6 +68,10 @@ const routes: Routes = [{
   {
     path: 'documentation/tooltip',
     component: DocTooltip
+  },
+  {
+    path: 'documentation/toast',
+    component: DocToast
   },
   {
     path: 'documentation/popover',

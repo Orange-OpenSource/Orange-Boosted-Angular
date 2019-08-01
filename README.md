@@ -18,7 +18,7 @@ It also explains the basic mechanics of using `git`, `node`, and `npm`.
 Before you can build and test Ng-Boosted, you must install and configure the
 following products on your development machine:
 
-* [Node.js](http://nodejs.org), (version `>=4.2.1`) which is used to run tests, and generate distributable files. We also use Node's Package Manager, `npm`
+* [Node.js](http://nodejs.org), (version `>=10`) which is used to run tests, and generate distributable files. We also use Node's Package Manager, `npm`
   (version `>3.8.x`), which comes with Node. Depending on your system, you can install Node either from
   source or as a pre-packaged bundle.
 

@@ -1,5 +1,3 @@
-import { TestBed } from '@angular/core/testing';
-
 import { DateParserFormatter } from './date-parser.service';
 
 describe('DateParserFormatter', () => {

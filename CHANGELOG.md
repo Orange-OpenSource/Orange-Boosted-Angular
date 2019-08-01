@@ -1,3 +1,14 @@
+<a name="5.0.0"></a> (01/08/2019)
+## 5.0.0
+
+### This version requires Angular > 8.0.0 and Ng-Bootstrap 5.0.0
+
+### Changes
+*	**O-Toast :** lib-o-toast is a new component for Toast Message [bc0687c](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/bc0687c8c8684b30e656349f15559ea8e91b0594)
+
+### Bug Fixed
+*	**README :** Specifying to use Node JS version > 10 [77fe95f](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/77fe95f340d7fec5f53320ab9f4ba4f23e2d47be)
+
 <a name="4.2.1"></a> (15/07/2019)
 ## 4.2.1
 

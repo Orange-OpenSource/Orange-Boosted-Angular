@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 
 import { ScrollTopComponent } from './o-scroll/scroll-top.component';
 import { OCalendarComponent } from './o-calendar/o-calendar.component';
+import { OToastComponent } from './o-toast/o-toast.component';
 import { OCarouselContainerComponent } from './o-carousel/o-carousel-container/o-carousel-container.component';
 import { OCarouselComponent } from './o-carousel/o-carousel.component';
 import { ODropdownDirective } from './o-dropdown/o-dropdown.component';
@@ -17,6 +18,7 @@ import { OSwitchComponent } from './o-switch/switch.component';
 const NG_BOOSTED_DECLARATIONS = [
   ScrollTopComponent,
   OCalendarComponent,
+  OToastComponent,
   OCarouselContainerComponent,
   OCarouselComponent,
   ODropdownDirective,
