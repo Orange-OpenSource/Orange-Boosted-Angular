@@ -1,32 +1,10 @@
 <p>
-    In this demo, you can show a toast by clicking the button below. It will hide itself after a 3 seconds delay unless you simply
+    Here is an example of our lib Toast.
+    In this demo, by clicking one of those button below, a toast is shown. It will hide itself after a 5 seconds delay unless you simply
     hover it with your mouse.
 </p>
-<button class="btn btn-primary" (click)="this.show = true">
-Show a toast
-</button>
-<hr *ngIf="show">
-<ngb-toast
-    *ngIf="show"
-    header="Autohide can be cancelled"
-    [delay]="3000"
-    [autohide]="autohide"
-    (mouseenter)="autohide = false"
-    (mouseleave)="this.autohide = true"
-    (hide)="show = false; autohide = true"
-    [class.bg-warning]="!autohide"
-    >
-    <div *ngIf="autohide">
-        Try to mouse hover me.
-    </div>
-    <div *ngIf="!autohide">
-        I will remain visible until you leave again.
-    </div>
-</ngb-toast>
-<br>
-<p>
-    Here is an example of our lib Toast.
-</p>
-<button class="btn btn-info" (click)="showSuccess()">Success toast</button>
+<button class="btn btn-success margin" (click)="showSuccess()">Success toast</button>
+<button class="btn btn-primary margin" (click)="showStandard()">Standard toast</button>
+<button class="btn btn-danger margin" (click)="showDanger()">Danger toast</button>
 
-<lib-o-toast aria-live="alert" aria-atomic="true"></lib-o-toast>
+<lib-o-toast aria-live="polite" aria-atomic="true"></lib-o-toast>

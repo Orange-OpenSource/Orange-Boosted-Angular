@@ -1,6 +1,8 @@
 #### OToast
-You can use our component by calling `<lib-o-toast>` accepts the following parameters :
+You can use our component by calling `<lib-o-toast>`.
+`ToastService` exports two functions:
+* `remove(toast)` removing a Toast after being shown.
 
-* `classname` is the class you want to apply to the toast.
-* `delay` is the time after which the toast will hide.
-* `autohide` is an attribute to auto hide the toast after a delay.
+* `show(textOrTpl: string | TemplateRef<any>, options: any = {})`, for displaying the message you can use either a string or a template and you can input options which include :
+- `classname` is the class (string) you want to apply to the toast.
+- `delay` is the time (nimber) after which the toast will hide.
