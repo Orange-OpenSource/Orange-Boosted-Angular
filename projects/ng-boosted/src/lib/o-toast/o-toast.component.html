@@ -1,8 +1,8 @@
 <ngb-toast
       *ngFor="let toast of toastService.toasts"
-      [class]="toast.classname"
-      [autohide]="toast.autohide || true"
-      [delay]="toast.delay || 5000"
+      [class]="toast.options.classname"
+      [autohide]="toast.options.autohide || true"
+      [delay]="toast.options.delay || 5000"
       (hide)="toastService.remove(toast)"
       attr.role="alert"
     >
