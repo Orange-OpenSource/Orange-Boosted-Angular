@@ -16,12 +16,14 @@ describe('ToastService', () => {
 
   it('Showing a toast with options', () => {
     service.show('I am a success toast test', { classname: 'bg-success text-light', delay: 3000 });
-    expect(service.toasts).toContain(Object({ textOrTpl: 'I am a success toast test', options: Object({ classname: 'bg-success text-light', delay: 3000 }) }));
+    expect(service.toasts).toContain(Object({ textOrTpl: 'I am a success toast test',
+    options: Object({ classname: 'bg-success text-light', delay: 3000 }) }));
   });
 
   it('Showing a templated-toast with options', () => {
     service.show(dangerTpl, { classname: 'bg-danger text-light', delay: 3000 });
-    expect(service.toasts).toContain(Object({ textOrTpl: '<ng-template #dangerTpl> Danger Danger !</ng-template>', options: Object({ classname: 'bg-danger text-light', delay: 3000 }) }));
+    expect(service.toasts).toContain(Object({ textOrTpl: '<ng-template #dangerTpl> Danger Danger !</ng-template>',
+    options: Object({ classname: 'bg-danger text-light', delay: 3000 }) }));
   });
 
 });
