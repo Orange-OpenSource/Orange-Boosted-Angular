@@ -18,10 +18,8 @@ install:
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
 
-after_success:
-  - npm run build:docs
-
 before_deploy:
+  - npm run build:docs
   - "echo 'Deployement launched...'"
 
 deploy:
@@ -37,6 +35,7 @@ deploy:
 
 before_deploy:
   - npm run build:lib
+  - cp ./README.md dist/ng-boosted
   - cd dist/ng-boosted
 
 deploy:
