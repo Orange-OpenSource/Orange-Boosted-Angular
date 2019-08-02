@@ -17,7 +17,6 @@ install:
 
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
-  - npm run build:docs
 
 before_deploy: "echo 'Deployement launched...'"
 deploy:
@@ -31,11 +30,12 @@ deploy:
     on:
       branch: refacto-structure
   - provider: npm
+    skip_cleanup: true
     script: npm run build:lib
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
     local_dir: dist/ng-boosted
     on:
-      tag: true
+      tags: true
       all_branches: true
 after_deploy: "echo 'Deployement Done !'"
