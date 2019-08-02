@@ -25,7 +25,7 @@ deploy:
     script: npm run build:docs
     github_token: $GITHUB_TOKEN
     keep_history: true
-    local_dir: dist/Orange-Boosted-Angular
+    deployment: dist/Orange-Boosted-Angular
     fqdn: ng-boosted.orange.com
     on:
       branch: refacto-structure
@@ -34,7 +34,7 @@ deploy:
     script: npm run build:lib
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
-    local_dir: dist/ng-boosted
+    deployment: dist/ng-boosted
     on:
       tags: true
       all_branches: true
