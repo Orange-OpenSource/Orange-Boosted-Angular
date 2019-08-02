@@ -17,6 +17,7 @@ install:
 
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
+  - npm run build:lib
 
 before_deploy: "echo 'Deployement launched...'"
 deploy:
