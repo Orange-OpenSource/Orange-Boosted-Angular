@@ -17,14 +17,12 @@ install:
 
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
-  - npm run build:lib
-if: branch = refacto-structure
-  - npm run build:docs
 
 before_deploy: "echo 'Deployement launched...'"
 deploy:
   - provider: pages
     skip_cleanup: true
+    script: npm run build:docs
     github_token: $GITHUB_TOKEN
     keep_history: true
     local_dir: dist/Orange-Boosted-Angular
@@ -33,6 +31,7 @@ deploy:
       branch: refacto-structure
   - provider: npm
     skip_cleanup: true
+    script: npm run build:lib
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
     deployment: dist/ng-boosted
