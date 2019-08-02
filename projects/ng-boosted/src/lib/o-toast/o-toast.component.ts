@@ -9,10 +9,9 @@ import { ToastService } from '../services/toast.service';
 export class OToastComponent {
 
     @HostBinding('class.ngb-toasts') ngb_toast: boolean;
-    public autohide: boolean;
+    public autohide = true;
 
     constructor(public toastService: ToastService) {
-        this.autohide = true;
         this.ngb_toast = true;
      }
 

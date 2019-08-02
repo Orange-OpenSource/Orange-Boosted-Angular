@@ -17,24 +17,34 @@ install:
 
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
-  - npm run build-lib
-  - npm run build:docs
 
-before_deploy: "echo 'Ready For Deployement in...'"
+before_deploy:
+  - npm run build:docs
+  - "echo 'Deployement launched...'"
+
 deploy:
   - provider: pages
     skip_cleanup: true
+    script: cd Orange-Boosted-Angular
     github_token: $GITHUB_TOKEN
     keep_history: true
-    local_dir: dist/Orange-Boosted-Angular
+    deployment: dist/Orange-Boosted-Angular
     fqdn: ng-boosted.orange.com
     on:
       branch: refacto-structure
+
+before_deploy:
+  - npm run build:lib
+  - cp ./README.md dist/ng-boosted
+  - cd dist/ng-boosted
+
+deploy:
   - provider: npm
     skip_cleanup: true
+    script: cd ng-boosted
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
-    local_dir: dist/ng-boosted
+    deployment: dist/ng-boosted
     on:
-      tag: true
-after_deploy: "echo 'Deployement Done !'"
+      tags: true
+      all_branches: true

@@ -1,6 +1,6 @@
 {
   "name": "ng-boosted",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Orange Boosted with Bootstrap 4 and Angular",
   "keywords": [
     "boosted",
@@ -20,12 +20,11 @@
     "build:docs": "ng build --prod",
     "publish-docs": "npm run build:docs && git checkout gh-pages && git add dist/Orange-Boosted-Angular && git commit -m \"chore: compile documentation\" --allow-empty && git push origin gh-pages && echo 'Documentation successfully deployed !'",
     "copy-readme": "cpx ./README.md dist/ng-boosted",
-    "test-lib": "ng test ng-boosted",
+    "test:lib": "ng test ng-boosted",
     "lint-lib": "ng lint ng-boosted",
-    "build-lib": "ng build ng-boosted",
+    "build:lib": "ng build ng-boosted",
     "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
   },
-  "private": true,
   "dependencies": {},
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.0",
@@ -42,12 +41,12 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
-    "@ng-bootstrap/ng-bootstrap": "5.0.0",
+    "@ng-bootstrap/ng-bootstrap": "5.1.0",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "ng-boosted": "5.1.0",
     "boosted": "4.3.1",
-    "ng-boosted": "5.0.0",
     "classlist.js": "^1.1.20150312",
     "codelyzer": "~4.5.0",
     "core-js": "^2.5.4",

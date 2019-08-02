@@ -1,3 +1,9 @@
+<a name="5.1.0"></a> (02/08/2019)
+## 5.1.0
+
+### Changes
+*	**O-Toast :** adding event mouseover and mouseleave on toast preventing authide [4c5c6fe](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4c5c6fef0db5e4f61173698d061888b9e43303ea)
+
 <a name="5.0.0"></a> (01/08/2019)
 ## 5.0.0
 
