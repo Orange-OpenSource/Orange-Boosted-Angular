@@ -34,7 +34,7 @@ deploy:
     script: npm run build:lib
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
-    deployment: dist/ng-boosted
+    local_dir: dist/ng-boosted
     on:
       tag: true
       all_branches: true
