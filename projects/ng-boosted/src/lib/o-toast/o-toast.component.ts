@@ -9,8 +9,12 @@ import { ToastService } from '../services/toast.service';
 export class OToastComponent {
 
     @HostBinding('class.ngb-toasts') ngb_toast: boolean;
+    public autohide: boolean;
 
-    constructor(public toastService: ToastService) { }
+    constructor(public toastService: ToastService) {
+        this.autohide = true;
+        this.ngb_toast = true;
+     }
 
     public Template(toast) {
         return toast.textOrTpl instanceof TemplateRef;
