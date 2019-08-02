@@ -37,4 +37,5 @@ deploy:
     local_dir: dist/ng-boosted
     on:
       tag: true
+      all_branches: true
 after_deploy: "echo 'Deployement Done !'"
