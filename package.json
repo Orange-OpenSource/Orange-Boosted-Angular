@@ -20,7 +20,7 @@
     "build:docs": "ng build --prod",
     "publish-docs": "npm run build:docs && git checkout gh-pages && git add dist/Orange-Boosted-Angular && git commit -m \"chore: compile documentation\" --allow-empty && git push origin gh-pages && echo 'Documentation successfully deployed !'",
     "copy-readme": "cpx ./README.md dist/ng-boosted",
-    "test-lib": "ng test ng-boosted",
+    "test:lib": "ng test ng-boosted",
     "lint-lib": "ng lint ng-boosted",
     "build:lib": "ng build ng-boosted",
     "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
