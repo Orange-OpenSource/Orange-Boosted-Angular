@@ -20,11 +20,10 @@ script:
 
 after_success:
   - npm run build:docs
-  - npm run build:lib
 
 before_deploy:
   - "echo 'Deployement launched...'"
-  - cd dist
+
 deploy:
   - provider: pages
     skip_cleanup: true
@@ -35,6 +34,12 @@ deploy:
     fqdn: ng-boosted.orange.com
     on:
       branch: refacto-structure
+
+before_deploy:
+  - npm run build:lib
+  - cd dist/ng-boosted
+
+deploy:
   - provider: npm
     skip_cleanup: true
     script: cd ng-boosted
@@ -44,4 +49,3 @@ deploy:
     on:
       tags: true
       all_branches: true
-after_deploy: "echo 'Deployement Done !'"
