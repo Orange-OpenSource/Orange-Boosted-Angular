@@ -17,7 +17,7 @@ install:
 
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
-  - npm run build-lib
+  - npm run build:lib
   - npm run build:docs
 
 before_deploy: "echo 'Ready For Deployement in...'"
@@ -34,7 +34,7 @@ deploy:
     skip_cleanup: true
     email: $NPM_EMAIL
     api_key: $NPM_TOKEN
-    local_dir: dist/ng-boosted
+    deployment: dist/ng-boosted
     on:
       tag: true
       all_branches: true

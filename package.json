@@ -22,7 +22,7 @@
     "copy-readme": "cpx ./README.md dist/ng-boosted",
     "test-lib": "ng test ng-boosted",
     "lint-lib": "ng lint ng-boosted",
-    "build-lib": "ng build ng-boosted",
+    "build:lib": "ng build ng-boosted",
     "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
   },
   "dependencies": {},
