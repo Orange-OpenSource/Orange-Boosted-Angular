@@ -18,9 +18,10 @@ install:
 script:
   - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
   - npm run build:lib
-  - npm run build:docs
+  if: branch = refacto-structure
+    - npm run build:docs
 
-before_deploy: "echo 'Ready For Deployement in...'"
+before_deploy: "echo 'Deployement launched...'"
 deploy:
   - provider: pages
     skip_cleanup: true
