@@ -31,7 +31,7 @@ jobs:
         skip_cleanup: true
         email: $NPM_EMAIL
         api_key: $NPM_TOKEN
-        deployment: dist/ng-boosted
+        local_dir: dist/ng-boosted
         on:
           tags: true
           all_branches: true
@@ -46,7 +46,7 @@ jobs:
         script: cd Orange-Boosted-Angular
         github_token: $GITHUB_TOKEN
         keep_history: true
-        deployment: dist/Orange-Boosted-Angular
+        local_dir: dist/Orange-Boosted-Angular
         fqdn: ng-boosted.orange.com
         on:
           branch: refacto-structure
