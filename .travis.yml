@@ -1,0 +1,52 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - "10.9.0"
+
+addons:
+  chrome: stable,
+
+cache:
+  directories:
+     - ./node_modules
+
+install:
+  - npm install
+
+jobs:
+  include:
+    - stage: Lib test
+      script:
+        - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
+    - stage: Npm Release
+      node_js: "10.9.0"
+      script:
+        - echo "Deploying to NPM..."
+        - npm run build:lib
+        - cp ./README.md dist/ng-boosted
+      deploy:
+        provider: npm
+        skip_cleanup: true
+        email: $NPM_EMAIL
+        api_key: $NPM_TOKEN
+        deployment: dist/ng-boosted
+        on:
+          tags: true
+          all_branches: true
+    - stage: Deploy to Production
+      node_js: "10.9.0"
+      script:
+        - echo "Deploying to gh Page ..."
+        - npm run build:docs
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        script: cd Orange-Boosted-Angular
+        github_token: $GITHUB_TOKEN
+        keep_history: true
+        deployment: dist/Orange-Boosted-Angular
+        fqdn: ng-boosted.orange.com
+        on:
+          branch: refacto-structure
