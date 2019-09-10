@@ -1,4 +1,13 @@
 /* Doc Styles */
+@media (max-width: 479px) {
+  body{
+      padding-top: 54px !important;
+  }
+}
+
+body{
+  padding-top: 100px;
+}
 
 code {
   background-color: #f5f5f5;
