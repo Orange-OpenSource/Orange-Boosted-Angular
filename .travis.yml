@@ -50,3 +50,4 @@ jobs:
         fqdn: ng-boosted.orange.com
         on:
           branch: refacto-structure
+          tags: true
