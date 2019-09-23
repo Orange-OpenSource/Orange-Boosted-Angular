@@ -23,6 +23,7 @@ import { DemoSwiper } from '../demos/swiper.component';
 import { DemoONavbar } from '../demos/o-navbar.component';
 
 import { BoostwatchComponent } from './boostwatch.component';
+import { DemoToast } from '../demos/toast.component';
 
 describe('BoostwatchComponent', () => {
   let component: BoostwatchComponent;
@@ -36,7 +37,7 @@ describe('BoostwatchComponent', () => {
       ],
       declarations: [ BoostwatchComponent, DemoAccordion, DemoModal, DemoTabs, DemoPagination, DemoTooltip,
         DemoPopover, DemoAlert, DemoCarousel, DemoOCalendar, DemoCollapse, DemoProgressBar, DemoDropdown,
-        DemoOSwitch, DemoOToggle, DemoSwiper, DemoONavbar ]
+        DemoOSwitch, DemoOToggle, DemoSwiper, DemoONavbar, DemoToast ]
     })
     .compileComponents();
   }));
