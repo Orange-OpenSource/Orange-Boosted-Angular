@@ -32,7 +32,10 @@ import {
       .swiper-pagination-bullets, .swiper-container-horizontal {
         bottom:2.5rem !important;
       }
-      `
+      .swiper-button-prev:focus, .swiper-button-next:focus {
+        outline: 2px solid #000 !important;
+        outline: -1px !important;
+      }`
     ],
     templateUrl: './o-carousel-container.component.html'
   })
