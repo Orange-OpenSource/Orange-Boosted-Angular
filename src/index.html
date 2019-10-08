@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, IE=10, IE=11">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orange boosted with Angular">
+  <title>Orange boosted with Angular</title>
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+</head>
+<body>
+  <app-root><style type="text/css">
+    .spinner {
+      left: 50%;
+      top: 50%;
+      position: fixed;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+    }
+    .spinner svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .spinner path {
+      fill: #ccc;
+    }
+
+    .spinner path:nth-child(2) {
+      fill: #999;
+    }
+
+    .spinner path:nth-child(3) {
+      fill: #666;
+    }
+
+    .spinner path:nth-child(4) {
+      fill: #333;
+    }
+  </style>
+  <!--[if !IE]-->
+  <style type="text/css">
+    .spinner path {
+        -webkit-animation: load1 1.5s infinite;
+                animation: load1 1.5s infinite;
+        fill: #ccc;
+    }
+
+    .spinner path:nth-child(2) {
+        -webkit-animation-delay: .125s;
+                animation-delay: .125s;
+    }
+
+    .spinner path:nth-child(3) {
+        -webkit-animation-delay: .25s;
+                animation-delay: .25s;
+    }
+
+    .spinner path:nth-child(4) {
+        -webkit-animation-delay: .375s;
+                animation-delay: .375s;
+    }
+
+    .spinner path:nth-child(5) {
+        -webkit-animation-delay: .5s;
+                animation-delay: .5s;
+    }
+
+    .spinner path:nth-child(6) {
+        -webkit-animation-delay: .625s;
+                animation-delay: .625s;
+    }
+
+    .spinner path:nth-child(7) {
+        -webkit-animation-delay: .75s;
+                animation-delay: .75s;
+    }
+
+    .spinner path:nth-child(8) {
+        -webkit-animation-delay: .875s;
+                animation-delay: .875s;
+    }
+
+    .spinner path:nth-child(9) {
+        -webkit-animation-delay: 1s;
+                animation-delay: 1s;
+    }
+
+    .spinner path:nth-child(10) {
+        -webkit-animation-delay: 1.125s;
+                animation-delay: 1.125s;
+    }
+
+    .spinner path:nth-child(11) {
+        -webkit-animation-delay: 1.25s;
+                animation-delay: 1.25s;
+    }
+
+    .spinner path:nth-child(12) {
+        -webkit-animation-delay: 1.375s;
+                animation-delay: 1.375s;
+    }
+
+    @-webkit-keyframes load1 {
+        0% {
+            fill: #000;
+        }
+        100% {
+            fill: #ccc;
+        }
+    }
+
+    @keyframes load1 {
+        0% {
+            fill: #000;
+        }
+        100% {
+            fill: #ccc;
+        }
+    }
+  </style>
+  <!--[endif]-->
+  <div class="spinner">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68">
+          <path d="M30.986.003l6-.003.008 16-6 .003z"></path>
+          <path d="M48.39 3.05l5.197 2.997-7.992 13.86-5.198-2.997z"></path>
+          <path d="M61.952 14.4l3 5.196-13.857 8-3-5.196z"></path>
+          <path d="M68 31v6H52v-6z"></path>
+          <path d="M64.95 48.41l-3 5.197-13.857-7.998 3-5.2z"></path>
+          <path d="M40.402 51.09l5.194-3.002 8.007 13.85-5.194 3.004z"></path>
+          <path d="M30.995 52.005l6-.003.008 16-6 .003z"></path>
+          <path d="M22.402 48.1l5.197 2.994-7.994 13.86-5.198-2.996z"></path>
+          <path d="M16.916 40.404l3 5.195-13.857 8-3-5.198z"></path>
+          <path d="M15.996 31.003v6h-16v-6z"></path>
+          <path d="M19.904 22.416l-3 5.197-13.857-7.998 3-5.197z"></path>
+          <path d="M14.393 6.068l5.194-3.002 8.007 13.85L22.4 19.92z"></path>
+      </svg>
+  </div></app-root>
+</body>
+</html>
