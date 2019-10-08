@@ -1,3 +1,15 @@
+<a name="5.1.1"></a>
+## [5.1.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.0...5.1.1) (2019-10-08)
+
+### Bug Fixed
+*   **swiper :** Fix prev and next focus style [95271a5](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/112/commits/95271a50b7f69a0911043d27aef6dd623ac9a739)
+*   **package :** fix a typo that prevent auto installing of the library dependencies [5f54e37](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/106/commits/5f54e372e3943e39829bb69021cb8c1311d112b9)
+
+### Documentation
+*   **Header :** Scroll to top when activating page link [61d05ff](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/104/commits/61d05ffcc86435bfe5c2cae2ef20085344423dd2)
+*   **Header :** Set fixed-top on the doc header [4f82235](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/104/commits/4f822359edf64b2c0bdfa85b52d60136b965029a)
+*   **Boostwatch :** list by alphabetical order in boostwatch page [c620dd8](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/102/commits/c620dd8c7512302a5d71eca42e1c58d17622fe3e)
+
 <a name="5.1.0"></a> (02/08/2019)
 ## 5.1.0
 
