@@ -1,5 +1,5 @@
-<a name="5.1.1"></a>
-## [5.1.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.0...5.1.1) (2019-10-08)
+<a name="5.1.2"></a>
+## [5.1.2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.0...5.1.2) (2019-10-08)
 
 ### Bug Fixed
 *   **swiper :** Fix prev and next focus style [95271a5](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/112/commits/95271a50b7f69a0911043d27aef6dd623ac9a739)
