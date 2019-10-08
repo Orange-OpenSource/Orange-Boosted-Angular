@@ -42,6 +42,7 @@ jobs:
       node_js: "10.9.0"
       script:
         - echo "Deploying to gh Page ..."
+        - npm run build:lib
         - npm run build:docs
       before_deploy:
         - cd dist/Orange-Boosted-Angular
