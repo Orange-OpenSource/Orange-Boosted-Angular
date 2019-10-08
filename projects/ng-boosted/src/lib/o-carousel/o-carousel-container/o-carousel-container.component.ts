@@ -29,10 +29,10 @@ import {
       .icon-Play {
           content: "\eac9";
       }
-      .swiper-pagination-bullets, swiper-container-horizontal {
+      .swiper-pagination-bullets, .swiper-container-horizontal {
         bottom:2.5rem !important;
       }
-      .swiper-button-prev,.swiper-button-next:focus {
+      .swiper-button-prev:focus, .swiper-button-next:focus {
         outline: 2px solid #000 !important;
         outline: -1px !important;
       }`
