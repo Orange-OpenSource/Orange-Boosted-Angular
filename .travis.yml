@@ -44,15 +44,12 @@ jobs:
         - echo "Deploying to gh Page ..."
         - npm run build:lib
         - npm run build:docs
-      before_deploy:
-        - cd dist/Orange-Boosted-Angular
-      after_deploy:
-        - cd ../../
       deploy:
         provider: pages
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         keep_history: true
+        local_dir: dist/Orange-Boosted-Angular
         fqdn: ng-boosted.orange.com
         on:
           branch: refacto-structure
