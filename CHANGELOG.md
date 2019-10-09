@@ -1,3 +1,9 @@
+<a name="4.2.2"></a> (09/10/2019)
+## 4.2.2
+
+### Bug Fixed
+*	**package :** fix a typo that prevent auto installing of the library dependencies [5e642e7](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5e642e787238d3efbeb9e5013af1741bfd427b9a)
+
 <a name="4.2.1"></a> (15/07/2019)
 ## 4.2.1
 
