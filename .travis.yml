@@ -15,16 +15,26 @@ cache:
 install:
   - npm install
 
-script:
-  - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
-  - npm run build:docs
-
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  local_dir: dist/Orange-Boosted-Angular
-  fqdn: ng-boosted.orange.com
-  on:
-    branch: refacto-structure
+jobs:
+  include:
+    - stage: Lib test
+      script:
+        - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
+    - stage: Npm Release
+      node_js: "10.4.1"
+      script:
+        - echo "Deploying to NPM..."
+        - npm run build:lib
+        - cp ./README.md dist/ng-boosted
+      before_deploy:
+        - cd dist/ng-boosted
+      after_deploy:
+        - cd ../../
+      deploy:
+        provider: npm
+        skip_cleanup: true
+        email: $NPM_EMAIL
+        api_key: $NPM_TOKEN
+        on:
+          tags: true
+          all_branches: true
