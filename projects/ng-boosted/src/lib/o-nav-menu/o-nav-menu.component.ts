@@ -30,4 +30,7 @@ import { Component, Input, HostBinding } from '@angular/core';
 
     @Input()
     public title: string;
+
+    @Input()
+    public id: string;
   }
