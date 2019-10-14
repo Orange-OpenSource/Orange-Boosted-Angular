@@ -32,5 +32,5 @@ import { Component, Input, HostBinding } from '@angular/core';
     public title: string;
 
     @Input()
-    public id: string;
+    public idForLabelledby: string;
   }
