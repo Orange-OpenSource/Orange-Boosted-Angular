@@ -9,7 +9,7 @@
 import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
-    selector: 'lib-li[o-nav-menu]',
+    selector: 'li[o-nav-menu]',
     styles: [`
       button {
         border: 0;
@@ -30,4 +30,7 @@ import { Component, Input, HostBinding } from '@angular/core';
 
     @Input()
     public title: string;
+
+    @Input()
+    public idForLabelledby: string;
   }
