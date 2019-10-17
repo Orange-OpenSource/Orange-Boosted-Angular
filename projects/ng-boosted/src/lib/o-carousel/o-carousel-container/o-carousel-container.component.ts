@@ -82,22 +82,30 @@ import {
       });
     }
     @HostListener('mouseenter') public onMouseEnter() {
-      this.swiper.autoplay.stop();
+      if (this.swiper) {
+        this.swiper.autoplay.stop();
+      }
       this.pause = !this.pause;
     }
 
     @HostListener('mouseleave') public onMouseLeave() {
-      this.swiper.autoplay.start();
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
       this.pause = !this.pause;
     }
 
     @HostListener('focus') public onFocusIn() {
-      this.swiper.autoplay.start();
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
       this.pause = !this.pause;
     }
 
     @HostListener('blur') public onFocusOut() {
-      this.swiper.autoplay.start();
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
       this.pause = !this.pause;
     }
   }
