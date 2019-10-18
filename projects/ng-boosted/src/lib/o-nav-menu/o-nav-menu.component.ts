@@ -9,6 +9,7 @@
 import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line:component-selector
     selector: 'li[o-nav-menu]',
     styles: [`
       button {
