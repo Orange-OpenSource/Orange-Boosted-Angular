@@ -29,7 +29,7 @@ import {
       .icon-Play {
           content: "\eac9";
       }
-      .swiper-pagination-bullets, .swiper-container-horizontal {
+      .swiper-pagination-bullets {
         bottom:2.5rem !important;
       }
       .swiper-button-prev:focus, .swiper-button-next:focus {
