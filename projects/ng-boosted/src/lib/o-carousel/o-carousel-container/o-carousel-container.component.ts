@@ -23,19 +23,16 @@ import {
   @Component({
     selector: 'lib-o-carousel-container',
     styles: [`
-      .icon-Pause {
-          content: "\eabc";
-      }
-      .icon-Play {
-          content: "\eac9";
-      }
-      .swiper-pagination-bullets {
-        bottom:2.5rem !important;
-      }
-      .swiper-button-prev:focus, .swiper-button-next:focus {
-        outline: 2px solid #000 !important;
-        outline: -1px !important;
-      }`
+    .icon-Pause {
+        content: "\eabc";
+    }
+    .icon-Play {
+        content: "\eac9";
+    }
+    .swiper-button-prev:focus, .swiper-button-next:focus {
+      outline: 2px solid #000 !important;
+      outline: -1px !important;
+    }`
     ],
     templateUrl: './o-carousel-container.component.html'
   })
@@ -50,7 +47,6 @@ import {
     public pauseButton: boolean;
 
     public swiper: any;
-
     public showPager: boolean;
     public pause: boolean;
 
@@ -85,27 +81,23 @@ import {
       if (this.swiper) {
         this.swiper.autoplay.stop();
       }
-      this.pause = !this.pause;
     }
 
     @HostListener('mouseleave') public onMouseLeave() {
-      if (this.swiper) {
+      if (this.swiper && !this.pause) {
         this.swiper.autoplay.start();
       }
-      this.pause = !this.pause;
     }
 
     @HostListener('focus') public onFocusIn() {
       if (this.swiper) {
         this.swiper.autoplay.start();
       }
-      this.pause = !this.pause;
     }
 
     @HostListener('blur') public onFocusOut() {
-      if (this.swiper) {
+      if (this.swiper && !this.pause) {
         this.swiper.autoplay.start();
       }
-      this.pause = !this.pause;
     }
   }
