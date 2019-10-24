@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 })
 export class DemoOSwitch {
     public checked: boolean;
+    
     public getCheck(check) {
         this.checked = check;
     }

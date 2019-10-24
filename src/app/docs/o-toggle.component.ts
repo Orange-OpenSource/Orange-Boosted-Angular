@@ -25,7 +25,9 @@ export class DocOToggle implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/o-toggle.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/o-toggle.component.ts')
   };
+
   constructor(private _analytics: Analytics) {}
+
   public ngOnInit(): void {
       // this._analytics.trackPageViews();
   }

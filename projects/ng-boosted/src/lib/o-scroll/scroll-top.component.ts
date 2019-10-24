@@ -14,20 +14,15 @@ import { Component, Input, HostListener } from '@angular/core';
   styles: ['a { display: inline;}']
 })
 export class ScrollTopComponent {
-
   public showMe = false;
+
   @Input() public label: string;
 
   public ScrollToTop() {
     window.scrollTo(0, 0);
   }
 
-  @HostListener('window:scroll', [])
-  public onWindowScroll() {
-    if (document.documentElement.scrollTop > window.innerHeight) {
-      this.showMe = true;
-    } else {
-      this.showMe = false;
-    }
+  @HostListener('window:scroll', []) public onWindowScroll() {
+    document.documentElement.scrollTop > window.innerHeight ? this.showMe = true : this.showMe = false;
   }
 }

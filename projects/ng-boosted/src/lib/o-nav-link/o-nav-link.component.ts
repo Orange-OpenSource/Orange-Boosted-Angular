@@ -16,18 +16,15 @@ import { Component, Input, HostBinding, ElementRef, ViewChild, DoCheck } from '@
   export class ONavLinkComponent implements DoCheck {
     @HostBinding('class.nav-item')
 
-    @Input()
-    public route: string;
+    @Input() public route: string;
 
-    @Input()
-    public query: string;
+    @Input() public query: string;
 
-    @Input()
-    public title: string;
+    @Input() public title: string;
 
     @ViewChild('link', {static: true})
-    public link: ElementRef;
 
+    public link: ElementRef;
     public isActive = false;
 
     public ngDoCheck() {

@@ -10,6 +10,4 @@ import { Component } from '@angular/core';
       background-color: #000;
       }`]
 })
-export class DemoDropdown {
-
-}
+export class DemoDropdown {}

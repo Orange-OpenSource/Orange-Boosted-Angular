@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
-
 import { DocAccordion } from './docs/accordion.component';
 import { DocOCalendar } from './docs/o-calendar.component';
 import { DocModal } from './docs/modal.component';

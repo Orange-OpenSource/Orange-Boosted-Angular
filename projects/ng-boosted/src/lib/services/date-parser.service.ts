@@ -2,11 +2,7 @@ import { Injectable } from '@angular/core';
 import { NgbDateParserFormatter, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 function padNumber(value: number) {
-    if (isNumber(value)) {
-        return `0${value}`.slice(-2);
-    } else {
-        return '';
-    }
+    return isNumber(value) ? `0${value}`.slice(-2) : '';
 }
 
 function isNumber(value: any): boolean {

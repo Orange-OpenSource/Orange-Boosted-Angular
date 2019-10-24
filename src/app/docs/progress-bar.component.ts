@@ -16,7 +16,9 @@ export class DocProgressBar implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/progress-bar.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/progress-bar.component.ts')
   };
+
   constructor(private _analytics: Analytics) {}
+
   public ngOnInit(): void {
       // this._analytics.trackPageViews();
   }

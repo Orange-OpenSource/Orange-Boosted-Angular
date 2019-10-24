@@ -2,21 +2,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
-
 import { Analytics } from './docs/shared/analytics';
-
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgBoostedModule } from 'ng-boosted';
-
 import { Globals } from './directives/global';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartComponent } from './start/start.component';
 import { DocsMenuComponent } from './docs-menu/docs-menu.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { HomeComponent } from './home/home.component';
-
 import { DemoAccordion } from './demos/accordion.component';
 import { DemoModal } from './demos/modal.component';
 import { DemoTabs } from './demos/tabs.component';
@@ -34,7 +29,6 @@ import { DemoOSwitch } from './demos/o-switch.component';
 import { DemoOToggle } from './demos/o-toggle.component';
 import { DemoSwiper } from './demos/swiper.component';
 import { DemoONavbar } from './demos/o-navbar.component';
-
 import { DocAccordion } from './docs/accordion.component';
 import { DocOCalendar } from './docs/o-calendar.component';
 import { DocModal } from './docs/modal.component';

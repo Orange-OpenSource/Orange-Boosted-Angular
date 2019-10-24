@@ -4,6 +4,4 @@ import { Component } from '@angular/core';
     selector: 'demo-o-navbar',
     templateUrl: './o-navbar.component.html'
 })
-export class DemoONavbar {
-
-}
+export class DemoONavbar {}
