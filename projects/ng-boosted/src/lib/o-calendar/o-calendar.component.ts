@@ -32,9 +32,11 @@ export class OCalendarComponent {
     public onChange(value) {
         if (value) {
             const dateParts = value.trim().split('/');
-            if (dateParts.length === 3 && isNumber(dateParts[0]) && isNumber(dateParts[1]) && isNumber(dateParts[2])) {
-                this.childEvent.emit({year: toInteger(dateParts[2]), month: toInteger(dateParts[1]), day: toInteger(dateParts[0])});
-            }
+            (dateParts.length === 3 && isNumber(dateParts[0]) && isNumber(dateParts[1]) && isNumber(dateParts[2])) ? 
+            this.childEvent.emit({year: toInteger(dateParts[2]), month: toInteger(dateParts[1]), day: toInteger(dateParts[0])}) : 
+            this.childEvent.emit();
+        }else{
+            this.childEvent.emit();
         }
     }
     public focusCalendar() {
