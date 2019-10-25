@@ -24,7 +24,6 @@ import {
     template: '<div><ng-content></ng-content></div>'
   })
   export class OCarouselComponent implements AfterViewInit {
-
     private elm: HTMLElement;
     private swiper: OCarouselContainerComponent;
 
@@ -40,5 +39,4 @@ import {
       this.elm.classList.add('swiper-slide');
       this.swiper.update();
     }
-
   }

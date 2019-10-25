@@ -6,15 +6,16 @@
  * --------------------------------------------------------------------------
  */
 
-import { Component, Input, HostBinding, ElementRef, ViewChild, DoCheck } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
   const TEST_PATTERN = /xs|sm|md|lg|xl|xxl/;
 
   @Component({
     selector: 'lib-o-navbar',
     styles: [`
-      .navbar-nav { width: 100%;}
-
+      .navbar-nav { 
+        width: 100%;
+      }
       >>> a:hover {
         cursor: pointer;
       }
@@ -23,18 +24,13 @@ import { Component, Input, HostBinding, ElementRef, ViewChild, DoCheck } from '@
   })
   export class ONavbarComponent {
     public pattern = TEST_PATTERN;
-
     public isCollapsed = true;
 
-    @Input()
-    public homeRoute: string;
+    @Input() public homeRoute: string;
 
-    @Input()
-    public breakpoint: string;
+    @Input() public breakpoint: string;
 
-    @Input()
-    public brandPath: string;
+    @Input() public brandPath: string;
 
-    @Input()
-    public brandLabel: string;
+    @Input() public brandLabel: string;
 }

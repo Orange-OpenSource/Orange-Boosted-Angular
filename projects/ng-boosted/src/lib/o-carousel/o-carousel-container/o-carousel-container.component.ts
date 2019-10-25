@@ -40,22 +40,17 @@ import {
     templateUrl: './o-carousel-container.component.html'
   })
   export class OCarouselContainerComponent implements OnInit {
-    @Input()
-    public pager: any;
+    @Input() public pager: any;
 
-    @Input()
-    public options: any;
+    @Input() public options: any;
 
-    @Input()
-    public pauseButton: boolean;
+    @Input() public pauseButton: boolean;
 
     public swiper: any;
-
     public showPager: boolean;
     public pause: boolean;
 
-    constructor( @Inject(ElementRef) private elementRef: ElementRef) {
-    }
+    constructor( @Inject(ElementRef) private elementRef: ElementRef) {}
 
     public ngOnInit() {
       const nativeElement = this.elementRef.nativeElement;
@@ -81,6 +76,7 @@ import {
         this.swiper.update();
       });
     }
+    
     @HostListener('mouseenter') public onMouseEnter() {
       if (this.swiper) {
         this.swiper.autoplay.stop();

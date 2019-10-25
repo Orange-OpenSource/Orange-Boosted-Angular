@@ -25,6 +25,7 @@ export class DocOScrollTop implements OnInit {
   };
 
   constructor(private _analytics: Analytics) {}
+
     public ngOnInit(): void {
         // this._analytics.trackPageViews();
     }

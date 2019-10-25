@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
       <h1>This is a test Component</h1>
     `
   })
-  export class TestComponent {
-  }
+  export class TestComponent {}

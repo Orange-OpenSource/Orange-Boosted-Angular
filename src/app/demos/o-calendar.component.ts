@@ -33,7 +33,6 @@ public getMonthShortName(month: number): string {
 public getMonthFullName(month: number): string {
     return this.getMonthShortName(month);
 }
-
 public getDayAriaLabel(date: NgbDateStruct): string {
     return `${date.day}-${date.month}-${date.year}`;
     }

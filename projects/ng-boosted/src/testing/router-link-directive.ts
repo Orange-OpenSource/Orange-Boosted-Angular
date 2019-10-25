@@ -9,6 +9,7 @@ import { Input, HostListener, Directive } from '@angular/core';
     navigatedTo: any = null;
 
     @HostListener('click')
+    
     onClick() {
       this.navigatedTo = this.linkParams;
     }

@@ -14,32 +14,35 @@ export class OCalendarComponent {
     public model: NgbDateStruct;
 
     @ViewChild('bdatepicker', {static: true}) public bdatepicker: ElementRef;
-    @Input()
-    public color: string;
-    @Input()
-    public  labelButton: string;
-    @Input()
-    public labelInput: string;
-    @Input()
-    public labelFooterToday: string;
-    @Input()
-    public labelFooterClose: string;
-    @Input()
-    public placeHolder: string;
-    @Output()
-    public childEvent = new EventEmitter();
+
+    @Input() public color: string;
+
+    @Input() public labelButton: string;
+
+    @Input() public labelInput: string;
+
+    @Input() public labelFooterToday: string;
+
+    @Input() public labelFooterClose: string;
+
+    @Input() public placeHolder: string;
+
+    @Output() public childEvent = new EventEmitter();
+
     constructor(private calendar: NgbCalendar) {}
+    
     public onChange(value) {
         if (value) {
             const dateParts = value.trim().split('/');
             (dateParts.length === 3 && isNumber(dateParts[0]) && isNumber(dateParts[1]) && isNumber(dateParts[2])) ? 
             this.childEvent.emit({year: toInteger(dateParts[2]), month: toInteger(dateParts[1]), day: toInteger(dateParts[0])}) : 
             this.childEvent.emit();
-        }else{
+        } else {
             this.childEvent.emit();
         }
     }
+
     public focusCalendar() {
         this.bdatepicker.nativeElement.focus();
     }
- }
+}

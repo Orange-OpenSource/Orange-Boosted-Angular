@@ -17,7 +17,9 @@ export class DocModal implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/modal.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/modal.component.ts')
   };
+
   constructor(private _analytics: Analytics ) {}
+
   public ngOnInit(): void {
     // this._analytics.trackPageViews();
   }

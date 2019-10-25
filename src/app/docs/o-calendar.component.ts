@@ -25,6 +25,7 @@ export class DocOCalendar implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/o-calendar.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/o-calendar.component.ts')
   };
+
   constructor( private _analytics: Analytics ) {}
 
   public ngOnInit(): void {
