@@ -16,7 +16,9 @@ export class DocTooltip implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/tooltip.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/tooltip.component.ts')
   };
+
   constructor(private _analytics: Analytics) {}
+
   public ngOnInit(): void {
       // this._analytics.trackPageViews();
   }

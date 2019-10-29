@@ -1,6 +1,6 @@
 {
   "name": "ng-boosted",
-  "version": "5.1.0",
+  "version": "5.1.2",
   "description": "Orange Boosted with Bootstrap 4 and Angular",
   "keywords": [
     "boosted",
@@ -41,7 +41,7 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
-    "@ng-bootstrap/ng-bootstrap": "5.1.0",
+    "@ng-bootstrap/ng-bootstrap": "5.1.1",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",

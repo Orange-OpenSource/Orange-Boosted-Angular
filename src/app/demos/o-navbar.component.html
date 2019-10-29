@@ -12,6 +12,13 @@
             <li><a class="dropdown-item" href="#">About Markdown</a></li>
         </ul>
     </li>
+    <li ngbDropdown o-nav-menu idForLabelledby="dropdownMenu1" menuTitle="Toggle dropdown">
+        <div ngbDropdownMenu aria-labelledby="dropdownMenu1">
+            <button ngbDropdownItem>Action - 1</button>
+            <button ngbDropdownItem>Another Action</button>
+            <button ngbDropdownItem>Something else is here</button>
+        </div>
+    </li>
 
     <li class="nav-item"><a href="http://orange.com" class="nav-link">External link</a></li>
 </lib-o-navbar>

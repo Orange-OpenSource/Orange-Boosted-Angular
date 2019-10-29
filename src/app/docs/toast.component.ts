@@ -15,12 +15,14 @@ import { Analytics } from './shared/analytics';
   `
 })
 export class DocToast implements OnInit {
-    public docContent = require('html-loader!markdown-loader!./toast.component.md');
-    public demoSnippets = {
-        markup: require('!!prismjs-loader?lang=html!../demos/toast.component.html'),
-        typescript: require('!!prismjs-loader?lang=typescript!../demos/toast.component.ts')
-    };
+  public docContent = require('html-loader!markdown-loader!./toast.component.md');
+  public demoSnippets = {
+      markup: require('!!prismjs-loader?lang=html!../demos/toast.component.html'),
+      typescript: require('!!prismjs-loader?lang=typescript!../demos/toast.component.ts')
+  };
+
   constructor(private _analytics: Analytics) {}
+
   public ngOnInit(): void {
       // this._analytics.trackPageViews();
   }

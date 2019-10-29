@@ -29,10 +29,10 @@ import {
       .icon-Play {
           content: "\eac9";
       }
-      .swiper-pagination-bullets, swiper-container-horizontal {
+      .swiper-pagination-bullets, .swiper-container-horizontal {
         bottom:2.5rem !important;
       }
-      .swiper-button-prev,.swiper-button-next:focus {
+      .swiper-button-prev:focus, .swiper-button-next:focus {
         outline: 2px solid #000 !important;
         outline: -1px !important;
       }`
@@ -40,22 +40,17 @@ import {
     templateUrl: './o-carousel-container.component.html'
   })
   export class OCarouselContainerComponent implements OnInit {
-    @Input()
-    public pager: any;
+    @Input() public pager: any;
 
-    @Input()
-    public options: any;
+    @Input() public options: any;
 
-    @Input()
-    public pauseButton: boolean;
+    @Input() public pauseButton: boolean;
 
     public swiper: any;
-
     public showPager: boolean;
     public pause: boolean;
 
-    constructor( @Inject(ElementRef) private elementRef: ElementRef) {
-    }
+    constructor( @Inject(ElementRef) private elementRef: ElementRef) {}
 
     public ngOnInit() {
       const nativeElement = this.elementRef.nativeElement;
@@ -81,23 +76,32 @@ import {
         this.swiper.update();
       });
     }
+    
     @HostListener('mouseenter') public onMouseEnter() {
-      this.swiper.autoplay.stop();
+      if (this.swiper) {
+        this.swiper.autoplay.stop();
+      }
       this.pause = !this.pause;
     }
 
     @HostListener('mouseleave') public onMouseLeave() {
-      this.swiper.autoplay.start();
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
       this.pause = !this.pause;
     }
 
     @HostListener('focus') public onFocusIn() {
-      this.swiper.autoplay.start();
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
       this.pause = !this.pause;
     }
 
     @HostListener('blur') public onFocusOut() {
-      this.swiper.autoplay.start();
+      if (this.swiper) {
+        this.swiper.autoplay.start();
+      }
       this.pause = !this.pause;
     }
   }

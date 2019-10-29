@@ -2,19 +2,15 @@ import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'docs-wrapper',
-  templateUrl: './docs-menu.component.html',
-  styleUrls: ['./docs-menu.component.scss']
+  templateUrl: './docs-menu.component.html'
 })
 export class DocsMenuComponent implements OnInit {
 
-  @Input()
-  public component: string;
+  @Input() public component: string;
 
   public isCollapsed = true;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

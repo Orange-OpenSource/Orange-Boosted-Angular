@@ -9,6 +9,4 @@ import { Component } from '@angular/core';
     `],
     templateUrl: './tooltip.component.html'
 })
-export class DemoTooltip {
-
-}
+export class DemoTooltip {}

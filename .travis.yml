@@ -26,12 +26,15 @@ jobs:
         - echo "Deploying to NPM..."
         - npm run build:lib
         - cp ./README.md dist/ng-boosted
+      before_deploy:
+        - cd dist/ng-boosted
+      after_deploy:
+        - cd ../../
       deploy:
         provider: npm
         skip_cleanup: true
         email: $NPM_EMAIL
         api_key: $NPM_TOKEN
-        local_dir: dist/ng-boosted
         on:
           tags: true
           all_branches: true
@@ -39,11 +42,11 @@ jobs:
       node_js: "10.9.0"
       script:
         - echo "Deploying to gh Page ..."
+        - npm run build:lib
         - npm run build:docs
       deploy:
         provider: pages
         skip_cleanup: true
-        script: cd Orange-Boosted-Angular
         github_token: $GITHUB_TOKEN
         keep_history: true
         local_dir: dist/Orange-Boosted-Angular

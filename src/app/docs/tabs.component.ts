@@ -16,7 +16,9 @@ export class DocTabs implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/tabs.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/tabs.component.ts')
   };
+
   constructor(private _analytics: Analytics) {}
+
   public ngOnInit(): void {
       // this._analytics.trackPageViews();
   }

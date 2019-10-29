@@ -9,13 +9,13 @@
 import { Component, Input, HostBinding } from '@angular/core';
 
 @Component({
-    selector: 'lib-li[o-nav-menu]',
+  // tslint:disable-next-line:component-selector
+    selector: 'li[o-nav-menu]',
     styles: [`
       button {
         border: 0;
         background-color: #000;
       }
-
       button:hover {
         cursor: pointer;
       }
@@ -25,9 +25,9 @@ import { Component, Input, HostBinding } from '@angular/core';
   export class ONavMenuComponent {
     @HostBinding('class') public dropdownClass = 'nav-item dropdown';
 
-    @Input()
-    public menuTitle: string;
+    @Input() public menuTitle: string;
 
-    @Input()
-    public title: string;
+    @Input() public title: string;
+
+    @Input() public idForLabelledby: string;
   }

@@ -16,7 +16,9 @@ export class DocAlert implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/alert.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/alert.component.ts')
   };
+
   constructor(private _analytics: Analytics) {}
+
   public ngOnInit(): void {
     this._analytics.trackPageViews();
   }
