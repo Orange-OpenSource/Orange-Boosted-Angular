@@ -1,10 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { NgBoostedModule } from 'ng-boosted';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { DemoAccordion } from '../demos/accordion.component';
 import { DemoModal } from '../demos/modal.component';
 import { DemoTabs } from '../demos/tabs.component';
@@ -21,7 +18,6 @@ import { DemoOSwitch } from '../demos/o-switch.component';
 import { DemoOToggle } from '../demos/o-toggle.component';
 import { DemoSwiper } from '../demos/swiper.component';
 import { DemoONavbar } from '../demos/o-navbar.component';
-
 import { BoostwatchComponent } from './boostwatch.component';
 import { DemoToast } from '../demos/toast.component';
 
@@ -32,7 +28,7 @@ describe('BoostwatchComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        NgBoostedModule, NgbModule, BrowserModule,
+        NgbModule, BrowserModule,
         FormsModule
       ],
       declarations: [ BoostwatchComponent, DemoAccordion, DemoModal, DemoTabs, DemoPagination, DemoTooltip,
