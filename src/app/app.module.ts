@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { Analytics } from './docs/shared/analytics';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgBoostedModule } from 'ng-boosted';
 import { Globals } from './directives/global';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -48,6 +47,8 @@ import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
 import { DocOToggle } from './docs/o-toggle.component';
 import { CodeBox } from './docs/code-box.component';
+import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule,
+  ScrollTopModule, OSwitchModule, OToastModule } from 'ng-boosted';
 
 @NgModule({
   declarations: [
@@ -96,9 +97,17 @@ import { CodeBox } from './docs/code-box.component';
   imports: [
     BrowserModule,
     FormsModule,
-    NgBoostedModule,
     NgbModule,
-    AppRoutingModule
+    AppRoutingModule,
+    OCalendarModule,
+    OCarouselModule,
+    ODropdownModule,
+    ONavLinkModule,
+    ONavMenuModule,
+    ONavbarModule,
+    ScrollTopModule,
+    OSwitchModule,
+    OToastModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Analytics, Globals],
   bootstrap: [AppComponent]

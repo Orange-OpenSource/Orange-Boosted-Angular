@@ -2,14 +2,13 @@ import { TestBed, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from "@angular/core";
 import { RouterTestingModule } from '@angular/router/testing';
-import { NgBoostedModule } from 'ng-boosted';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule,NgBoostedModule
+        RouterTestingModule
       ],
       declarations: [
         AppComponent
