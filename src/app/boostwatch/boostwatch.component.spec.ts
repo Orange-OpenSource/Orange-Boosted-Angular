@@ -20,7 +20,7 @@ import { DemoSwiper } from '../demos/swiper.component';
 import { DemoONavbar } from '../demos/o-navbar.component';
 import { BoostwatchComponent } from './boostwatch.component';
 import { DemoToast } from '../demos/toast.component';
-import { OCalendarModule, OSwitchModule } from 'ng-boosted';
+import { OCalendarModule, OSwitchModule, OCarouselModule } from 'ng-boosted';
 
 describe('BoostwatchComponent', () => {
   let component: BoostwatchComponent;
@@ -28,7 +28,7 @@ describe('BoostwatchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ NgbModule, BrowserModule, FormsModule, OCalendarModule, OSwitchModule ],
+      imports: [ NgbModule, BrowserModule, FormsModule, OCalendarModule, OSwitchModule, OCarouselModule ],
       declarations: [ BoostwatchComponent, DemoAccordion, DemoModal, DemoTabs, DemoPagination, DemoTooltip,
         DemoPopover, DemoAlert, DemoCarousel, DemoOCalendar, DemoCollapse, DemoProgressBar, DemoDropdown,
         DemoOSwitch, DemoOToggle, DemoSwiper, DemoONavbar, DemoToast ]
