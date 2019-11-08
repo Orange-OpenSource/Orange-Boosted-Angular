@@ -3,6 +3,7 @@ import { NgbDateParserFormatter } from '@ng-bootstrap/ng-bootstrap';
 import { DateParserFormatter } from '../services/date-parser.service';
 import { OCalendarComponent } from './o-calendar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 describe('OCalendarComponent', () => {
   let component: OCalendarComponent;
@@ -10,8 +11,8 @@ describe('OCalendarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [NgbModule],
-      providers: [{provide: NgbDateParserFormatter, useClass: DateParserFormatter}],
+      imports: [ NgbModule, FormsModule ],
+      providers: [ {provide: NgbDateParserFormatter, useClass: DateParserFormatter} ],
       declarations: [ OCalendarComponent ]
     })
     .compileComponents();
@@ -23,7 +24,7 @@ describe('OCalendarComponent', () => {
     fixture.detectChanges();
   });
 
-  /*it('should create OCalendarComponent', () => {
+  it('should create OCalendarComponent', () => {
     expect(component).toBeTruthy();
-  });*/
+  });
 });
