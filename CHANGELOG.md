@@ -1,3 +1,23 @@
+<a name="5.1.3"></a>
+## 5.1.3
+
+### Bug Fixed
+*   **deployment :** fix travis task for deployment [4adcd65](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4adcd65f187c3cace73489da0545b674e31b3247)
+*   **navbar :** o-nav-menu correction [debd517](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/debd517b2e1a029f9994ecc965e59d6972ad5acd)
+*   **swiper :** add safe check to OCarouselContainerComponent [f868fee](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/f868fee924030a62b832071a862d69d419330c75)
+*   **o-nav-menu :** fix lib linting issue in o-nav-menu [9f56e62](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/9f56e62e275f405991a04bb9866f6e322e8577d0)
+*   **calendar :** correction delete action in input [db9d739](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/db9d739587660cbb0247e6a2114e2f0e6e131184)
+*   **TU :** correction TU [819445e](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/819445e02df74c1885808265f88d45c450d052b8)
+*   **TU :** TU correction [06fcec7](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/06fcec720628876777482e5c9ae1d01f85125e97)
+*   **swiper :** swiper correction pause [dad2908](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/dad290892378867220f10e6a2b3d3f90fef7f0ea)
+
+### Changes
+*   **ng-bootsrap:** ng-bootsrap update [4af525a](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4af525acf18bf64216bd366b825935981f97413a)
+*   **code formatting:** code formatting [dcc8723](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/dcc87234fbdccdeb7f406b626397b9fee7a26049)
+*   **modules:** Create a module for each ng-boosted component [dcbe7ad](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/dcbe7ad0d0b91c9fdf95777e2ee1b92d592efe82)
+*   **ng-bootsrap:** ng-bootsrap update [29931af](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/29931affa1d01231e2e7b7cb4008011e998dfb10)
+*   **ng-bootsrap:** ng-bootsrap update [945eef3](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/945eef3bf3cd93566a845e1c1dacba60eec43c97)
+
 <a name="5.1.2"></a>
 ## [5.1.2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.0...5.1.2) (2019-10-08)
 
