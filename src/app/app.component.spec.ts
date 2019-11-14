@@ -3,16 +3,13 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from "@angular/core";
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { ONavbarModule, ScrollTopModule } from 'ng-boosted';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [ RouterTestingModule, ONavbarModule, ScrollTopModule ],
+      declarations: [ AppComponent ]
     }).compileComponents();
   }));
 
