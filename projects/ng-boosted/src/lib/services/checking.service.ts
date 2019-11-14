@@ -27,11 +27,7 @@ export function isDefined(value: any): boolean {
   }
 
 export function padNumber(value: number) {
-    if (isNumber(value)) {
-      return `0${value}`.slice(-2);
-    } else {
-      return '';
-    }
+  return isNumber(value) ? `0${value}`.slice(-2) : '';
   }
 
 export function regExpEscape(text) {

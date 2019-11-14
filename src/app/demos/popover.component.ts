@@ -9,6 +9,4 @@ import { Component } from '@angular/core';
     `],
     templateUrl: './popover.component.html'
 })
-export class DemoPopover  {
-
- }
+export class DemoPopover  {}

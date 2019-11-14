@@ -29,7 +29,9 @@ export class DocSwiper implements OnInit {
         markup: require('!!prismjs-loader?lang=html!../demos/swiper.component.html'),
         typescript: require('!!prismjs-loader?lang=typescript!../demos/swiper.component.ts')
     };
+
     constructor(private _analytics: Analytics) {}
+
     public ngOnInit(): void {
       // this._analytics.trackPageViews();
   }

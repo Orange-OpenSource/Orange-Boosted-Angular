@@ -20,29 +20,22 @@ import {
   export class OSwitchComponent {
     @HostBinding('class.o-switch')
 
-    @Input()
-    public inputId: string;
+    @Input() public inputId: string;
 
-    @Input()
-    public toggled = false;
+    @Input() public toggled = false;
 
-    @Input()
-    public rounded = false;
+    @Input() public rounded = false;
 
-    @Input()
-    public successColor = false;
+    @Input() public successColor = false;
 
-    @Input()
-    public customWidth = 'auto';
+    @Input() public customWidth = 'auto';
 
-    @Input()
-    public onLabel = 'on';
+    @Input() public onLabel = 'on';
 
-    @Input()
-    public offLabel = 'off';
+    @Input() public offLabel = 'off';
 
-    @Output()
-    public isChecked = new EventEmitter();
+    @Output() public isChecked = new EventEmitter();
+    
     public checkValue(event: any) {
       this.isChecked.emit(this.toggled);
    }

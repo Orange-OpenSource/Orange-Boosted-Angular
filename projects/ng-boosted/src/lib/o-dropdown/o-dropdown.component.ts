@@ -15,18 +15,17 @@ import { Directive, HostListener, ElementRef, AfterViewInit } from '@angular/cor
 export class ODropdownDirective implements AfterViewInit {
     private dropdownMenu: any;
 
-    constructor(private elRef: ElementRef) { }
+    constructor(private elRef: ElementRef) {}
 
     public ngAfterViewInit() {
         this.dropdownMenu = this.elRef.nativeElement.querySelectorAll('.dropdown-menu')[0];
     }
 
-    @HostListener('openChange', ['$event'])
-    public handleDropdownFocus(isOpenEvent) {
+    @HostListener('openChange', ['$event']) public handleDropdownFocus(isOpenEvent) {
         if (isOpenEvent) {
             setTimeout(() => {
                 this.dropdownMenu.firstElementChild.focus();
             });
         }
     }
- }
+}

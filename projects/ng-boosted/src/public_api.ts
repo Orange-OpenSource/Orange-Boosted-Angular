@@ -1,8 +1,15 @@
 /*
  * Public API Surface of ng-boosted
  */
-
-export * from './lib/ng-boosted.module';
+export * from './lib/o-calendar/o-calendar.module';
+export * from './lib/o-carousel/o-carousel.module';
+export * from './lib/o-dropdown/o-drowdown.module';
+export * from './lib/o-nav-link/o-nav-link.module';
+export * from './lib/o-nav-menu/o-nav-menu.module';
+export * from './lib/o-navbar/o-navbar.module';
+export * from './lib/o-scroll/scroll-top.module';
+export * from './lib/o-switch/switch.module';
+export * from './lib/o-toast/o-toast.module';
 
 // Ng-Boosted Export
 export * from './lib/o-calendar/o-calendar.component';

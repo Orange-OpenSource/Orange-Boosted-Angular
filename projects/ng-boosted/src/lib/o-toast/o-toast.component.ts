@@ -7,7 +7,6 @@ import { ToastService } from '../services/toast.service';
     templateUrl: './o-toast.component.html'
 })
 export class OToastComponent {
-
     @HostBinding('class.ngb-toasts') ngb_toast: boolean;
     public autohide = true;
 

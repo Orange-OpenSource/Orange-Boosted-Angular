@@ -16,6 +16,7 @@ export class DocAccordion implements OnInit {
     markup: require('!!prismjs-loader?lang=html!../demos/accordion.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/accordion.component.ts')
   };
+
   constructor(private _analytics: Analytics) {}
 
   public ngOnInit(): void {

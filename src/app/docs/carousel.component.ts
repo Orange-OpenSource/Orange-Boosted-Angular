@@ -22,6 +22,7 @@ export class DocCarousel implements OnInit {
     };
 
     constructor(private _analytics: Analytics) {}
+
     public ngOnInit() {
         // this._analytics.trackPageViews();
     }

@@ -19,7 +19,7 @@ jobs:
   include:
     - stage: Lib test
       script:
-        - npm run test ng-boosted -- --no-watch --no-progress --browsers=ChromeHeadless
+        - npm run test-PhJS:lib
     - stage: Npm Release
       node_js: "10.9.0"
       script:

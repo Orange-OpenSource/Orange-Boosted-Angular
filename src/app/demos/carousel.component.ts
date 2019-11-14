@@ -41,11 +41,13 @@ export class DemoCarousel implements OnInit {
     public ngOnInit() {
         this.pause = false;
     }
+
     public onFocus() {
         this.carousel.interval = 0;
         this.carousel.pause();
         this.pause = !this.pause;
     }
+
     public onBlur() {
         this.carousel.interval = 1500;
         this.carousel.cycle();

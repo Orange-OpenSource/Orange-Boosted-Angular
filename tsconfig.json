@@ -19,10 +19,10 @@
     ],
     "paths": {
       "ng-boosted": [
-        "dist/ng-boosted"
+        "projects/ng-boosted/src/public_api"
       ],
       "ng-boosted/*": [
-        "dist/ng-boosted/*"
+        "projects/ng-boosted/src/public_api/*"
       ]
     }
   }
