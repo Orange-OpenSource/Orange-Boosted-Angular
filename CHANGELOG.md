@@ -1,3 +1,10 @@
+<a name="5.1.4"></a> (20/11/2019)
+## 5.1.4
+
+### Documentation
+*   **Getting started :** 
+Installation paragraphe in Getting started page changed [e6878d6] https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/e6878d694eec6ec97011b4df1ffc99117e0cd826
+
 <a name="5.1.3"></a> (14/11/2019)
 ## 5.1.3
 
