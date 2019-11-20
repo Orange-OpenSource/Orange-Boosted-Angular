@@ -41,6 +41,28 @@
         If you need to use a component from ng-bootstrap you need to import it like explained in the ng-bootstrap documentation <a href="https://ng-bootstrap.github.io/#/getting-started#installation">here</a>.
     </p>
 
+    <p>
+        <b>From version 1.5.3 :</b>
+    </p>
+    <p>
+        Delete "NgBoostedModule" and add :
+    </p>
+    <p><code>
+        import {{ '{' }} OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule,<br>
+            &emsp;ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule {{ '}' }} from 'ng-boosted';
+    </code></p>
+
+    <p><code>
+        @NgModule({{ '{' }}<br>
+        &emsp;declarations: [AppComponent, ...],<br>
+        &emsp;imports: [ OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, 
+        ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule, ...],<br>
+        &emsp;bootstrap: [AppComponent]<br>
+        {{ '}' }})<br>
+        export class AppModule {{ '{' }}<br>
+        {{ '}' }}<br>
+    </code></p>
+
     <h2>Adding Boosted CSS</h2>
     <p>Three options can be done to import Boosted CSS if downloaded from <a href="https://www.npmjs.com/package/boosted"></a>npm</p>
     <h3>Configure your angular.json</h3>

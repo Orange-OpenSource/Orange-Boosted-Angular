@@ -14,7 +14,7 @@
 ### Changes
 *   **ng-bootsrap:** ng-bootsrap update [4af525a](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4af525acf18bf64216bd366b825935981f97413a)
 *   **code formatting:** code formatting [dcc8723](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/dcc87234fbdccdeb7f406b626397b9fee7a26049)
-*   **modules:** Create a module for each ng-boosted component [dcbe7ad](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/dcbe7ad0d0b91c9fdf95777e2ee1b92d592efe82)
+*   **modules:** Create a module for each ng-boosted component [dcbe7ad](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/dcbe7ad0d0b91c9fdf95777e2ee1b92d592efe82). NgBoostedModule removed, please look at the page https://ng-boosted.orange.com/#/start
 *   **ng-bootsrap:** ng-bootsrap update [29931af](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/29931affa1d01231e2e7b7cb4008011e998dfb10)
 *   **ng-bootsrap:** ng-bootsrap update [945eef3](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/945eef3bf3cd93566a845e1c1dacba60eec43c97)
 
