@@ -76,7 +76,7 @@
     "prismjs-loader": "^0.0.4",
     "protractor": "~5.4.2",
     "rxjs": "^6.5.3",
-    "swiper": "^4.5.0",
+    "swiper": "^4.4.6",
     "ts-node": "~8.5.4",
     "tsickle": ">=0.37.1",
     "tslib": "^1.10.0",
