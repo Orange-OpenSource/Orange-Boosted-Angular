@@ -26,7 +26,13 @@
     "build:lib": "ng build ng-boosted",
     "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^6.7.2",
+    "focus-visible": "^5.0.2",
+    "serialize-javascript": "^2.1.2",
+    "set-value": "^3.0.1",
+    "tablesorter": "^2.31.2"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.800.0",
     "@angular-devkit/build-ng-packagr": "~0.800.0",
@@ -62,14 +68,14 @@
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-phantomjs-launcher": "1.0.4",
-    "markdown-loader": "^5.0.0",
-    "ng-packagr": "^4.2.0",
+    "markdown-loader": "^5.1.0",
+    "ng-packagr": "^5.7.1",
     "node-sass": "^4.12.0",
     "popper.js": "^1.15.0",
     "prismjs": "^1.16.0",
     "prismjs-loader": "^0.0.4",
     "protractor": "~5.4.0",
-    "rxjs": "~6.3.3",
+    "rxjs": "^6.4.0",
     "swiper": "^4.4.6",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.29.0",
@@ -77,7 +83,7 @@
     "tslint": "~5.11.0",
     "typescript": "~3.4.0",
     "web-animations-js": "^2.3.2",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.9.1"
   },
   "repository": {
     "type": "git",
