@@ -78,7 +78,8 @@
     "web-animations-js": "^2.3.2",
     "zone.js": "~0.9.1",
     "serialize-javascript": "^2.1.2",
-    "set-value": "^3.0.1"
+    "set-value": "^3.0.1",
+    "lodash": "^4.17.15"
   },
   "repository": {
     "type": "git",
