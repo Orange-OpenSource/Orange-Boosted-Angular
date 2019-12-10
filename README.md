@@ -11,7 +11,7 @@ It also explains the basic mechanics of using `git`, `node`, and `npm`.
 * [Installing NPM Modules](#installing-npm-modules)
 * [Installing Ng-Boosted](#installing-lib)
 * [Running demo Locally](#running-demo-locally)
-* [Copyright and license](#copyright-and-license)
+* [License](#license)
 
 ## Prerequisite Software
 
@@ -40,10 +40,10 @@ npm install
 
 Here is the [explanation](https://ng-boosted.orange.com/#/start) on how to install and use ng-boosted library.
 
-## Copyright and license
+## License
 
 Thanks to [Netlify](https://www.netlify.com/), we are able to deploy pre-versions at [Ng-Boosted](https://ng-boosted.netlify.com).
-Code and documentation copyright 2018 Orange SA. Code released under [the MIT license](LICENSE). Docs released under [Creative Commons Attribution](docs/LICENSE).
+Code released under [the MIT license](LICENSE). Docs released under [Creative Commons Attribution](docs/LICENSE).
 
 
 ## Development server

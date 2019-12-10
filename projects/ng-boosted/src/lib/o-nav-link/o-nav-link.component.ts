@@ -1,7 +1,6 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - o-nav-link.component.ts
- * copyright 2019 Orange SA
  * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
