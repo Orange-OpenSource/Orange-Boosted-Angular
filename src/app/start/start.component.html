@@ -68,13 +68,14 @@
     <h3>Configure your angular.json</h3>
     <p>Inside the file, add the following path:<br>
         <code> "styles": [<br>
-                "/path/node_modules/boosted/dist/css/boosted.min.css",<br>
-                "styles.css"<br>
+                "node_modules/boosted/dist/css/boosted.min.css",<br>
+                "node_modules/boosted/dist/css/orangeIcons.css"<br>
             ]</code><br>
+    Add orangeIcons.css, if you need.
     </p>
     <h3>Configure your styles.css</h3>
     <p>Inside your styles.css, import boosted css:<br>
-        <code>@import '~boosted/dist/css/boosted.min.css'</code>
+        <code>@import '../node_modules/boosted/dist/css/boosted.min.css'</code>
     </p>
     <h3>Configure your styles.scss with SASS</h3>
     <p>if you are using SASS, then you need to do this in your styles.scss:<br>
