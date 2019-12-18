@@ -10,5 +10,8 @@ Beware in your option, you have to enbale autoplay.
 
 In order to use the wrapper correctly, please add the following dependencies into your projet.
 
-* [swiper.css](https://github.com/nolimits4web/Swiper/blob/master/dist/css/swiper.css) (make sure to add this before boosted css)
-* [swiper.js](https://github.com/nolimits4web/Swiper/blob/master/dist/js/swiper.js)
+* [swiper.css](https://github.com/nolimits4web/Swiper/blob/master/dist/css/swiper.css)("^4.4.1") (make sure to add this in angular.json before boosted css)
+           "styles": [
+              "...",
+              "node_modules/swiper/dist/css/swiper.css"
+            ],
