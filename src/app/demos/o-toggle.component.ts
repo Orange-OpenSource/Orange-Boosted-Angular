@@ -12,5 +12,4 @@ import { Component } from '@angular/core';
 export class DemoOToggle {
     // define which radio is toggled on init
     public model = 2;
-    public model2 = 1;
 }
