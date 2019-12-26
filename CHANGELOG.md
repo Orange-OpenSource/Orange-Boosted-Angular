@@ -1,3 +1,24 @@
+<a name="5.1.5"></a> (26/12/2019)
+## 5.1.5
+
+### Documentation
+*   **license :**
+Correction of license text in documentation [293e7bc](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/293e7bc3a915e97265d967f7b1c1a3f231b10ca4)
+*   **getting start :**
+Getting start page correction[8151f10](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/8151f109f6d14a8b447d47ec509730caa464161a)
+*   **swiper :**
+Add information to swiper component doc [b98c01f](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/b98c01fe0de37ced9030b4f4d4b4dd10a6e0a9fd)
+*   **pagination :**
+Class css for responsive web app added to dec [0b6a813](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/0b6a8137172a608e2ccc5e1f7af9407858f0f1ec)
+*   **toggle :**
+Add information to toggle component doc [5356369](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/53563694c55f1c363f3844d51947c6e59253c911)
+
+### Changes
+*   **package.json :**
+Packages add & update [5caa3f7](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5caa3f7e68305d31085072381aa360d673f0a105)
+*   **toggle :**
+no-outline toggle is no more in orage brand[81651fe](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/81651fe42927c359f50ad1fc45ba5c1a17646513)
+
 <a name="5.1.4"></a> (20/11/2019)
 ## 5.1.4
 
