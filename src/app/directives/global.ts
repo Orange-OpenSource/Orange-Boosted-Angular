@@ -5,5 +5,5 @@ export class Globals {
     public ngBoostedVersion = '5.1.5';
     public boostedVersion = '4.3.1';
     public angularVersion = ' > 7.0.0' ;
-    public ngBootstrapVersion = '5.1.4';
+    public ngBootstrapVersion = '5.1.5';
 }
