@@ -23,7 +23,7 @@ import { Component, Input } from '@angular/core';
   })
   export class ONavbarComponent {
     public pattern = TEST_PATTERN;
-    public isCollapsed = true;
+    @Input() public isCollapsed = true;
 
     @Input() public homeRoute: string;
 

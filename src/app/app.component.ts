@@ -8,5 +8,6 @@ import { Globals } from './directives/global';
 })
 export class AppComponent {
   title = 'Orange-Boosted-Angular';
+  public isCollapsed = true;
   constructor(public globals: Globals) {}
 }

@@ -9,6 +9,7 @@ Main element `<lib-o-navbar>` accepts the following parameters :
 Checkout Boosted [documentation](http://boosted.orange.com/v4-alpha/layout/responsive-utilities/#available-classes) for supported values.
 * `brandPath` to specify path and file of the brand logo
 * `brandLabel` to specify alt text for image and link title at the same time
+* `isCollapsed` to close the navbar after clicking on navbar items. (just for mobile apps) 
 
 There is three supported types of child elements to `<lib-o-navbar>`. Each of them must use native `<li>` html element.
 
