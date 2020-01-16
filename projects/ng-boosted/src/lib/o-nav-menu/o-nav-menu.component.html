@@ -1,3 +1,4 @@
-<button class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" [attr.title]="title === 'undefined' ? null : title" [attr.id]="idForLabelledby === 'undefined' ? null : idForLabelledby" [attr.aria-label]="title === 'undefined' ? null : title"
-      (click)="$event.stopPropagation();">{{menuTitle}}</button>
+<button class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" 
+[attr.title]="title === 'undefined' ? null : title" [attr.id]="idForLabelledby === 'undefined' ? null : idForLabelledby" 
+[attr.aria-label]="title === 'undefined' ? null : title" (click)="$event.stopPropagation();">{{menuTitle}}</button>
  <ng-content></ng-content>
