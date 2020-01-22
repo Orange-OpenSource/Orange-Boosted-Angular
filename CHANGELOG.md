@@ -1,3 +1,19 @@
+<a name="5.1.6"></a> (22/01/2020)
+## 5.1.6
+
+### Changes
+*   **ngBootstrap :**
+NgBootstrap update [742a0ab] & [b133e93](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/742a0ab4dc5555078ec3ac40dadfeffbe7b644e9) & (https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/b133e9343f084960f08890f197e04a8a285768ba)
+*   **navbar :**
+Close navbar in mobile apps [0b19bfe](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/0b19bfe18ef9b949ce0ed03d253e25520199b9e0)
+*   **calendar :**
+Dynamic label button in calendar [4b75814](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4b758140f14ac74260cf5cd2c9015d86d0f0d5a3)
+
+
+### Bug Fixed
+*   **navbar :**
+Tag li o-nav-menu correction [92aad9a](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/92aad9a39c7ca12ec5580b4d81030759c3c9079d)
+
 <a name="5.1.5"></a> (26/12/2019)
 ## 5.1.5
 
