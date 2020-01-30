@@ -1,6 +1,6 @@
-By default a popover is closed by clicking on its trigger element.
-To close by clicking outside you'll have to use custom directives on the trigger element :
-
+* You can close the popover manually :
 ```html
-<span #p="ngbPopover" (document:click)="p.close()" (click)="$event.stopPropagation()"></span>
+<button ... triggers="manual" #p="ngbPopover" (click)="p.open()"></button>
+<button ... (click)="p.close()"></button>
 ```
+* `autoClose` allows to close popover by clicking `inside` or `outside` of button.
