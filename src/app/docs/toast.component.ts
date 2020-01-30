@@ -7,8 +7,7 @@ import { Analytics } from './shared/analytics';
     <docs-wrapper component="Toast">
         <h3>Demo</h3>
         <demo-toast></demo-toast>
-        <br>
-        <h3>Usage</h3>
+        <h3 class="mt-3">Usage</h3>
         <div [innerHtml]=docContent></div>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>
