@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
     >>> .progress {
       margin-top: 1rem;
     }
+    >>> .progress-bar {
+        color: white;
+    }
   `],
   templateUrl: './progress-bar.component.html'
 })
