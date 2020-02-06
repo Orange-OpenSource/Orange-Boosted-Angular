@@ -1,3 +1,22 @@
+<a name="5.1.7"></a> (06/02/2020)
+## 5.1.7
+
+### Changes
+*   **ngBootstrap :**
+NgBootstrap update [ec01e90](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ec01e901baaad5312669fd58215e258728678409)
+
+### Documentation
+*   **tooltip :**
+doc changed for tooltip [a682e42](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/a682e42ae7ca338369a3f07b6d0333362bfc34e5)
+*   **popover,accordion :**
+doc changed [700b296](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/700b296a62a734d8a06256209ca177ee8c2892e5)
+*   **progress-bar, o-navbar :**
+correction doc [bd3666a](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/bd3666aca2369047fa5ac5c2d77b8105ceb0b4f9)
+
+### Bug Fixed
+*   **navbar :**
+routerLinkActiveOptions added to nav-link [d976a57](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/d976a5794167e4ab6ec9bdc1910f77a89bd8c485)
+
 <a name="5.1.6"></a> (22/01/2020)
 ## 5.1.6
 
