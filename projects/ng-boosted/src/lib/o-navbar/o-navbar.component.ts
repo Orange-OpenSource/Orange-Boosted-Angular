@@ -32,4 +32,8 @@ import { Component, Input } from '@angular/core';
     @Input() public brandPath: string;
 
     @Input() public brandLabel: string;
+
+    @Input() public containerClass: string;
+
+    @Input() public ariaLabel: string;
 }
