@@ -1,11 +1,11 @@
 <nav [class]="'navbar navbar-dark bg-dark ' +
     (pattern.test(breakpoint) ? 'navbar-expand-'+breakpoint : 'navbar-toggleable-sm')" role="navigation">
-    <div class="container">
+    <div [class]="containerClass ? containerClass : 'container'">
         <a class="navbar-brand logo" [routerLink]="homeRoute">
             <img [attr.src]="brandPath" [attr.alt]="brandLabel" [attr.title]="brandLabel">
         </a>
         <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-        [attr.aria-expanded]="!isCollapsed" aria-controls="collapsingNavbarHead">
+        [attr.aria-expanded]="!isCollapsed" aria-controls="collapsingNavbarHead" [attr.aria-label]= "menuTitle ? menuTitle : 'Toggle navigation'">{{menuTitle}}
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse" [ngClass]="{'show': isCollapsed}" id="collapsingNavbarHead" [ngbCollapse]="isCollapsed">
