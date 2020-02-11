@@ -7,7 +7,7 @@ Main element `<lib-o-navbar>` accepts the following parameters :
 * `homeRoute` which is the default route of your application when user clicks the logo link.
 * `breakpoint` which is the bootstrap suffix for when the navbar must collapse to mobile view. The default value is `"sm"`. Checkout [Boosted documentation][1] for supported values.
 * `containerClass` to specify `container` or `container-fluid` class. The default value is `container`.
-* `menuTitle` to add a title attribute to  `<button>` tag.
+* `ariaLabel` to add a aria-Label attribute to  `<button>` tag.
 
 * `brandPath` to specify path and file of the brand logo.
 * `brandLabel` to specify alt text for image and link title at the same time.

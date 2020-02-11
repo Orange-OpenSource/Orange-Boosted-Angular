@@ -35,5 +35,5 @@ import { Component, Input } from '@angular/core';
 
     @Input() public containerClass: string;
 
-    @Input() public menuTitle: string;
+    @Input() public ariaLabel: string;
 }
