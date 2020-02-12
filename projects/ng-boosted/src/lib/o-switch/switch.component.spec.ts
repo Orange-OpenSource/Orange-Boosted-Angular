@@ -31,22 +31,7 @@ describe('OSwitchComponent', () => {
   it('The value of toggled should be false', () => {
     expect(component.toggled).toBeFalsy();
   });
-
-  it('The value of rounded should be false', () => {
-    expect(component.rounded).toBeFalsy();
-  });
-
-  it('The value of rounded should be false', () => {
-    component.rounded = true;
-    const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
-    fixture.detectChanges();
-    expect(ataghtml.querySelector('label').getAttribute('class')).toEqual('toggle col-form-label toggle-rounded');
-  });
-
-  it('The value of successColor should be false', () => {
-    expect(component.successColor).toBeFalsy();
-  });
-
+  
   it('The value of id and the name of the input tag html attribute should be Input#1', () => {
     component.inputId = 'Input#1';
     fixture.detectChanges();
