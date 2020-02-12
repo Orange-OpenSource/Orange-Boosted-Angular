@@ -65,8 +65,19 @@ pre {
   }
 }
 
-/* @todo Remove this when Boosted handles this */
+/*
+  @todo Remove this when Boosted handles this
+  @link https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/issues/317
+*/
 .pagination {
   flex-wrap: wrap;
+}
+
+/*
+  @todo Find a way to remove this from markup
+  @link https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues/167
+*/
+.close > [aria-hidden="true"]  {
+  display: none;
 }
 
