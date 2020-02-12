@@ -12,74 +12,14 @@ body{
 code {
   background-color: #f5f5f5;
 }
+
 .navbar-nav-svg {
   width: 1.4rem;
   height: 1.4rem;
 }
 
-.footer-svg {
-  height: 1.6rem;
-}
-
 .ng-banner {
   margin-bottom: 3.75rem;
-}
-
-.head h1 {
-  margin-top: 3.75rem;
-  font-size: 3.755rem;
-  letter-spacing: -1px;
-}
-
-.head .lead {
-  font-size: 1rem;
-  margin-top: 1.25rem;
-}
-
-.head .lead a {
-  text-decoration: underline;
-}
-
-.head svg {
-  margin-top: 2.5rem;
-}
-
-.head img {
-  height: 14.75rem;
-  margin-top: 3.75rem;
-}
-
-.version {
-  margin-left: 1.875rem;
-}
-
-.only-in-ng {
-  background-color: #eee;
-}
-
-.only-in-ng .col-md-5 {
-  display: flex;
-}
-
-.only-in-ng .inner {
-  align-self: center;
-}
-
-.only-in-ng h2 {
-  font-size: 1.5rem;
-}
-
-.only-in-ng img {
-  width: 100%;
-  margin: 3.755rem 0;
-}
-
-.only-in-ng .o-square-list li::before {
-  color: #000;
-}
- 
-h2 {
-  margin-top: 1.25rem;
 }
 
 .bd-sidebar {
@@ -173,7 +113,7 @@ article {
   .head h1 {
     font-size: 2.5rem;
   }
-  
+
   .head .col-md-7 {
     order: 1;
   }
