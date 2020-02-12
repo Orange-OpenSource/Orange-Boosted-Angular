@@ -19,13 +19,12 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as footer with "Designed and built by the Boosted team"`, () => {
+  it(`should have a footer with "Designed and built by the Boosted team"`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const bannerDe: DebugElement = fixture.debugElement;
-    const paragraphDe = bannerDe.query(By.css('.o-footer-top'));
+    const paragraphDe = bannerDe.query(By.css('.o-footer-body p:first-child'));
     const p: HTMLElement = paragraphDe.nativeElement;
     fixture.detectChanges();
-    const app = fixture.debugElement.componentInstance;
     expect(p.textContent).toEqual('Designed and built by the Boosted team.');
   });
 });

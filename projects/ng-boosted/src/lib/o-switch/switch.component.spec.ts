@@ -31,17 +31,17 @@ describe('OSwitchComponent', () => {
   it('The value of toggled should be false', () => {
     expect(component.toggled).toBeFalsy();
   });
-  
-  it('The value of id and the name of the input tag html attribute should be Input#1', () => {
+
+  it('The id name of the input tag should be Input#1', () => {
     component.inputId = 'Input#1';
     fixture.detectChanges();
     const inputTagHtml: HTMLElement = fixture.debugElement.nativeElement;
     expect(inputTagHtml.querySelector('input').getAttribute('id')).toEqual('Input#1');
   });
 
-  it('Simulated a click on the input with subscriotion to the output', () => {
+  it('Simulate a click on the input with subscription to the output', () => {
     component.toggled = true;
-    component.inputId = 'Input#2';
+    component.inputId = 'Input#1';
     input.triggerEventHandler('click', null);
 
     fixture.detectChanges();

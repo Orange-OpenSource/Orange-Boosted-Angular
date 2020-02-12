@@ -46,21 +46,21 @@ describe('ONavbarComponent', () => {
     expect(component.isCollapsed).toBeTruthy();
   });
 
-  it('The value of title of the img tag html attribute should be brand label', () => {
+  it('The .navbar-brand link title should be brand label', () => {
     component.brandLabel = 'brand label';
     fixture.detectChanges();
     const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
-    expect(ataghtml.querySelector('img').getAttribute('title')).toEqual('brand label');
+    expect(ataghtml.querySelector('a.logo').getAttribute('title')).toEqual('brand label');
   });
 
-  it('The value of source of the img tag html attribute should be src img', () => {
+  it('The .navbar-brand img source should be src/img', () => {
     component.brandPath = '/src/img/';
     fixture.detectChanges();
     const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
     expect(ataghtml.querySelector('img').getAttribute('src')).toEqual('/src/img/');
   });
 
-  it('Get RouterLinks from tempalte and check if it is equal to home', () => {
+  it('Get RouterLinks from template and check if it equals home', () => {
     component.homeRoute = '/home';
     fixture.detectChanges();
     expect(routerLinks[0].linkParams).toBe('/home');
@@ -81,7 +81,6 @@ describe('ONavbarComponent', () => {
   it('Check the click event on button', () => {
     component.homeRoute = '/home';
     fixture.detectChanges();
-    const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
     testButton.triggerEventHandler('click', null);
     expect(component.isCollapsed).toBeFalsy();
   });

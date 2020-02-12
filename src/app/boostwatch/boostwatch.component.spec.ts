@@ -18,9 +18,19 @@ import { DemoOSwitch } from '../demos/o-switch.component';
 import { DemoOToggle } from '../demos/o-toggle.component';
 import { DemoSwiper } from '../demos/swiper.component';
 import { DemoONavbar } from '../demos/o-navbar.component';
+import { HomeComponent } from '../home/home.component';
 import { BoostwatchComponent } from './boostwatch.component';
 import { DemoToast } from '../demos/toast.component';
-import { OCalendarModule, OSwitchModule, OCarouselModule } from 'ng-boosted';
+import {
+  OCalendarModule,
+  OSwitchModule,
+  OCarouselModule,
+  ONavbarModule,
+  ODropdownModule,
+  ONavLinkModule, ONavMenuModule, ScrollTopModule, OToastModule
+} from 'ng-boosted';
+import {RouterTestingModule} from "@angular/router/testing";
+import {AppRoutingModule} from "../app-routing.module";
 
 describe('BoostwatchComponent', () => {
   let component: BoostwatchComponent;
@@ -28,10 +38,42 @@ describe('BoostwatchComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ NgbModule, BrowserModule, FormsModule, OCalendarModule, OSwitchModule, OCarouselModule ],
-      declarations: [ BoostwatchComponent, DemoAccordion, DemoModal, DemoTabs, DemoPagination, DemoTooltip,
-        DemoPopover, DemoAlert, DemoCarousel, DemoOCalendar, DemoCollapse, DemoProgressBar, DemoDropdown,
-        DemoOSwitch, DemoOToggle, DemoSwiper, DemoONavbar, DemoToast ]
+      imports: [
+        BrowserModule,
+        FormsModule,
+        NgbModule,
+        AppRoutingModule,
+        OCalendarModule,
+        OCarouselModule,
+        ODropdownModule,
+        ONavLinkModule,
+        ONavMenuModule,
+        ONavbarModule,
+        ScrollTopModule,
+        OSwitchModule,
+        OToastModule
+      ],
+      declarations: [
+        BoostwatchComponent,
+        HomeComponent,
+        DemoAccordion,
+        DemoModal,
+        DemoTabs,
+        DemoPagination,
+        DemoTooltip,
+        DemoPopover,
+        DemoAlert,
+        DemoCarousel,
+        DemoOCalendar,
+        DemoCollapse,
+        DemoProgressBar,
+        DemoDropdown,
+        DemoOSwitch,
+        DemoOToggle,
+        DemoSwiper,
+        DemoONavbar,
+        DemoToast
+      ]
     })
     .compileComponents();
   }));
