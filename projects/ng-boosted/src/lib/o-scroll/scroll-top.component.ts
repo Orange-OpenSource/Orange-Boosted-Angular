@@ -9,8 +9,7 @@ import { Component, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'lib-scroll-top',
-  templateUrl: './scroll-top.component.html',
-  styles: ['a { display: inline;}']
+  templateUrl: './scroll-top.component.html'
 })
 export class ScrollTopComponent {
   public showMe = false;
