@@ -18,24 +18,18 @@ import {
     templateUrl: './switch.component.html'
   })
   export class OSwitchComponent {
-    @HostBinding('class.o-switch')
+    @HostBinding('class') public SwitchClass = 'custom-control custom-switch';
 
     @Input() public inputId: string;
 
     @Input() public toggled = false;
 
-    @Input() public rounded = false;
-
-    @Input() public successColor = false;
-
     @Input() public customWidth = 'auto';
 
-    @Input() public onLabel = 'on';
-
-    @Input() public offLabel = 'off';
+    @Input() public label: string;
 
     @Output() public isChecked = new EventEmitter();
-    
+
     public checkValue(event: any) {
       this.isChecked.emit(this.toggled);
    }
