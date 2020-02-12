@@ -31,6 +31,28 @@ import {
 } from 'ng-boosted';
 import {RouterTestingModule} from "@angular/router/testing";
 import {AppRoutingModule} from "../app-routing.module";
+import {StartComponent} from "../start/start.component";
+import {DocCollapse} from "../docs/collapse.component";
+import {DocOCalendar} from "../docs/o-calendar.component";
+import {AppComponent} from "../app.component";
+import {DocsMenuComponent} from "../docs-menu/docs-menu.component";
+import {DocAccordion} from "../docs/accordion.component";
+import {DocModal} from "../docs/modal.component";
+import {DocDropdown} from "../docs/dropdown.component";
+import {DocTabs} from "../docs/tabs.component";
+import {DocPagination} from "../docs/pagination.component";
+import {DocAlert} from "../docs/alert.component";
+import {DocTooltip} from "../docs/tooltip.component";
+import {DocToast} from "../docs/toast.component";
+import {DocPopover} from "../docs/popover.component";
+import {DocCarousel} from "../docs/carousel.component";
+import {DocSwiper} from "../docs/swiper.component";
+import {DocProgressBar} from "../docs/progress-bar.component";
+import {DocONavbar} from "../docs/o-navbar.component";
+import {DocOScrollTop} from "../docs/o-scroll-top.component";
+import {DocOSwitch} from "../docs/o-switch.component";
+import {DocOToggle} from "../docs/o-toggle.component";
+import {CodeBox} from "../docs/code-box.component";
 
 describe('BoostwatchComponent', () => {
   let component: BoostwatchComponent;
@@ -54,25 +76,47 @@ describe('BoostwatchComponent', () => {
         OToastModule
       ],
       declarations: [
+        AppComponent,
+        StartComponent,
+        DocsMenuComponent,
         BoostwatchComponent,
-        HomeComponent,
         DemoAccordion,
         DemoModal,
         DemoTabs,
         DemoPagination,
         DemoTooltip,
+        DemoToast,
         DemoPopover,
         DemoAlert,
         DemoCarousel,
         DemoOCalendar,
+        DemoSwiper,
         DemoCollapse,
         DemoProgressBar,
         DemoDropdown,
         DemoOSwitch,
         DemoOToggle,
-        DemoSwiper,
         DemoONavbar,
-        DemoToast
+        DocAccordion,
+        DocOCalendar,
+        DocModal,
+        DocDropdown,
+        DocTabs,
+        DocPagination,
+        DocAlert,
+        DocTooltip,
+        DocToast,
+        DocPopover,
+        DocCarousel,
+        DocSwiper,
+        DocCollapse,
+        DocProgressBar,
+        DocONavbar,
+        DocOScrollTop,
+        DocOSwitch,
+        DocOToggle,
+        CodeBox,
+        HomeComponent
       ]
     })
     .compileComponents();

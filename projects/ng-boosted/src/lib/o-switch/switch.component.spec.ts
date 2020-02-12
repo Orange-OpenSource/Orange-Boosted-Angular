@@ -20,7 +20,7 @@ describe('OSwitchComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(OSwitchComponent);
     component = fixture.componentInstance;
-    input  = fixture.debugElement.query(By.css('.checkbox'));
+    input  = fixture.debugElement.query(By.css('.custom-control-input'));
     fixture.detectChanges();
   });
 
@@ -41,7 +41,7 @@ describe('OSwitchComponent', () => {
 
   it('Simulate a click on the input with subscription to the output', () => {
     component.toggled = true;
-    component.inputId = 'Input#1';
+    component.inputId = 'Input#2';
     input.triggerEventHandler('click', null);
 
     fixture.detectChanges();
