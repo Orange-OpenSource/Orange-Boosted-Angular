@@ -17,6 +17,17 @@ h3 {
   margin-top: 1.875rem;
 }
 
+pre {
+  background-color: #f6f6f6;
+  border: .2rem solid #eee;
+  padding: 1.25rem;
+
+  code {
+    color: #333 !important;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace !important;
+  }
+}
+
 .navbar-nav-svg {
   width: 1.4rem;
   height: 1.4rem;
