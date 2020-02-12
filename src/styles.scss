@@ -1,16 +1,20 @@
 /* Doc Styles */
-@media (max-width: 479px) {
-  body{
-      padding-top: 54px !important;
+body {
+    padding-top: 54px;
+}
+
+@media (min-width: 480px) {
+  body {
+    padding-top: 100px;
   }
 }
 
-body{
-  padding-top: 100px;
+h2 {
+  margin-top: 3.75rem;
 }
 
-code {
-  background-color: #f5f5f5;
+h3 {
+  margin-top: 1.875rem;
 }
 
 .navbar-nav-svg {
