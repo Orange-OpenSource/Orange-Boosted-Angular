@@ -33,113 +33,39 @@ pre {
   height: 1.4rem;
 }
 
-.ng-banner {
-  margin-bottom: 3.75rem;
-}
-
 .doc-link {
-  margin-left: .625rem;
   font-size: 1.5rem;
 }
 
-/* local nav */
+[id="component_nav"] {
+  .nav-link {
+    font-weight: 400;
+    color: #666;
 
-#component_nav {
-  border-right: 1px solid #eee;
-}
+    &:hover,
+    &:focus {
+      color: #f16e00;
+    }
 
-.o-nav-local {
-  border: 0;
-  flex-direction: column;
-}
-
-.o-nav-local > .container {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.o-nav-local .nav-item,
-.o-nav-local .nav-item + .nav-item,
-.o-nav-local .nav-item:first-child {
-  margin-left: 0;
-}
-
-.o-nav-local .nav .nav-link {
-  font-weight: 400;
-  padding-top: .5rem;
-  padding-left: 0;
-  padding-bottom: .5rem;
-}
-
-.o-nav-local .nav .nav-link.active {
-  color: #f16e00;
-}
-
-.o-nav-local .nav-item:first-child {
-  margin: 24px 0;
-}
-
-.doc-ext-link {
-  margin-top: 33px;
-}
-
-@media (max-width: 767px) {
-  .head .col-md-7 {
-    order: 1;
-  }
-
-  .head .col-md-5 {
-    text-align: center;
-  }
-
-  #component_nav {
-    border: 0;
-  }
-
-  .o-nav-local {
-    margin-top: 12px;
-    margin-bottom: 0;
-  }
-
-  .o-nav-local .nav {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .o-nav-local .nav-item:first-child,
-  .o-nav-local .nav-item + .nav-item {
-    margin-left: 0;
-  }
-
-  .o-nav-local .nav-link {
-    font-weight: normal;
-    width: 100%;
+    &.active {
+      color: #f16e00;
+      font-weight: 700;
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .o-nav-local {
-    position: sticky; /* Firefox & Chrome only */
-    top: 0; /* for position sticky */
-    display: flex !important;
-  }
+  [id="component_nav"] {
+    border-right: 1px solid #eee;
 
-  .o-nav-local hr {
-    display: none;
-  }
-
-  .o-nav-local .nav-link {
-    font-weight: normal;
-    padding: .5rem 0;
-  }
-
-   .o-nav-local .nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    > * {
+      position: sticky;
+      top: 0;
+    }
   }
 }
 
+/* @todo Remove this when Boosted handles this */
 .pagination {
   flex-wrap: wrap;
 }
