@@ -23,9 +23,9 @@ describe('StartComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have <h3> with "Dependencies"', () => {
+  it('should have <h2> with "Dependencies"', () => {
     const bannerElement: HTMLElement = fixture.nativeElement;
-    const p = bannerElement.querySelector('h3');
+    const p = bannerElement.querySelector('h2');
     expect(p.textContent).toEqual('Dependencies');
   });
 });

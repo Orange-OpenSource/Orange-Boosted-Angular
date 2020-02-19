@@ -3,34 +3,33 @@
     [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">Menu</button>
     <div class="row">
         <div class="col-md-2" id="component_nav">
-            <div class="o-nav-local" [ngbCollapse]="isCollapsed" id="collapseExample">
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item d-none d-md-inline-block"><a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/accordion">Accordion</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/alert">Alert</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/calendar">Calendar</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/collapse">Collapse</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/dropdown">Dropdown</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/modal">Modal</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/o-navbar">Navbar</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/pagination">Pagination</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/popover">Popover</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/progress">Progress</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/o-scroll-top">Scroll Top</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/swiper">Swiper</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/o-switch">Switch</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/tabs">Tabs</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/o-toggle">Toggle</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/tooltip">Tooltip</a></li>
-                        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/documentation/toast">Toast</a></li>
+            <div class="d-md-flex flex-column mt-2 mb-0 my-md-4" [ngbCollapse]="isCollapsed" id="collapseExample">
+                <nav role="navigation" aria-label="Documentation navigation">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/accordion">Accordion</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/alert">Alert</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/calendar">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/collapse">Collapse</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/dropdown">Dropdown</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/modal">Modal</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/o-navbar">Navbar</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/pagination">Pagination</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/popover">Popover</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/progress">Progress</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/o-scroll-top">Scroll Top</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/swiper">Swiper</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/o-switch">Switch</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/tabs">Tabs</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/o-toggle">Toggle</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/tooltip">Tooltip</a></li>
+                        <li class="nav-item"><a class="nav-link py-md-2 px-md-0" routerLinkActive="active" routerLink="/documentation/toast">Toast</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="col-md-10 pl-md-5">
             <h2>{{ component }}</h2>
-            <p class="doc-ext-link">Original component documentation can be found <a target="_blank" href="https://ng-bootstrap.github.io/#/components/">here.</a></p>
+            <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/">ng-bootstrap's original component documentation</a>.</p>
             <ng-content></ng-content>
         </div>
     </div>

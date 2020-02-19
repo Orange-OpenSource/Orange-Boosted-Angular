@@ -1,7 +1,7 @@
-<div class="container">
-    <h2>Getting started</h2>
+<main role="main" class="container py-5">
+    <h1>Getting started</h1>
 
-    <h3>Dependencies</h3>
+    <h2>Dependencies</h2>
     <p>Ng-boosted is an extension of ng-bootstrap. It uses Orange graphic chart. It allows you to run your Angular project based on Boosted CSS.
         Like ng-bootstrap that backports js component from bootstrap in angular, ng-boosted aimed to backport custom Orange component of boosted in Angular.
     </p>
@@ -11,87 +11,66 @@
             <li><a href="https://ng-bootstrap.github.io/">Ng-bootstrap {{globals.ngBootstrapVersion}}</a></li>
         </ul>
         <p>Beware the versions above-mentioned are <b>the minimal required versions</b>.
-        Some components need ng-bootstrap import. Find below instructions.</p>
-    <h3>Installation</h3>
-    <p>For <code>ng-bootstrap</code> installation, please see the documentation <a href="https://ng-bootstrap.github.io/#/getting-started#installation">here.</a></p>
+        Some components need ng-bootstrap import.</p>
 
-    <p>Install <code>ng-boosted</code> via:</p>
+    <h2>Installation</h2>
 
-    <p><code>npm install --save ng-boosted</code></p>
-    or <br>
-    <p><code>yarn add ng-boosted</code></p>
+    <p>For ng-bootstrap installation, please <a href="https://ng-bootstrap.github.io/#/getting-started#installation">read its documentation.</a></p>
+
+    <p>Install <code>ng-boosted</code> via either npm or yarn:</p>
+
+    <pre><code class="language-shell">npm install --save ng-boosted</code></pre>
+    <pre><code class="language-shell">yarn add ng-boosted</code></pre>
 
     <p>Once installed, you need to import <code>ng-boosted</code> modules.</p>
 
-    <p><code>
-        import {{ '{' }} NgBoostedModule {{ '}' }} from 'ng-boosted';
-    </code></p>
+    <pre><code class="language-ts">import {{ '{' }} NgBoostedModule {{ '}' }} from 'ng-boosted';
 
-    <p><code>
-        @NgModule({{ '{' }}<br>
-        &emsp;declarations: [AppComponent, ...],<br>
-        &emsp;imports: [ NgBoostedModule, ...],<br>
-        &emsp;bootstrap: [AppComponent]<br>
-        {{ '}' }})<br>
-        export class AppModule {{ '{' }}<br>
-        {{ '}' }}<br>
-    </code></p>
+@NgModule({{ '{' }}
+&emsp;declarations: [AppComponent, ...],
+&emsp;imports: [ NgBoostedModule, ...],
+&emsp;bootstrap: [AppComponent]
+{{ '}' }})
+export class AppModule {{ '{' }}
+{{ '}' }}
+</code></pre>
 
-    <p>
-        If you need to use a component from ng-bootstrap you need to import it like explained in the ng-bootstrap documentation <a href="https://ng-bootstrap.github.io/#/getting-started#installation">here</a>.
-    </p>
+    <p>If you need to use a component from ng-bootstrap, you have to import it like explained <a href="https://ng-bootstrap.github.io/#/getting-started#installation">in the ng-bootstrap documentation</a>.</p>
 
-    <p>
-        <b>From version 5.1.3 :</b>
-    </p>
-    <p>
-        Delete "NgBoostedModule" and add :
-    </p>
-    <p><code>
-        import {{ '{' }} OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule,<br>
-            &emsp;ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule {{ '}' }} from 'ng-boosted';
-    </code></p>
+    <h3>From version 5.1.3</h3>
+    <p>Delete <code>NgBoostedModule</code> and add:</p>
+    <pre><code class="language-ts">import {{ '{' }} OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule {{ '}' }} from 'ng-boosted';
 
-    <p><code>
-        @NgModule({{ '{' }}<br>
-        &emsp;declarations: [AppComponent, ...],<br>
-        &emsp;imports: [ OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, 
-        ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule, ...],<br>
-        &emsp;bootstrap: [AppComponent]<br>
-        {{ '}' }})<br>
-        export class AppModule {{ '{' }}<br>
-        {{ '}' }}<br>
-    </code></p>
+@NgModule({{ '{' }}
+&emsp;declarations: [AppComponent, ...],
+&emsp;imports: [ OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule, ...],
+&emsp;bootstrap: [AppComponent]
+{{ '}' }})
+export class AppModule {{ '{' }}
+{{ '}' }}</code></pre>
 
     <h2>Adding Boosted CSS</h2>
-    <p>Three options can be done to import Boosted CSS if downloaded from <a href="https://www.npmjs.com/package/boosted"></a>npm</p>
-    <h3>Configure your angular.json</h3>
-    <p>Inside the file, add the following path:<br>
-        <code> "styles": [<br>
-                "node_modules/boosted/dist/css/boosted.min.css",<br>
-                "node_modules/boosted/dist/css/orangeIcons.css"<br>
-            ]</code><br>
-    Add orangeIcons.css, if you need.
-    </p>
-    <h3>Configure your styles.css</h3>
-    <p>Inside your styles.css, import boosted css:<br>
-        <code>@import '../node_modules/boosted/dist/css/boosted.min.css'</code>
-    </p>
-    <h3>Configure your styles.scss with SASS</h3>
-    <p>if you are using SASS, then you need to do this in your styles.scss:<br>
-        <code>@import '../node_modules/boosted/scss/boosted.scss'</code>
-    </p>
+    <p>Three options can be used to import Boosted CSS when installed from <a href="https://www.npmjs.com/package/boosted">npm</a>.</p>
+
+    <h3>Configure your <code>angular.json</code></h3>
+    <p>Add the following path:</p>
+    <pre><code class="language-ts">"styles": [
+    "node_modules/boosted/dist/css/boosted.min.css",
+    "node_modules/boosted/dist/css/orangeIcons.css"
+]</code></pre>
+  <p>Add <code>orangeIcons.css</code>, if you need.</p>
+
+    <h3>Import Boosted styles</h3>
+    <p>Import Boosted minified CSS:</p>
+    <pre><code class="language-css">@import '../node_modules/boosted/dist/css/boosted.min.css'</code></pre>
+
+    <p>Or import Boosted SCSS sources:<br>
+    <pre><code class="language-css">@import '../node_modules/boosted/scss/boosted.scss'</code></pre>
 
     <h2>Building this documentation</h2>
     <p>Simply <code>npm run build:docs</code> and the output goes to a <code>_gh_pages</code> folder.</p>
 
-    <p>You can also run this documentation with <code>npm run start</code></p>
+    <p>You can also run this documentation with <code>npm run start</code>.</p>
 
-    <p>The output is then served to <a href="http://localhost:3030">http://localhost:3030</a>
-    </p>
-
-    <h2>License</h2>
-
-    <p>Orange modified code licensed MIT. Code released under <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/LICENSE">the MIT license</a>. Docs released under <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/docs/LICENSE">Creative Commons Attribution</a>.
-    </p>
-</div>
+    <p>The output is then served to <a href="http://localhost:4200">http://localhost:4200</a>.</p>
+</main>

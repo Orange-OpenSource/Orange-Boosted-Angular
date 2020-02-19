@@ -20,7 +20,7 @@ describe('OSwitchComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(OSwitchComponent);
     component = fixture.componentInstance;
-    input  = fixture.debugElement.query(By.css('.checkbox'));
+    input  = fixture.debugElement.query(By.css('.custom-control-input'));
     fixture.detectChanges();
   });
 
@@ -32,29 +32,14 @@ describe('OSwitchComponent', () => {
     expect(component.toggled).toBeFalsy();
   });
 
-  it('The value of rounded should be false', () => {
-    expect(component.rounded).toBeFalsy();
-  });
-
-  it('The value of rounded should be false', () => {
-    component.rounded = true;
-    const ataghtml: HTMLElement = fixture.debugElement.nativeElement;
-    fixture.detectChanges();
-    expect(ataghtml.querySelector('label').getAttribute('class')).toEqual('toggle col-form-label toggle-rounded');
-  });
-
-  it('The value of successColor should be false', () => {
-    expect(component.successColor).toBeFalsy();
-  });
-
-  it('The value of id and the name of the input tag html attribute should be Input#1', () => {
+  it('The id name of the input tag should be Input#1', () => {
     component.inputId = 'Input#1';
     fixture.detectChanges();
     const inputTagHtml: HTMLElement = fixture.debugElement.nativeElement;
     expect(inputTagHtml.querySelector('input').getAttribute('id')).toEqual('Input#1');
   });
 
-  it('Simulated a click on the input with subscriotion to the output', () => {
+  it('Simulate a click on the input with subscription to the output', () => {
     component.toggled = true;
     component.inputId = 'Input#2';
     input.triggerEventHandler('click', null);
