@@ -1,3 +1,21 @@
+<a name="5.1.8"></a> (2020-02-19)
+## [5.1.8](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.7...5.1.8)
+
+### Bug Fixes
+
+* **close:** hide ng-bootstrap's close icon & mention it in the docs, to fix [#167](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues/167) ([c0c24e0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/c0c24e0))
+* **o-nav-link:** ensure aria-current is set for parents too ([71de98f](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/71de98f))
+* **o-switch:** failing test since I dropped props ([a2ee8a3](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/a2ee8a3))
+* **tests:** adjust assertions ([1c91bf5](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/1c91bf5))
+* **tests:** missing declaractions + fixed a selector ([2d8bd90](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/2d8bd90))
+
+### Features
+
+* **navbar:** use SVG logo and update favicon ([ff3cfa2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ff3cfa2))
+* **o-scroll:** remove useless style and update markup ([862bd55](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/862bd55))
+* **o-toggle:** remove .o-switch class name to close [#168](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues/168) ([374464f](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/374464f))
+* **switch:** revamp o-switch component for [#164](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues/164) ([8070dd6](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/8070dd6))
+
 <a name="5.1.7"></a> (06/02/2020)
 ## 5.1.7
 
