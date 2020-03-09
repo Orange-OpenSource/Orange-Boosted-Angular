@@ -1,0 +1,37 @@
+<p>Simple datepicker</p>
+<ngb-datepicker #dp1 [(ngModel)]="model1" (navigate)="date = $event.next"></ngb-datepicker>
+<pre class="mt-2">Model: {{ model1 | json }}</pre>
+
+<hr/>
+
+<p>Datepicker in a popup</p>
+<form class="form-inline">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar-black" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="Open Calendar" aria-haspopup="true"></button>
+        </div>
+        <input class="form-control calendar-input" placeholder="Une date (jj/mm/aaa)"
+               name="dp2" [(ngModel)]="model2" ngbDatepicker #d="ngbDatepicker" attr.aria-label='Calendar'>
+      </div>
+    </div>
+  </form>
+  <pre class="mt-2">Model: {{ model2 | json }}</pre>
+
+  <hr/>
+
+<p>Range selection</p>
+<ngb-datepicker #dp3 (dateSelect)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t" outsideDays="hidden"></ngb-datepicker>
+<ng-template #t let-date let-focused="focused">
+  <span class="custom-day"
+        [class.focused]="focused"
+        [class.range]="isRange(date)"
+        [class.faded]="isHovered(date) || isInside(date)"
+        (mouseenter)="hoveredDate = date"
+        (mouseleave)="hoveredDate = null">
+    {{ date.day }}
+  </span>
+</ng-template>
+<hr>
+<pre>From: {{ fromDate | json }} </pre>
+<pre>To: {{ toDate | json }} </pre>

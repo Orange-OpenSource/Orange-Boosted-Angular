@@ -22,6 +22,7 @@ import { DemoAlert } from './demos/alert.component';
 import { DemoCarousel } from './demos/carousel.component';
 import { DemoOCalendar } from './demos/o-calendar.component';
 import { DemoCollapse } from './demos/collapse.component';
+import { DemoDatepicker } from './demos/datepicker.component';
 import { DemoProgressBar } from './demos/progress-bar.component';
 import { DemoDropdown } from './demos/dropdown.component';
 import { DemoOSwitch } from './demos/o-switch.component';
@@ -41,6 +42,7 @@ import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
 import { DocSwiper } from './docs/swiper.component';
 import { DocCollapse } from './docs/collapse.component';
+import { DocDatepicker } from './docs/datepicker.component';
 import { DocProgressBar } from './docs/progress-bar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
@@ -68,6 +70,7 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DemoOCalendar,
     DemoSwiper,
     DemoCollapse,
+    DemoDatepicker,
     DemoProgressBar,
     DemoDropdown,
     DemoOSwitch,
@@ -86,6 +89,7 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DocCarousel,
     DocSwiper,
     DocCollapse,
+    DocDatepicker,
     DocProgressBar,
     DocONavbar,
     DocOScrollTop,

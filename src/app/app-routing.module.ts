@@ -16,6 +16,7 @@ import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
 import { DocSwiper } from './docs/swiper.component';
 import { DocCollapse } from './docs/collapse.component';
+import { DocDatepicker } from './docs/datepicker.component';
 import { DocProgressBar } from './docs/progress-bar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
@@ -106,6 +107,10 @@ const routes: Routes = [{
   {
     path: 'documentation/o-toggle',
     component: DocOToggle
+  },
+  {
+    path: 'documentation/datepicker',
+    component: DocDatepicker
   },
   {
     path: 'boostwatch',
