@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-o-toggle',
@@ -18,17 +17,10 @@ import { Analytics } from './shared/analytics';
     </docs-wrapper>
   `
 })
-export class DocOToggle implements OnInit {
+export class DocOToggle {
   public docContent = require('html-loader!markdown-loader!./o-toggle.component.md');
-
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-toggle.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/o-toggle.component.ts')
   };
-
-  constructor(private _analytics: Analytics) {}
-
-  public ngOnInit(): void {
-      // this._analytics.trackPageViews();
-  }
 }

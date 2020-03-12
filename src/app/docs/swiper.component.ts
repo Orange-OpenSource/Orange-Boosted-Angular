@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-swiper',
@@ -22,17 +21,10 @@ import { Analytics } from './shared/analytics';
     </docs-wrapper>
   `
 })
-export class DocSwiper implements OnInit {
+export class DocSwiper {
     public docContent = require('html-loader!markdown-loader!./swiper.component.md');
-
     public demoSnippets = {
         markup: require('!!prismjs-loader?lang=html!../demos/swiper.component.html'),
         typescript: require('!!prismjs-loader?lang=typescript!../demos/swiper.component.ts')
     };
-
-    constructor(private _analytics: Analytics) {}
-
-    public ngOnInit(): void {
-      // this._analytics.trackPageViews();
-  }
 }

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-datepicker',
@@ -7,18 +6,14 @@ import { Analytics } from './shared/analytics';
     <docs-wrapper component="Datepicker">
       <h3>Demo</h3>
       <demo-datepicker></demo-datepicker>
-      <h3 class="mt-3">Usage</h3>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>
   `
 })
-export class DocDatepicker implements OnInit {
+export class DocDatepicker {
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/datepicker.component.html'),
-    typescript: require('!!prismjs-loader?lang=typescript!../demos/datepicker.component.ts')
+    typescript: require('!!prismjs-loader?lang=typescript!../demos/datepicker.component.ts'),
+    css: require('!!prismjs-loader?lang=typescript!../demos/datepicker.component.scss')
   };
-
-  constructor(private _analytics: Analytics) {}
-
-  public ngOnInit(): void { }
 }

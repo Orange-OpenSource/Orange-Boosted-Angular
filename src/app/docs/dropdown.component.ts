@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-dropdown',
@@ -11,15 +10,9 @@ import { Analytics } from './shared/analytics';
     </docs-wrapper>
   `
 })
-export class DocDropdown implements OnInit {
+export class DocDropdown {
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/dropdown.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/dropdown.component.ts')
   };
-
-  constructor(private _analytics: Analytics) {}
-
-  public ngOnInit(): void {
-    // this._analytics.trackPageViews();
-  }
 }

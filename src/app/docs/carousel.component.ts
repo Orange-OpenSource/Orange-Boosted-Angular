@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-carousel',
@@ -15,15 +14,9 @@ import { Analytics } from './shared/analytics';
     </docs-wrapper>
   `
 })
-export class DocCarousel implements OnInit {
+export class DocCarousel {
     public demoSnippets = {
         markup: require('!!prismjs-loader?lang=html!../demos/carousel.component.html'),
         typescript: require('!!prismjs-loader?lang=typescript!../demos/carousel.component.ts')
     };
-
-    constructor(private _analytics: Analytics) {}
-
-    public ngOnInit() {
-        // this._analytics.trackPageViews();
-    }
 }

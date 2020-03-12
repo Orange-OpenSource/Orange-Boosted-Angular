@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { Analytics } from './shared/analytics';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'doc-alert',
@@ -13,16 +12,10 @@ import { Analytics } from './shared/analytics';
     </docs-wrapper>
   `
 })
-export class DocAlert implements OnInit {
+export class DocAlert {
   public docContent = require('html-loader!markdown-loader!./close.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/alert.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/alert.component.ts')
   };
-
-  constructor(private _analytics: Analytics) {}
-
-  public ngOnInit(): void {
-    this._analytics.trackPageViews();
-  }
 }
