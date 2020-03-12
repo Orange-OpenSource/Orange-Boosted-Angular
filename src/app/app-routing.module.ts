@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { DocAccordion } from './docs/accordion.component';
+import { DocButtons } from './docs/buttons.component';
 import { DocOCalendar } from './docs/o-calendar.component';
 import { DocModal } from './docs/modal.component';
 import { DocDropdown } from './docs/dropdown.component';
@@ -22,6 +23,10 @@ import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
 import { DocOToggle } from './docs/o-toggle.component';
+import { DocRating } from './docs/rating.component';
+import { DocTable } from './docs/table.component';
+import { DocTimepicker } from './docs/timepicker.component';
+import { DocTypeahead} from './docs/typeahead.component';
 
 const routes: Routes = [{
     path: 'home',
@@ -35,6 +40,10 @@ const routes: Routes = [{
     path: 'documentation',
     redirectTo: 'documentation/accordion',
     pathMatch: 'full'
+  },
+  {
+    path: 'documentation/buttons',
+    component: DocButtons
   },
   {
     path: 'documentation/collapse',
@@ -111,6 +120,22 @@ const routes: Routes = [{
   {
     path: 'documentation/datepicker',
     component: DocDatepicker
+  },
+  {
+    path: 'documentation/rating',
+    component: DocRating
+  },
+  {
+    path: 'documentation/table',
+    component: DocTable
+  },
+  {
+    path: 'documentation/timepicker',
+    component: DocTimepicker
+  },
+  {
+    path: 'documentation/typeahead',
+    component: DocTypeahead
   },
   {
     path: 'boostwatch',

@@ -28,10 +28,15 @@ import { Component, Input } from '@angular/core';
                 <pre class="language-typescript"><code class="language-typescript" [innerHTML]="snippets.typescript"></code></pre>
             </ng-template>
         </ngb-tab>
+        <ngb-tab title="CSS" *ngIf="snippets.css">
+        <ng-template ngbTabContent>
+            <pre class="language-css"><code class="language-css" [innerHTML]="snippets.css"></code></pre>
+        </ng-template>
+    </ngb-tab>
     </ngb-tabset>
     `
 })
 export class CodeBox {
     @Input()
-    public snippets = {markup: '', typescript: ''};
+    public snippets = {markup: '', typescript: '', css: ''};
 }

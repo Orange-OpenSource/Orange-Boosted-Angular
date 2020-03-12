@@ -12,6 +12,7 @@ import { DocsMenuComponent } from './docs-menu/docs-menu.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { HomeComponent } from './home/home.component';
 import { DemoAccordion } from './demos/accordion.component';
+import { DemoButtons } from './demos/buttons.component';
 import { DemoModal } from './demos/modal.component';
 import { DemoTabs } from './demos/tabs.component';
 import { DemoPagination } from './demos/pagination.component';
@@ -28,8 +29,13 @@ import { DemoDropdown } from './demos/dropdown.component';
 import { DemoOSwitch } from './demos/o-switch.component';
 import { DemoOToggle } from './demos/o-toggle.component';
 import { DemoSwiper } from './demos/swiper.component';
+import { DemoTable } from './demos/table.component';
+import { DemoTimepicker } from './demos/timepicker.component';
 import { DemoONavbar } from './demos/o-navbar.component';
+import { DemoRating } from './demos/rating.component';
+import { DemoTypeahead } from './demos/typeahead.component';
 import { DocAccordion } from './docs/accordion.component';
+import { DocButtons } from './docs/buttons.component';
 import { DocOCalendar } from './docs/o-calendar.component';
 import { DocModal } from './docs/modal.component';
 import { DocDropdown } from './docs/dropdown.component';
@@ -48,6 +54,10 @@ import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
 import { DocOToggle } from './docs/o-toggle.component';
+import { DocRating } from './docs/rating.component';
+import { DocTable } from './docs/table.component';
+import { DocTimepicker } from './docs/timepicker.component';
+import { DocTypeahead } from './docs/typeahead.component';
 import { CodeBox } from './docs/code-box.component';
 import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule,
   ScrollTopModule, OSwitchModule, OToastModule } from 'ng-boosted';
@@ -59,6 +69,7 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DocsMenuComponent,
     BoostwatchComponent,
     DemoAccordion,
+    DemoButtons,
     DemoModal,
     DemoTabs,
     DemoPagination,
@@ -76,7 +87,12 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DemoOSwitch,
     DemoOToggle,
     DemoONavbar,
+    DemoRating,
+    DemoTable,
+    DemoTimepicker,
+    DemoTypeahead,
     DocAccordion,
+    DocButtons,
     DocOCalendar,
     DocModal,
     DocDropdown,
@@ -95,6 +111,10 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DocOScrollTop,
     DocOSwitch,
     DocOToggle,
+    DocRating,
+    DocTable,
+    DocTimepicker,
+    DocTypeahead,
     CodeBox,
     HomeComponent
   ],
