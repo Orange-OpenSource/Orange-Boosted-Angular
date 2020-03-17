@@ -5,9 +5,11 @@ import { Component } from '@angular/core';
   templateUrl: './buttons.component.html'
 })
 export class DemoButtons {
-  model = {
-    left: true,
-    middle: false,
-    right: false
+  model1 = 1;
+  
+  model2 = {
+    one: true,
+    two: false,
+    three: false
   };
 }

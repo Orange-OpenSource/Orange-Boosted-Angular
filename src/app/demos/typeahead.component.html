@@ -4,8 +4,6 @@ A typeahead example that gets values from a static <code>string[]</code>
   <li>kicks in only if 2+ characters typed</li>
   <li>limits to 10 results</li>
 </ul>
-
 <label for="typeahead-basic">Search for a department in France:</label>
 <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model" [ngbTypeahead]="search"/>
-<hr>
-<pre>Model: {{ model | json }}</pre>
+<pre class="mt-2">Model: {{ model | json }}</pre>

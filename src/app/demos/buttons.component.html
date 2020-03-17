@@ -1,13 +1,27 @@
+<div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="model1">
+  <label ngbButtonLabel class="btn-secondary">
+    <input ngbButton type="radio" [value]="1"> 1
+  </label>
+  <label ngbButtonLabel class="btn-secondary">
+    <input ngbButton type="radio" [value]="2"> 2
+  </label>
+  <label ngbButtonLabel class="btn-secondary">
+    <input ngbButton type="radio" [value]="3"> 3
+  </label>
+</div>
+<pre class="mt-2">{{model1}}</pre>
+
 <div class="btn-group btn-group-toggle">
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
-    </label>
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
-    </label>
-    <label class="btn-primary" ngbButtonLabel>
-      <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
-    </label>
+  <label class="btn-primary btn-inverse" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model2.one"> 1
+  </label>
+  <label class="btn-primary btn-inverse" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model2.two"> 2
+  </label>
+  <label class="btn-primary btn-inverse" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model2.three"> 3
+  </label>
 </div>
 <hr>
-<pre>{{model | json}}</pre>
+<pre>{{model2 | json}}</pre>
+

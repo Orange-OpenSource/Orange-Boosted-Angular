@@ -5,6 +5,11 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Datepicker">
       <h3>Demo</h3>
+      <ul>
+        <li>Simple datepicker</li>
+        <li>Datepicker in a popup</li>
+        <li>Range selection</li>
+      </ul>
       <demo-datepicker></demo-datepicker>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>

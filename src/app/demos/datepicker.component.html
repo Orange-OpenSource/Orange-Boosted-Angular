@@ -1,10 +1,8 @@
-<p>Simple datepicker</p>
 <ngb-datepicker #dp1 [(ngModel)]="model1" (navigate)="date = $event.next"></ngb-datepicker>
 <pre class="mt-2">Model: {{ model1 | json }}</pre>
 
 <hr/>
 
-<p>Datepicker in a popup</p>
 <form class="form-inline">
     <div class="form-group">
       <div class="input-group">
@@ -20,7 +18,6 @@
 
   <hr/>
 
-<p>Range selection</p>
 <ngb-datepicker #dp3 (dateSelect)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t" outsideDays="hidden"></ngb-datepicker>
 <ng-template #t let-date let-focused="focused">
   <span class="custom-day"
@@ -32,6 +29,5 @@
     {{ date.day }}
   </span>
 </ng-template>
-<hr>
-<pre>From: {{ fromDate | json }} </pre>
+<pre class="mt-2">From: {{ fromDate | json }} </pre>
 <pre>To: {{ toDate | json }} </pre>

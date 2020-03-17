@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Buttons">
       <h3>Demo</h3>
+      <h4 class="mt-3">Checkbox and radio buttons</h4>
       <demo-buttons></demo-buttons>
-      <h3 class="mt-3">Usage</h3>
       <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>
   `

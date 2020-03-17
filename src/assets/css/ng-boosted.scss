@@ -15,7 +15,6 @@
 display: none;
 }
 
-
 // Datepicker
 ngb-datepicker{
     border-radius: 0 !important;
@@ -25,4 +24,12 @@ ngb-datepicker{
     .ngb-dp-weekday {
       color: black;
     }
+}
+
+//Carousel
+.carousel-control-next-icon::before {
+  display: none;
+}
+.carousel-control-prev-icon::before {
+  display: none;
 }
