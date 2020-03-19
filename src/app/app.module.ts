@@ -18,6 +18,7 @@ import { DemoTabs } from './demos/tabs.component';
 import { DemoPagination } from './demos/pagination.component';
 import { DemoTooltip } from './demos/tooltip.component';
 import { DemoToast } from './demos/toast.component';
+import { DemoOToast } from './demos/o-toast.component';
 import { DemoPopover } from './demos/popover.component';
 import { DemoAlert } from './demos/alert.component';
 import { DemoCarousel } from './demos/carousel.component';
@@ -43,6 +44,7 @@ import { DocTabs } from './docs/tabs.component';
 import { DocPagination } from './docs/pagination.component';
 import { DocTooltip } from './docs/tooltip.component';
 import { DocToast } from './docs/toast.component';
+import { DocOToast } from './docs/o-toast.component';
 import { DocPopover } from './docs/popover.component';
 import { DocAlert } from './docs/alert.component';
 import { DocCarousel } from './docs/carousel.component';
@@ -58,6 +60,7 @@ import { DocRating } from './docs/rating.component';
 import { DocTable } from './docs/table.component';
 import { DocTimepicker } from './docs/timepicker.component';
 import { DocTypeahead } from './docs/typeahead.component';
+import { ToastsContainer } from './demos/toasts-container.component';
 import { CodeBox } from './docs/code-box.component';
 import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule,
   ScrollTopModule, OSwitchModule, OToastModule } from 'ng-boosted';
@@ -75,6 +78,8 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DemoPagination,
     DemoTooltip,
     DemoToast,
+    ToastsContainer,
+    DemoOToast,
     DemoPopover,
     DemoAlert,
     DemoCarousel,
@@ -101,6 +106,7 @@ import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONav
     DocAlert,
     DocTooltip,
     DocToast,
+    DocOToast,
     DocPopover,
     DocCarousel,
     DocSwiper,

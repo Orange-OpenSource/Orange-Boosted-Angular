@@ -22,4 +22,4 @@ export * from './lib/o-nav-menu/o-nav-menu.component';
 export * from './lib/o-navbar/o-navbar.component';
 export * from './lib/o-scroll/scroll-top.component';
 export * from './lib/o-switch/switch.component';
-export * from './lib/services/toast.service';
+export * from './lib/services/o-toast.service';

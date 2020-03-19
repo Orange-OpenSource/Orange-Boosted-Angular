@@ -21,6 +21,7 @@ import { DemoONavbar } from '../demos/o-navbar.component';
 import { HomeComponent } from '../home/home.component';
 import { BoostwatchComponent } from './boostwatch.component';
 import { DemoToast } from '../demos/toast.component';
+import { DemoOToast } from '../demos/o-toast.component';
 import {
   OCalendarModule,
   OSwitchModule,
@@ -44,6 +45,7 @@ import {DocPagination} from "../docs/pagination.component";
 import {DocAlert} from "../docs/alert.component";
 import {DocTooltip} from "../docs/tooltip.component";
 import {DocToast} from "../docs/toast.component";
+import {DocOToast} from "../docs/o-toast.component";
 import {DocPopover} from "../docs/popover.component";
 import {DocCarousel} from "../docs/carousel.component";
 import {DocSwiper} from "../docs/swiper.component";
@@ -86,6 +88,7 @@ describe('BoostwatchComponent', () => {
         DemoPagination,
         DemoTooltip,
         DemoToast,
+        DemoOToast,
         DemoPopover,
         DemoAlert,
         DemoCarousel,
@@ -106,6 +109,7 @@ describe('BoostwatchComponent', () => {
         DocAlert,
         DocTooltip,
         DocToast,
+        DocOToast,
         DocPopover,
         DocCarousel,
         DocSwiper,

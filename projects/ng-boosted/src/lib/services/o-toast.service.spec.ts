@@ -1,9 +1,9 @@
-import { ToastService } from './toast.service';
+import { ToastOService } from './o-toast.service';
 
 describe('ToastService', () => {
-  let service: ToastService;
+  let service: ToastOService;
   const dangerTpl = '<ng-template #dangerTpl> Danger Danger !</ng-template>';
-  beforeEach(() => { service = new ToastService(); });
+  beforeEach(() => { service = new ToastOService(); });
 
   it('ToastService should be created ', () => {
     expect(service).toBeTruthy();

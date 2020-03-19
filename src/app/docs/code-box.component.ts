@@ -18,25 +18,41 @@ import { Component, Input } from '@angular/core';
     template: `
         <h3 >Source</h3>
         <ngb-tabset class="code-box">
-        <ngb-tab title="HTML" *ngIf="snippets.markup">
-            <ng-template ngbTabContent>
-                <pre class="language-html"><code class="language-html" [innerHTML]="snippets.markup"></code></pre>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="TypeScript" *ngIf="snippets.typescript">
-            <ng-template ngbTabContent>
-                <pre class="language-typescript"><code class="language-typescript" [innerHTML]="snippets.typescript"></code></pre>
-            </ng-template>
-        </ngb-tab>
-        <ngb-tab title="CSS" *ngIf="snippets.css">
-        <ng-template ngbTabContent>
-            <pre class="language-css"><code class="language-css" [innerHTML]="snippets.css"></code></pre>
-        </ng-template>
-    </ngb-tab>
-    </ngb-tabset>
+
+            <ngb-tab title="HTML" *ngIf="snippets.markup">
+                <ng-template ngbTabContent>
+                    <pre class="language-html"><code class="language-html" [innerHTML]="snippets.markup"></code></pre>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="TypeScript" *ngIf="snippets.typescript">
+                <ng-template ngbTabContent>
+                    <pre class="language-typescript"><code class="language-typescript" [innerHTML]="snippets.typescript"></code></pre>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="CSS" *ngIf="snippets.css">
+                <ng-template ngbTabContent>
+                    <pre class="language-css"><code class="language-css" [innerHTML]="snippets.css"></code></pre>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="Service" *ngIf="snippets.service">
+                <ng-template ngbTabContent>
+                    <pre class="language-typescript"><code class="language-typescript" [innerHTML]="snippets.service"></code></pre>
+                </ng-template>
+            </ngb-tab>
+
+            <ngb-tab title="Container" *ngIf="snippets.container">
+                <ng-template ngbTabContent>
+                    <pre class="language-typescript"><code class="language-typescript" [innerHTML]="snippets.container"></code></pre>
+                </ng-template>
+            </ngb-tab>
+
+        </ngb-tabset>
     `
 })
 export class CodeBox {
     @Input()
-    public snippets = {markup: '', typescript: '', css: ''};
+    public snippets = {markup: '', typescript: '', css: '', service:'', container:''};
 }

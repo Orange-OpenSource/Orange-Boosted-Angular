@@ -1,5 +1,5 @@
 import { Component, TemplateRef, HostBinding } from '@angular/core';
-import { ToastService } from '../services/toast.service';
+import { ToastOService } from '../services/o-toast.service';
 
 @Component({
     selector: 'lib-o-toast',
@@ -10,7 +10,7 @@ export class OToastComponent {
     @HostBinding('class.ngb-toasts') ngb_toast: boolean;
     public autohide = true;
 
-    constructor(public toastService: ToastService) {
+    constructor(public toastService: ToastOService) {
         this.ngb_toast = true;
      }
 
