@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
     <docs-wrapper component="Typeahead">
         <h3>Demo</h3>
         <demo-typeahead></demo-typeahead>
-        <div [innerHtml]=docContent></div>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>
   `

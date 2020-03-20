@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
     <docs-wrapper component="Toast">
         <h3>Demo</h3>
         <demo-toast></demo-toast>
-        <div [innerHtml]=docContent></div>
         <code-box [snippets]="demoSnippets"></code-box>
     </docs-wrapper>
   `
