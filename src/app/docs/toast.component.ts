@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-toast',
   template: `
     <docs-wrapper component="Toast">
+    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/toast/examples">ng-bootstrap's original component documentation</a>.</p>
         <h3>Demo</h3>
         <demo-toast></demo-toast>
         <code-box [snippets]="demoSnippets"></code-box>

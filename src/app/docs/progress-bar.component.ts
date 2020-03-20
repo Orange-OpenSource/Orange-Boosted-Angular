@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-progress-bar',
   template: `
     <docs-wrapper component="Progress Bar">
+    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/progressbar/examples">ng-bootstrap's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-progress-bar></demo-progress-bar>
       <code-box [snippets]="demoSnippets"></code-box>

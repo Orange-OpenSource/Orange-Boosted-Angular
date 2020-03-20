@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-modal',
   template: `
     <docs-wrapper component="Modal">
+    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/modal/examples">ng-bootstrap's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-modal></demo-modal>
       <ng-template ngbModalContainer></ng-template>
@@ -12,7 +13,6 @@ import { Component } from '@angular/core';
   `
 })
 export class DocModal{
-  // public docContent = require('html-loader!markdown-loader!./close.component.md');   <h3 class="mt-3">Usage</h3>        <div [innerHtml]=docContent></div>
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/modal.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/modal.component.ts')

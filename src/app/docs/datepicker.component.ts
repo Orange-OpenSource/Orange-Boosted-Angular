@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-datepicker',
   template: `
     <docs-wrapper component="Datepicker">
+    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/datepicker/examples">ng-bootstrap's original component documentation</a>.</p>
       <h3>Demo</h3>
       <ul>
         <li>Simple datepicker</li>
