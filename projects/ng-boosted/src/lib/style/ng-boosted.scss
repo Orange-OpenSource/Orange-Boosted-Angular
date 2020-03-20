@@ -1,0 +1,41 @@
+// pagination
+.pagination {
+    flex-wrap: wrap;
+}
+  
+// Alert
+.close > [aria-hidden="true"]  {
+display: none;
+}
+
+// Datepicker
+ngb-datepicker{
+    border-radius: 0 !important;
+    .ngb-dp-header {
+        border-radius: 0;
+    }
+    .ngb-dp-weekday {
+      color: black;
+    }
+}
+
+//Carousel
+.carousel-control-next-icon::before {
+  display: none;
+}
+.carousel-control-prev-icon::before {
+  display: none;
+}
+
+// Toast
+.bg-danger {
+  font-weight: 700;
+  color: #fff;
+}
+.bg-success {
+  font-weight: 700;
+  color: #fff;
+}
+.undefined {
+  font-weight: 700;
+}
