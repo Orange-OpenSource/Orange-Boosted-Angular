@@ -32,6 +32,7 @@
               "node_modules/boosted/dist/css/orangeHelvetica.css",
               "node_modules/boosted/dist/css/orangeIcons.css",
               "node_modules/boosted/scss/boosted.scss",
+              "dist/ng-boosted/style/ng-boosted.scss",
               "src/styles.scss"
               
             ],
