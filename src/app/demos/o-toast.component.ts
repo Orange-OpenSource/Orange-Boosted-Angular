@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToastOService } from 'ng-boosted';
+import { ToastService } from './../../../node_modules/ng-boosted'; // You should just use: from 'ng-boosted'
 
 @Component({
     selector: 'demo-o-toast',
@@ -11,7 +11,7 @@ import { ToastOService } from 'ng-boosted';
 })
 export class DemoOToast {
 
-    constructor(public toastService: ToastOService) {}
+    constructor(public toastService: ToastService) {}
 
     showSuccess() {
         this.toastService.show('I am a success toast', { classname: 'bg-success', delay: 5000});

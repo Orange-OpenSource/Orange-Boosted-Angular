@@ -22,14 +22,7 @@ import { HomeComponent } from '../home/home.component';
 import { BoostwatchComponent } from './boostwatch.component';
 import { DemoToast } from '../demos/toast.component';
 import { DemoOToast } from '../demos/o-toast.component';
-import {
-  OCalendarModule,
-  OSwitchModule,
-  OCarouselModule,
-  ONavbarModule,
-  ODropdownModule,
-  ONavLinkModule, ONavMenuModule, ScrollTopModule, OToastModule
-} from 'ng-boosted';
+import { ONavbarModule, ONavLinkModule, ScrollTopModule } from 'ng-boosted';
 import {RouterTestingModule} from "@angular/router/testing";
 import {AppRoutingModule} from "../app-routing.module";
 import {StartComponent} from "../start/start.component";
@@ -67,15 +60,9 @@ describe('BoostwatchComponent', () => {
         FormsModule,
         NgbModule,
         AppRoutingModule,
-        OCalendarModule,
-        OCarouselModule,
-        ODropdownModule,
         ONavLinkModule,
-        ONavMenuModule,
         ONavbarModule,
-        ScrollTopModule,
-        OSwitchModule,
-        OToastModule
+        ScrollTopModule
       ],
       declarations: [
         AppComponent,

@@ -62,8 +62,8 @@ import { DocTimepicker } from './docs/timepicker.component';
 import { DocTypeahead } from './docs/typeahead.component';
 import { ToastsContainer } from './demos/toasts-container.component';
 import { CodeBox } from './docs/code-box.component';
-import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule,
-  ScrollTopModule, OSwitchModule, OToastModule } from 'ng-boosted';
+import { OCalendarModule, OCarouselModule, ODropdownModule, ONavMenuModule, OSwitchModule, OToastModule } from '../../node_modules/ng-boosted';
+import { ONavLinkModule, ONavbarModule, ScrollTopModule } from 'ng-boosted';
 
 @NgModule({
   declarations: [
