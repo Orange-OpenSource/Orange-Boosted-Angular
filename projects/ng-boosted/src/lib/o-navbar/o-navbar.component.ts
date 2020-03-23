@@ -12,7 +12,7 @@ import { Component, Input } from '@angular/core';
   @Component({
     selector: 'lib-o-navbar',
     styles: [`
-      .navbar-nav { 
+      .navbar-nav {
         width: 100%;
       }
       >>> a:hover {
