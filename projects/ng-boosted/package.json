@@ -16,8 +16,7 @@
   },
   "dependencies": {
       "@ng-bootstrap/ng-bootstrap": "5.2.1",
-      "boosted": "^4.4.1",
-      "swiper": "^4.4.1"
+      "boosted": "^4.4.1"
   },
   "repository": {
     "type": "git",
