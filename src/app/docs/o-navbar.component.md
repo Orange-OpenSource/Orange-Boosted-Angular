@@ -16,7 +16,6 @@ Main element `<lib-o-navbar>` accepts the following parameters :
 There is three supported types of child elements to `<lib-o-navbar>`. Each of them must use native `<li>` html element.
 
 * `o-nav-link` for application navigation using Angular router module.
-* `o-nav-menu` for dropdown menu in navbar.
 * classic `<a href class="nav-link"></a>` for external links.
 
 ##### ONavLink
