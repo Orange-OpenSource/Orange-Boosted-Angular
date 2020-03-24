@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Toggle">
       <h3>Demo</h3>
-      <demo-o-toggle></demo-o-toggle>
+      <img src="../../assets/gif/toggle.gif" alt="this slowpoke moves"  width=350/>
       <h3>Usage</h3>
       <div [innerHtml]=docContent></div>
       <code-box [snippets]="demoSnippets"></code-box>

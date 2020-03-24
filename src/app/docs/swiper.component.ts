@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
         <div class="row">
             <div class="col-md-9">
                 <h3>Demo</h3>
-                <demo-swiper></demo-swiper>
+                <img src="../../assets/gif/swiper.gif" alt="this slowpoke moves"  width=550/>
                 <h3>Usage</h3>
                 <div [innerHtml]=docContent></div>
                 <code-box [snippets]="demoSnippets"></code-box>

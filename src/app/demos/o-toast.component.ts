@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ToastService } from './../../../node_modules/ng-boosted'; // You should just use: from 'ng-boosted'
+// import { ToastService } from 'ng-boosted';
 
 @Component({
     selector: 'demo-o-toast',
@@ -11,17 +11,17 @@ import { ToastService } from './../../../node_modules/ng-boosted'; // You should
 })
 export class DemoOToast {
 
-    constructor(public toastService: ToastService) {}
+    // constructor(public toastService: ToastService) {}
 
-    showSuccess() {
-        this.toastService.show('I am a success toast', { classname: 'bg-success', delay: 5000});
-    }
+    // showSuccess() {
+    //     this.toastService.show('I am a success toast', { classname: 'bg-success', delay: 5000});
+    // }
 
-    showStandard() {
-        this.toastService.show('I am a standard toast');
-    }
+    // showStandard() {
+    //     this.toastService.show('I am a standard toast');
+    // }
 
-    showDanger() {
-        this.toastService.show('I am a danger toast', { classname: 'bg-danger', delay: 5000});
-    }
+    // showDanger() {
+    //     this.toastService.show('I am a danger toast', { classname: 'bg-danger', delay: 5000});
+    // }
 }

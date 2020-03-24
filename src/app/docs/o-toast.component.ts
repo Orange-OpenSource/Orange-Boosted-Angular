@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Toast">
         <h3>Demo</h3>
-        <demo-o-toast></demo-o-toast>
+        <img src="../../assets/gif/toast.gif" alt="this slowpoke moves"  width=850/>
         <h3 class="mt-3">Usage</h3>
         <div [innerHtml]=docContent></div>
         <code-box [snippets]="demoSnippets"></code-box>
