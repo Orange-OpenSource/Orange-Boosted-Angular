@@ -9,15 +9,16 @@ import { Component } from '@angular/core';
   `],
   template: `
     <docs-wrapper component="Swiper">
-        <div class="row">
-            <div class="col-md-9">
-                <h3>Demo</h3>
-                <img src="../../assets/gif/swiper.gif" alt="this is a swiper component gif" width=550/>
-                <h3>Usage</h3>
-                <div [innerHtml]=docContent></div>
-                <code-box [snippets]="demoSnippets"></code-box>
-            </div>
-        </div>
+      <h6 class="text-primary">Warning ! : No longer supported, available under version 5.1.9</h6>
+      <div class="row">
+          <div class="col-md-9">
+              <h3>Demo</h3>
+              <img src="../../assets/gif/swiper.gif" alt="this is a swiper component gif" width=550/>
+              <h3>Usage</h3>
+              <div [innerHtml]=docContent></div>
+              <code-box [snippets]="demoSnippets"></code-box>
+          </div>
+      </div>
     </docs-wrapper>
   `
 })

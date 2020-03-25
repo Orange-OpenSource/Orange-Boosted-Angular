@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-o-switch',
   template: `
     <docs-wrapper component="Switch">
+      <h6 class="text-primary">Warning ! : No longer supported, available under version 5.1.9</h6>
       <h3>Demo</h3>
       <img src="../../assets/gif/switch.gif" alt="this is a o-switch component gif" width=240/>
       <h3>Usage</h3>

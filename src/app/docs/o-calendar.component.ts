@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   `],
   template: `
     <docs-wrapper component="Calendar">
+      <h6 class="text-primary">Warning ! : No longer supported, available under version 5.1.9</h6>
       <h3>Demo</h3>
       <img src="../../assets/gif/calendar.gif" alt="this is a o-calendar component gif" width=270/>
       <h3>Usage</h3>
