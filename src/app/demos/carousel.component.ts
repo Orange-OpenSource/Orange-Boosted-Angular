@@ -6,7 +6,7 @@ import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/n
     templateUrl: './carousel.component.html'
 })
 export class DemoCarousel {
-    images = [1, 2, 3, 4, 5, 6, 7].map((n) => `https://dummyimage.com/800x600/cccccc/000000&text=slide`+ n);
+    images = [1, 2, 3, 4, 5].map((n) => `https://dummyimage.com/800x600/cccccc/000000&text=slide`+ n);
     paused = false;
     pauseOnHover = true;
   
