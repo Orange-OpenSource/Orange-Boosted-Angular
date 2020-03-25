@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Calendar">
       <h3>Demo</h3>
-      <img src="../../assets/gif/calendar.gif" alt="this slowpoke moves"  width=350/>
+      <img class="rounded float-left" src="../../assets/gif/calendar.gif" alt="this is a o-calendar component gif" width=350/>
       <h3>Usage</h3>
       <div [innerHtml]=docContent></div>
       <code-box [snippets]="demoSnippets"></code-box>
