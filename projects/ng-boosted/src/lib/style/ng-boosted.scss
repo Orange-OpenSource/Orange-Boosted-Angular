@@ -1,25 +1,9 @@
-// pagination
-.pagination {
-    flex-wrap: wrap;
-}
-  
-// Alert
+/*Alert*/
 .close > [aria-hidden="true"]  {
-display: none;
+  display: none;
 }
 
-// Datepicker
-ngb-datepicker{
-    border-radius: 0 !important;
-    .ngb-dp-header {
-        border-radius: 0;
-    }
-    .ngb-dp-weekday {
-      color: black;
-    }
-}
-
-//Carousel
+/*Carousel*/
 .carousel-control-next-icon::before {
   display: none;
 }
@@ -27,7 +11,28 @@ ngb-datepicker{
   display: none;
 }
 
-// Toast
+/*Datepicker*/
+ngb-datepicker{
+  border-radius: 0 !important;
+  .ngb-dp-header {
+      border-radius: 0;
+  }
+  .ngb-dp-weekday {
+    color: black;
+  }
+}
+
+/*pagination*/
+.pagination {
+    flex-wrap: wrap;
+}
+
+/*Popover*/
+.popover-header {
+  margin-top: 0;
+}
+  
+/*Toast*/
 .bg-danger {
   font-weight: 700;
   color: #fff;
@@ -39,3 +44,4 @@ ngb-datepicker{
 .undefined {
   font-weight: 700;
 }
+
