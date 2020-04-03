@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
   `
 })
 export class DocButtons {
+  public docContent = require('html-loader!markdown-loader!./buttons.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/buttons.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/buttons.component.ts')
