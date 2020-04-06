@@ -20,10 +20,10 @@ export class DemoToast {
     }
   
     showSuccess() {
-      this.toastService.show('I am a success toast', { classname: 'bg-success text-light font-weight-bold', delay: 10000 });
+      this.toastService.show('I am a success toast', { classname: 'bg-success font-weight-bold', delay: 10000 });
     }
   
-    showDanger(dangerTpl) {
-      this.toastService.show(dangerTpl, { classname: 'bg-danger text-light font-weight-bold', delay: 15000 });
+    showDanger() {
+      this.toastService.show('I am a danger toast', { classname: 'bg-danger font-weight-bold', delay: 15000 });
     }
 }
