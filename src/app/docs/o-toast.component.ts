@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'doc-o-toast',
   template: `
     <docs-wrapper component="Toast">
-        <h6 class="text-primary">Warning ! : No longer supported, available under version 5.1.9</h6>
+        <p class="h6 text-primary">Warning ! : No longer supported, available under version 5.1.9</p>
         <h3>Demo</h3>
         <img src="../../assets/gif/toast.gif" alt="this is a o-toast component gif" width=950/>
         <h3 class="mt-3">Usage</h3>
