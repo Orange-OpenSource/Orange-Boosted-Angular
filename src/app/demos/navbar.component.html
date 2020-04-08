@@ -1,0 +1,37 @@
+<header role="banner" class="navbar navbar-dark bg-dark navbar-expand-md">
+    <nav role="navigation" class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/orange_logo.svg" alt="Back to homepage" title="Back to homepage" width="50" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/documentation/navbar" [routerLinkActive]="['active']">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/start" [routerLinkActive]="['active']">Getting started</a>
+          </li>
+          <li class="nav-item" ngbDropdown>
+            <button class="btn btn-link nav-link" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+            <ul ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem>Action - 1</button>
+              <button ngbDropdownItem>Another Action</button>
+              <li><a ngbDropdownItem href="#">Github</a></li>
+              <li><a ngbDropdownItem href="#">About Markdown</a></li>
+            </ul>
+          </li>  
+        </ul>
+        <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link py-2" href="#">
+              <span class="icon icon-home"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>

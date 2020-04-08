@@ -17,12 +17,13 @@ import { DemoDropdown } from '../demos/dropdown.component';
 import { DemoOSwitch } from '../demos/o-switch.component';
 import { DemoOToggle } from '../demos/o-toggle.component';
 import { DemoSwiper } from '../demos/swiper.component';
+import { DemoNavbar } from '../demos/navbar.component';
 import { DemoONavbar } from '../demos/o-navbar.component';
 import { HomeComponent } from '../home/home.component';
 import { BoostwatchComponent } from './boostwatch.component';
 import { DemoToast } from '../demos/toast.component';
 import { DemoOToast } from '../demos/o-toast.component';
-import { ONavbarModule, ONavLinkModule, ScrollTopModule } from 'ng-boosted';
+import { ScrollTopModule } from 'ng-boosted';
 import {RouterTestingModule} from "@angular/router/testing";
 import {AppRoutingModule} from "../app-routing.module";
 import {StartComponent} from "../start/start.component";
@@ -38,6 +39,7 @@ import {DocPagination} from "../docs/pagination.component";
 import {DocAlert} from "../docs/alert.component";
 import {DocTooltip} from "../docs/tooltip.component";
 import {DocToast} from "../docs/toast.component";
+import {DocNavbar} from "../docs/navbar.component";
 import {DocOToast} from "../docs/o-toast.component";
 import {DocPopover} from "../docs/popover.component";
 import {DocCarousel} from "../docs/carousel.component";
@@ -60,8 +62,6 @@ describe('BoostwatchComponent', () => {
         FormsModule,
         NgbModule,
         AppRoutingModule,
-        ONavLinkModule,
-        ONavbarModule,
         ScrollTopModule
       ],
       declarations: [
@@ -90,12 +90,14 @@ describe('BoostwatchComponent', () => {
         DocAccordion,
         DocOCalendar,
         DocModal,
+        DemoNavbar,
         DocDropdown,
         DocTabs,
         DocPagination,
         DocAlert,
         DocTooltip,
         DocToast,
+        DocNavbar,
         DocOToast,
         DocPopover,
         DocCarousel,

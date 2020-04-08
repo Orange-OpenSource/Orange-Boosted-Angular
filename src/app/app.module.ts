@@ -33,6 +33,7 @@ import { DemoSwiper } from './demos/swiper.component';
 import { DemoTable } from './demos/table.component';
 import { DemoTimepicker } from './demos/timepicker.component';
 import { DemoONavbar } from './demos/o-navbar.component';
+import { DemoNavbar } from './demos/navbar.component';
 import { DemoRating } from './demos/rating.component';
 import { DemoTypeahead } from './demos/typeahead.component';
 import { DocAccordion } from './docs/accordion.component';
@@ -52,6 +53,7 @@ import { DocSwiper } from './docs/swiper.component';
 import { DocCollapse } from './docs/collapse.component';
 import { DocDatepicker } from './docs/datepicker.component';
 import { DocProgressBar } from './docs/progress-bar.component';
+import { DocNavbar } from './docs/navbar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
@@ -62,7 +64,7 @@ import { DocTimepicker } from './docs/timepicker.component';
 import { DocTypeahead } from './docs/typeahead.component';
 import { ToastsContainer } from './demos/toasts-container.component';
 import { CodeBox } from './docs/code-box.component';
-import { ONavLinkModule, ONavbarModule, ScrollTopModule } from 'ng-boosted';
+import { ScrollTopModule } from 'ng-boosted';
 
 @NgModule({
   declarations: [
@@ -91,6 +93,7 @@ import { ONavLinkModule, ONavbarModule, ScrollTopModule } from 'ng-boosted';
     DemoOSwitch,
     DemoOToggle,
     DemoONavbar,
+    DemoNavbar,
     DemoRating,
     DemoTable,
     DemoTimepicker,
@@ -112,6 +115,7 @@ import { ONavLinkModule, ONavbarModule, ScrollTopModule } from 'ng-boosted';
     DocCollapse,
     DocDatepicker,
     DocProgressBar,
+    DocNavbar,
     DocONavbar,
     DocOScrollTop,
     DocOSwitch,
@@ -128,8 +132,6 @@ import { ONavLinkModule, ONavbarModule, ScrollTopModule } from 'ng-boosted';
     FormsModule,
     NgbModule,
     AppRoutingModule,
-    ONavLinkModule,
-    ONavbarModule,
     ScrollTopModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Analytics, Globals],

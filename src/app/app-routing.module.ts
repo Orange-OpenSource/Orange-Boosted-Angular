@@ -20,6 +20,7 @@ import { DocSwiper } from './docs/swiper.component';
 import { DocCollapse } from './docs/collapse.component';
 import { DocDatepicker } from './docs/datepicker.component';
 import { DocProgressBar } from './docs/progress-bar.component';
+import { DocNavbar } from './docs/navbar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
@@ -105,6 +106,10 @@ const routes: Routes = [{
   {
     path: 'documentation/progress',
     component: DocProgressBar
+  },
+  {
+    path: 'documentation/navbar',
+    component: DocNavbar
   },
   {
     path: 'documentation/o-navbar',
