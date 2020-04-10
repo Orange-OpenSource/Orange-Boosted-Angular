@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOCalendar {
+export class DocOCalendarComponent {
   public docContent = require('html-loader!markdown-loader!./o-calendar.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-calendar.component.html'),

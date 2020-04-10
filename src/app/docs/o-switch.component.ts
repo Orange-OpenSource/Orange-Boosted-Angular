@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOSwitch {
+export class DocOSwitchComponent {
   public docContent = require('html-loader!markdown-loader!./o-switch.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-switch.component.html'),

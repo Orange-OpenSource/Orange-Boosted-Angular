@@ -22,11 +22,9 @@ describe('DocsMenuComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  
   it(`should have iscollapsed set to true`, () => {
     expect(component.isCollapsed).toBeTruthy();
   });

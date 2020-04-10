@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOToggle {
+export class DocOToggleComponent {
   public docContent = require('html-loader!markdown-loader!./o-toggle.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-toggle.component.html'),

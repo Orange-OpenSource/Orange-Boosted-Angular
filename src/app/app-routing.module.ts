@@ -3,33 +3,33 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
-import { DocAccordion } from './docs/accordion.component';
-import { DocButtons } from './docs/buttons.component';
-import { DocOCalendar } from './docs/o-calendar.component';
-import { DocModal } from './docs/modal.component';
-import { DocDropdown } from './docs/dropdown.component';
-import { DocTabs } from './docs/tabs.component';
-import { DocPagination } from './docs/pagination.component';
-import { DocTooltip } from './docs/tooltip.component';
-import { DocOToast } from './docs/o-toast.component';
-import { DocToast } from './docs/toast.component';
-import { DocPopover } from './docs/popover.component';
-import { DocAlert } from './docs/alert.component';
-import { DocCarousel } from './docs/carousel.component';
-import { DocSwiper } from './docs/swiper.component';
-import { DocCollapse } from './docs/collapse.component';
-import { DocDatepicker } from './docs/datepicker.component';
-import { DocProgressBar } from './docs/progress-bar.component';
-import { DocNavbar } from './docs/navbar.component';
-import { DocONavbar } from './docs/o-navbar.component';
-import { DocOScrollTop } from './docs/o-scroll-top.component';
-import { DocScrollUp } from './docs/scroll-up.component';
-import { DocOSwitch } from './docs/o-switch.component';
-import { DocOToggle } from './docs/o-toggle.component';
-import { DocRating } from './docs/rating.component';
-import { DocTable } from './docs/table.component';
-import { DocTimepicker } from './docs/timepicker.component';
-import { DocTypeahead} from './docs/typeahead.component';
+import { DocAccordionComponent } from './docs/accordion.component';
+import { DocButtonsComponent } from './docs/buttons.component';
+import { DocOCalendarComponent } from './docs/o-calendar.component';
+import { DocModalComponent } from './docs/modal.component';
+import { DocDropdownComponent } from './docs/dropdown.component';
+import { DocTabsComponent } from './docs/tabs.component';
+import { DocPaginationComponent } from './docs/pagination.component';
+import { DocTooltipComponent } from './docs/tooltip.component';
+import { DocOToastComponent } from './docs/o-toast.component';
+import { DocToastComponent } from './docs/toast.component';
+import { DocPopoverComponent } from './docs/popover.component';
+import { DocAlertComponent } from './docs/alert.component';
+import { DocCarouselComponent } from './docs/carousel.component';
+import { DocSwiperComponent } from './docs/swiper.component';
+import { DocCollapseComponent } from './docs/collapse.component';
+import { DocDatepickerComponent } from './docs/datepicker.component';
+import { DocProgressBarComponent } from './docs/progress-bar.component';
+import { DocNavbarComponent } from './docs/navbar.component';
+import { DocONavbarComponent } from './docs/o-navbar.component';
+import { DocOScrollTopComponent } from './docs/o-scroll-top.component';
+import { DocScrollUpComponent } from './docs/scroll-up.component';
+import { DocOSwitchComponent } from './docs/o-switch.component';
+import { DocOToggleComponent } from './docs/o-toggle.component';
+import { DocRatingComponent } from './docs/rating.component';
+import { DocTableComponent } from './docs/table.component';
+import { DocTimepickerComponent } from './docs/timepicker.component';
+import { DocTypeaheadComponent} from './docs/typeahead.component';
 
 const routes: Routes = [{
     path: 'home',
@@ -46,111 +46,111 @@ const routes: Routes = [{
   },
   {
     path: 'documentation/buttons',
-    component: DocButtons
+    component: DocButtonsComponent
   },
   {
     path: 'documentation/collapse',
-    component: DocCollapse
+    component: DocCollapseComponent
   },
   {
     path: 'documentation/calendar',
-    component: DocOCalendar
+    component: DocOCalendarComponent
   },
   {
     path: 'documentation/accordion',
-    component: DocAccordion
+    component: DocAccordionComponent
   },
   {
     path: 'documentation/modal',
-    component: DocModal
+    component: DocModalComponent
   },
   {
     path: 'documentation/dropdown',
-    component: DocDropdown
+    component: DocDropdownComponent
   },
   {
     path: 'documentation/tabs',
-    component: DocTabs
+    component: DocTabsComponent
   },
   {
     path: 'documentation/pagination',
-    component: DocPagination
+    component: DocPaginationComponent
   },
   {
     path: 'documentation/tooltip',
-    component: DocTooltip
+    component: DocTooltipComponent
   },
   {
     path: 'documentation/Otoast',
-    component: DocOToast
+    component: DocOToastComponent
   },
   {
     path: 'documentation/toast',
-    component: DocToast
+    component: DocToastComponent
   },
   {
     path: 'documentation/popover',
-    component: DocPopover
+    component: DocPopoverComponent
   },
   {
     path: 'documentation/alert',
-    component: DocAlert
+    component: DocAlertComponent
   },
   {
     path: 'documentation/carousel',
-    component: DocCarousel
+    component: DocCarouselComponent
   },
   {
     path: 'documentation/swiper',
-    component: DocSwiper
+    component: DocSwiperComponent
   },
   {
     path: 'documentation/progress',
-    component: DocProgressBar
+    component: DocProgressBarComponent
   },
   {
     path: 'documentation/navbar',
-    component: DocNavbar
+    component: DocNavbarComponent
   },
   {
     path: 'documentation/o-navbar',
-    component: DocONavbar
+    component: DocONavbarComponent
   },
   {
     path: 'documentation/scroll-up',
-    component: DocScrollUp
+    component: DocScrollUpComponent
   },
   {
     path: 'documentation/o-scroll-top',
-    component: DocOScrollTop
+    component: DocOScrollTopComponent
   },
   {
     path: 'documentation/o-switch',
-    component: DocOSwitch
+    component: DocOSwitchComponent
   },
   {
     path: 'documentation/o-toggle',
-    component: DocOToggle
+    component: DocOToggleComponent
   },
   {
     path: 'documentation/datepicker',
-    component: DocDatepicker
+    component: DocDatepickerComponent
   },
   {
     path: 'documentation/rating',
-    component: DocRating
+    component: DocRatingComponent
   },
   {
     path: 'documentation/table',
-    component: DocTable
+    component: DocTableComponent
   },
   {
     path: 'documentation/timepicker',
-    component: DocTimepicker
+    component: DocTimepickerComponent
   },
   {
     path: 'documentation/typeahead',
-    component: DocTypeahead
+    component: DocTypeaheadComponent
   },
   {
     path: 'boostwatch',

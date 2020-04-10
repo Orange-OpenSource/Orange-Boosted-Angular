@@ -16,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOScrollTop {
+export class DocOScrollTopComponent {
   public docContent = require('html-loader!markdown-loader!./o-scroll-top.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-scroll-top.component.html')

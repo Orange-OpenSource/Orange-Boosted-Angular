@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'demo-navbar',
   templateUrl: './navbar.component.html'
 })
-export class DemoNavbar {}
+export class DemoNavbarComponent {}

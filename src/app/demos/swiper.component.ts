@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
     `],
     templateUrl: './swiper.component.html'
 })
-export class DemoSwiper {
+export class DemoSwiperComponent {
     public example1SwipeOptions: any;
 
     constructor() {

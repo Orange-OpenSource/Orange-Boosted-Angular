@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
     selector: 'demo-pagination',
     templateUrl: './pagination.component.html'
 })
-export class DemoPagination {
+export class DemoPaginationComponent {
     public page = 1;
 }

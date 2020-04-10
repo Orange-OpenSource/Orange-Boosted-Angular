@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'doc-accordion',
   template: `
     <docs-wrapper component="Accordion">
-      <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/accordion/examples">ng-bootstrap's original component documentation</a>.</p>
+      <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
+      href="https://ng-bootstrap.github.io/#/components/accordion/examples">ng-bootstrap's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-accordion></demo-accordion>
       <h3 class="mt-3">Usage</h3>
@@ -13,7 +14,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocAccordion {
+export class DocAccordionComponent {
   public docContent = require('html-loader!markdown-loader!./accordion.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/accordion.component.html'),

@@ -23,7 +23,7 @@ const ALERTS: Alert[] = [{
     selector: 'demo-alert',
     templateUrl: './alert.component.html'
 })
-export class DemoAlert {
+export class DemoAlertComponent {
   alerts: Alert[];
 
   constructor() {

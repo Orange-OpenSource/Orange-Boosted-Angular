@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './rating.component.html'
 })
 
-export class DemoRating {
+export class DemoRatingComponent {
     currentRate = 8;
 }

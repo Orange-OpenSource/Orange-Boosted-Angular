@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { DebugElement } from "@angular/core";
+import { DebugElement } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { ScrollTopModule } from 'ng-boosted';
@@ -19,7 +19,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have a footer with "Designed and built by the Boosted team"`, () => {
+  it(`should have a footer with 'Designed and built by the Boosted team'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const bannerDe: DebugElement = fixture.debugElement;
     const paragraphDe = bannerDe.query(By.css('.o-footer-body p:first-child'));

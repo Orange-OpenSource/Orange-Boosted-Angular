@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         margin:0.5rem;
     }`]
 })
-export class DemoOToast {
+export class DemoOToastComponent {
 
     // constructor(public toastService: ToastService) {}
 

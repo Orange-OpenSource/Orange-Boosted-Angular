@@ -4,12 +4,12 @@ import { Component } from '@angular/core';
   selector: 'demo-buttons',
   templateUrl: './buttons.component.html'
 })
-export class DemoButtons {
+export class DemoButtonsComponent {
   model1 = 1;
-  
   model2 = {
     one: true,
     two: false,
     three: false
   };
 }
+

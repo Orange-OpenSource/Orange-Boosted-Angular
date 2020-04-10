@@ -52,7 +52,7 @@ import { Component, Input } from '@angular/core';
         </ngb-tabset>
     `
 })
-export class CodeBox {
+export class CodeBoxComponent {
     @Input()
-    public snippets = {markup: '', typescript: '', css: '', service:'', container:''};
+    public snippets = {markup: '', typescript: '', css: '', service: '', container: ''};
 }

@@ -5,7 +5,7 @@ import { NgbTimeStruct } from '@ng-bootstrap/ng-bootstrap';
     selector: 'demo-timepicker',
     templateUrl: './timepicker.component.html'
 })
-export class DemoTimepicker {
+export class DemoTimepickerComponent {
     time: NgbTimeStruct = {hour: 13, minute: 30, second: 30};
     seconds = true;
 }

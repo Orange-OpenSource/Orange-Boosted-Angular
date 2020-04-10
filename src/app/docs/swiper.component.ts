@@ -22,7 +22,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocSwiper {
+export class DocSwiperComponent {
     public docContent = require('html-loader!markdown-loader!./swiper.component.md');
     public demoSnippets = {
         markup: require('!!prismjs-loader?lang=html!../demos/swiper.component.html'),

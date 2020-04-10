@@ -17,7 +17,8 @@ import { Component } from '@angular/core';
   `],
   template: `
     <docs-wrapper component="Popover">
-    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/popover/examples">ng-bootstrap's original component documentation</a>.</p>
+    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
+    href="https://ng-bootstrap.github.io/#/components/popover/examples">ng-bootstrap's original component documentation</a>.</p>
         <h3>Demo</h3>
         <demo-popover></demo-popover>
         <h3>Usage</h3>
@@ -26,7 +27,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocPopover {
+export class DocPopoverComponent {
   public docContent = require('html-loader!markdown-loader!./popover.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/popover.component.html'),

@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocOToast {
+export class DocOToastComponent {
   public docContent = require('html-loader!markdown-loader!./o-toast.component.md');
   public demoSnippets = {
       markup: require('!!prismjs-loader?lang=html!../demos/o-toast.component.html'),

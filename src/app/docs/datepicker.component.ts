@@ -4,7 +4,8 @@ import { Component } from '@angular/core';
   selector: 'doc-datepicker',
   template: `
     <docs-wrapper component="Datepicker">
-    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer" href="https://ng-bootstrap.github.io/#/components/datepicker/examples">ng-bootstrap's original component documentation</a>.</p>
+    <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
+    href="https://ng-bootstrap.github.io/#/components/datepicker/examples">ng-bootstrap's original component documentation</a>.</p>
       <h3>Demo</h3>
       <ul>
         <li>Simple datepicker</li>
@@ -16,7 +17,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocDatepicker {
+export class DocDatepickerComponent {
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/datepicker.component.html'),
     typescript: require('!!prismjs-loader?lang=typescript!../demos/datepicker.component.ts'),

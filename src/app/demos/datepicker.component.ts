@@ -44,39 +44,36 @@ public getDayAriaLabel(date: NgbDateStruct): string {
   styleUrls: ['./datepicker.component.scss'],
   providers: [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
 })
-export class DemoDatepicker {
-    public model1;
-    public model2;
-    public date;
-    hoveredDate: NgbDate;
-    fromDate: NgbDate;
-    toDate: NgbDate;
+export class DemoDatepickerComponent {
+  public model1;
+  public model2;
+  public date;
+  hoveredDate: NgbDate;
+  fromDate: NgbDate;
+  toDate: NgbDate;
 
-    constructor(calendar: NgbCalendar) {
-        this.fromDate = calendar.getToday();
-        this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
+  constructor(calendar: NgbCalendar) {
+    this.fromDate = calendar.getToday();
+    this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
+  }
+
+  onDateSelection(date: NgbDate) {
+    if (!this.fromDate && !this.toDate) {
+      this.fromDate = date;
+    } else if (this.fromDate && !this.toDate && date.after(this.fromDate)) {
+      this.toDate = date;
+    } else {
+      this.toDate = null;
+      this.fromDate = date;
     }
-
-    onDateSelection(date: NgbDate) {
-        if (!this.fromDate && !this.toDate) {
-          this.fromDate = date;
-        } else if (this.fromDate && !this.toDate && date.after(this.fromDate)) {
-          this.toDate = date;
-        } else {
-          this.toDate = null;
-          this.fromDate = date;
-        }
-      }
-    
-      isHovered(date: NgbDate) {
-        return this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate);
-      }
-    
-      isInside(date: NgbDate) {
-        return date.after(this.fromDate) && date.before(this.toDate);
-      }
-    
-      isRange(date: NgbDate) {
-        return date.equals(this.fromDate) || date.equals(this.toDate) || this.isInside(date) || this.isHovered(date);
-      }
+  }
+  isHovered(date: NgbDate) {
+    return this.fromDate && !this.toDate && this.hoveredDate && date.after(this.fromDate) && date.before(this.hoveredDate);
+  }
+  isInside(date: NgbDate) {
+    return date.after(this.fromDate) && date.before(this.toDate);
+  }
+  isRange(date: NgbDate) {
+    return date.equals(this.fromDate) || date.equals(this.toDate) || this.isInside(date) || this.isHovered(date);
+  }
 }

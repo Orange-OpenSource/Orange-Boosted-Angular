@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
     </docs-wrapper>
   `
 })
-export class DocONavbar{
+export class DocONavbarComponent {
   public docContent = require('html-loader!markdown-loader!./o-navbar.component.md');
   public demoSnippets = {
     markup: require('!!prismjs-loader?lang=html!../demos/o-navbar.component.html'),
