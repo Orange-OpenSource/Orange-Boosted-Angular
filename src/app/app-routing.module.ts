@@ -23,6 +23,7 @@ import { DocProgressBar } from './docs/progress-bar.component';
 import { DocNavbar } from './docs/navbar.component';
 import { DocONavbar } from './docs/o-navbar.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
+import { DocScrollUp } from './docs/scroll-up.component';
 import { DocOSwitch } from './docs/o-switch.component';
 import { DocOToggle } from './docs/o-toggle.component';
 import { DocRating } from './docs/rating.component';
@@ -114,6 +115,10 @@ const routes: Routes = [{
   {
     path: 'documentation/o-navbar',
     component: DocONavbar
+  },
+  {
+    path: 'documentation/scroll-up',
+    component: DocScrollUp
   },
   {
     path: 'documentation/o-scroll-top',

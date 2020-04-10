@@ -55,6 +55,7 @@ import { DocDatepicker } from './docs/datepicker.component';
 import { DocProgressBar } from './docs/progress-bar.component';
 import { DocNavbar } from './docs/navbar.component';
 import { DocONavbar } from './docs/o-navbar.component';
+import { DocScrollUp } from './docs/scroll-up.component';
 import { DocOScrollTop } from './docs/o-scroll-top.component';
 import { DocOSwitch } from './docs/o-switch.component';
 import { DocOToggle } from './docs/o-toggle.component';
@@ -118,6 +119,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DocNavbar,
     DocONavbar,
     DocOScrollTop,
+    DocScrollUp,
     DocOSwitch,
     DocOToggle,
     DocRating,

@@ -34,7 +34,9 @@
 
 <router-outlet></router-outlet>
 
-<lib-scroll-top label="Back to top"></lib-scroll-top>
+<a class="o-scroll-up" title="back to top" (click)="scroll()">
+  <span class="d-none d-sm-inline-block">Back to top</span>
+</a>
 
 <footer role="contentinfo" class="o-footer mt-0">
   <h2 class="sr-only">Site map & informations</h2>
