@@ -87,19 +87,21 @@
     export class AppModule {{ '{' }} {{ '}' }}
     </code></pre>
 
-    <p><strong>From version 5.1.3 :</strong></p>
+    <p><strong>From version 5.1.3 to version 5.1.9 :</strong></p>
     <p><code>NgBoostedModule</code> deleted.</p>
+    <p>You just need to import the component module you want to use.</p>
     <pre><code class="language-ts">
-    import {{ '{' }} ExampleModule, ... {{ '}' }} from 'ng-boosted';
+    import {{ '{' }} ScrollTopModule, ... {{ '}' }} from 'ng-boosted';
     @NgModule({{ '{' }}
     &emsp;...
-    &emsp;imports: [ ExampleModule, ...],
+    &emsp;imports: [ ScrollTopModule, ...],
     &emsp;...
     {{ '}' }})
     export class AppModule {{ '{' }} {{ '}' }}</code></pre>
 
     <h4 class="text-primary">Warning !</h4>
     <p><strong >From version 5.1.9 :</strong></p>
+    <p>You don't need to import ng-boosted modules. The ng-bootstrap module will be sufficient.</p>
     <p>You can no longer use the below components, they have been removed.</p>
     <div class="d-flex">
             <ul>
@@ -115,7 +117,7 @@
             <p class="align-self-center ml-5"><strong >Here are the equivalent components : </strong></p>
             <ul>
                 <li>Datepicker</li>
-                <li>nav</li>
+                <li>navbar</li>
                 <li>Dropdown</li>
                 <li>Scroll Up</li>
                 <li>Carousel</li>
