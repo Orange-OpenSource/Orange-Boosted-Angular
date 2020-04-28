@@ -1,3 +1,10 @@
+<a name="5.2.0"></a> (2020-04-28)
+## [5.2.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.7...5.2.0)
+
+### Features
+
+lib-o-calendar, lib-o-navbar, o-nav-link, llib-scroll-top, lib-o-carousel, lib-o-switch, lib-o-toast, Toggle, have been removed [#174](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/pull/174)
+
 <a name="5.1.8"></a> (2020-02-19)
 ## [5.1.8](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.7...5.1.8)
 
