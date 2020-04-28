@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   `],
   template: `
     <docs-wrapper component="Swiper">
-      <p class="h6 text-primary">Warning ! : No longer supported, available under version 5.1.9</p>
+      <p class="h6 text-primary">Warning ! : No longer supported, available under version 5.2.0</p>
       <div class="row">
           <div class="col-md-9">
               <h3>Demo</h3>
