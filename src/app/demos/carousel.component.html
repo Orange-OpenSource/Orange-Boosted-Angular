@@ -1,33 +1,30 @@
-<ngb-carousel #carousel (focus)="onFocus()" (blur)="onBlur()">
-    <ng-template ngbSlide>
-        <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random first slide">
-        <div class="carousel-caption">
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-    </ng-template>
-    <ng-template ngbSlide>
-        <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random second slide">
-        <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </ng-template>
-    <ng-template ngbSlide>
-        <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random third slide">
-        <div class="carousel-caption">
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-    </ng-template>
-    <ng-template ngbSlide>
-        <img src="https://dummyimage.com/600x400/cccccc/000000" alt="Random fourth slide">
-        <div class="carousel-caption">
-        <h3>Fourth slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-    </ng-template>
+<ngb-carousel #carousel [interval]="1000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
+  <ng-template ngbSlide *ngFor="let img of images; index as i">
+    <div class="carousel-caption">
+      <h3>My slide {{i + 1}} title</h3>
+    </div>
+    <a href="https://dummyimage.com/800x600/cccccc/000000&text+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
+      <div class="picsum-img-wrapper">
+        <img [src]="img" alt="My image {{i + 1}} description">
+      </div>
+    </a>
+  </ng-template>
 </ngb-carousel>
-<div class="btn-group" role="group" aria-label="Carousel toggle controls">
-    <button type="button" (click)="this.changeState()" id="changeState" class="btn btn-outline-dark btn-sm" [ngClass] = "!this.pause ? 'icon-Pause':'icon-Play'" [attr.aria-label]="!this.pause ? 'set Pause':'set Play'"></button>
+
+<hr>
+
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="pauseOnHover" [(ngModel)]="pauseOnHover">
+  <label class="form-check-label" for="pauseOnHover">Pause on hover</label>
 </div>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="unpauseOnArrow" [(ngModel)]="unpauseOnArrow">
+  <label class="form-check-label" for="unpauseOnArrow">Unpause when clicking on arrows</label>
+</div>
+<div class="form-check">
+  <input type="checkbox" class="form-check-input" id="pauseOnIndicator" [(ngModel)]="pauseOnIndicator">
+  <label class="form-check-label" for="pauseOnIndicator">Pause when clicking on navigation indicator</label>
+</div>
+<button type="button" (click)="togglePaused()" class="btn btn-primary btn-sm">
+  {{paused ? 'Cycle' : 'Pause' }}
+</button>

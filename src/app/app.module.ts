@@ -11,103 +11,130 @@ import { StartComponent } from './start/start.component';
 import { DocsMenuComponent } from './docs-menu/docs-menu.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { HomeComponent } from './home/home.component';
-import { DemoAccordion } from './demos/accordion.component';
-import { DemoModal } from './demos/modal.component';
-import { DemoTabs } from './demos/tabs.component';
-import { DemoPagination } from './demos/pagination.component';
-import { DemoTooltip } from './demos/tooltip.component';
-import { DemoToast } from './demos/toast.component';
-import { DemoPopover } from './demos/popover.component';
-import { DemoAlert } from './demos/alert.component';
-import { DemoCarousel } from './demos/carousel.component';
-import { DemoOCalendar } from './demos/o-calendar.component';
-import { DemoCollapse } from './demos/collapse.component';
-import { DemoProgressBar } from './demos/progress-bar.component';
-import { DemoDropdown } from './demos/dropdown.component';
-import { DemoOSwitch } from './demos/o-switch.component';
-import { DemoOToggle } from './demos/o-toggle.component';
-import { DemoSwiper } from './demos/swiper.component';
-import { DemoONavbar } from './demos/o-navbar.component';
-import { DocAccordion } from './docs/accordion.component';
-import { DocOCalendar } from './docs/o-calendar.component';
-import { DocModal } from './docs/modal.component';
-import { DocDropdown } from './docs/dropdown.component';
-import { DocTabs } from './docs/tabs.component';
-import { DocPagination } from './docs/pagination.component';
-import { DocTooltip } from './docs/tooltip.component';
-import { DocToast } from './docs/toast.component';
-import { DocPopover } from './docs/popover.component';
-import { DocAlert } from './docs/alert.component';
-import { DocCarousel } from './docs/carousel.component';
-import { DocSwiper } from './docs/swiper.component';
-import { DocCollapse } from './docs/collapse.component';
-import { DocProgressBar } from './docs/progress-bar.component';
-import { DocONavbar } from './docs/o-navbar.component';
-import { DocOScrollTop } from './docs/o-scroll-top.component';
-import { DocOSwitch } from './docs/o-switch.component';
-import { DocOToggle } from './docs/o-toggle.component';
-import { CodeBox } from './docs/code-box.component';
-import { OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule,
-  ScrollTopModule, OSwitchModule, OToastModule } from 'ng-boosted';
+import { CodeBoxComponent } from './docs/code-box.component';
+import { DemoAccordionComponent } from './demos/accordion.component';
+import { DemoButtonsComponent } from './demos/buttons.component';
+import { DemoModalComponent } from './demos/modal.component';
+import { DemoTabsComponent } from './demos/tabs.component';
+import { DemoPaginationComponent } from './demos/pagination.component';
+import { DemoTooltipComponent } from './demos/tooltip.component';
+import { DemoToastComponent } from './demos/toast.component';
+import { DemoOToastComponent } from './demos/o-toast.component';
+import { DemoPopoverComponent } from './demos/popover.component';
+import { DemoAlertComponent } from './demos/alert.component';
+import { DemoCarouselComponent } from './demos/carousel.component';
+import { DemoOCalendarComponent } from './demos/o-calendar.component';
+import { DemoCollapseComponent } from './demos/collapse.component';
+import { DemoDatepickerComponent } from './demos/datepicker.component';
+import { DemoProgressBarComponent } from './demos/progress-bar.component';
+import { DemoDropdownComponent } from './demos/dropdown.component';
+import { DemoOSwitchComponent } from './demos/o-switch.component';
+import { DemoOToggleComponent } from './demos/o-toggle.component';
+import { DemoSwiperComponent } from './demos/swiper.component';
+import { DemoTableComponent } from './demos/table.component';
+import { DemoTimepickerComponent } from './demos/timepicker.component';
+import { DemoONavbarComponent } from './demos/o-navbar.component';
+import { DemoNavbarComponent } from './demos/navbar.component';
+import { DemoRatingComponent } from './demos/rating.component';
+import { DemoTypeaheadComponent } from './demos/typeahead.component';
+import { DocAccordionComponent } from './docs/accordion.component';
+import { DocButtonsComponent } from './docs/buttons.component';
+import { DocOCalendarComponent } from './docs/o-calendar.component';
+import { DocModalComponent } from './docs/modal.component';
+import { DocDropdownComponent } from './docs/dropdown.component';
+import { DocTabsComponent } from './docs/tabs.component';
+import { DocPaginationComponent } from './docs/pagination.component';
+import { DocTooltipComponent } from './docs/tooltip.component';
+import { DocToastComponent } from './docs/toast.component';
+import { DocOToastComponent } from './docs/o-toast.component';
+import { DocPopoverComponent } from './docs/popover.component';
+import { DocAlertComponent } from './docs/alert.component';
+import { DocCarouselComponent } from './docs/carousel.component';
+import { DocSwiperComponent } from './docs/swiper.component';
+import { DocCollapseComponent } from './docs/collapse.component';
+import { DocDatepickerComponent } from './docs/datepicker.component';
+import { DocProgressBarComponent } from './docs/progress-bar.component';
+import { DocNavbarComponent } from './docs/navbar.component';
+import { DocONavbarComponent } from './docs/o-navbar.component';
+import { DocScrollUpComponent } from './docs/scroll-up.component';
+import { DocOScrollTopComponent } from './docs/o-scroll-top.component';
+import { DocOSwitchComponent } from './docs/o-switch.component';
+import { DocOToggleComponent } from './docs/o-toggle.component';
+import { DocRatingComponent } from './docs/rating.component';
+import { DocTableComponent } from './docs/table.component';
+import { DocTimepickerComponent } from './docs/timepicker.component';
+import { DocTypeaheadComponent } from './docs/typeahead.component';
+import { ToastsContainerComponent } from './demos/toasts-container.component';
+import { ScrollTopModule } from 'ng-boosted';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartComponent,
-    DocsMenuComponent,
+    CodeBoxComponent,
+    HomeComponent,
     BoostwatchComponent,
-    DemoAccordion,
-    DemoModal,
-    DemoTabs,
-    DemoPagination,
-    DemoTooltip,
-    DemoToast,
-    DemoPopover,
-    DemoAlert,
-    DemoCarousel,
-    DemoOCalendar,
-    DemoSwiper,
-    DemoCollapse,
-    DemoProgressBar,
-    DemoDropdown,
-    DemoOSwitch,
-    DemoOToggle,
-    DemoONavbar,
-    DocAccordion,
-    DocOCalendar,
-    DocModal,
-    DocDropdown,
-    DocTabs,
-    DocPagination,
-    DocAlert,
-    DocTooltip,
-    DocToast,
-    DocPopover,
-    DocCarousel,
-    DocSwiper,
-    DocCollapse,
-    DocProgressBar,
-    DocONavbar,
-    DocOScrollTop,
-    DocOSwitch,
-    DocOToggle,
-    CodeBox,
-    HomeComponent
+    DocsMenuComponent,
+    DemoAccordionComponent,
+    DemoButtonsComponent,
+    DemoCollapseComponent,
+    DemoDatepickerComponent,
+    DemoDropdownComponent,
+    DemoModalComponent,
+    DemoNavbarComponent,
+    DemoCarouselComponent,
+    DemoOCalendarComponent,
+    DemoONavbarComponent,
+    DemoOSwitchComponent,
+    DemoOToastComponent,
+    DemoOToggleComponent,
+    DemoPaginationComponent,
+    DemoPopoverComponent,
+    DemoProgressBarComponent,
+    DemoRatingComponent,
+    DemoSwiperComponent,
+    DemoTableComponent,
+    DemoTabsComponent,
+    DemoTimepickerComponent,
+    DemoToastComponent,
+    DemoTooltipComponent,
+    ToastsContainerComponent,
+    DemoAlertComponent,
+    DemoTypeaheadComponent,
+    DocAccordionComponent,
+    DocAlertComponent,
+    DocButtonsComponent,
+    DocCarouselComponent,
+    DocCollapseComponent,
+    DocDatepickerComponent,
+    DocOCalendarComponent,
+    DocModalComponent,
+    DocDropdownComponent,
+    DocTabsComponent,
+    DocPaginationComponent,
+    DocTooltipComponent,
+    DocToastComponent,
+    DocOToastComponent,
+    DocPopoverComponent,
+    DocSwiperComponent,
+    DocProgressBarComponent,
+    DocNavbarComponent,
+    DocONavbarComponent,
+    DocOScrollTopComponent,
+    DocScrollUpComponent,
+    DocOSwitchComponent,
+    DocOToggleComponent,
+    DocRatingComponent,
+    DocTableComponent,
+    DocTimepickerComponent,
+    DocTypeaheadComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgbModule,
     AppRoutingModule,
-    OCalendarModule,
-    OCarouselModule,
-    ODropdownModule,
-    ONavLinkModule,
-    ONavMenuModule,
-    ONavbarModule,
-    ScrollTopModule,
-    OSwitchModule,
-    OToastModule
+    ScrollTopModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}, Analytics, Globals],
   bootstrap: [AppComponent]

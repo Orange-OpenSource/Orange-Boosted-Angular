@@ -1,14 +1,4 @@
 /* Doc Styles */
-body {
-    padding-top: 54px;
-}
-
-@media (min-width: 480px) {
-  body {
-    padding-top: 100px;
-  }
-}
-
 h2 {
   margin-top: 3.75rem;
 }
@@ -65,19 +55,4 @@ pre {
   }
 }
 
-/*
-  @todo Remove this when Boosted handles this
-  @link https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/issues/317
-*/
-.pagination {
-  flex-wrap: wrap;
-}
-
-/*
-  @todo Find a way to remove this from markup
-  @link https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues/167
-*/
-.close > [aria-hidden="true"]  {
-  display: none;
-}
 

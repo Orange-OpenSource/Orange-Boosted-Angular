@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'demo-collapse',
   templateUrl: './collapse.component.html'
 })
-export class DemoCollapse {
+export class DemoCollapseComponent {
   public isCollapsed = false;
 }

@@ -1,47 +1,40 @@
 import { Component, Input } from '@angular/core';
+interface Alert {
+  type: string;
+  message: string;
+}
+
+const ALERTS: Alert[] = [{
+    type: 'success',
+    message: 'This is an success alert',
+  }, {
+    type: 'info',
+    message: 'This is an info alert',
+  }, {
+    type: 'warning',
+    message: 'This is a warning alert',
+  }, {
+    type: 'danger',
+    message: 'This is a danger alert',
+  }
+];
 
 @Component({
     selector: 'demo-alert',
     templateUrl: './alert.component.html'
 })
-export class DemoAlert {
-  @Input()
-  public alerts: IAlert[] = [];
-  private backup: IAlert[] = [];
+export class DemoAlertComponent {
+  alerts: Alert[];
 
   constructor() {
-    this.alerts.push({
-      id: 1,
-      type: 'success',
-      message: 'This is an success alert',
-    }, {
-      id: 2,
-      type: 'info',
-      message: 'This is an info alert',
-    }, {
-      id: 3,
-      type: 'warning',
-      message: 'This is a warning alert',
-    }, {
-      id: 4,
-      type: 'danger',
-      message: 'This is a danger alert',
-    });
-    this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
+    this.reset();
   }
 
-  public closeAlert(alert: IAlert) {
-    const index: number = this.alerts.indexOf(alert);
-    this.alerts.splice(index, 1);
+  close(alert: Alert) {
+    this.alerts.splice(this.alerts.indexOf(alert), 1);
   }
 
-  public reset() {
-    this.alerts = this.backup.map((alert: IAlert) => Object.assign({}, alert));
+  reset() {
+    this.alerts = Array.from(ALERTS);
   }
-}
-
-export interface IAlert {
-  id: number;
-  type: string;
-  message: string;
 }

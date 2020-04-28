@@ -1,3 +1,6 @@
+<!-- no longer supported, available under version 5.1.9-->
+
+<!--
 <lib-o-navbar homeRoute="/start" breakpoint="sm" containerClass="container-fluid" brandPath="assets/img/orange_logo.svg" brandLabel="Back to home page" isCollapsed={{isCollapsed}}>
      <li o-nav-link route="/documentation" query="{id: 'my_id'}" (click)="isCollapsed = !isCollapsed">Getting started</li>
 
@@ -12,13 +15,17 @@
             <li><a class="dropdown-item" href="#">About Markdown</a></li>
         </ul>
     </li>
-    <li o-nav-menu idForLabelledby="dropdownMenu1" menuTitle="Toggle dropdown">
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <button ngbDropdownItem>Action - 1</button>
-            <button ngbDropdownItem>Another Action</button>
-            <button ngbDropdownItem>Something else is here</button>
+    <li ngbDropdown class="nav-item">
+        <a href (click)="false" class="nav-link" ngbDropdownToggle>Toggle dropdown</a>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else here</button>
+          <div class="dropdown-divider"></div>
+          <button ngbDropdownItem>Separated link</button>
         </div>
     </li>
 
     <li class="nav-item"><a href="http://orange.com" class="nav-link">External link</a></li>
 </lib-o-navbar>
+-->

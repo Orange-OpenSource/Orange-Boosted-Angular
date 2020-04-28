@@ -13,4 +13,4 @@ import { Component } from '@angular/core';
   templateUrl: './progress-bar.component.html'
 })
 
-export class DemoProgressBar {}
+export class DemoProgressBarComponent {}

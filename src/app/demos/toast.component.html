@@ -1,10 +1,20 @@
-<p>
-    Here is an example of our lib Toast.
-    In this demo, by clicking one of those button below, a toast is shown. It will hide itself after a 5 seconds delay unless you simply
-    hover it with your mouse.
-</p>
-<button class="btn btn-success margin" (click)="showSuccess()">Success toast</button>
-<button class="btn btn-primary margin" (click)="showStandard()">Standard toast</button>
-<button class="btn btn-danger margin" (click)="showDanger()">Danger toast</button>
+<h6>Body only</h6>
+<ngb-toast>
+  I am a simple static toast.
+</ngb-toast>
 
-<lib-o-toast aria-live="polite" aria-atomic="true"></lib-o-toast>
+<h6>With a text header</h6>
+<ngb-toast *ngIf="show" header="Click my close icon →" [autohide]="false"
+  (hide)="close()">
+  If you close me, I will automatically re-appear after a few seconds.
+</ngb-toast>
+<p *ngIf="!show">I'll be back!</p>
+
+<h6>Toast management service</h6>
+<p>Please click one of the button to see a Toast being displayed in the top right corner of your screen:</p>
+<button class="btn btn-success" (click)="showSuccess()" ngbTooltip="Will disappear in 10s">Success toast</button>&nbsp;
+<button class="btn btn-primary" (click)="showStandard()" ngbTooltip="Will disappear in 5s">Standard toast</button>&nbsp;
+<button class="btn btn-danger" (click)="showDanger()" ngbTooltip="Will disappear in 15s">Danger toast</button>&nbsp;
+
+<app-toasts aria-live="polite" aria-atomic="true"></app-toasts>
+

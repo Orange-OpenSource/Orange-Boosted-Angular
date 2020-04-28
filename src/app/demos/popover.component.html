@@ -1,19 +1,19 @@
 <div>
-    <button type="button" class="btn btn-secondary" ngbPopover="Now click to open me !" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()" popoverTitle="Popover on top">
+    <button type="button" class="btn btn-secondary mr-2" ngbPopover="Now click to open me !" [autoClose]="false" triggers="manual" #p="ngbPopover" (click)="p.open()" popoverTitle="Popover on top">
         Popover on top
     </button>
-    <button type="button" class="btn btn-secondary" (click)="p.close()">click to close me !</button>
+    <button type="button" class="btn btn-secondary mr-2" (click)="p.close()">click to close me !</button>
 </div>
 <div class="mt-3">
-    <button type="button" class="btn btn-secondary" placement="bottom" [autoClose]="'outside'" ngbPopover="You can't close me by clicking outside, sorry." popoverTitle="Popover on bottom">
+    <button type="button" class="btn btn-secondary mr-2" placement="bottom" [autoClose]="'outside'" ngbPopover="You can't close me by clicking outside, sorry." popoverTitle="Popover on bottom">
         Popover on bottom
     </button>
         
-    <button type="button" class="btn btn-secondary" placement="left" [autoClose]="'inside'" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on left">
+    <button type="button" class="btn btn-secondary mr-2" placement="left" [autoClose]="'inside'" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on left">
         Popover on left
     </button>
         
-    <button type="button" class="btn btn-secondary" placement="right" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">
+    <button type="button" class="btn btn-secondary mr-2" placement="right" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">
         Popover on right
     </button>
 </div>

@@ -1,71 +1,147 @@
 <main role="main" class="container py-5">
     <h1>Getting started</h1>
+    <h4 class="text-primary">Warning !</h4>
+    <h6 class="text-primary">V5.1.9 ng-boosted: Some components have been removed, please read this page carefully.</h6>
 
     <h2>Dependencies</h2>
     <p>Ng-boosted is an extension of ng-bootstrap. It uses Orange graphic chart. It allows you to run your Angular project based on Boosted CSS.
         Like ng-bootstrap that backports js component from bootstrap in angular, ng-boosted aimed to backport custom Orange component of boosted in Angular.
     </p>
-    <p>Here are the dependencies that we rely on and you don't need to explicitly add to your project:</p>
+    <p>Here are the dependencies that we rely on and <b>you don't need to explicitly add to your project</b>:</p>
         <ul class="o-square-list">
-            <li><a href="http://boosted.orange.com">Boosted {{globals.boostedVersion}}</a></li>
-            <li><a href="https://ng-bootstrap.github.io/">Ng-bootstrap {{globals.ngBootstrapVersion}}</a></li>
+            <li><a href="http://boosted.orange.com">Boosted</a></li>
+            <li><a href="https://ng-bootstrap.github.io/">Ng-bootstrap</a></li>
         </ul>
-        <p>Beware the versions above-mentioned are <b>the minimal required versions</b>.
-        Some components need ng-bootstrap import.</p>
+        <p> Here is the list of minimal required versions for ng-bootstrap & ng-boosted:</p>
+        <div class="d-flex">
+            <div>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col"><small>ng-bootstrap</small></th>
+                        <th scope="col"><small>Angular</small></th>
+                        <th scope="col"><small>Bootstrap</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1.x.x</td><td>5.0.2</td><td>4.0.0</td></tr>
+                        <tr><td>2.x.x</td><td>6.0.0</td><td>4.0.0</td></tr>
+                        <tr><td>3.x.x</td><td>6.1.0</td><td>4.0.0</td></tr>
+                        <tr><td>4.x.x</td><td>7.0.0</td><td>4.0.0</td></tr>
+                        <tr><td>5.x.x</td><td>8.0.0</td><td>4.3.1</td></tr>
+                        <tr><td>6.x.x</td><td>9.0.0</td><td>4.4.1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pl-4">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col"><small>ng-bootsted</small></th>
+                        <th scope="col"><small>Angular</small></th>
+                        <th scope="col"><small>Bootsted</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1.x.x</td><td>2.4.6</td><td>4.0.0</td></tr>
+                        <tr><td>2.x.x</td><td>5.2.9</td><td>4.0.0</td></tr>
+                        <tr><td>3.x.x</td><td>6.1.0</td><td>4.0.0</td></tr>
+                        <tr><td>4.x.x</td><td>7.0.0</td><td>4.0.0</td></tr>
+                        <tr><td>5.x.x</td><td>8.0.0</td><td>4.3.1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+       
 
     <h2>Installation</h2>
-
-    <p>For ng-bootstrap installation, please <a href="https://ng-bootstrap.github.io/#/getting-started#installation">read its documentation.</a></p>
 
     <p>Install <code>ng-boosted</code> via either npm or yarn:</p>
 
     <pre><code class="language-shell">npm install --save ng-boosted</code></pre>
     <pre><code class="language-shell">yarn add ng-boosted</code></pre>
 
-    <p>Once installed, you need to import <code>ng-boosted</code> modules.</p>
+    <p>Once installed, you need to import <code>ng-bootstrap & ng-boosted</code> modules.</p>
 
-    <pre><code class="language-ts">import {{ '{' }} NgBoostedModule {{ '}' }} from 'ng-boosted';
+    <h5>Ng-bootstrap module</h5>
+    <pre><code class="language-ts">
+    import {{ '{' }} NgbModule {{ '}' }} from '@ng-bootstrap/ng-bootstrap';
+    @NgModule({{ '{' }}
+    &emsp;...
+    &emsp;imports: [ NgbModule, ...],
+    &emsp;...
+    {{ '}' }})
+    export class AppModule {{ '{' }} {{ '}' }}
+    </code></pre>
+    <p>For more information, please <a href="https://ng-bootstrap.github.io/#/getting-started#installation">read its documentation.</a></p>
+    
+    <h5>Ng-boosted module</h5>
+    <p><strong>Under version 5.1.3 :</strong></p>
+    <pre><code class="language-ts">
+    import {{ '{' }} NgBoostedModule {{ '}' }} from 'ng-boosted';
+    @NgModule({{ '{' }}
+    &emsp;...
+    &emsp;imports: [ NgBoostedModule, ...],
+    &emsp;...
+    {{ '}' }})
+    export class AppModule {{ '{' }} {{ '}' }}
+    </code></pre>
 
-@NgModule({{ '{' }}
-&emsp;declarations: [AppComponent, ...],
-&emsp;imports: [ NgBoostedModule, ...],
-&emsp;bootstrap: [AppComponent]
-{{ '}' }})
-export class AppModule {{ '{' }}
-{{ '}' }}
-</code></pre>
+    <p><strong>From version 5.1.3 to version 5.1.9 :</strong></p>
+    <p><code>NgBoostedModule</code> deleted.</p>
+    <p>You just need to import the component module you want to use.</p>
+    <pre><code class="language-ts">
+    import {{ '{' }} ScrollTopModule, ... {{ '}' }} from 'ng-boosted';
+    @NgModule({{ '{' }}
+    &emsp;...
+    &emsp;imports: [ ScrollTopModule, ...],
+    &emsp;...
+    {{ '}' }})
+    export class AppModule {{ '{' }} {{ '}' }}</code></pre>
 
-    <p>If you need to use a component from ng-bootstrap, you have to import it like explained <a href="https://ng-bootstrap.github.io/#/getting-started#installation">in the ng-bootstrap documentation</a>.</p>
+    <h4 class="text-primary">Warning !</h4>
+    <p><strong >From version 5.1.9 :</strong></p>
+    <p>You don't need to import ng-boosted modules. The ng-bootstrap module will be sufficient.</p>
+    <p>You can no longer use the below components, they have been removed.</p>
+    <div class="d-flex">
+            <ul>
+                <li>Calendar : lib-o-calendar</li>
+                <li>Navbar : lib-o-navbar</li>
+                <li>o-nav-menu & o-nav-link</li>
+                <li>Scroll Top : llib-scroll-top</li>
+                <li>Swiper : lib-o-carousel</li>
+                <li>Switch : lib-o-switch</li>
+                <li>Toast : lib-o-toast</li>
+                <li>Toggle</li>
+            </ul>
+            <p class="align-self-center ml-5"><strong >Here are the equivalent components : </strong></p>
+            <ul>
+                <li>Datepicker</li>
+                <li>navbar</li>
+                <li>Dropdown</li>
+                <li>Scroll Up</li>
+                <li>Carousel</li>
+                <li>-</li>
+                <li>Toast</li>
+                <li>Buttons</li>
+            </ul>
+    </div>
+  
 
-    <h3>From version 5.1.3</h3>
-    <p>Delete <code>NgBoostedModule</code> and add:</p>
-    <pre><code class="language-ts">import {{ '{' }} OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule {{ '}' }} from 'ng-boosted';
 
-@NgModule({{ '{' }}
-&emsp;declarations: [AppComponent, ...],
-&emsp;imports: [ OCalendarModule, OCarouselModule, ODropdownModule, ONavLinkModule, ONavMenuModule, ONavbarModule, ScrollTopModule, OSwitchModule, OToastModule, ...],
-&emsp;bootstrap: [AppComponent]
-{{ '}' }})
-export class AppModule {{ '{' }}
-{{ '}' }}</code></pre>
 
     <h2>Adding Boosted CSS</h2>
-    <p>Three options can be used to import Boosted CSS when installed from <a href="https://www.npmjs.com/package/boosted">npm</a>.</p>
-
-    <h3>Configure your <code>angular.json</code></h3>
+    <h4>Configure your <code>angular.json</code></h4>
     <p>Add the following path:</p>
     <pre><code class="language-ts">"styles": [
-    "node_modules/boosted/dist/css/boosted.min.css",
-    "node_modules/boosted/dist/css/orangeIcons.css"
-]</code></pre>
-  <p>Add <code>orangeIcons.css</code>, if you need.</p>
-
-    <h3>Import Boosted styles</h3>
-    <p>Import Boosted minified CSS:</p>
-    <pre><code class="language-css">@import '../node_modules/boosted/dist/css/boosted.min.css'</code></pre>
-
-    <p>Or import Boosted SCSS sources:<br>
-    <pre><code class="language-css">@import '../node_modules/boosted/scss/boosted.scss'</code></pre>
+    "node_modules/boosted/scss/boosted.scss",
+    "node_modules/boosted/dist/css/orangeIcons.css",
+    "node_modules/boosted/dist/css/orangeHelvetica.css",
+    "node_modules/ng-boosted/style/ng-boosted.scss"
+    ]</code></pre>
+    <p>Add <code>orangeIcons.css & orangeHelvetica.css</code>, if you need.</p>
+    <h6 class="text-primary">Warning !</h6>
+    <p>Add <code>ng-boosted.scss From version 5.1.9.</code></p>
 
     <h2>Building this documentation</h2>
     <p>Simply <code>npm run build:docs</code> and the output goes to a <code>_gh_pages</code> folder.</p>

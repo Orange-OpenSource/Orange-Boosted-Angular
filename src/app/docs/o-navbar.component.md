@@ -16,7 +16,6 @@ Main element `<lib-o-navbar>` accepts the following parameters :
 There is three supported types of child elements to `<lib-o-navbar>`. Each of them must use native `<li>` html element.
 
 * `o-nav-link` for application navigation using Angular router module.
-* `o-nav-menu` for dropdown menu in navbar.
 * classic `<a href class="nav-link"></a>` for external links.
 
 ##### ONavLink
@@ -27,11 +26,7 @@ This component has two parameters :
 * `query`, optional, is the params to pass. It is the same value you would use in `[queryParams]`attribute.
 * `title` which acts as `<a>` tag attribute `title`. Can be handy when using icon nav links with no text in it. No provided value will not set the `title`attribute.
 
-##### ONavMenu
-
-This component has one parameter :
-
-* `menuTitle` which is the dropdown title.
+##### Dropdown
 
 The host tag `<li>` must include the `ngbDropdown` directive in order to allow dropdown behaviour. Dropdown menu content must be included inside `<li>` element. See Dropdown [documentation](https://ng-bootstrap.github.io/#/components/dropdown) for more information.
 

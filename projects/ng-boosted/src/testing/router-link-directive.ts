@@ -7,9 +7,7 @@ import { Input, HostListener, Directive } from '@angular/core';
   export class RouterLinkDirective {
     @Input('routerLink') linkParams: any;
     navigatedTo: any = null;
-
     @HostListener('click')
-    
     onClick() {
       this.navigatedTo = this.linkParams;
     }

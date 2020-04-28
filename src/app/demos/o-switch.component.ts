@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'demo-o-switch',
     templateUrl: './o-switch.component.html'
 })
-export class DemoOSwitch {
+export class DemoOSwitchComponent {
     public checked: boolean;
 
     public getCheck(check) {

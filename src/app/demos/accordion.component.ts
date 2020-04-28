@@ -4,4 +4,4 @@ import { Component } from '@angular/core';
   selector: 'demo-accordion',
   templateUrl: './accordion.component.html'
 })
-export class DemoAccordion {}
+export class DemoAccordionComponent {}

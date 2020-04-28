@@ -1,0 +1,34 @@
+/*Alert*/
+.close > [aria-hidden="true"]  {
+  display: none;
+}
+
+/*Carousel*/
+.carousel-control-next-icon::before {
+  display: none;
+}
+.carousel-control-prev-icon::before {
+  display: none;
+}
+
+/*Datepicker*/
+ngb-datepicker{
+  border-radius: 0 !important;
+  .ngb-dp-header {
+      border-radius: 0;
+  }
+  .ngb-dp-weekday {
+    color: black;
+  }
+}
+
+/*pagination*/
+.pagination {
+    flex-wrap: wrap;
+}
+
+/*Popover*/
+.popover-header {
+  margin-top: 0;
+}
+
