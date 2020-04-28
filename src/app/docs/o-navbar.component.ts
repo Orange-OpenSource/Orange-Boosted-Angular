@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
   `],
   template: `
     <docs-wrapper component="Navbar">
-      <p class="h6 text-primary">Warning ! : No longer supported, available under version 5.1.9</p>
+      <p class="h6 text-primary">Warning ! : No longer supported, available under version 5.2.0</p>
       <h3>Demo</h3>
       <img src="../../assets/img/navbar.PNG" alt="this is a o-navbar component png" width=650/>
       <h3>Usage</h3>
