@@ -11,11 +11,11 @@
   "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "~8.2.14",
-    "@angular/core": "~8.2.14"
+    "@angular/common": "~9.1.6",
+    "@angular/core": "~9.1.6"
   },
   "dependencies": {
-      "@ng-bootstrap/ng-bootstrap": "^5.3.1",
+      "@ng-bootstrap/ng-bootstrap": "^6.1.0",
       "boosted": "^4.4.1"
   },
   "repository": {
