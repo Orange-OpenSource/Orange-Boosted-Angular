@@ -27,8 +27,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/prismjs/themes/prism.css",
-              "node_modules/swiper/dist/css/swiper.css",
               "node_modules/boosted/dist/css/orangeHelvetica.css",
               "node_modules/boosted/dist/css/orangeIcons.css",
               "node_modules/boosted/scss/boosted.scss",
@@ -37,9 +35,7 @@
               
             ],
             "scripts": [
-              "node_modules/swiper/dist/js/swiper.min.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/boosted/dist/js/boosted.min.js"
             ]
           },
