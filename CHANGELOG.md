@@ -1,3 +1,15 @@
+<a name="5.2.1"></a> (2020-05-05)
+## [5.2.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.0...5.2.1) (2020-05-05)
+
+### Bug Fixes
+
+* **swiper:** swiper deleted in angular.json ([f8cb97d](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/f8cb97d))
+
+### Features
+
+* **angular:** ng update @angular/core@8 @angular/cli@8 ([e6a2e8a](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/e6a2e8a))
+* **packages:** update packages ([4d77e1b](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4d77e1b))
+
 <a name="5.2.0"></a> (2020-04-28)
 ## [5.2.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.1.7...5.2.0)
 
