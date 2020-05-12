@@ -3,7 +3,7 @@ sudo: false
 
 language: node_js
 node_js:
-  - "10.9.0"
+  - "10.13.0"
 
 addons:
   chrome: stable,
@@ -21,7 +21,7 @@ jobs:
       script:
         - npm run test:lib
     - stage: Npm Release
-      node_js: "10.9.0"
+      node_js: "10.13.0"
       script:
         - echo "Deploying to NPM..."
         - npm run build:lib
@@ -39,7 +39,7 @@ jobs:
           tags: true
           all_branches: true
     - stage: Deploy to Production
-      node_js: "10.9.0"
+      node_js: "10.13.0"
       script:
         - echo "Deploying to gh Page ..."
         - npm run build:lib
