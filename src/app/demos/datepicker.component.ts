@@ -3,8 +3,8 @@ import { NgbDatepickerI18n, NgbDateStruct, NgbDate, NgbCalendar } from '@ng-boot
 
 const I18N_VALUES = {
     'fr': {
-      weekdays: ['Lu', 'Ma', 'Me', 'Je', 'Ve', 'Sa', 'Di'],
-      months: ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Déc'],
+      weekdays: ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi', 'Dimanche'],
+      months: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
     }
     // other languages you would support
   };
@@ -19,23 +19,25 @@ const I18N_VALUES = {
   // Define custom service providing the months and weekdays translations
 @Injectable()
 export class CustomDatepickerI18n extends NgbDatepickerI18n {
-
-constructor(private _i18n: I18n) {
+  constructor(private _i18n: I18n) {
     super();
-}
-
-public getWeekdayShortName(weekday: number): string {
+  }
+  public getWeekdayShortName(weekday: number): string {
     return I18N_VALUES[this._i18n.language].weekdays[weekday - 1];
-}
-public getMonthShortName(month: number): string {
+  }
+  public getMonthShortName(month: number): string {
     return I18N_VALUES[this._i18n.language].months[month - 1];
-}
-public getMonthFullName(month: number): string {
+  }
+  public getMonthFullName(month: number): string {
     return this.getMonthShortName(month);
-}
-public getDayAriaLabel(date: NgbDateStruct): string {
-    return `${date.day}-${date.month}-${date.year}`;
-    }
+  }
+  public getDayAriaLabel(date: NgbDateStruct): string {
+    var newDate = new Date(date.year, date.month - 1, date.day);
+    var newDay = newDate.getDay();
+    newDay = newDay === 0 ? 7 : newDay;
+    const day = this.getWeekdayShortName(newDay);
+    return day + ' ' + `${date.day}-${date.month}-${date.year}`;
+  }
 }
 
 @Component({
