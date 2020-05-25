@@ -19,6 +19,10 @@ ngb-datepicker{
   }
   .ngb-dp-weekday {
     color: black;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 9px;
+    white-space: nowrap;
   }
 }
 
