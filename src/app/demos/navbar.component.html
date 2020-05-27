@@ -4,10 +4,12 @@
   <nav class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/documentation" [routerLinkActive]="['active']">Components</a>
+        <a class="nav-link" routerLinkActive="active" #componentsRouterLink="routerLinkActive" 
+        [attr.aria-current]="componentsRouterLink.isActive ? 'page': undefined" routerLink="/documentation">Components</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/boostwatch" [routerLinkActive]="['active']">Boostwatch</a>
+        <a class="nav-link" routerLinkActive="active" #boostwatchRouterLink="routerLinkActive" 
+        [attr.aria-current]="boostwatchRouterLink.isActive ? 'page': undefined"routerLink="/boostwatch">Boostwatch</a>
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -22,12 +24,12 @@
             </a>
         </li>
         <li class="nav-item" ngbDropdown>
-            <button class="btn btn-link nav-link" id="dropdownLanguage" ngbDropdownToggle>Languages</button>
-            <ul class="dropdown-menu-right" ngbDropdownMenu aria-labelledby="dropdownLanguage">
-              <li><a ngbDropdownItem aria-label="Version en anglais" lang="en" hreflang="en">EN</a></li>
-              <li><a ngbDropdownItem aria-label="Version française" lang="fr" hreflang="fr">FR</a></li>
-              <li><a ngbDropdownItem aria-label="Version en español" lang="es" hreflang="es">SP</a></li>
-            </ul>
+          <button class="btn btn-link nav-link" id="dropdownLanguage" ngbDropdownToggle>Languages</button>
+          <ul ngbDropdownMenu aria-labelledby="dropdownLanguage">
+            <li><a ngbDropdownItem aria-label="Version en anglais" lang="en" hreflang="en" href="#">EN</a></li>
+            <li><a ngbDropdownItem aria-label="Version en française" lang="fr" hreflang="fr" href="#">FR</a></li>
+            <li><a ngbDropdownItem aria-label="Version en español" lang="es" hreflang="es" href="#">SP</a></li>
+          </ul>
         </li>
     </ul>
   </nav>
@@ -47,10 +49,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" routerLink="/documentation/navbar" [routerLinkActive]="['active']">Navbar</a>
+            <a class="nav-link" routerLinkActive="active" #navbarRouterLink="routerLinkActive" 
+            [attr.aria-current]="navbarRouterLink.isActive ? 'page': undefined" routerLink="/documentation/navbar">Navbar</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/start" [routerLinkActive]="['active']">Getting started</a>
+            <a class="nav-link" routerLinkActive="active" #startRouterLink="routerLinkActive" 
+            [attr.aria-current]="startRouterLink.isActive ? 'page': undefined" routerLink="/start">Getting started</a>
           </li>
           <li class="nav-item" ngbDropdown>
             <button class="btn btn-link nav-link" id="dropdownBasic1" ngbDropdownToggle>Contribute</button>

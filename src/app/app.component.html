@@ -9,16 +9,20 @@
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/home" [routerLinkActive]="['active']">Ng-boosted</a>
+          <a class="nav-link" routerLinkActive="active" #ngboostedRouterLink="routerLinkActive" 
+          [attr.aria-current]="ngboostedRouterLink.isActive ? 'page': undefined" routerLink="/home">Ng-boosted</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/start" [routerLinkActive]="['active']">Getting started</a>
+          <a class="nav-link" routerLinkActive="active" #startRouterLink="routerLinkActive" 
+          [attr.aria-current]="startRouterLink.isActive ? 'page': undefined" routerLink="/start">Getting started</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/documentation" [routerLinkActive]="['active']">Components</a>
+          <a class="nav-link" routerLinkActive="active" #componentsRouterLink="routerLinkActive" 
+          [attr.aria-current]="componentsRouterLink.isActive ? 'page': undefined" routerLink="/documentation">Components</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/boostwatch" [routerLinkActive]="['active']">Boostwatch</a>
+          <a class="nav-link" routerLinkActive="active" #boostwatchRouterLink="routerLinkActive" 
+          [attr.aria-current]="boostwatchRouterLink.isActive ? 'page': undefined" routerLink="/boostwatch">Boostwatch</a>
         </li>
       </ul>
       <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-items-center">
