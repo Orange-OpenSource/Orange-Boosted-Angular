@@ -24,7 +24,7 @@
             </a>
         </li>
         <li class="nav-item" ngbDropdown>
-          <button class="btn btn-link nav-link" id="dropdownLanguage" ngbDropdownToggle>{{selectLanuage.name}}</button>
+          <button class="btn btn-link nav-link" id="dropdownLanguage" ngbDropdownToggle>{{selectLanguage.name}}</button>
           <ul ngbDropdownMenu aria-labelledby="dropdownLanguage">
             <li *ngFor="let language of languages">
               <a ngbDropdownItem [class.active]= "language.current" attr.aria-label={{language.label}} attr.aria-current={{language.current}} lang={{language.lang}} 

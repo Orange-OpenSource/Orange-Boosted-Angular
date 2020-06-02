@@ -11,10 +11,10 @@ export class DemoNavbarComponent {
     {name: 'FR', label: 'Version française', lang: 'fr', current: this.active}, 
     {name: 'SP', label: 'Versión en español', lang: 'sp', current: this.active}
   ];
-  public selectLanuage = {name: 'Languages', label: '', lang: ''};
+  public selectLanguage = {name: 'Languages', label: '', lang: ''};
 
   ChangeLanuage(l) { 
-    this.selectLanuage = l;
+    this.selectLanguage = l;
     this.languages.forEach(lang => { lang.current = this.active });
     l.current = !l.current;
   }
