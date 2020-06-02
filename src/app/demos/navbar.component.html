@@ -24,11 +24,12 @@
             </a>
         </li>
         <li class="nav-item" ngbDropdown>
-          <button class="btn btn-link nav-link" id="dropdownLanguage" ngbDropdownToggle>Languages</button>
+          <button class="btn btn-link nav-link" id="dropdownLanguage" ngbDropdownToggle>{{selectLanuage.name}}</button>
           <ul ngbDropdownMenu aria-labelledby="dropdownLanguage">
-            <li><a ngbDropdownItem aria-label="Version en anglais" lang="en" hreflang="en" href="#">EN</a></li>
-            <li><a ngbDropdownItem aria-label="Version en française" lang="fr" hreflang="fr" href="#">FR</a></li>
-            <li><a ngbDropdownItem aria-label="Version en español" lang="es" hreflang="es" href="#">SP</a></li>
+            <li *ngFor="let language of languages">
+              <a ngbDropdownItem [class.active]= "language.current" attr.aria-label={{language.label}} attr.aria-current={{language.current}} lang={{language.lang}} 
+              hreflang={{language.lang}} (click)="ChangeLanuage(language)">{{language.name}}</a>
+            </li>
           </ul>
         </li>
     </ul>
