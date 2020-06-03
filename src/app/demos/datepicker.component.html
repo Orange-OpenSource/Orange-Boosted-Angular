@@ -7,7 +7,9 @@
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-append">
-            <button class="btn btn-outline-secondary icon-calendar-day" (click)="d.toggle()" type="button" id="button-toggle" attr.aria-label="Open Calendar" aria-haspopup="true"></button>
+            <button class="btn btn-outline-secondary icon-calendar-day" (click)="d.toggle()" type="button" id="button-toggle" aria-haspopup="true">
+              <span class="sr-only">choose date</span>
+            </button>
         </div>
         <input class="form-control calendar-input" placeholder="Une date (jj/mm/aaa)"
                name="dp2" [(ngModel)]="model2" ngbDatepicker #d="ngbDatepicker" attr.aria-label='Calendar'>
