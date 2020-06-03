@@ -45,7 +45,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "acorn": "^7.1.1",
-    "boosted": "^4.4.1",
+    "boosted": "^4.5.0",
     "classlist.js": "^1.1.20150312",
     "codelyzer": "~5.1.2",
     "core-js": "^2.5.4",
