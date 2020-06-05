@@ -1,3 +1,18 @@
+<a name="5.2.2"></a> (2020-06-05)
+## [5.2.2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.1...5.2.2) (2020-06-05)
+
+### Bug Fixes
+
+* **carousel:** interval modification ([23c2685](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/23c2685))
+* **datepicker:** accessibility correction ([9eee87b](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/9eee87b))
+* **datepicker:** accessibility correction ([0ced78c](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/0ced78c))
+* **datepicker:** aria-label modified ([80034ad](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/80034ad))
+* **navbar:** accessibility correction ([4261df2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4261df2))
+* **navbar:** accessibility correction - aria-current added ([454ff04](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/454ff04))
+* **navbar:** aria-label, aria-current & active class added to dropdown ([ffae880](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ffae880))
+* **navbar:** correction text code ([91dab33](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/91dab33))
+* **ngBoosted:** ng-boosted.css chaned ([84fdc98](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/84fdc98))
+
 <a name="5.2.1"></a> (2020-05-05)
 ## [5.2.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.0...5.2.1) (2020-05-05)
 
