@@ -16,12 +16,12 @@ export class DemoToastComponent {
   }
 
   showStandard() {
-    this.toastService.show('I am a standard toast', { classname: 'font-weight-bold', delay: 10000 });
+    this.toastService.show('I am a standard toast', { classname: 'border border-primary font-weight-bold', delay: 10000 });
   }
   showSuccess() {
-    this.toastService.show('I am a success toast', { classname: 'bg-success font-weight-bold', delay: 10000 });
+    this.toastService.show('I am a success toast', { classname: 'border border-success font-weight-bold', delay: 10000 });
   }
   showDanger() {
-    this.toastService.show('I am a danger toast', { classname: 'bg-danger font-weight-bold', delay: 15000 });
+    this.toastService.show('I am a danger toast', { classname: 'border border-danger font-weight-bold', delay: 15000 });
   }
 }
