@@ -32,8 +32,8 @@ export class CustomDatepickerI18n extends NgbDatepickerI18n {
     return this.getMonthShortName(month);
   }
   public getDayAriaLabel(date: NgbDateStruct): string {
-    var newDate = new Date(date.year, date.month - 1, date.day);
-    var newDay = newDate.getDay();
+    const newDate = new Date(date.year, date.month - 1, date.day);
+    let newDay = newDate.getDay();
     newDay = newDay === 0 ? 7 : newDay;
     const day = this.getWeekdayShortName(newDay);
     return day + ' ' + `${date.day}-${date.month}-${date.year}`;
