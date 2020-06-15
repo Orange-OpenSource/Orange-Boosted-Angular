@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
 export class DemoNavbarComponent {
   public active = false;
   public languages = [
-    {name: 'EN', label: 'English version', lang: 'en', current: this.active}, 
-    {name: 'FR', label: 'Version française', lang: 'fr', current: this.active}, 
+    {name: 'EN', label: 'English version', lang: 'en', current: this.active},
+    {name: 'FR', label: 'Version française', lang: 'fr', current: this.active},
     {name: 'SP', label: 'Versión en español', lang: 'sp', current: this.active}
   ];
   public selectLanguage = {name: 'Languages', label: '', lang: ''};
 
-  ChangeLanuage(l) { 
+  ChangeLanuage(l) {
     this.selectLanguage = l;
-    this.languages.forEach(lang => { lang.current = this.active });
+    this.languages.forEach(lang => { lang.current = this.active; });
     l.current = !l.current;
   }
 }
