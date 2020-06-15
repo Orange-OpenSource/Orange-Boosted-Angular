@@ -1,3 +1,16 @@
+<a name="5.2.3"></a> (2020-06-15)
+## [5.2.3](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.2...5.2.3) (2020-06-15)
+
+### Bug Fixes
+
+* **carousel:** img class changed ([5fc71df](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5fc71df))
+* **toast:** toast css class changed ([96f8484](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/96f8484))
+
+### Features
+
+* **boosted:** update ([20651da](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/20651da))
+* **boosted:** update boosted ([16b7bc0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/16b7bc0))
+
 <a name="5.2.2"></a> (2020-06-05)
 ## [5.2.2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.1...5.2.2) (2020-06-05)
 
