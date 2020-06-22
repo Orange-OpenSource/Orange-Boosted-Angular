@@ -22,7 +22,7 @@
     "copy-readme": "cpx ./README.md dist/ng-boosted",
     "test:lib": "ng test ng-boosted --browsers=PhantomJS --watch=false --code-coverage=true --sourceMap=false",
     "lint-lib": "ng lint ng-boosted",
-    "build:lib": "ng build ng-boosted && npm run build:lib-styles",
+    "build:lib": "ng build ng-boosted --prod && npm run build:lib-styles",
     "build:lib-styles": "scss-bundle -e ./projects/ng-boosted/src/lib/style/ng-boosted.scss -o ./dist/ng-boosted/style/ng-boosted.scss",
     "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
   },
