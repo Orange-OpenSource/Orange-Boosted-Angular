@@ -36,6 +36,7 @@
     "@angular/compiler-cli": "~9.0.0",
     "@angular/core": "~9.0.0",
     "@angular/forms": "~9.0.0",
+    "@angular/localize": "~9.0.0",
     "@angular/language-service": "~9.0.0",
     "@angular/platform-browser": "~9.0.0",
     "@angular/platform-browser-dynamic": "~9.0.0",
@@ -71,7 +72,7 @@
     "prismjs": "^1.16.0",
     "prismjs-loader": "^0.0.4",
     "protractor": "~5.4.0",
-    "rxjs": "^6.5.5",
+    "rxjs": "~6.5.4",
     "scss-bundle": "^3.1.1",
     "serialize-javascript": "^2.1.2",
     "set-value": "^3.0.1",
@@ -95,9 +96,5 @@
   },
   "files": [
     "dist/**/*"
-  ],
-  "dependencies": {
-    "@angular/localize": "^9.1.11",
-    "node-sass": "^4.14.1"
-  }
+  ]
 }

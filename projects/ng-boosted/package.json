@@ -11,8 +11,13 @@
   "homepage": "https://orange-opensource.github.io/Orange-Boosted-Angular",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/common": "~9.0.0",
-    "@angular/core": "~9.0.0"
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "@angular/forms": "^9.0.0",
+    "@angular/localize": "^9.0.0",
+    "rxjs": "^6.5.3",
+    "tslib": "^1.10.0",
+    "node-sass": "^4.12.0"
   },
   "dependencies": {
       "@ng-bootstrap/ng-bootstrap": "^6.0.0",
