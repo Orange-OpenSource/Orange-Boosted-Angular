@@ -1,3 +1,19 @@
+<a name="6.0.0"></a> (2020-06-22)
+# [6.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.3...6.0.0) (2020-06-22)
+
+### Bug Fixes
+
+* **node:** update node ([6028111](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/6028111))
+
+### Features
+
+* **angular:** update @angular/cli-core@8 ([6a0e115](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/6a0e115))
+* **angular:** update angular 8 to 9 ([453514d](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/453514d))
+* **angular:** update angular 8 to 9 ([8b19cd2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/8b19cd2))
+* **angular:** update package.json ([d1d1067](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/d1d1067))
+* **angular:** update typescript ([8472c17](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/8472c17))
+* **angular:** update typescript ([674396d](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/674396d))
+
 <a name="5.2.3"></a> (2020-06-15)
 ## [5.2.3](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.2...5.2.3) (2020-06-15)
 
