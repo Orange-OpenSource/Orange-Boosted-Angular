@@ -1,3 +1,10 @@
+<a name="6.0.0"></a> (2020-07-01)
+# [6.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/6.0.0...6.1.0) (2020-07-01)
+
+### Features
+
+* **packages:** update packages ([aac5caf](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/aac5caf))
+
 <a name="6.0.0"></a> (2020-06-22)
 # [6.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/5.2.3...6.0.0) (2020-06-22)
 
