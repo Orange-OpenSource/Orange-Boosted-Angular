@@ -20,7 +20,7 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-      "@ng-bootstrap/ng-bootstrap": "^6.1.0",
+      "@ng-bootstrap/ng-bootstrap": "^6.2.0",
       "boosted": "^4.5.0"
   },
   "repository": {
