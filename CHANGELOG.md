@@ -1,4 +1,12 @@
-<a name="6.0.0"></a> (2020-07-01)
+<a name="6.2.0"></a> (2020-07-09)
+# [6.2.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/6.1.0...6.2.0) (2020-07-09)
+
+### Features
+
+* **ngBootstrap:** update ([ceea8a5](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ceea8a5))
+* **deps:** bump npm-registry-ferch from 4.0.4 to 4.0.5 ([c16bf0f](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/c16bf0f))
+
+<a name="6.1.0"></a> (2020-07-01)
 # [6.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/6.0.0...6.1.0) (2020-07-01)
 
 ### Features
