@@ -1,3 +1,14 @@
+<a name="7.0.0"></a> (2020-07-22)
+# [7.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/6.2.0...7.0.0) (2020-07-22)
+
+### Features
+
+* **angular:** package.json lib changed ([217dd0c](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/217dd0c))
+* **angular:** tslint update ([97a470c](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/97a470c))
+* **angular:** update angular 9 to 10 ([81a480c](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/81a480c))
+* **angular:** update angular/cli&core ([64ace91](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/64ace91))
+* **angular:** update start page ([ea77e14](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ea77e14))
+
 <a name="6.2.0"></a> (2020-07-09)
 # [6.2.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/6.1.0...6.2.0) (2020-07-09)
 
