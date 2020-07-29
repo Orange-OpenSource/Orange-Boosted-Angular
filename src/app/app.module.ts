@@ -17,6 +17,8 @@ import { DemoBadgeComponent } from './demos/badge.component';
 import { DemoCardComponent } from './demos/card.component';
 import { DemoFormComponent } from './demos/form.component';
 import { DemoJumbotronComponent } from './demos/jumbotron.component';
+import { DemoMediaComponent } from './demos/media.component';
+import { DemoOrangePopinComponent } from './demos/orange-popin.component';
 import { DemoListGroupComponent } from './demos/list-group.component';
 import { DemoBreadcrumbComponent } from './demos/breadcrumb.component';
 import { DemoButtonsComponent } from './demos/buttons.component';
@@ -49,6 +51,8 @@ import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
 import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
+import { DocMediaComponent } from './docs/media.component';
+import { DocOrangePopinComponent } from './docs/orange-popin.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -92,6 +96,8 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoCardComponent,
     DemoFormComponent,
     DemoJumbotronComponent,
+    DemoMediaComponent,
+    DemoOrangePopinComponent,
     DemoListGroupComponent,
     DemoBreadcrumbComponent,
     DemoButtonsComponent,
@@ -125,6 +131,8 @@ import { ScrollTopModule } from 'ng-boosted';
     DocFormComponent,
     DocJumbotronComponent,
     DocListGroupComponent,
+    DocMediaComponent,
+    DocOrangePopinComponent,
     DocBreadcrumbComponent,
     DocAlertComponent,
     DocButtonsComponent,

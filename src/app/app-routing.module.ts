@@ -9,6 +9,8 @@ import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
 import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
+import { DocMediaComponent } from './docs/media.component';
+import { DocOrangePopinComponent } from './docs/orange-popin.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -97,6 +99,14 @@ const routes: Routes = [{
   {
     path: 'documentation/list-group',
     component: DocListGroupComponent
+  },
+  {
+    path: 'documentation/media-object',
+    component: DocMediaComponent
+  },
+  {
+    path: 'documentation/orange-popin',
+    component: DocOrangePopinComponent
   },
   {
     path: 'documentation/tabs',

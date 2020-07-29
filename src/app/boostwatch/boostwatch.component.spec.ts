@@ -13,6 +13,8 @@ import { DemoBadgeComponent } from '../demos/badge.component';
 import { DemoCardComponent } from '../demos/card.component';
 import { DemoFormComponent } from '../demos/form.component';
 import { DemoJumbotronComponent } from '../demos/jumbotron.component';
+import { DemoMediaComponent } from '../demos/media.component';
+import { DemoOrangePopinComponent } from '../demos/orange-popin.component';
 import { DemoListGroupComponent } from '../demos/list-group.component';
 import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
 import { DemoModalComponent } from '../demos/modal.component';
@@ -51,6 +53,8 @@ import { DocDropdownComponent } from '../docs/dropdown.component';
 import { DocFormComponent } from '../docs/form.component';
 import { DocJumbotronComponent } from '../docs/jumbotron.component';
 import { DocListGroupComponent } from '../docs/list-group.component';
+import { DocMediaComponent } from '../docs/media.component';
+import { DocOrangePopinComponent } from '../docs/orange-popin.component';
 import { DocTabsComponent } from '../docs/tabs.component';
 import { DocPaginationComponent } from '../docs/pagination.component';
 import { DocAlertComponent } from '../docs/alert.component';
@@ -100,6 +104,8 @@ describe('BoostwatchComponent', () => {
         DemoCardComponent,
         DemoFormComponent,
         DemoJumbotronComponent,
+        DemoMediaComponent,
+        DemoOrangePopinComponent,
         DemoListGroupComponent,
         DemoBreadcrumbComponent,
         DemoButtonsComponent,
@@ -132,6 +138,8 @@ describe('BoostwatchComponent', () => {
         DocFormComponent,
         DocJumbotronComponent,
         DocListGroupComponent,
+        DocMediaComponent,
+        DocOrangePopinComponent,
         DocBreadcrumbComponent,
         DocAlertComponent,
         DocButtonsComponent,
