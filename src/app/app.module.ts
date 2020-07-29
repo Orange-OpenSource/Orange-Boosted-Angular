@@ -16,6 +16,8 @@ import { DemoAccordionComponent } from './demos/accordion.component';
 import { DemoBadgeComponent } from './demos/badge.component';
 import { DemoCardComponent } from './demos/card.component';
 import { DemoFormComponent } from './demos/form.component';
+import { DemoJumbotronComponent } from './demos/jumbotron.component';
+import { DemoListGroupComponent } from './demos/list-group.component';
 import { DemoBreadcrumbComponent } from './demos/breadcrumb.component';
 import { DemoButtonsComponent } from './demos/buttons.component';
 import { DemoModalComponent } from './demos/modal.component';
@@ -45,6 +47,8 @@ import { DocAccordionComponent } from './docs/accordion.component';
 import { DocBadgeComponent } from './docs/badge.component';
 import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
+import { DocJumbotronComponent } from './docs/jumbotron.component';
+import { DocListGroupComponent } from './docs/list-group.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -87,6 +91,8 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoBadgeComponent,
     DemoCardComponent,
     DemoFormComponent,
+    DemoJumbotronComponent,
+    DemoListGroupComponent,
     DemoBreadcrumbComponent,
     DemoButtonsComponent,
     DemoCollapseComponent,
@@ -117,6 +123,8 @@ import { ScrollTopModule } from 'ng-boosted';
     DocBadgeComponent,
     DocCardComponent,
     DocFormComponent,
+    DocJumbotronComponent,
+    DocListGroupComponent,
     DocBreadcrumbComponent,
     DocAlertComponent,
     DocButtonsComponent,

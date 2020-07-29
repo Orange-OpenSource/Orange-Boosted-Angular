@@ -12,6 +12,8 @@ import { DemoAccordionComponent } from '../demos/accordion.component';
 import { DemoBadgeComponent } from '../demos/badge.component';
 import { DemoCardComponent } from '../demos/card.component';
 import { DemoFormComponent } from '../demos/form.component';
+import { DemoJumbotronComponent } from '../demos/jumbotron.component';
+import { DemoListGroupComponent } from '../demos/list-group.component';
 import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
 import { DemoModalComponent } from '../demos/modal.component';
 import { DemoTabsComponent } from '../demos/tabs.component';
@@ -47,6 +49,8 @@ import { DocBreadcrumbComponent } from '../docs/breadcrumb.component';
 import { DocModalComponent } from '../docs/modal.component';
 import { DocDropdownComponent } from '../docs/dropdown.component';
 import { DocFormComponent } from '../docs/form.component';
+import { DocJumbotronComponent } from '../docs/jumbotron.component';
+import { DocListGroupComponent } from '../docs/list-group.component';
 import { DocTabsComponent } from '../docs/tabs.component';
 import { DocPaginationComponent } from '../docs/pagination.component';
 import { DocAlertComponent } from '../docs/alert.component';
@@ -95,6 +99,8 @@ describe('BoostwatchComponent', () => {
         DemoBadgeComponent,
         DemoCardComponent,
         DemoFormComponent,
+        DemoJumbotronComponent,
+        DemoListGroupComponent,
         DemoBreadcrumbComponent,
         DemoButtonsComponent,
         DemoDatepickerComponent,
@@ -124,6 +130,8 @@ describe('BoostwatchComponent', () => {
         DocBadgeComponent,
         DocCardComponent,
         DocFormComponent,
+        DocJumbotronComponent,
+        DocListGroupComponent,
         DocBreadcrumbComponent,
         DocAlertComponent,
         DocButtonsComponent,

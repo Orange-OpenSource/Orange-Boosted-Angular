@@ -7,6 +7,8 @@ import { DocAccordionComponent } from './docs/accordion.component';
 import { DocBadgeComponent } from './docs/badge.component';
 import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
+import { DocJumbotronComponent } from './docs/jumbotron.component';
+import { DocListGroupComponent } from './docs/list-group.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -87,6 +89,14 @@ const routes: Routes = [{
   {
     path: 'documentation/forms',
     component: DocFormComponent
+  },
+  {
+    path: 'documentation/jumbotron',
+    component: DocJumbotronComponent
+  },
+  {
+    path: 'documentation/list-group',
+    component: DocListGroupComponent
   },
   {
     path: 'documentation/tabs',
