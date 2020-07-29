@@ -5,6 +5,8 @@ import { StartComponent } from './start/start.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { DocAccordionComponent } from './docs/accordion.component';
 import { DocBadgeComponent } from './docs/badge.component';
+import { DocCardComponent } from './docs/card.component';
+import { DocFormComponent } from './docs/form.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -67,6 +69,10 @@ const routes: Routes = [{
     component: DocBadgeComponent
   },
   {
+    path: 'documentation/card',
+    component: DocCardComponent
+  },
+  {
     path: 'documentation/breadcrumb',
     component: DocBreadcrumbComponent
   },
@@ -77,6 +83,10 @@ const routes: Routes = [{
   {
     path: 'documentation/dropdown',
     component: DocDropdownComponent
+  },
+  {
+    path: 'documentation/forms',
+    component: DocFormComponent
   },
   {
     path: 'documentation/tabs',

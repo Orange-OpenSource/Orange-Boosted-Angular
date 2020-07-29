@@ -10,6 +10,8 @@ import { StartComponent } from '../start/start.component';
 import { CodeBoxComponent } from '../docs/code-box.component';
 import { DemoAccordionComponent } from '../demos/accordion.component';
 import { DemoBadgeComponent } from '../demos/badge.component';
+import { DemoCardComponent } from '../demos/card.component';
+import { DemoFormComponent } from '../demos/form.component';
 import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
 import { DemoModalComponent } from '../demos/modal.component';
 import { DemoTabsComponent } from '../demos/tabs.component';
@@ -40,9 +42,11 @@ import { DocOCalendarComponent } from '../docs/o-calendar.component';
 import { DocsMenuComponent } from '../docs-menu/docs-menu.component';
 import { DocAccordionComponent } from '../docs/accordion.component';
 import { DocBadgeComponent } from '../docs/badge.component';
+import { DocCardComponent } from '../docs/card.component';
 import { DocBreadcrumbComponent } from '../docs/breadcrumb.component';
 import { DocModalComponent } from '../docs/modal.component';
 import { DocDropdownComponent } from '../docs/dropdown.component';
+import { DocFormComponent } from '../docs/form.component';
 import { DocTabsComponent } from '../docs/tabs.component';
 import { DocPaginationComponent } from '../docs/pagination.component';
 import { DocAlertComponent } from '../docs/alert.component';
@@ -89,6 +93,8 @@ describe('BoostwatchComponent', () => {
         HomeComponent,
         DemoAccordionComponent,
         DemoBadgeComponent,
+        DemoCardComponent,
+        DemoFormComponent,
         DemoBreadcrumbComponent,
         DemoButtonsComponent,
         DemoDatepickerComponent,
@@ -116,6 +122,8 @@ describe('BoostwatchComponent', () => {
         DemoTypeaheadComponent,
         DocAccordionComponent,
         DocBadgeComponent,
+        DocCardComponent,
+        DocFormComponent,
         DocBreadcrumbComponent,
         DocAlertComponent,
         DocButtonsComponent,
