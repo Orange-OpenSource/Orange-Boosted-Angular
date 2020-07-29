@@ -9,6 +9,8 @@ import { AppRoutingModule } from '../app-routing.module';
 import { StartComponent } from '../start/start.component';
 import { CodeBoxComponent } from '../docs/code-box.component';
 import { DemoAccordionComponent } from '../demos/accordion.component';
+import { DemoBadgeComponent } from '../demos/badge.component';
+import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
 import { DemoModalComponent } from '../demos/modal.component';
 import { DemoTabsComponent } from '../demos/tabs.component';
 import { DemoPaginationComponent } from '../demos/pagination.component';
@@ -37,6 +39,8 @@ import { DocCollapseComponent } from '../docs/collapse.component';
 import { DocOCalendarComponent } from '../docs/o-calendar.component';
 import { DocsMenuComponent } from '../docs-menu/docs-menu.component';
 import { DocAccordionComponent } from '../docs/accordion.component';
+import { DocBadgeComponent } from '../docs/badge.component';
+import { DocBreadcrumbComponent } from '../docs/breadcrumb.component';
 import { DocModalComponent } from '../docs/modal.component';
 import { DocDropdownComponent } from '../docs/dropdown.component';
 import { DocTabsComponent } from '../docs/tabs.component';
@@ -84,6 +88,8 @@ describe('BoostwatchComponent', () => {
         CodeBoxComponent,
         HomeComponent,
         DemoAccordionComponent,
+        DemoBadgeComponent,
+        DemoBreadcrumbComponent,
         DemoButtonsComponent,
         DemoDatepickerComponent,
         DemoDropdownComponent,
@@ -109,6 +115,8 @@ describe('BoostwatchComponent', () => {
         DemoCollapseComponent,
         DemoTypeaheadComponent,
         DocAccordionComponent,
+        DocBadgeComponent,
+        DocBreadcrumbComponent,
         DocAlertComponent,
         DocButtonsComponent,
         DocCarouselComponent,

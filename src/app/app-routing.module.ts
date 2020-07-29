@@ -4,6 +4,8 @@ import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { DocAccordionComponent } from './docs/accordion.component';
+import { DocBadgeComponent } from './docs/badge.component';
+import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
 import { DocModalComponent } from './docs/modal.component';
@@ -59,6 +61,14 @@ const routes: Routes = [{
   {
     path: 'documentation/accordion',
     component: DocAccordionComponent
+  },
+  {
+    path: 'documentation/badge',
+    component: DocBadgeComponent
+  },
+  {
+    path: 'documentation/breadcrumb',
+    component: DocBreadcrumbComponent
   },
   {
     path: 'documentation/modal',
