@@ -23,7 +23,8 @@ import { DemoTabsComponent } from '../demos/tabs.component';
 import { DemoPaginationComponent } from '../demos/pagination.component';
 import { DemoTooltipComponent } from '../demos/tooltip.component';
 import { DemoPopoverComponent } from '../demos/popover.component';
-import { DemoSpinnerComponent } from './demos/spinner.component';
+import { DemoSpinnerComponent } from '../demos/spinner.component';
+import { DemoStepbarComponent } from '../demos/stepbar.component';
 import { DemoAlertComponent } from '../demos/alert.component';
 import { DemoCarouselComponent } from '../demos/carousel.component';
 import { DemoOCalendarComponent } from '../demos/o-calendar.component';
@@ -34,6 +35,7 @@ import { DemoDropdownComponent } from '../demos/dropdown.component';
 import { DemoOSwitchComponent } from '../demos/o-switch.component';
 import { DemoOToggleComponent } from '../demos/o-toggle.component';
 import { DemoRatingComponent } from '../demos/rating.component';
+import { DemoScrollspyComponent } from '../demos/scrollspy.component';
 import { DemoSwiperComponent } from '../demos/swiper.component';
 import { DemoButtonsComponent } from '../demos/buttons.component';
 import { DemoNavbarComponent } from '../demos/navbar.component';
@@ -75,6 +77,8 @@ import { DocPopoverComponent } from '../docs/popover.component';
 import { DocCarouselComponent } from '../docs/carousel.component';
 import { DocSwiperComponent } from '../docs/swiper.component';
 import { DocSpinnerComponent } from '../docs/spinner.component';
+import { DocScrollspyComponent } from '../docs/scrollspy.component';
+import { DocStepbarComponent } from '../docs/stepbar.component';
 import { DocProgressBarComponent } from '../docs/progress-bar.component';
 import { DocONavbarComponent } from '../docs/o-navbar.component';
 import { DocScrollUpComponent } from '../docs/scroll-up.component';
@@ -127,8 +131,10 @@ describe('BoostwatchComponent', () => {
         DemoPopoverComponent,
         DemoProgressBarComponent,
         DemoRatingComponent,
+        DemoScrollspyComponent,
         DemoSwiperComponent,
         DemoSpinnerComponent,
+        DemoStepbarComponent,
         DemoTableComponent,
         DemoTabsComponent,
         DemoTimepickerComponent,
@@ -169,6 +175,8 @@ describe('BoostwatchComponent', () => {
         DocPopoverComponent,
         DocSwiperComponent,
         DocSpinnerComponent,
+        DocScrollspyComponent,
+        DocStepbarComponent,
         DocProgressBarComponent,
         DocONavbarComponent,
         DocOScrollTopComponent,

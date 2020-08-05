@@ -27,6 +27,8 @@ import { DocAlertComponent } from './docs/alert.component';
 import { DocCarouselComponent } from './docs/carousel.component';
 import { DocSwiperComponent } from './docs/swiper.component';
 import { DocSpinnerComponent } from './docs/spinner.component';
+import { DocScrollspyComponent } from './docs/scrollspy.component';
+import { DocStepbarComponent } from './docs/stepbar.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
@@ -153,6 +155,14 @@ const routes: Routes = [{
   {
     path: 'documentation/spinners',
     component: DocSpinnerComponent
+  },
+  {
+    path: 'documentation/scrollspy',
+    component: DocScrollspyComponent
+  },
+  {
+    path: 'documentation/stepbar',
+    component: DocStepbarComponent
   },
   {
     path: 'documentation/progress',
