@@ -9,6 +9,7 @@ import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
 import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
+import { DocLocalNavigationComponent } from './docs/local-navigation.component';
 import { DocMediaComponent } from './docs/media.component';
 import { DocOrangePopinComponent } from './docs/orange-popin.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
@@ -25,6 +26,7 @@ import { DocPopoverComponent } from './docs/popover.component';
 import { DocAlertComponent } from './docs/alert.component';
 import { DocCarouselComponent } from './docs/carousel.component';
 import { DocSwiperComponent } from './docs/swiper.component';
+import { DocSpinnerComponent } from './docs/spinner.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
@@ -101,6 +103,10 @@ const routes: Routes = [{
     component: DocListGroupComponent
   },
   {
+    path: 'documentation/local-navigation',
+    component: DocLocalNavigationComponent
+  },
+  {
     path: 'documentation/media-object',
     component: DocMediaComponent
   },
@@ -143,6 +149,10 @@ const routes: Routes = [{
   {
     path: 'documentation/swiper',
     component: DocSwiperComponent
+  },
+  {
+    path: 'documentation/spinners',
+    component: DocSpinnerComponent
   },
   {
     path: 'documentation/progress',

@@ -16,12 +16,14 @@ import { DemoJumbotronComponent } from '../demos/jumbotron.component';
 import { DemoMediaComponent } from '../demos/media.component';
 import { DemoOrangePopinComponent } from '../demos/orange-popin.component';
 import { DemoListGroupComponent } from '../demos/list-group.component';
+import { DemoLocalNavigationComponent } from '../demos/local-navigation.Component';
 import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
 import { DemoModalComponent } from '../demos/modal.component';
 import { DemoTabsComponent } from '../demos/tabs.component';
 import { DemoPaginationComponent } from '../demos/pagination.component';
 import { DemoTooltipComponent } from '../demos/tooltip.component';
 import { DemoPopoverComponent } from '../demos/popover.component';
+import { DemoSpinnerComponent } from './demos/spinner.component';
 import { DemoAlertComponent } from '../demos/alert.component';
 import { DemoCarouselComponent } from '../demos/carousel.component';
 import { DemoOCalendarComponent } from '../demos/o-calendar.component';
@@ -53,6 +55,7 @@ import { DocDropdownComponent } from '../docs/dropdown.component';
 import { DocFormComponent } from '../docs/form.component';
 import { DocJumbotronComponent } from '../docs/jumbotron.component';
 import { DocListGroupComponent } from '../docs/list-group.component';
+import { DocLocalNavigationComponent } from '../docs/local-navigation.component';
 import { DocMediaComponent } from '../docs/media.component';
 import { DocOrangePopinComponent } from '../docs/orange-popin.component';
 import { DocTabsComponent } from '../docs/tabs.component';
@@ -71,6 +74,7 @@ import { DocOToastComponent } from '../docs/o-toast.component';
 import { DocPopoverComponent } from '../docs/popover.component';
 import { DocCarouselComponent } from '../docs/carousel.component';
 import { DocSwiperComponent } from '../docs/swiper.component';
+import { DocSpinnerComponent } from '../docs/spinner.component';
 import { DocProgressBarComponent } from '../docs/progress-bar.component';
 import { DocONavbarComponent } from '../docs/o-navbar.component';
 import { DocScrollUpComponent } from '../docs/scroll-up.component';
@@ -107,6 +111,7 @@ describe('BoostwatchComponent', () => {
         DemoMediaComponent,
         DemoOrangePopinComponent,
         DemoListGroupComponent,
+        DemoLocalNavigationComponent,
         DemoBreadcrumbComponent,
         DemoButtonsComponent,
         DemoDatepickerComponent,
@@ -123,6 +128,7 @@ describe('BoostwatchComponent', () => {
         DemoProgressBarComponent,
         DemoRatingComponent,
         DemoSwiperComponent,
+        DemoSpinnerComponent,
         DemoTableComponent,
         DemoTabsComponent,
         DemoTimepickerComponent,
@@ -138,6 +144,7 @@ describe('BoostwatchComponent', () => {
         DocFormComponent,
         DocJumbotronComponent,
         DocListGroupComponent,
+        DocLocalNavigationComponent,
         DocMediaComponent,
         DocOrangePopinComponent,
         DocBreadcrumbComponent,
@@ -161,6 +168,7 @@ describe('BoostwatchComponent', () => {
         DocOToastComponent,
         DocPopoverComponent,
         DocSwiperComponent,
+        DocSpinnerComponent,
         DocProgressBarComponent,
         DocONavbarComponent,
         DocOScrollTopComponent,

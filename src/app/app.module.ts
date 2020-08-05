@@ -20,6 +20,7 @@ import { DemoJumbotronComponent } from './demos/jumbotron.component';
 import { DemoMediaComponent } from './demos/media.component';
 import { DemoOrangePopinComponent } from './demos/orange-popin.component';
 import { DemoListGroupComponent } from './demos/list-group.component';
+import { DemoLocalNavigationComponent } from './demos/local-navigation.Component';
 import { DemoBreadcrumbComponent } from './demos/breadcrumb.component';
 import { DemoButtonsComponent } from './demos/buttons.component';
 import { DemoModalComponent } from './demos/modal.component';
@@ -39,6 +40,7 @@ import { DemoDropdownComponent } from './demos/dropdown.component';
 import { DemoOSwitchComponent } from './demos/o-switch.component';
 import { DemoOToggleComponent } from './demos/o-toggle.component';
 import { DemoSwiperComponent } from './demos/swiper.component';
+import { DemoSpinnerComponent } from './demos/spinner.component';
 import { DemoTableComponent } from './demos/table.component';
 import { DemoTimepickerComponent } from './demos/timepicker.component';
 import { DemoONavbarComponent } from './demos/o-navbar.component';
@@ -51,6 +53,7 @@ import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
 import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
+import { DocLocalNavigationComponent } from './docs/local-navigation.component';
 import { DocMediaComponent } from './docs/media.component';
 import { DocOrangePopinComponent } from './docs/orange-popin.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
@@ -67,6 +70,7 @@ import { DocPopoverComponent } from './docs/popover.component';
 import { DocAlertComponent } from './docs/alert.component';
 import { DocCarouselComponent } from './docs/carousel.component';
 import { DocSwiperComponent } from './docs/swiper.component';
+import { DocSpinnerComponent } from './docs/spinner.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
@@ -99,6 +103,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoMediaComponent,
     DemoOrangePopinComponent,
     DemoListGroupComponent,
+    DemoLocalNavigationComponent,
     DemoBreadcrumbComponent,
     DemoButtonsComponent,
     DemoCollapseComponent,
@@ -117,6 +122,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoProgressBarComponent,
     DemoRatingComponent,
     DemoSwiperComponent,
+    DemoSpinnerComponent,
     DemoTableComponent,
     DemoTabsComponent,
     DemoTimepickerComponent,
@@ -131,6 +137,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DocFormComponent,
     DocJumbotronComponent,
     DocListGroupComponent,
+    DocLocalNavigationComponent,
     DocMediaComponent,
     DocOrangePopinComponent,
     DocBreadcrumbComponent,
@@ -149,6 +156,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DocOToastComponent,
     DocPopoverComponent,
     DocSwiperComponent,
+    DocSpinnerComponent,
     DocProgressBarComponent,
     DocNavbarComponent,
     DocONavbarComponent,
