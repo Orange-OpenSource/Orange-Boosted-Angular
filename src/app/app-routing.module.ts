@@ -11,7 +11,6 @@ import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
 import { DocLocalNavigationComponent } from './docs/local-navigation.component';
 import { DocMediaComponent } from './docs/media.component';
-import { DocOrangePopinComponent } from './docs/orange-popin.component';
 import { DocOrangeFooterComponent } from './docs/orange-footer.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
@@ -112,10 +111,6 @@ const routes: Routes = [{
   {
     path: 'documentation/media-object',
     component: DocMediaComponent
-  },
-  {
-    path: 'documentation/orange-popin',
-    component: DocOrangePopinComponent
   },
   {
     path: 'documentation/orange-footer',

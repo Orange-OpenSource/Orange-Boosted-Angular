@@ -18,7 +18,6 @@ import { DemoCardComponent } from './demos/card.component';
 import { DemoFormComponent } from './demos/form.component';
 import { DemoJumbotronComponent } from './demos/jumbotron.component';
 import { DemoMediaComponent } from './demos/media.component';
-import { DemoOrangePopinComponent } from './demos/orange-popin.component';
 import { DemoOrangeFooterComponent } from './demos/orange-footer.component';
 import { DemoListGroupComponent } from './demos/list-group.component';
 import { DemoLocalNavigationComponent } from './demos/local-navigation.component';
@@ -58,7 +57,6 @@ import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
 import { DocLocalNavigationComponent } from './docs/local-navigation.component';
 import { DocMediaComponent } from './docs/media.component';
-import { DocOrangePopinComponent } from './docs/orange-popin.component';
 import { DocOrangeFooterComponent } from './docs/orange-footer.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
@@ -107,7 +105,6 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoFormComponent,
     DemoJumbotronComponent,
     DemoMediaComponent,
-    DemoOrangePopinComponent,
     DemoOrangeFooterComponent,
     DemoListGroupComponent,
     DemoLocalNavigationComponent,
@@ -148,7 +145,6 @@ import { ScrollTopModule } from 'ng-boosted';
     DocListGroupComponent,
     DocLocalNavigationComponent,
     DocMediaComponent,
-    DocOrangePopinComponent,
     DocOrangeFooterComponent,
     DocBreadcrumbComponent,
     DocAlertComponent,
