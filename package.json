@@ -74,7 +74,7 @@
     "protractor": "~7.0.0",
     "rxjs": "~6.5.5",
     "scss-bundle": "^3.1.2",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^3.1.0",
     "set-value": "^3.0.2",
     "ts-node": "~8.3.0",
     "tslib": "^2.0.0",
