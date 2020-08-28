@@ -4,6 +4,15 @@ import { HomeComponent } from './home/home.component';
 import { StartComponent } from './start/start.component';
 import { BoostwatchComponent } from './boostwatch/boostwatch.component';
 import { DocAccordionComponent } from './docs/accordion.component';
+import { DocBadgeComponent } from './docs/badge.component';
+import { DocCardComponent } from './docs/card.component';
+import { DocFormComponent } from './docs/form.component';
+import { DocJumbotronComponent } from './docs/jumbotron.component';
+import { DocListGroupComponent } from './docs/list-group.component';
+import { DocLocalNavigationComponent } from './docs/local-navigation.component';
+import { DocMediaComponent } from './docs/media.component';
+import { DocOrangeFooterComponent } from './docs/orange-footer.component';
+import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
 import { DocModalComponent } from './docs/modal.component';
@@ -17,6 +26,9 @@ import { DocPopoverComponent } from './docs/popover.component';
 import { DocAlertComponent } from './docs/alert.component';
 import { DocCarouselComponent } from './docs/carousel.component';
 import { DocSwiperComponent } from './docs/swiper.component';
+import { DocSpinnerComponent } from './docs/spinner.component';
+import { DocScrollspyComponent } from './docs/scrollspy.component';
+import { DocStepbarComponent } from './docs/stepbar.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
@@ -61,12 +73,48 @@ const routes: Routes = [{
     component: DocAccordionComponent
   },
   {
+    path: 'documentation/badge',
+    component: DocBadgeComponent
+  },
+  {
+    path: 'documentation/card',
+    component: DocCardComponent
+  },
+  {
+    path: 'documentation/breadcrumb',
+    component: DocBreadcrumbComponent
+  },
+  {
     path: 'documentation/modal',
     component: DocModalComponent
   },
   {
     path: 'documentation/dropdown',
     component: DocDropdownComponent
+  },
+  {
+    path: 'documentation/forms',
+    component: DocFormComponent
+  },
+  {
+    path: 'documentation/jumbotron',
+    component: DocJumbotronComponent
+  },
+  {
+    path: 'documentation/list-group',
+    component: DocListGroupComponent
+  },
+  {
+    path: 'documentation/local-navigation',
+    component: DocLocalNavigationComponent
+  },
+  {
+    path: 'documentation/media-object',
+    component: DocMediaComponent
+  },
+  {
+    path: 'documentation/orange-footer',
+    component: DocOrangeFooterComponent
   },
   {
     path: 'documentation/tabs',
@@ -103,6 +151,18 @@ const routes: Routes = [{
   {
     path: 'documentation/swiper',
     component: DocSwiperComponent
+  },
+  {
+    path: 'documentation/spinners',
+    component: DocSpinnerComponent
+  },
+  {
+    path: 'documentation/scrollspy',
+    component: DocScrollspyComponent
+  },
+  {
+    path: 'documentation/stepbar',
+    component: DocStepbarComponent
   },
   {
     path: 'documentation/progress',

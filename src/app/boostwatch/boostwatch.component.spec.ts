@@ -9,11 +9,22 @@ import { AppRoutingModule } from '../app-routing.module';
 import { StartComponent } from '../start/start.component';
 import { CodeBoxComponent } from '../docs/code-box.component';
 import { DemoAccordionComponent } from '../demos/accordion.component';
+import { DemoBadgeComponent } from '../demos/badge.component';
+import { DemoCardComponent } from '../demos/card.component';
+import { DemoFormComponent } from '../demos/form.component';
+import { DemoJumbotronComponent } from '../demos/jumbotron.component';
+import { DemoMediaComponent } from '../demos/media.component';
+import { DemoOrangeFooterComponent } from '../demos/orange-footer.component';
+import { DemoListGroupComponent } from '../demos/list-group.component';
+import { DemoLocalNavigationComponent } from '../demos/local-navigation.Component';
+import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
 import { DemoModalComponent } from '../demos/modal.component';
 import { DemoTabsComponent } from '../demos/tabs.component';
 import { DemoPaginationComponent } from '../demos/pagination.component';
 import { DemoTooltipComponent } from '../demos/tooltip.component';
 import { DemoPopoverComponent } from '../demos/popover.component';
+import { DemoSpinnerComponent } from '../demos/spinner.component';
+import { DemoStepbarComponent } from '../demos/stepbar.component';
 import { DemoAlertComponent } from '../demos/alert.component';
 import { DemoCarouselComponent } from '../demos/carousel.component';
 import { DemoOCalendarComponent } from '../demos/o-calendar.component';
@@ -24,6 +35,7 @@ import { DemoDropdownComponent } from '../demos/dropdown.component';
 import { DemoOSwitchComponent } from '../demos/o-switch.component';
 import { DemoOToggleComponent } from '../demos/o-toggle.component';
 import { DemoRatingComponent } from '../demos/rating.component';
+import { DemoScrollspyComponent } from '../demos/scrollspy.component';
 import { DemoSwiperComponent } from '../demos/swiper.component';
 import { DemoButtonsComponent } from '../demos/buttons.component';
 import { DemoNavbarComponent } from '../demos/navbar.component';
@@ -37,8 +49,17 @@ import { DocCollapseComponent } from '../docs/collapse.component';
 import { DocOCalendarComponent } from '../docs/o-calendar.component';
 import { DocsMenuComponent } from '../docs-menu/docs-menu.component';
 import { DocAccordionComponent } from '../docs/accordion.component';
+import { DocBadgeComponent } from '../docs/badge.component';
+import { DocCardComponent } from '../docs/card.component';
+import { DocBreadcrumbComponent } from '../docs/breadcrumb.component';
 import { DocModalComponent } from '../docs/modal.component';
 import { DocDropdownComponent } from '../docs/dropdown.component';
+import { DocFormComponent } from '../docs/form.component';
+import { DocJumbotronComponent } from '../docs/jumbotron.component';
+import { DocListGroupComponent } from '../docs/list-group.component';
+import { DocLocalNavigationComponent } from '../docs/local-navigation.component';
+import { DocMediaComponent } from '../docs/media.component';
+import { DocOrangeFooterComponent } from '../docs/orange-footer.component';
 import { DocTabsComponent } from '../docs/tabs.component';
 import { DocPaginationComponent } from '../docs/pagination.component';
 import { DocAlertComponent } from '../docs/alert.component';
@@ -55,6 +76,9 @@ import { DocOToastComponent } from '../docs/o-toast.component';
 import { DocPopoverComponent } from '../docs/popover.component';
 import { DocCarouselComponent } from '../docs/carousel.component';
 import { DocSwiperComponent } from '../docs/swiper.component';
+import { DocSpinnerComponent } from '../docs/spinner.component';
+import { DocScrollspyComponent } from '../docs/scrollspy.component';
+import { DocStepbarComponent } from '../docs/stepbar.component';
 import { DocProgressBarComponent } from '../docs/progress-bar.component';
 import { DocONavbarComponent } from '../docs/o-navbar.component';
 import { DocScrollUpComponent } from '../docs/scroll-up.component';
@@ -84,6 +108,15 @@ describe('BoostwatchComponent', () => {
         CodeBoxComponent,
         HomeComponent,
         DemoAccordionComponent,
+        DemoBadgeComponent,
+        DemoCardComponent,
+        DemoFormComponent,
+        DemoJumbotronComponent,
+        DemoMediaComponent,
+        DemoOrangeFooterComponent,
+        DemoListGroupComponent,
+        DemoLocalNavigationComponent,
+        DemoBreadcrumbComponent,
         DemoButtonsComponent,
         DemoDatepickerComponent,
         DemoDropdownComponent,
@@ -98,7 +131,10 @@ describe('BoostwatchComponent', () => {
         DemoPopoverComponent,
         DemoProgressBarComponent,
         DemoRatingComponent,
+        DemoScrollspyComponent,
         DemoSwiperComponent,
+        DemoSpinnerComponent,
+        DemoStepbarComponent,
         DemoTableComponent,
         DemoTabsComponent,
         DemoTimepickerComponent,
@@ -109,6 +145,15 @@ describe('BoostwatchComponent', () => {
         DemoCollapseComponent,
         DemoTypeaheadComponent,
         DocAccordionComponent,
+        DocBadgeComponent,
+        DocCardComponent,
+        DocFormComponent,
+        DocJumbotronComponent,
+        DocListGroupComponent,
+        DocLocalNavigationComponent,
+        DocMediaComponent,
+        DocOrangeFooterComponent,
+        DocBreadcrumbComponent,
         DocAlertComponent,
         DocButtonsComponent,
         DocCarouselComponent,
@@ -129,6 +174,9 @@ describe('BoostwatchComponent', () => {
         DocOToastComponent,
         DocPopoverComponent,
         DocSwiperComponent,
+        DocSpinnerComponent,
+        DocScrollspyComponent,
+        DocStepbarComponent,
         DocProgressBarComponent,
         DocONavbarComponent,
         DocOScrollTopComponent,
