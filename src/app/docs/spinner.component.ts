@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Spinner">
       <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
-      href="https://boosted.orange.com/docs/4.5/components/spinners">ng-bootstrap's original component documentation</a>.</p>
+      href="https://boosted.orange.com/docs/4.5/components/spinners">boosted's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-spinner></demo-spinner>
       <code-box [snippets]="demoSnippets"></code-box>
