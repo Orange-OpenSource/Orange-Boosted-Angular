@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Media">
       <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
-      href="https://boosted.orange.com/docs/4.5/components/media-object">ng-bootstrap's original component documentation</a>.</p>
+      href="https://boosted.orange.com/docs/4.5/components/media-object">boosted's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-media></demo-media>
       <code-box [snippets]="demoSnippets"></code-box>

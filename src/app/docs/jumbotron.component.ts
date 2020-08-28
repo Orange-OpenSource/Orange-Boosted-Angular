@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Jumbotron">
       <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
-      href="https://boosted.orange.com/docs/4.5/components/jumbotron">ng-bootstrap's original component documentation</a>.</p>
+      href="https://boosted.orange.com/docs/4.5/components/jumbotron">boosted's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-jumbotron></demo-jumbotron>
       <code-box [snippets]="demoSnippets"></code-box>

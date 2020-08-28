@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Scroll Up">
     <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
-    href="https://boosted.orange.com/docs/4.4/components/scroll-up/">bootsted's original component documentation</a>.</p>
+    href="https://boosted.orange.com/docs/4.4/components/scroll-up/">boosted's original component documentation</a>.</p>
       <h3>Demo</h3>
       <p>Scroll down this page to see a nice example.</p>
       <h3>Usage</h3>
