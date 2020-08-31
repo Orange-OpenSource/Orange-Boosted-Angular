@@ -1,6 +1,6 @@
 {
   "name": "ng-boosted",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "description": "Orange Boosted with Bootstrap 4 and Angular",
   "keywords": [
     "boosted",
@@ -20,7 +20,7 @@
   },
   "dependencies": {
       "@ng-bootstrap/ng-bootstrap": "^7.0.0",
-      "boosted": "^4.5.0"
+      "boosted": "^4.5.2"
   ,    "tslib": "^2.0.0"
 },
   "repository": {
