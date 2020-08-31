@@ -1,3 +1,19 @@
+<a name="7.1.0"></a> (2020-08-31)
+# [7.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/7.0.0...7.1.0) (2020-08-31)
+
+### Features
+
+* **angular:** update angular core/cli ([aea8704](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/aea8704))
+* **boosted:** update ([95fed5c](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/95fed5c))
+* **component:** badge & breadcrumb added ([ea6f7a8](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ea6f7a8))
+* **component:** card & form added ([baf92af](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/baf92af))
+* **component:** Jumbotron & List-group added ([273bfe5](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/273bfe5))
+* **component:** local-navigation & spinner added ([42f9e80](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/42f9e80))
+* **component:** media-object & orange-popin added ([5840dd2](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5840dd2))
+* **component:** orange-footer added ([0a2a04b](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/0a2a04b))
+* **component:** stepbar & scrollspy added ([7fd0cef](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/7fd0cef))
+* **components:** add new components to boostwatch ([4a35e7a](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/4a35e7a))
+
 <a name="7.0.0"></a> (2020-07-22)
 # [7.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/6.2.0...7.0.0) (2020-07-22)
 
