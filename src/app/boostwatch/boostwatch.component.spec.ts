@@ -31,6 +31,7 @@ import { DemoOCalendarComponent } from '../demos/o-calendar.component';
 import { DemoCollapseComponent } from '../demos/collapse.component';
 import { DemoDatepickerComponent } from '../demos/datepicker.component';
 import { DemoProgressBarComponent } from '../demos/progress-bar.component';
+import { DemoPriorityNavComponent } from '../demos/priority-nav.component';
 import { DemoDropdownComponent } from '../demos/dropdown.component';
 import { DemoOSwitchComponent } from '../demos/o-switch.component';
 import { DemoOToggleComponent } from '../demos/o-toggle.component';
@@ -80,6 +81,7 @@ import { DocSpinnerComponent } from '../docs/spinner.component';
 import { DocScrollspyComponent } from '../docs/scrollspy.component';
 import { DocStepbarComponent } from '../docs/stepbar.component';
 import { DocProgressBarComponent } from '../docs/progress-bar.component';
+import { DocPriorityNavComponent } from '../docs/priority-nav.component';
 import { DocONavbarComponent } from '../docs/o-navbar.component';
 import { DocScrollUpComponent } from '../docs/scroll-up.component';
 import { DocOScrollTopComponent } from '../docs/o-scroll-top.component';
@@ -129,6 +131,7 @@ describe('BoostwatchComponent', () => {
         DemoOToggleComponent,
         DemoPaginationComponent,
         DemoPopoverComponent,
+        DemoPriorityNavComponent,
         DemoProgressBarComponent,
         DemoRatingComponent,
         DemoScrollspyComponent,
@@ -178,6 +181,7 @@ describe('BoostwatchComponent', () => {
         DocScrollspyComponent,
         DocStepbarComponent,
         DocProgressBarComponent,
+        DocPriorityNavComponent,
         DocONavbarComponent,
         DocOScrollTopComponent,
         DocScrollUpComponent,

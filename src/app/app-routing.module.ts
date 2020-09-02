@@ -32,6 +32,7 @@ import { DocStepbarComponent } from './docs/stepbar.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
+import { DocPriorityNavComponent } from './docs/priority-nav.component';
 import { DocNavbarComponent } from './docs/navbar.component';
 import { DocONavbarComponent } from './docs/o-navbar.component';
 import { DocOScrollTopComponent } from './docs/o-scroll-top.component';
@@ -167,6 +168,10 @@ const routes: Routes = [{
   {
     path: 'documentation/progress',
     component: DocProgressBarComponent
+  },
+  {
+    path: 'documentation/priority-nav',
+    component: DocPriorityNavComponent
   },
   {
     path: 'documentation/navbar',

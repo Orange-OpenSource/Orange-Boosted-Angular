@@ -35,6 +35,7 @@ import { DemoCarouselComponent } from './demos/carousel.component';
 import { DemoOCalendarComponent } from './demos/o-calendar.component';
 import { DemoCollapseComponent } from './demos/collapse.component';
 import { DemoDatepickerComponent } from './demos/datepicker.component';
+import { DemoPriorityNavComponent } from './demos/priority-nav.component';
 import { DemoProgressBarComponent } from './demos/progress-bar.component';
 import { DemoDropdownComponent } from './demos/dropdown.component';
 import { DemoOSwitchComponent } from './demos/o-switch.component';
@@ -78,6 +79,7 @@ import { DocStepbarComponent } from './docs/stepbar.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
+import { DocPriorityNavComponent } from './docs/priority-nav.component';
 import { DocNavbarComponent } from './docs/navbar.component';
 import { DocONavbarComponent } from './docs/o-navbar.component';
 import { DocScrollUpComponent } from './docs/scroll-up.component';
@@ -123,6 +125,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoOToggleComponent,
     DemoPaginationComponent,
     DemoPopoverComponent,
+    DemoPriorityNavComponent,
     DemoProgressBarComponent,
     DemoRatingComponent,
     DemoScrollspyComponent,
@@ -166,6 +169,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DocScrollspyComponent,
     DocStepbarComponent,
     DocProgressBarComponent,
+    DocPriorityNavComponent,
     DocNavbarComponent,
     DocONavbarComponent,
     DocOScrollTopComponent,
