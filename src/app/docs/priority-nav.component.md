@@ -1,8 +1,7 @@
 
 * You need to add jquery and popper.js :
 ```html
-npm i jquery
-npm i popper.js
+npm install --save jquery popper.js
 ```
 ```html
 "scripts": [
