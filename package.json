@@ -69,6 +69,7 @@
     "minimist": "^1.2.5",
     "ng-packagr": "^10.0.0",
     "node-sass": "^4.14.1",
+    "popper.js": "^1.16.1",
     "prismjs": "^1.16.0",
     "prismjs-loader": "^0.0.4",
     "protractor": "~7.0.0",
