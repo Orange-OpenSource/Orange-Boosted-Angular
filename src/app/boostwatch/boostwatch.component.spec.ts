@@ -15,6 +15,7 @@ import { DemoFormComponent } from '../demos/form.component';
 import { DemoJumbotronComponent } from '../demos/jumbotron.component';
 import { DemoMediaComponent } from '../demos/media.component';
 import { DemoOrangeFooterComponent } from '../demos/orange-footer.component';
+import { DemoOrangeMegamenuComponent } from '../demos/orange-megamenu.component';
 import { DemoListGroupComponent } from '../demos/list-group.component';
 import { DemoLocalNavigationComponent } from '../demos/local-navigation.Component';
 import { DemoBreadcrumbComponent } from '../demos/breadcrumb.component';
@@ -61,6 +62,7 @@ import { DocListGroupComponent } from '../docs/list-group.component';
 import { DocLocalNavigationComponent } from '../docs/local-navigation.component';
 import { DocMediaComponent } from '../docs/media.component';
 import { DocOrangeFooterComponent } from '../docs/orange-footer.component';
+import { DocOrangeMegamenuComponent } from '../docs/orange-megamenu.component';
 import { DocTabsComponent } from '../docs/tabs.component';
 import { DocPaginationComponent } from '../docs/pagination.component';
 import { DocAlertComponent } from '../docs/alert.component';
@@ -116,6 +118,7 @@ describe('BoostwatchComponent', () => {
         DemoJumbotronComponent,
         DemoMediaComponent,
         DemoOrangeFooterComponent,
+        DemoOrangeMegamenuComponent,
         DemoListGroupComponent,
         DemoLocalNavigationComponent,
         DemoBreadcrumbComponent,
@@ -156,6 +159,7 @@ describe('BoostwatchComponent', () => {
         DocLocalNavigationComponent,
         DocMediaComponent,
         DocOrangeFooterComponent,
+        DocOrangeMegamenuComponent,
         DocBreadcrumbComponent,
         DocAlertComponent,
         DocButtonsComponent,

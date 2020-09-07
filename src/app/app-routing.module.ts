@@ -12,6 +12,7 @@ import { DocListGroupComponent } from './docs/list-group.component';
 import { DocLocalNavigationComponent } from './docs/local-navigation.component';
 import { DocMediaComponent } from './docs/media.component';
 import { DocOrangeFooterComponent } from './docs/orange-footer.component';
+import { DocOrangeMegamenuComponent } from './docs/orange-megamenu.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -116,6 +117,10 @@ const routes: Routes = [{
   {
     path: 'documentation/orange-footer',
     component: DocOrangeFooterComponent
+  },
+  {
+    path: 'documentation/orange-megamenu',
+    component: DocOrangeMegamenuComponent
   },
   {
     path: 'documentation/tabs',
