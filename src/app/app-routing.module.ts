@@ -12,6 +12,7 @@ import { DocListGroupComponent } from './docs/list-group.component';
 import { DocLocalNavigationComponent } from './docs/local-navigation.component';
 import { DocMediaComponent } from './docs/media.component';
 import { DocOrangeFooterComponent } from './docs/orange-footer.component';
+import { DocOrangeMegamenuComponent } from './docs/orange-megamenu.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -32,6 +33,7 @@ import { DocStepbarComponent } from './docs/stepbar.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
+import { DocPriorityNavComponent } from './docs/priority-nav.component';
 import { DocNavbarComponent } from './docs/navbar.component';
 import { DocONavbarComponent } from './docs/o-navbar.component';
 import { DocOScrollTopComponent } from './docs/o-scroll-top.component';
@@ -117,6 +119,10 @@ const routes: Routes = [{
     component: DocOrangeFooterComponent
   },
   {
+    path: 'documentation/orange-megamenu',
+    component: DocOrangeMegamenuComponent
+  },
+  {
     path: 'documentation/tabs',
     component: DocTabsComponent
   },
@@ -167,6 +173,10 @@ const routes: Routes = [{
   {
     path: 'documentation/progress',
     component: DocProgressBarComponent
+  },
+  {
+    path: 'documentation/priority-nav',
+    component: DocPriorityNavComponent
   },
   {
     path: 'documentation/navbar',
