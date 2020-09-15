@@ -6,7 +6,7 @@ declare var $: any;
     templateUrl: './orange-megamenu.component.html'
 })
 export class DemoOrangeMegamenuComponent implements OnInit  {
-    ngOnInit(){
+    ngOnInit() {
         $('#megamenu').megamenu();
     }
 }

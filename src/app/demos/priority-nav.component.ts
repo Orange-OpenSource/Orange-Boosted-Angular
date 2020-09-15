@@ -6,7 +6,7 @@ declare var $: any;
     templateUrl: './priority-nav.component.html'
 })
 export class DemoPriorityNavComponent implements OnInit  {
-    ngOnInit(){
+    ngOnInit() {
         $('.o-nav-local').prioritynav();
     }
 }
