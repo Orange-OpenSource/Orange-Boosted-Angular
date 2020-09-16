@@ -1,3 +1,13 @@
+<a name="7.1.1"></a> (2020-09-16)
+## [7.1.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/7.1.0...7.1.1) (2020-09-16)
+
+### Features
+
+* **component:** megamenu added ([ed33223](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ed33223))
+* **component:** priority-nav added ([489c852](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/489c852))
+* **component:** priority-nav added ([1340f4e](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/1340f4e))
+* **doc:** new components in boostwatch page ([84f8ca0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/84f8ca0))
+
 <a name="7.1.0"></a> (2020-08-31)
 # [7.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/7.0.0...7.1.0) (2020-08-31)
 
