@@ -27,7 +27,7 @@
     "publish-lib": "npm run build-lib && npm run copy-readme && cd dist/ng-boosted && npm publish"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1001.0",
+    "@angular-devkit/build-angular": "^0.1002.0",
     "@angular-devkit/build-ng-packagr": "~0.1001.0",
     "@angular/animations": "~10.1.0",
     "@angular/cli": "^10.1.0",
