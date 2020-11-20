@@ -1,3 +1,13 @@
+<a name="8.0.0"></a> (2020-11-20)
+# [8.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/7.1.1...8.0.0) (2020-11-20)
+
+### Features
+
+* **angular:** update angular 10 ([798a5ca](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/798a5ca))
+* **angular:** update angular 10 ([b4348fd](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/b4348fd))
+* **ng-bootstrap:** boosted & ng-bootstrap update ([5748bf6](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5748bf6))
+* **ng-bootstrap:** ngb-tabset deleted ([18b62c0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/18b62c0))
+
 <a name="7.1.1"></a> (2020-09-16)
 ## [7.1.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/7.1.0...7.1.1) (2020-09-16)
 
