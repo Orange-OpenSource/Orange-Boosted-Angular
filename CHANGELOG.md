@@ -1,3 +1,11 @@
+<a name="8.1.0"></a> (2021-02-05)
+# [8.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/8.0.0...8.1.0) (2021-02-05)
+
+### Features
+
+* **angular:** update angular 10 ([6da00fd](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/6da00fd))
+* **ng-bootstrap:** update ng-bootstrap ([5066cad](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/5066cad))
+
 <a name="8.0.0"></a> (2020-11-20)
 # [8.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/7.1.1...8.0.0) (2020-11-20)
 
