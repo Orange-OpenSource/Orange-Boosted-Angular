@@ -20,7 +20,7 @@
   },
   "dependencies": {
       "@ng-bootstrap/ng-bootstrap": "^8.0.4",
-      "boosted": "^4.5.3",
+      "boosted": "^4.6.0",
       "tslib": "^2.0.1"
 },
   "repository": {
