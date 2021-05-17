@@ -1,3 +1,15 @@
+<a name="9.1.1"></a> (2021-05-17)
+
+## [9.1.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/9.1.0...9.1.1) (2021-05-17)
+
+
+### Features
+
+* **angular:** update angular ([529be9d](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/529be9d0a0a7529b8f6d452cb6a0e95693c5c634))
+* **ng-bootstrap:** update ng bootstrap ([e42e937](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/e42e9373acb835271cfd6b157694e13b13bae62c))
+
+
+
 <a name="9.1.0"></a> (2021-03-25)
 
 # [9.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/9.0.0...9.1.0) (2021-03-25)
