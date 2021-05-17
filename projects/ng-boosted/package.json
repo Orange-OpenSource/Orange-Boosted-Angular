@@ -19,7 +19,7 @@
     "node-sass": "^4.14.1"
   },
   "dependencies": {
-      "@ng-bootstrap/ng-bootstrap": "^9.1.0",
+      "@ng-bootstrap/ng-bootstrap": "^9.1.1",
       "boosted": "^4.6.0",
       "tslib": "^2.0.1"
 },
