@@ -17,34 +17,34 @@ const I18N_VALUES = {
     }
 
   // Define custom service providing the months and weekdays translations
-@Injectable()
-export class CustomDatepickerI18n extends NgbDatepickerI18n {
-  constructor(private _i18n: I18n) {
-    super();
-  }
-  public getWeekdayShortName(weekday: number): string {
-    return I18N_VALUES[this._i18n.language].weekdays[weekday - 1];
-  }
-  public getMonthShortName(month: number): string {
-    return I18N_VALUES[this._i18n.language].months[month - 1];
-  }
-  public getMonthFullName(month: number): string {
-    return this.getMonthShortName(month);
-  }
-  public getDayAriaLabel(date: NgbDateStruct): string {
-    const newDate = new Date(date.year, date.month - 1, date.day);
-    let newDay = newDate.getDay();
-    newDay = newDay === 0 ? 7 : newDay;
-    const day = this.getWeekdayShortName(newDay);
-    return day + ' ' + `${date.day}-${date.month}-${date.year}`;
-  }
-}
+// @Injectable()
+// export class CustomDatepickerI18n extends NgbDatepickerI18n {
+//   constructor(private _i18n: I18n) {
+//     super();
+//   }
+//   public getWeekdayShortName(weekday: number): string {
+//     return I18N_VALUES[this._i18n.language].weekdays[weekday - 1];
+//   }
+//   public getMonthShortName(month: number): string {
+//     return I18N_VALUES[this._i18n.language].months[month - 1];
+//   }
+//   public getMonthFullName(month: number): string {
+//     return this.getMonthShortName(month);
+//   }
+//   public getDayAriaLabel(date: NgbDateStruct): string {
+//     const newDate = new Date(date.year, date.month - 1, date.day);
+//     let newDay = newDate.getDay();
+//     newDay = newDay === 0 ? 7 : newDay;
+//     const day = this.getWeekdayShortName(newDay);
+//     return day + ' ' + `${date.day}-${date.month}-${date.year}`;
+//   }
+// }
 
 @Component({
   selector: 'demo-datepicker',
   templateUrl: './datepicker.component.html',
   styleUrls: ['./datepicker.component.scss'],
-  providers: [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
+  providers: [I18n]
 })
 export class DemoDatepickerComponent {
   public model1;
