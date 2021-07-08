@@ -7,10 +7,8 @@ import { DocAccordionComponent } from './docs/accordion.component';
 import { DocBadgeComponent } from './docs/badge.component';
 import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
-import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
 import { DocLocalNavigationComponent } from './docs/local-navigation.component';
-import { DocMediaComponent } from './docs/media.component';
 import { DocOrangeFooterComponent } from './docs/orange-footer.component';
 import { DocOrangeMegamenuComponent } from './docs/orange-megamenu.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
@@ -99,20 +97,12 @@ const routes: Routes = [{
     component: DocFormComponent
   },
   {
-    path: 'documentation/jumbotron',
-    component: DocJumbotronComponent
-  },
-  {
     path: 'documentation/list-group',
     component: DocListGroupComponent
   },
   {
     path: 'documentation/local-navigation',
     component: DocLocalNavigationComponent
-  },
-  {
-    path: 'documentation/media-object',
-    component: DocMediaComponent
   },
   {
     path: 'documentation/orange-footer',

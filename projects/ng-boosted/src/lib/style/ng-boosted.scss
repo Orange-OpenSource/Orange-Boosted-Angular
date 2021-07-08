@@ -1,13 +1,5 @@
 /*Alert*/
-.close > [aria-hidden="true"]  {
-  display: none;
-}
-
-/*Carousel*/
-.carousel-control-next-icon::before {
-  display: none;
-}
-.carousel-control-prev-icon::before {
+.btn-close > [aria-hidden="true"]  {
   display: none;
 }
 

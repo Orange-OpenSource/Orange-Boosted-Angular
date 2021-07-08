@@ -12,8 +12,6 @@ import { DemoAccordionComponent } from '../demos/accordion.component';
 import { DemoBadgeComponent } from '../demos/badge.component';
 import { DemoCardComponent } from '../demos/card.component';
 import { DemoFormComponent } from '../demos/form.component';
-import { DemoJumbotronComponent } from '../demos/jumbotron.component';
-import { DemoMediaComponent } from '../demos/media.component';
 import { DemoOrangeFooterComponent } from '../demos/orange-footer.component';
 import { DemoOrangeMegamenuComponent } from '../demos/orange-megamenu.component';
 import { DemoListGroupComponent } from '../demos/list-group.component';
@@ -57,10 +55,8 @@ import { DocBreadcrumbComponent } from '../docs/breadcrumb.component';
 import { DocModalComponent } from '../docs/modal.component';
 import { DocDropdownComponent } from '../docs/dropdown.component';
 import { DocFormComponent } from '../docs/form.component';
-import { DocJumbotronComponent } from '../docs/jumbotron.component';
 import { DocListGroupComponent } from '../docs/list-group.component';
 import { DocLocalNavigationComponent } from '../docs/local-navigation.component';
-import { DocMediaComponent } from '../docs/media.component';
 import { DocOrangeFooterComponent } from '../docs/orange-footer.component';
 import { DocOrangeMegamenuComponent } from '../docs/orange-megamenu.component';
 import { DocTabsComponent } from '../docs/tabs.component';
@@ -115,8 +111,6 @@ describe('BoostwatchComponent', () => {
         DemoBadgeComponent,
         DemoCardComponent,
         DemoFormComponent,
-        DemoJumbotronComponent,
-        DemoMediaComponent,
         DemoOrangeFooterComponent,
         DemoOrangeMegamenuComponent,
         DemoListGroupComponent,
@@ -154,10 +148,8 @@ describe('BoostwatchComponent', () => {
         DocBadgeComponent,
         DocCardComponent,
         DocFormComponent,
-        DocJumbotronComponent,
         DocListGroupComponent,
         DocLocalNavigationComponent,
-        DocMediaComponent,
         DocOrangeFooterComponent,
         DocOrangeMegamenuComponent,
         DocBreadcrumbComponent,
