@@ -9,7 +9,8 @@ import {ToastService} from './toast-service';
       [class]="toast.classname"
       [autohide]="true"
       [delay]="toast.delay || 5000"
-      (hide)="toastService.remove(toast)">
+      (hidden)="toastService.remove(toast)"
+    >
       <ng-template [ngIf]="isTemplate(toast)" [ngIfElse]="text">
         <ng-template [ngTemplateOutlet]="toast.textOrTpl"></ng-template>
       </ng-template>

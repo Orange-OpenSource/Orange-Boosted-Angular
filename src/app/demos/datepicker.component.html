@@ -2,23 +2,19 @@
 <pre class="mt-2">Model: {{ model1 | json }}</pre>
 
 <hr/>
-
-<form class="form-inline">
-    <div class="form-group">
-      <div class="input-group">
-        <div class="input-group-append">
-            <button class="btn btn-outline-secondary icon-calendar-day" (click)="d.toggle()" type="button" id="button-toggle" aria-haspopup="true">
-              <span class="sr-only">choose date</span>
-            </button>
-        </div>
-        <input class="form-control calendar-input" placeholder="Une date (jj/mm/aaa)"
-               name="dp2" [(ngModel)]="model2" ngbDatepicker #d="ngbDatepicker" attr.aria-label='Calendar'>
-      </div>
+<div class="d-grid gap-2 col-4">
+  <div class="input-group">
+    <input class="form-control" placeholder="yyyy-mm-dd"
+           name="dp" [(ngModel)]="model2" ngbDatepicker #d="ngbDatepicker">
+    <div class="input-group-append">
+      <button class="btn btn-secondary calendar" (click)="d.toggle()" type="button">your icon</button>
     </div>
-  </form>
-  <pre class="mt-2">Model: {{ model2 | json }}</pre>
+  </div>
+</div>
 
-  <hr/>
+<pre class="mt-2">Model: {{ model2 | json }}</pre>
+
+<hr/>
 
 <ngb-datepicker #dp3 (dateSelect)="onDateSelection($event)" [displayMonths]="2" [dayTemplate]="t" outsideDays="hidden"></ngb-datepicker>
 <ng-template #t let-date let-focused="focused">

@@ -1,7 +1,8 @@
 <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" (slide)="onSlide($event)">
   <ng-template ngbSlide *ngFor="let img of images; index as i">
     <div class="carousel-caption">
-      <h3>My slide {{i + 1}} title</h3>
+      <h5 class="mb-0">My slide {{i + 1}} title</h5>
+      <p class="mb-0">Some representative placeholder content for this slide.</p>
     </div>
     <a href="https://dummyimage.com/800x600/cccccc/000000&text+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
       <div class="picsum-img-wrapper">
