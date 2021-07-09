@@ -10,7 +10,4 @@ export class AppComponent {
   title = 'Orange-Boosted-Angular';
   public isCollapsed = true;
   constructor(public globals: Globals) {}
-  scroll() {
-    window.scrollTo(0, 0);
-  }
 }

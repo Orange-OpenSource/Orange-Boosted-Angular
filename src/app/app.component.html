@@ -38,9 +38,11 @@
 
 <router-outlet></router-outlet>
 
-<a class="o-scroll-up" title="back to top" (click)="scroll()">
-  <span class="d-none d-sm-inline-block">Back to top</span>
-</a>
+<nav aria-label="Back to top" class="back-to-top">
+  <a href="#top" class="back-to-top-link btn btn-icon btn-secondary" data-o-label="Back to top">
+      <span class="visually-hidden">Back to top</span>
+  </a>
+</nav>
 
 <div role="contentinfo" class="o-footer mt-0">
   <h2 class="sr-only">Site map & informations</h2>
