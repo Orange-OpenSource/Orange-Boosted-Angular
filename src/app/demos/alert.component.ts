@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 interface Alert {
   type: string;
   message: string;
@@ -23,18 +23,10 @@ const ALERTS: Alert[] = [{
     selector: 'demo-alert',
     templateUrl: './alert.component.html'
 })
-export class DemoAlertComponent {
+export class DemoAlertComponent  {
   alerts: Alert[];
 
   constructor() {
-    this.reset();
-  }
-
-  close(alert: Alert) {
-    this.alerts.splice(this.alerts.indexOf(alert), 1);
-  }
-
-  reset() {
     this.alerts = Array.from(ALERTS);
   }
 }

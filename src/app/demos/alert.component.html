@@ -1,6 +1,7 @@
-<p *ngFor="let alert of alerts">
-    <ngb-alert [type]="alert.type" (close)="close(alert)">{{ alert.message }}</ngb-alert>
-  </p>
-  <p>
-    <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
-</p>
+<div *ngFor="let alert of alerts">
+  <div class="alert alert-{{alert.type}} alert-dismissible fade show" role="alert">
+    <span class="alert-icon"><span class="visually-hidden">{{alert.type}}</span></span>
+    <p>{{ alert.message }}</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert"><span class="visually-hidden">Close</span></button>
+  </div>
+</div>
