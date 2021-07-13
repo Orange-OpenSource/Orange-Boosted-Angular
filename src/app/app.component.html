@@ -1,4 +1,4 @@
-<header role="banner" class="navbar navbar-dark bg-dark navbar-expand-md">
+<header role="banner" class="navbar navbar-dark bg-dark navbar-expand-md" id="top">
   <nav role="navigation" class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="assets/img/orange_logo.svg" alt="Back to homepage" title="Back to homepage" width="50" height="50">
@@ -39,32 +39,29 @@
 <router-outlet></router-outlet>
 
 <nav aria-label="Back to top" class="back-to-top">
-  <a href="#top" class="back-to-top-link btn btn-icon btn-secondary" data-o-label="Back to top">
+  <a class="back-to-top-link btn btn-icon btn-secondary" (click)="onClick('top')" data-o-label="Back to top">
       <span class="visually-hidden">Back to top</span>
   </a>
 </nav>
 
-<div role="contentinfo" class="o-footer mt-0">
-  <h2 class="sr-only">Site map & informations</h2>
-  <div class="o-footer-body py-3">
-      <div class="container">
-        <p class="m-0">Designed and built by the Boosted team.</p>
-        <p class="m-0">Orange modified code licensed <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/docs/LICENSE" rel="licence">MIT</a>, original code licensed <a href="https://github.com/ng-bootstrap/ng-bootstrap/blob/master/LICENSE">MIT</a>, docs <a href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/docs/LICENSE">CC BY 3.0</a>.</p>
-      </div>
-  </div>
-  <div class="o-footer-bottom">
-      <div class="container">
-        <div class="row">
-          <ul class="nav">
-              <li class="nav-item"><span class="nav-link">Currently v{{globals.ngBoostedVersion}}</span></li>
-              <li class="nav-item"><a class="nav-link" href="https://ng-boosted.netlify.com" >Pre-release on Netlify</a></li>
-              <li class="nav-item">
-                <a class="nav-link py-0" href="https://www.netlify.com">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Deploys by Netlify" width="89" height="40">
-                </a>
-              </li>
-          </ul>
-        </div>
-      </div>
-  </div>
+<div class="bd-footer py-3 py-md-4 bg-dark">
+  <div class="container py-1">
+    <div class="row">
+      <p class="m-0">Designed and built by the Boosted team.</p>
+      <p class="m-0 text-white">Orange modified code licensed <a class="text-white" href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/docs/LICENSE" 
+        rel="licence">MIT</a>, original code licensed <a class="text-white" href="https://github.com/ng-bootstrap/ng-bootstrap/blob/master/LICENSE">MIT</a>, docs 
+        <a class="text-white"href="https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/master/docs/LICENSE">CC BY 3.0</a>.</p>
+    </div>
+    <div class="row">
+      <ul class="nav">
+          <li class="nav-item"><span class="nav-link text-white">Currently v{{globals.ngBoostedVersion}}</span></li>
+          <li class="nav-item"><a class="nav-link text-white" href="https://ng-boosted.netlify.com" >Pre-release on Netlify</a></li>
+          <li class="nav-item">
+            <a class="nav-link py-0" href="https://www.netlify.com">
+              <img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Deploys by Netlify" width="89" height="40">
+            </a>
+          </li>
+      </ul>
+    </div>
+    </div>
 </div>
