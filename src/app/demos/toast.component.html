@@ -1,19 +1,22 @@
 <h6>Body only</h6>
-<ngb-toast>
+<ngb-toast [autohide]="false">
   I am a simple static toast.
 </ngb-toast>
 
-<h6>With a text header</h6>
-<ngb-toast *ngIf="show" header="Click my close icon →" [autohide]="false"
-  (hide)="close()">
+<h6 class="mt-2">With a text header</h6>
+<ngb-toast *ngIf="show_toast_1" header="Hello" [autohide]="false" (hidden)="show=false">
+  I am a simple static toast with a header.
+</ngb-toast>
+
+<h6 class="mt-2">Closeable toast</h6>
+<ngb-toast *ngIf="show_toast_2" header="Click my close icon →" [autohide]="false" (hidden)="close()">
   If you close me, I will automatically re-appear after a few seconds.
 </ngb-toast>
-<p *ngIf="!show">I'll be back!</p>
+<p *ngIf="!show_toast_2">I'll be back!</p>
 
-<h6>Toast management service</h6>
-<p>Please click one of the button to see a Toast being displayed in the top right corner of your screen:</p>
-<button class="btn btn-success" (click)="showSuccess()" ngbTooltip="Will disappear in 10s">Success toast</button>&nbsp;
+<h6 class="mt-2">Please click one of the button to see a Toast being displayed in the top right corner of your screen:</h6>
 <button class="btn btn-primary" (click)="showStandard()" ngbTooltip="Will disappear in 5s">Standard toast</button>&nbsp;
+<button class="btn btn-success" (click)="showSuccess()" ngbTooltip="Will disappear in 10s">Success toast</button>&nbsp;
 <button class="btn btn-danger" (click)="showDanger()" ngbTooltip="Will disappear in 15s">Danger toast</button>&nbsp;
 
 <app-toasts aria-live="polite" aria-atomic="true"></app-toasts>

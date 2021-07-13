@@ -23,3 +23,12 @@ ngb-datepicker{
   margin-top: 0;
 }
 
+/*toast*/
+.ngb-toasts {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: .5em;
+  z-index: 1200;
+}
+
