@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="Navbar">
     <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
-    href="https://boosted.orange.com/docs/4.4/components/navbar/">boosted's original component documentation</a>.</p>
+    href="https://boosted.orange.com/docs/5.0/components/navbar/">boosted's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-navbar></demo-navbar>
       <ng-template ngbModalContainer></ng-template>

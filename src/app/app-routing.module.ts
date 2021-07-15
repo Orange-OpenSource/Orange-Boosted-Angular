@@ -157,7 +157,7 @@ const routes: Routes = [{
     component: DocScrollspyComponent
   },
   {
-    path: 'documentation/stepbar',
+    path: 'documentation/stepped-process',
     component: DocStepbarComponent
   },
   {
