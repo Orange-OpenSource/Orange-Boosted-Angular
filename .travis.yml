@@ -41,7 +41,7 @@ jobs:
     - stage: Deploy to Production
       node_js: "12.14.0"
       script:
-        - echo "Deploying to gh Page ..."
+        - echo "Deploying to gh Pages ..."
         - npm run build:lib
         - npm run build:docs
       deploy:
