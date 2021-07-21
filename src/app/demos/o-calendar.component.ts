@@ -17,32 +17,32 @@ const I18N_VALUES = {
     }
 
   // Define custom service providing the months and weekdays translations
-@Injectable()
-export class CustomDatepickerI18n extends NgbDatepickerI18n {
+// @Injectable()
+// export class CustomDatepickerI18n extends NgbDatepickerI18n {
 
-constructor(private _i18n: I18n) {
-    super();
-}
+// constructor(private _i18n: I18n) {
+//     super();
+// }
 
-public getWeekdayShortName(weekday: number): string {
-    return I18N_VALUES[this._i18n.language].weekdays[weekday - 1];
-}
-public getMonthShortName(month: number): string {
-    return I18N_VALUES[this._i18n.language].months[month - 1];
-}
-public getMonthFullName(month: number): string {
-    return this.getMonthShortName(month);
-}
-public getDayAriaLabel(date: NgbDateStruct): string {
-    return `${date.day}-${date.month}-${date.year}`;
-    }
-}
+// public getWeekdayShortName(weekday: number): string {
+//     return I18N_VALUES[this._i18n.language].weekdays[weekday - 1];
+// }
+// public getMonthShortName(month: number): string {
+//     return I18N_VALUES[this._i18n.language].months[month - 1];
+// }
+// public getMonthFullName(month: number): string {
+//     return this.getMonthShortName(month);
+// }
+// public getDayAriaLabel(date: NgbDateStruct): string {
+//     return `${date.day}-${date.month}-${date.year}`;
+//     }
+// }
 
 @Component({
     selector: 'demo-o-calendar',
     styles: [],
     templateUrl: './o-calendar.component.html',
-    providers: [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
+    providers: [I18n]
 })
 export class DemoOCalendarComponent {
     public model: NgbDateStruct;

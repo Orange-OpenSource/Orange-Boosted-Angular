@@ -1,16 +1,3 @@
-/*Alert*/
-.close > [aria-hidden="true"]  {
-  display: none;
-}
-
-/*Carousel*/
-.carousel-control-next-icon::before {
-  display: none;
-}
-.carousel-control-prev-icon::before {
-  display: none;
-}
-
 /*Datepicker*/
 ngb-datepicker{
   border-radius: 0 !important;
@@ -34,5 +21,14 @@ ngb-datepicker{
 /*Popover*/
 .popover-header {
   margin-top: 0;
+}
+
+/*toast*/
+.ngb-toasts {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: .5em;
+  z-index: 1200;
 }
 

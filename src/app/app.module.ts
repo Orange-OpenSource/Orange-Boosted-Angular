@@ -16,12 +16,7 @@ import { DemoAccordionComponent } from './demos/accordion.component';
 import { DemoBadgeComponent } from './demos/badge.component';
 import { DemoCardComponent } from './demos/card.component';
 import { DemoFormComponent } from './demos/form.component';
-import { DemoJumbotronComponent } from './demos/jumbotron.component';
-import { DemoMediaComponent } from './demos/media.component';
-import { DemoOrangeFooterComponent } from './demos/orange-footer.component';
-import { DemoOrangeMegamenuComponent } from './demos/orange-megamenu.component';
 import { DemoListGroupComponent } from './demos/list-group.component';
-import { DemoLocalNavigationComponent } from './demos/local-navigation.component';
 import { DemoBreadcrumbComponent } from './demos/breadcrumb.component';
 import { DemoButtonsComponent } from './demos/buttons.component';
 import { DemoModalComponent } from './demos/modal.component';
@@ -36,7 +31,6 @@ import { DemoCarouselComponent } from './demos/carousel.component';
 import { DemoOCalendarComponent } from './demos/o-calendar.component';
 import { DemoCollapseComponent } from './demos/collapse.component';
 import { DemoDatepickerComponent } from './demos/datepicker.component';
-import { DemoPriorityNavComponent } from './demos/priority-nav.component';
 import { DemoProgressBarComponent } from './demos/progress-bar.component';
 import { DemoDropdownComponent } from './demos/dropdown.component';
 import { DemoOSwitchComponent } from './demos/o-switch.component';
@@ -55,12 +49,7 @@ import { DocAccordionComponent } from './docs/accordion.component';
 import { DocBadgeComponent } from './docs/badge.component';
 import { DocCardComponent } from './docs/card.component';
 import { DocFormComponent } from './docs/form.component';
-import { DocJumbotronComponent } from './docs/jumbotron.component';
 import { DocListGroupComponent } from './docs/list-group.component';
-import { DocLocalNavigationComponent } from './docs/local-navigation.component';
-import { DocMediaComponent } from './docs/media.component';
-import { DocOrangeFooterComponent } from './docs/orange-footer.component';
-import { DocOrangeMegamenuComponent } from './docs/orange-megamenu.component';
 import { DocBreadcrumbComponent } from './docs/breadcrumb.component';
 import { DocButtonsComponent } from './docs/buttons.component';
 import { DocOCalendarComponent } from './docs/o-calendar.component';
@@ -81,7 +70,6 @@ import { DocStepbarComponent } from './docs/stepbar.component';
 import { DocCollapseComponent } from './docs/collapse.component';
 import { DocDatepickerComponent } from './docs/datepicker.component';
 import { DocProgressBarComponent } from './docs/progress-bar.component';
-import { DocPriorityNavComponent } from './docs/priority-nav.component';
 import { DocNavbarComponent } from './docs/navbar.component';
 import { DocONavbarComponent } from './docs/o-navbar.component';
 import { DocScrollUpComponent } from './docs/scroll-up.component';
@@ -107,12 +95,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoBadgeComponent,
     DemoCardComponent,
     DemoFormComponent,
-    DemoJumbotronComponent,
-    DemoMediaComponent,
-    DemoOrangeFooterComponent,
-    DemoOrangeMegamenuComponent,
     DemoListGroupComponent,
-    DemoLocalNavigationComponent,
     DemoBreadcrumbComponent,
     DemoButtonsComponent,
     DemoCollapseComponent,
@@ -128,7 +111,6 @@ import { ScrollTopModule } from 'ng-boosted';
     DemoOToggleComponent,
     DemoPaginationComponent,
     DemoPopoverComponent,
-    DemoPriorityNavComponent,
     DemoProgressBarComponent,
     DemoRatingComponent,
     DemoScrollspyComponent,
@@ -147,12 +129,7 @@ import { ScrollTopModule } from 'ng-boosted';
     DocBadgeComponent,
     DocCardComponent,
     DocFormComponent,
-    DocJumbotronComponent,
     DocListGroupComponent,
-    DocLocalNavigationComponent,
-    DocMediaComponent,
-    DocOrangeFooterComponent,
-    DocOrangeMegamenuComponent,
     DocBreadcrumbComponent,
     DocAlertComponent,
     DocButtonsComponent,
@@ -173,7 +150,6 @@ import { ScrollTopModule } from 'ng-boosted';
     DocScrollspyComponent,
     DocStepbarComponent,
     DocProgressBarComponent,
-    DocPriorityNavComponent,
     DocNavbarComponent,
     DocONavbarComponent,
     DocOScrollTopComponent,

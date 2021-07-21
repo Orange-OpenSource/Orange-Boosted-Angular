@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <docs-wrapper component="List-Group">
       <p class="mt-4">Check the <a target="_blank" rel="noopener noreferrer"
-      href="https://boosted.orange.com/docs/4.5/components/list-group">boosted's original component documentation</a>.</p>
+      href="https://boosted.orange.com/docs/5.0/components/list-group">boosted's original component documentation</a>.</p>
       <h3>Demo</h3>
       <demo-list-group></demo-list-group>
       <code-box [snippets]="demoSnippets"></code-box>
