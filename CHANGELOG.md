@@ -1,3 +1,15 @@
+<a name="10.0.0"></a> (2021-07-22)
+
+# [10.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/9.1.1...10.0.0) (2021-07-22)
+
+
+### Features
+
+* **angular:** update to angular 12 ([f6cac07](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/f6cac07))
+* **boosted:** migration boosted 4 to 5 (+11 squashed commit) ([00311f7](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/00311f7))
+* **boosted:** update boosted & ng-bootstrap ([9d2c667](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/9d2c667))
+
+
 <a name="9.1.1"></a> (2021-05-17)
 
 ## [9.1.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/9.1.0...9.1.1) (2021-05-17)
