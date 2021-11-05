@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'demo-tabs',
   templateUrl: './tabs.component.html'
 })
-export class DemoTabsComponent {}
+export class DemoTabsComponent {
+  public active = 1;
+}

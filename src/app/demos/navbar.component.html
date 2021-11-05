@@ -3,10 +3,10 @@
     <a class="navbar-brand" href="#">
       <img src="assets/img/orange_logo.svg" width="50" height="50" role="img" alt="Boosted" loading="lazy">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" (click)="collapseDemo.toggle()" [attr.aria-expanded]="!isDemoCollapsed" aria-label="Toggle navigation" aria-controls="navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" #collapseDemo="ngbCollapse" [(ngbCollapse)]="isDemoCollapsed">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -14,16 +14,14 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li ngbDropdown class="nav-item">
+          <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem>Action</button>
+            <button ngbDropdownItem>Another action</button>
+            <div class="dropdown-divider"></div>
+            <button ngbDropdownItem>Something else here</button>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>

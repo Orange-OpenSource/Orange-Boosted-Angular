@@ -9,18 +9,18 @@
     <li class="nav-item">
       <a class="nav-link" (click)="onClick('scrollspyHeading2')">Second</a>
     </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" (click)="onClick('scrollspyHeading3')">Third</a></li>
-        <li><a class="dropdown-item" (click)="onClick('scrollspyHeading4')">Fourth</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" (click)="onClick('scrollspyHeading5')">Fifth</a></li>
-      </ul>
+    <li ngbDropdown class="nav-item">
+      <a href (click)="false" class="nav-link" ngbDropdownToggle>Dropdown</a>
+      <div ngbDropdownMenu>
+        <button ngbDropdownItem (click)="onClick('scrollspyHeading5')">Third</button>
+        <button ngbDropdownItem (click)="onClick('scrollspyHeading5')">Fourth</button>
+        <div class="dropdown-divider"></div>
+        <button ngbDropdownItem (click)="onClick('scrollspyHeading5')">Fifth</button>
+      </div>
     </li>
   </ul>
 </nav>
-<div data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0">
+<div tabindex="0">
   <h4 id="scrollspyHeading1">First heading</h4>
   <p>
     This is some placeholder content for the scrollspy page. Note that as you scroll down the page, 

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class DemoNavbarComponent {
   public active = false;
+  public isDemoCollapsed = true;
   public languages = [
     {name: 'EN', label: 'English version', lang: 'en', current: this.active},
     {name: 'FR', label: 'Version française', lang: 'fr', current: this.active},
