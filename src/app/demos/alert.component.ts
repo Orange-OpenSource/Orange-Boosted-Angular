@@ -27,6 +27,14 @@ export class DemoAlertComponent  {
   alerts: Alert[];
 
   constructor() {
+    this.reset();
+  }
+
+  close(alert: Alert) {
+    this.alerts.splice(this.alerts.indexOf(alert), 1);
+  }
+
+  reset() {
     this.alerts = Array.from(ALERTS);
   }
 }

@@ -2,6 +2,6 @@
   <div class="alert alert-{{alert.type}} alert-dismissible fade show" role="alert">
     <span class="alert-icon"><span class="visually-hidden">{{alert.type}}</span></span>
     <p>{{ alert.message }}</p>
-    <button type="button" class="btn-close" data-bs-dismiss="alert"><span class="visually-hidden">Close</span></button>
+    <button type="button" class="btn-close" (click)="close(alert)"><span class="visually-hidden">Close</span></button>
   </div>
 </div>

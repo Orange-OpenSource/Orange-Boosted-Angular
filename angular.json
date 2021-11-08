@@ -32,11 +32,6 @@
               "src/styles.scss"
               
             ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/@popperjs/core/dist/umd/popper.js",
-              "node_modules/boosted/dist/js/boosted.min.js"
-            ],
             "vendorChunk": true,
             "extractLicenses": false,
             "buildOptimizer": false,
@@ -102,11 +97,6 @@
               "node_modules/boosted/scss/boosted.scss",
               "dist/ng-boosted/style/ng-boosted.scss",
               "src/styles.scss"
-            ],
-            "scripts": [
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/@popperjs/core/dist/umd/popper.js",
-              "node_modules/boosted/dist/js/boosted.min.js"
             ],
             "assets": [
               "src/favicon.ico",
