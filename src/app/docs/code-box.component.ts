@@ -51,7 +51,6 @@ import { Component, Input } from '@angular/core';
     </ul>
 
     <div [ngbNavOutlet]="nav"></div>
-        
     `
 })
 export class CodeBoxComponent {
