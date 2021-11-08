@@ -2,12 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'demo-swiper',
-    styles: [`
-        >>> .swiper-container {
-            width: 37.5rem;
-            margin-left: 0;
-        }
-    `],
     templateUrl: './swiper.component.html'
 })
 export class DemoSwiperComponent {

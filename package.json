@@ -55,7 +55,6 @@
     "install": "^0.13.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
-    "jquery": "^3.5.1",
     "karma": "~6.3.4",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.3",
@@ -69,11 +68,11 @@
     "minimist": "^1.2.5",
     "ng-packagr": "^12.1.0",
     "node-forge": "~0.10.0",
-    "node-sass": "^4.14.1",
     "prismjs": "^1.21.0",
     "prismjs-loader": "^0.0.4",
     "protractor": "~7.0.0",
     "rxjs": "~6.6.7",
+    "sass": "^1.43.4",
     "scss-bundle": "^3.1.2",
     "serialize-javascript": "^4.0.0",
     "set-value": "^3.0.2",
@@ -93,8 +92,8 @@
     "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues"
   },
   "engines": {
-    "node": ">= 4.2.1",
-    "npm": ">= 3"
+    "node": ">= 14.18.1",
+    "npm": ">= 6"
   },
   "files": [
     "dist/**/*"

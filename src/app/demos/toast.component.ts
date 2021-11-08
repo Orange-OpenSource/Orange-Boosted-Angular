@@ -8,7 +8,7 @@ import { ToastService } from './toast-service';
 export class DemoToastComponent {
   show_toast_1 = true;
   show_toast_2 = true;
-  
+
   constructor(public toastService: ToastService) {}
 
   close() {
@@ -25,6 +25,6 @@ export class DemoToastComponent {
   }
 
   showDanger() {
-    this.toastService.show('I am a danger toast',{ classname: 'border border-danger fw-bold', delay: 15000 });
+    this.toastService.show('I am a danger toast', { classname: 'border border-danger fw-bold', delay: 15000 });
   }
 }

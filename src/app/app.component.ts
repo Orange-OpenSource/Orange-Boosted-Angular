@@ -12,7 +12,7 @@ export class AppComponent {
   public isCollapsed = true;
   constructor(public globals: Globals, private viewportScroller: ViewportScroller) {}
 
-  public onClick(elementId: string): void { 
+  public onClick(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
 }
 }
