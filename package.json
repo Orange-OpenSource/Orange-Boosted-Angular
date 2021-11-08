@@ -93,7 +93,7 @@
     "url": "https://github.com/Orange-OpenSource/Orange-Boosted-Angular/issues"
   },
   "engines": {
-    "node": ">= 16.13.0",
+    "node": ">= 14.15.5",
     "npm": ">= 7"
   },
   "files": [
