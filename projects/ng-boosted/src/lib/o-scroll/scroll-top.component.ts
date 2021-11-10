@@ -1,7 +1,7 @@
 /*!
  * --------------------------------------------------------------------------
  * Ng-boosted - scroll-top.component.ts
- * Licensed under MIT (https://github.com/Orange-OpenSource/ng-boosted/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/Orange-OpenSource/Orange-Boosted-Angular/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
