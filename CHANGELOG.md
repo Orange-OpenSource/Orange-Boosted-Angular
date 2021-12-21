@@ -1,3 +1,13 @@
+<a name="10.1.0"></a> (2021-07-22)
+
+# [10.1.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/10.0.0...10.1.0) (2021-12-21)
+
+
+### Features
+
+* **boosted:** update ([6be11db](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/6be11db))
+
+
 <a name="10.0.0"></a> (2021-07-22)
 
 # [10.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/9.1.1...10.0.0) (2021-07-22)
