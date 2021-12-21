@@ -4,9 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-boostwatch',
   templateUrl: './boostwatch.component.html'
 })
-export class BoostwatchComponent implements OnInit {
+export class BoostwatchComponent {
 
   constructor() {}
-
-  ngOnInit() {}
 }

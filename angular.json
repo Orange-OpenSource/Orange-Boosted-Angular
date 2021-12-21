@@ -30,7 +30,6 @@
               "node_modules/boosted/scss/boosted.scss",
               "dist/ng-boosted/style/ng-boosted.scss",
               "src/styles.scss"
-              
             ],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -105,14 +104,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
             ]
           }
         }
@@ -136,11 +132,11 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "e2e//**/*.ts",
+              "e2e//**/*.html"
             ]
           }
         }
@@ -163,7 +159,7 @@
               "tsConfig": "projects/ng-boosted/tsconfig.lib.prod.json"
             }
           }
-},
+        },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
@@ -173,19 +169,19 @@
           }
         },
         "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
+          "builder": "@angular-eslint/builder:lint",
           "options": {
-            "tsConfig": [
-              "projects/ng-boosted/tsconfig.lib.json",
-              "projects/ng-boosted/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "lintFilePatterns": [
+              "projects/ng-boosted/**/*.ts",
+              "projects/ng-boosted/**/*.html"
             ]
           }
         }
       }
     }
   },
-  "defaultProject": "Orange-Boosted-Angular"
+  "defaultProject": "Orange-Boosted-Angular",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }

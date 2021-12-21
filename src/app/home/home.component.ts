@@ -6,9 +6,7 @@ import { Globals } from '../directives/global';
   templateUrl: './home.component.html',
   providers: [Globals]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
 
   constructor(public globals: Globals) {}
-
-  ngOnInit() {}
 }
