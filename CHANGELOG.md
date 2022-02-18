@@ -1,3 +1,7 @@
+<a name="10.2.1"></a> (2022-02-18)
+## [10.2.1](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/10.2.0...10.2.1) (2022-02-18)
+
+
 <a name="10.2.0"></a> (2022-02-17)
 # [10.2.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/10.1.0...10.2.0) (2022-02-17)
 
