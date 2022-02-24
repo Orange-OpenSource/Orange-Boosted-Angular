@@ -1,3 +1,8 @@
+<a name="11.0.0"></a> (2022-02-24)
+# [11.0.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/10.3.0...11.0.0) (2022-02-24)
+
+* **Angular:** update to angular 13 ([ce1c191](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/commit/ce1c191))
+
 <a name="10.3.0"></a> (2022-02-24)
 # [10.3.0](https://github.com/Orange-OpenSource/Orange-Boosted-Angular/compare/10.2.1...10.3.0) (2022-02-24)
 
