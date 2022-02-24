@@ -73,7 +73,7 @@
     "markdown-loader": "^6.0.0",
     "minimist": "^1.2.5",
     "ng-packagr": "^13.2.1",
-    "node-forge": "~0.10.0",
+    "node-forge": "~1.0.0",
     "prismjs": "^1.25.0",
     "prismjs-loader": "^0.0.4",
     "protractor": "~7.0.0",
