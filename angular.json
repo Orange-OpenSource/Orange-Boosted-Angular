@@ -30,6 +30,9 @@
               "node_modules/boosted/scss/boosted.scss",
               "dist/ng-boosted/style/ng-boosted.scss",
               "src/styles.scss"
+            ],            
+            "scripts": [
+              "node_modules/focus-visible/dist/focus-visible.min.js"
             ],
             "vendorChunk": true,
             "extractLicenses": false,
