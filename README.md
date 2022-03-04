@@ -1,7 +1,18 @@
-# Orange Boosted Angular
+# Orange Boosted Angular [DEPRECATED]
 
 [![npm version](https://badge.fury.io/js/ng-boosted.svg)](https://badge.fury.io/js/ng-boosted)
 [![Build Status](https://travis-ci.org/Orange-OpenSource/Orange-Boosted-Angular.svg?branch=main)](https://travis-ci.org/Orange-OpenSource/Orange-Boosted-Angular)
+
+## This project is no more maintained
+With Boosted version 5 and the removal of jQuery, ng-boosted is no longer relevant. This v12.0.0 is the latest one.
+
+If you still need some specific Angular components, please use [Ng-bootstrap](https://ng-bootstrap.github.io) with Boosted CSS, font-family, and focus-visible JavaScript polyfill.
+
+If you have any questions [Please create an issue](https://github.com/Orange-OpenSource/Orange-Boosted-Bootstrap/issues/new).
+
+For more information please refer to [Boosted official website](https://boosted.orange.com).
+
+---
 
 This document describes how to set up your development environment to build and test Ng-Boosted.
 It also explains the basic mechanics of using `git`, `node`, and `npm`.
