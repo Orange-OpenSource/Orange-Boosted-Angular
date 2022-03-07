@@ -78,7 +78,7 @@
     "prismjs": "^1.27.0",
     "prismjs-loader": "^0.0.4",
     "protractor": "~7.0.0",
-    "rxjs": "^6.5.5",
+    "rxjs": "^7.5.4",
     "sass": "^1.45.1",
     "scss-bundle": "^3.1.2",
     "serialize-javascript": "^6.0.0",
