@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/ng-boosted.svg)](https://badge.fury.io/js/ng-boosted)
 [![Build Status](https://travis-ci.org/Orange-OpenSource/Orange-Boosted-Angular.svg?branch=main)](https://travis-ci.org/Orange-OpenSource/Orange-Boosted-Angular)
 
-## This project is no more maintained
+## :warning: This project is not maintained anymore :warning:
 With Boosted version 5 and the removal of jQuery, ng-boosted is no longer relevant. This v12.0.0 is the latest one.
 
 If you still need some specific Angular components, please use [Ng-bootstrap](https://ng-bootstrap.github.io) with Boosted CSS, font-family, and focus-visible JavaScript polyfill.
